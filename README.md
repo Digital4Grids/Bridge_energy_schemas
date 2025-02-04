@@ -7,7 +7,7 @@
 
 **\Repository**
 
-Here you will find the Sparx Enterprise Architect EAPX file that holds the CIM library and combined  Project EDDIE and IEC 62746-4 profiles. Project EDDIE messages are based on the IEC 62325 (ESMP) with a few extensions and is compliant in structure and usage with the IEC 62746-4.
+Here you will find the Sparx Enterprise Architect EAP file that holds the CIM library and combined  Project EDDIE and IEC 62746-4 profiles. Project EDDIE messages are based on the IEC 62325 (ESMP) with a few extensions and is compliant in structure and usage with the IEC 62746-4.
 
 **\IEC62746-4**
 
