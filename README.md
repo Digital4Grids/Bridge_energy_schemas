@@ -5,15 +5,15 @@
 
 **Folder structure**
 
+**\Repository**
+
+Here you will find the Sparx Enterprise Architect EAPX file that holds the CIM library and combined  Project EDDIE and IEC 62746-4 profiles. Project EDDIE messages are based on the IEC 62325 (ESMP) with a few extensions and is compliant in structure and usage with the IEC 62746-4.
+
 **\IEC62746-4**
 
 **\EDDIE**
 
 This is the root folder for Project EDDIE documentation. Project EDDIE is an EU funded open-source project to develop a data space infrastructure for the energy sector. EDDIE creates a decentralised, distributed, open-source Data Space, aligned with directions of the work on the Implementing Acts on Interoperability, the upcoming Network Code on Demand Response and other European activities. 
-
-**\EDDIE\Repository**
-
-Here you will find the Sparx Enterprise Architect EAPX file that holds the CIM library and combined  Project EDDIE and IEC 62746-4 profiles. Project EDDIE messages are based on the IEC 62325 (ESMP) with a few extensions and is compliant in structure and usage with the IEC 62746-4.
 
 
 *Note: All individual project messages are given a separate folders that hold the Use case diagram, XSD, annotated XSD and JSON defintion files. Each message has a **pre-standardised** version and a **project** version. The project version contains an extra brancheswith includes an optional MessageHeader section with process information needed by the EDDIE framework, a top-level Enveloppe class and the CIM part MarketDocument which is equal top the pre-standardised version. See below for more details per message.*
