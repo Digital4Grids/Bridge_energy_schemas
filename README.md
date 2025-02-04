@@ -11,6 +11,8 @@ Here you will find the Sparx Enterprise Architect EAPX file that holds the CIM l
 
 **\IEC62746-4**
 
+This is the root folder for IEC62746-4 documentation.
+
 **\EDDIE**
 
 This is the root folder for Project EDDIE documentation. Project EDDIE is an EU funded open-source project to develop a data space infrastructure for the energy sector. EDDIE creates a decentralised, distributed, open-source Data Space, aligned with directions of the work on the Implementing Acts on Interoperability, the upcoming Network Code on Demand Response and other European activities. 
