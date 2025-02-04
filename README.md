@@ -16,10 +16,10 @@ This is the root folder for Project EDDIE documentation. Project EDDIE is an EU 
 Here you will find the Sparx Enterprise Architect EAPX file that holds the CIM library and combined  Project EDDIE and IEC 62746-4 profiles. Project EDDIE messages are based on the IEC 62325 (ESMP) with a few extensions and is compliant in structure and usage with the IEC 62746-4.
 
 
-*Note: All individual project messages are given a separate folders that hold the Use case diagram, XSD, annotated XSD and JSON defintion files. Each message has a **pre-standardised** version and a **project** version. See below.*
+*Note: All individual project messages are given a separate folders that hold the Use case diagram, XSD, annotated XSD and JSON defintion files. Each message has a **pre-standardised** version and a **project** version. The project version contains an extra brancheswith includes an optional MessageHeader section with process information needed by the EDDIE framework, a top-level Enveloppe class and the CIM part MarketDocument which is equal top the pre-standardised version. See below for more details per message.*
 
 **\EDDIE\Validated Historical Data (VHD)**
-This is CIMContextor generated CIM message used for large amounts of historical validated consumption data of the final customer. It may contain month of hourly values depending on the dataNeed specified in the EDDIE Portal. It consists of two branches: an optional MessageHeader section with process information needed by the EDDIE framework and the CIM part MarketDocument. 
+This is CIMContextor generated CIM message used for large amounts of historical validated consumption data of the final customer. It may contain month of hourly values depending on the dataNeed specified in the EDDIE Portal. 
 
 **\EDDIE\Redistribution Transaction Request (RTR)**
 
