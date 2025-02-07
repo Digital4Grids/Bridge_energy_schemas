@@ -1,14 +1,14 @@
 {
     "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/ValidatedHistoricalData-assembly-model.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "ValidatedHistoricalData-assembly-model  profile generated 2025-02-03 10:48:37.851772",
+    "title": "ValidatedHistoricalData-assembly-model  profile generated 2025-02-06 10:34:20.727939",
     "description": "",
     "namespace": "http://iec.ch/TC57/2020/ValidatedHistoricalData-assembly-model#",
     "type": "object",
     "additionalProperties": false,
     "properties": {
-        "RTD_Enveloppe": {
-            "$ref": "#/definitions/RTD_Enveloppe"
+        "VHD_Enveloppe": {
+            "$ref": "#/definitions/VHD_Enveloppe"
         }
     },
     "definitions": {
@@ -63,9 +63,9 @@
                 "position"
             ]
         },
-        "RTD_Enveloppe": {
-            "id": "#RTD_Enveloppe",
-            "title": "RTD_Enveloppe",
+        "VHD_Enveloppe": {
+            "id": "#VHD_Enveloppe",
+            "title": "VHD_Enveloppe",
             "description": "",
             "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Enveloppe",
             "type": "object",
@@ -109,13 +109,13 @@
                 "MarketDocument": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Enveloppe.MarketDocument",
-                    "$ref": "#/definitions/RTD_MarketDocument"
+                    "$ref": "#/definitions/VHD_MarketDocument"
                 }
             }
         },
-        "RTD_MarketDocument": {
-            "id": "#RTD_MarketDocument",
-            "title": "RTD_MarketDocument",
+        "VHD_MarketDocument": {
+            "id": "#VHD_MarketDocument",
+            "title": "VHD_MarketDocument",
             "description": "An electronic document containing the information necessary to satisfy the requirements of a given business process.",
             "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument",
             "type": "object",
@@ -368,23 +368,6 @@
                 "flowDirection.direction"
             ]
         },
-        "Quality_String": {
-            "id": "#Quality_String",
-            "title": "Quality_String",
-            "description": "The coded identification of the quality of the information.",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "value": {
-                    "description": "Main Core value Space.",
-                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/QualityTypeList"
-                }
-            },
-            "required": [
-                "value"
-            ]
-        },
         "Position_Integer": {
             "id": "#Position_Integer",
             "title": "Position_Integer",
@@ -398,6 +381,23 @@
                     "type": "integer",
                     "maximum": 999999,
                     "minimum": 1
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "Quality_String": {
+            "id": "#Quality_String",
+            "title": "Quality_String",
+            "description": "The coded identification of the quality of the information.",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/QualityTypeList"
                 }
             },
             "required": [
