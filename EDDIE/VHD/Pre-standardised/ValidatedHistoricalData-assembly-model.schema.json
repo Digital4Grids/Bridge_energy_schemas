@@ -1,14 +1,14 @@
 {
     "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/ValidatedHistoricalData-assembly-model.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "ValidatedHistoricalData-assembly-model  profile generated 2025-02-03 10:46:44.572083",
+    "title": "ValidatedHistoricalData-assembly-model  profile generated 2025-02-07 13:56:55.140115",
     "description": "",
     "namespace": "http://iec.ch/TC57/2020/ValidatedHistoricalData-assembly-model#",
     "type": "object",
     "additionalProperties": false,
     "properties": {
-        "RTD_MarketDocument": {
-            "$ref": "#/definitions/RTD_MarketDocument"
+        "VHD_MarketDocument": {
+            "$ref": "#/definitions/VHD_MarketDocument"
         }
     },
     "definitions": {
@@ -63,9 +63,9 @@
                 "position"
             ]
         },
-        "RTD_MarketDocument": {
-            "id": "#RTD_MarketDocument",
-            "title": "RTD_MarketDocument",
+        "VHD_MarketDocument": {
+            "id": "#VHD_MarketDocument",
+            "title": "VHD_MarketDocument",
             "description": "An electronic document containing the information necessary to satisfy the requirements of a given business process.",
             "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument",
             "type": "object",

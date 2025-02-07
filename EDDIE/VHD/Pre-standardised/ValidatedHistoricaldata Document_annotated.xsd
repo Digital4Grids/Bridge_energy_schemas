@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:Prefix="TargetNamespace" xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:cimp="http://www.iec.ch/cimprofile" xmlns:TargetNamespace="https://eddie.energy/CIM" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://eddie.energy/CIM" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="" namespace="urn:entsoe.eu:wgedi:codelists" />
-  <xs:element name="RTD_MarketDocument" type="TargetNamespace:RTD_MarketDocument" />
+  <xs:element name="VHD_MarketDocument" type="TargetNamespace:VHD_MarketDocument" />
   <xs:simpleType name="ID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#String">
     <xs:annotation>
       <xs:documentation>A code to uniquely distinguish one occurrence of an entity from another.
@@ -89,7 +89,7 @@ In the ESMP context, it is an authorized issuing office that provides an agreed 
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="RTD_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument">
+  <xs:complexType name="VHD_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument">
     <xs:annotation>
       <xs:documentation>An electronic document containing the information necessary to satisfy the requirements of a given business process.</xs:documentation>
       <xs:documentation cimp:category="TagValue" cimp:subcategory="businessProcessContextValue">

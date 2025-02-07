@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:Prefix="TargetNamespace" xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:cimp="http://www.iec.ch/cimprofile" xmlns:TargetNamespace="https://eddie.energy/CIM" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://eddie.energy/CIM" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="" namespace="urn:entsoe.eu:wgedi:codelists" />
-  <xs:element name="RTD_MarketDocument" type="TargetNamespace:RTD_MarketDocument" />
+  <xs:element name="VHD_MarketDocument" type="TargetNamespace:VHD_MarketDocument" />
   <xs:simpleType name="ID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#String">
     <xs:restriction base="xs:string">
       <xs:maxLength value="60" />
@@ -94,25 +94,17 @@
   <xs:simpleType name="Quality_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#String">
     <xs:restriction base="ecl:QualityTypeList" />
   </xs:simpleType>
-  <xs:complexType name="RTD_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument">
+  <xs:complexType name="Series_Period" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period">
     <xs:sequence>
-      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="TargetNamespace:ID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
+      <xs:element minOccurs="1" maxOccurs="1" name="resolution" type="xs:duration" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.resolution">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="createdDateTime" type="TargetNamespace:ESMP_DateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Document.createdDateTime">
+      <xs:element minOccurs="1" maxOccurs="1" name="timeInterval" type="TargetNamespace:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.timeInterval">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="unbounded" name="TimeSeries" type="TargetNamespace:TimeSeries" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.TimeSeries">
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Point" type="TargetNamespace:Point" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.Point">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="sender_MarketParticipant.mRID" type="TargetNamespace:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
+      <xs:element minOccurs="0" maxOccurs="1" name="reason.code" type="TargetNamespace:ReasonCode_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Reason.code">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="sender_MarketParticipant.marketRole.type" type="TargetNamespace:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketRole.type">
-      </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="receiver_MarketParticipant.mRID" type="TargetNamespace:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
-      </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="receiver_MarketParticipant.marketRole.type" type="TargetNamespace:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketRole.type">
-      </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="period.timeInterval" type="TargetNamespace:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.timeInterval">
-      </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="process.processType" type="TargetNamespace:ProcessKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Process.processType">
+      <xs:element minOccurs="0" maxOccurs="1" name="reason.text" type="TargetNamespace:ReasonText_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Reason.text">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
@@ -124,13 +116,51 @@
       <xs:maxLength value="512" />
     </xs:restriction>
   </xs:simpleType>
-  <xs:complexType name="Series_Period" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period">
+  <xs:complexType name="TimeSeries" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#TimeSeries">
     <xs:sequence>
-      <xs:element minOccurs="1" maxOccurs="1" name="resolution" type="xs:duration" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.resolution">
+      <xs:element minOccurs="1" maxOccurs="1" name="version" type="TargetNamespace:ESMPVersion_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#TimeSeries.version">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="timeInterval" type="TargetNamespace:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.timeInterval">
+      <xs:element minOccurs="0" maxOccurs="1" name="dateAndOrTime.dateTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#DateAndOrTime.dateTime">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="unbounded" name="Point" type="TargetNamespace:Point" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.Point">
+      <xs:element minOccurs="1" maxOccurs="1" name="measurement_Unit.name" type="TargetNamespace:MeasurementUnitKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Unit.name">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="flowDirection.direction" type="TargetNamespace:DirectionKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#FlowDirection.direction">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Period" type="TargetNamespace:Series_Period" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#TimeSeries.Period">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.mRID" type="TargetNamespace:ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.fuel.fuel" type="TargetNamespace:Fuel_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Fuel.fuel">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.type" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Location.type">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.coordinateSystem.crsUrn" type="TargetNamespace:CoordinateSystemKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#CoordinateSystem.crsUrn">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.positionPoints.sequenceNumber" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#PositionPoint.sequenceNumber">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.positionPoints.xPosition" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#PositionPoint.xPosition">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.positionPoints.yPosition" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#PositionPoint.yPosition">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.positionPoints.zPosition" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#PositionPoint.zPosition">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.pSRType.psrType" type="TargetNamespace:PsrType_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MktPSRType.psrType">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.mRID" type="TargetNamespace:MeasurementPointID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.mRID" type="TargetNamespace:ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.mRID" type="TargetNamespace:ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.readingType.accumulation" type="TargetNamespace:AccumulationKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#ReadingType.accumulation">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.readingType.aggregate" type="TargetNamespace:AggregateKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#ReadingType.aggregate">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.readingType.commodity" type="TargetNamespace:CommodityKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#ReadingType.commodity">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.usagePointLocation.geoInfoReference" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Location.geoInfoReference">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="reason.code" type="TargetNamespace:ReasonCode_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Reason.code">
       </xs:element>
@@ -459,55 +489,25 @@
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:complexType name="TimeSeries" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#TimeSeries">
+  <xs:complexType name="VHD_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument">
     <xs:sequence>
-      <xs:element minOccurs="1" maxOccurs="1" name="version" type="TargetNamespace:ESMPVersion_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#TimeSeries.version">
+      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="TargetNamespace:ID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="dateAndOrTime.dateTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#DateAndOrTime.dateTime">
+      <xs:element minOccurs="1" maxOccurs="1" name="createdDateTime" type="TargetNamespace:ESMP_DateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Document.createdDateTime">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="measurement_Unit.name" type="TargetNamespace:MeasurementUnitKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Unit.name">
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="TimeSeries" type="TargetNamespace:TimeSeries" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.TimeSeries">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="flowDirection.direction" type="TargetNamespace:DirectionKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#FlowDirection.direction">
+      <xs:element minOccurs="1" maxOccurs="1" name="sender_MarketParticipant.mRID" type="TargetNamespace:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Period" type="TargetNamespace:Series_Period" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#TimeSeries.Period">
+      <xs:element minOccurs="1" maxOccurs="1" name="sender_MarketParticipant.marketRole.type" type="TargetNamespace:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketRole.type">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.mRID" type="TargetNamespace:ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
+      <xs:element minOccurs="1" maxOccurs="1" name="receiver_MarketParticipant.mRID" type="TargetNamespace:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.fuel.fuel" type="TargetNamespace:Fuel_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Fuel.fuel">
+      <xs:element minOccurs="1" maxOccurs="1" name="receiver_MarketParticipant.marketRole.type" type="TargetNamespace:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketRole.type">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
+      <xs:element minOccurs="1" maxOccurs="1" name="period.timeInterval" type="TargetNamespace:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.timeInterval">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.type" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Location.type">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.coordinateSystem.crsUrn" type="TargetNamespace:CoordinateSystemKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#CoordinateSystem.crsUrn">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.positionPoints.sequenceNumber" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#PositionPoint.sequenceNumber">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.positionPoints.xPosition" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#PositionPoint.xPosition">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.positionPoints.yPosition" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#PositionPoint.yPosition">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.location.positionPoints.zPosition" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#PositionPoint.zPosition">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.pSRType.psrType" type="TargetNamespace:PsrType_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MktPSRType.psrType">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.mRID" type="TargetNamespace:MeasurementPointID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.mRID" type="TargetNamespace:ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.mRID" type="TargetNamespace:ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.readingType.accumulation" type="TargetNamespace:AccumulationKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#ReadingType.accumulation">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.readingType.aggregate" type="TargetNamespace:AggregateKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#ReadingType.aggregate">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.readingType.commodity" type="TargetNamespace:CommodityKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#ReadingType.commodity">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.usagePointLocation.geoInfoReference" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Location.geoInfoReference">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="reason.code" type="TargetNamespace:ReasonCode_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Reason.code">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="reason.text" type="TargetNamespace:ReasonText_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Reason.text">
+      <xs:element minOccurs="1" maxOccurs="1" name="process.processType" type="TargetNamespace:ProcessKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Process.processType">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
