@@ -1,4 +1,4 @@
-# energy_schemasDigital4 grids github 
+# CIM based data exchange schema for Bridge DERA deployment github 
 
 
 ## Reading guide
