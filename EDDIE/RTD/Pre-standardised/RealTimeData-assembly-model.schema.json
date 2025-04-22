@@ -1,7 +1,7 @@
 {
     "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/RealTimeData-assembly-model.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "RealTimeData-assembly-model  profile generated 2025-02-03 10:45:35.026064",
+    "title": "RealTimeData-assembly-model  profile generated 2025-04-15 17:22:14.192936",
     "description": "",
     "namespace": "http://iec.ch/TC57/2020/RealTimeData-assembly-model#",
     "type": "object",
@@ -14,35 +14,6 @@
     "definitions": {
         "RealTimeData-assembly-model": {
             "$ref": "#"
-        },
-        "Quantity": {
-            "id": "#Quantity",
-            "title": "Quantity",
-            "description": "Description of quantities needed in the data exchange. \r\nThe type of the quantity is described either by the role of the association or the quantityType attribute.\r\nThe quality attribute provides the information about the quality of the quantity (measured, estimated, etc.).",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Quantity",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "quality": {
-                    "description": "The description of the quality of the quantity.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Quantity.quality",
-                    "$ref": "#/definitions/Quality_String"
-                },
-                "quantity": {
-                    "description": "The quantity value.\r\nThe association role provides the information about what is expressed.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Quantity.quantity",
-                    "type": "number"
-                },
-                "type": {
-                    "description": "The description of the type of the quantity.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Quantity.type",
-                    "$ref": "#/definitions/QuantityTypeKind"
-                }
-            },
-            "required": [
-                "quantity",
-                "type"
-            ]
         },
         "RTD_MarketDocument": {
             "id": "#RTD_MarketDocument",
@@ -118,21 +89,33 @@
                 "Quantity"
             ]
         },
-        "Quality_String": {
-            "id": "#Quality_String",
-            "title": "Quality_String",
-            "description": "The coded identification of the quality of the information.",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
+        "Quantity": {
+            "id": "#Quantity",
+            "title": "Quantity",
+            "description": "Description of quantities needed in the data exchange. \r\nThe type of the quantity is described either by the role of the association or the quantityType attribute.\r\nThe quality attribute provides the information about the quality of the quantity (measured, estimated, etc.).",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Quantity",
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "value": {
-                    "description": "Main Core value Space.",
-                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/QualityTypeList"
+                "quality": {
+                    "description": "The description of the quality of the quantity.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Quantity.quality",
+                    "$ref": "#/definitions/Quality_String"
+                },
+                "quantity": {
+                    "description": "The quantity value.\r\nThe association role provides the information about what is expressed.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Quantity.quantity",
+                    "type": "number"
+                },
+                "type": {
+                    "description": "The description of the type of the quantity.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Quantity.type",
+                    "$ref": "#/definitions/QuantityTypeKind"
                 }
             },
             "required": [
-                "value"
+                "quantity",
+                "type"
             ]
         },
         "ID_String": {
@@ -214,6 +197,23 @@
                 "value"
             ]
         },
+        "Quality_String": {
+            "id": "#Quality_String",
+            "title": "Quality_String",
+            "description": "The coded identification of the quality of the information.",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/QualityTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
         "QuantityTypeKind": {
             "id": "#QuantityTypeKind",
             "title": "QuantityTypeKind",
@@ -222,16 +222,17 @@
             "$id": "#QuantityTypeKind",
             "type": "string",
             "enum": [
-                "TotalActiveEnergyProduction_kWh",
-                "TotalActiveEnergyConsumption_kWh",
-                "InstantaneousActivePowerGeneration_W",
-                "InstantaneousActivePowerConsumption_W",
-                "GasTotalEnergyConsumptionLastHour_M3",
-                "electricityTariff_Euro",
-                "EnergyDeliveredTariff2_Euro",
-                "PowerDelivered_l1_Euro",
-                "InstantaneousReAactivePowerGeneration_W",
-                "InstantaneousReactivePowerConsumption_W"
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
             ]
         }
     }

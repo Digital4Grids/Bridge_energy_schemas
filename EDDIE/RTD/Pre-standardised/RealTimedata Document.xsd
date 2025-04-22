@@ -51,25 +51,60 @@
   </xs:complexType>
   <xs:simpleType name="QuantityTypeKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#QuantityTypeKind">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="electricityTariff_Euro">
+      <xs:enumeration value="0">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">TotalActiveEnergyConsumed_import_kWh</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="EnergyDeliveredTariff2_Euro">
+      <xs:enumeration value="1">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">TotalActiveEnergyProduced_export_kWh</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="GasTotalEnergyConsumptionLastHour_M3">
+      <xs:enumeration value="2">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousActivePowerConsumption_import__kW</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="InstantaneousActivePowerConsumption_W">
+      <xs:enumeration value="3">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousActivePowerGeneration_export_kW</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="InstantaneousActivePowerGeneration_W">
+      <xs:enumeration value="4">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousVoltage_V_on_phaseL1</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="InstantaneousReAactivePowerGeneration_W">
+      <xs:enumeration value="5">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousVoltage_V_on_phaseL2</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="InstantaneousReactivePowerConsumption_W">
+      <xs:enumeration value="6">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousVoltage_V_on_phaseL3</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="PowerDelivered_l1_Euro">
+      <xs:enumeration value="7">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousCurrent_A_on_phaseL1</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="TotalActiveEnergyConsumption_kWh">
+      <xs:enumeration value="8">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousCurrent_A_on_phaseL2</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="TotalActiveEnergyProduction_kWh">
+      <xs:enumeration value="9">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousCurrent_A_on_phaseL3</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="10">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">PowerFactor</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
