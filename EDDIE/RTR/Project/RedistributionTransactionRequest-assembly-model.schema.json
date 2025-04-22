@@ -1,25 +1,25 @@
 {
     "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/RedistributionTransactionRequest-assembly-model.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "RedistributionTransactionRequest-assembly-model  profile generated 2025-02-03 10:56:32.044966",
+    "title": "RedistributionTransactionRequest-assembly-model  profile generated 2025-04-14 15:16:58.350930",
     "description": "",
     "namespace": "http://iec.ch/TC57/2020/RedistributionTransactionRequest-assembly-model#",
     "type": "object",
     "additionalProperties": false,
     "properties": {
-        "RTR_Enveloppe": {
-            "$ref": "#/definitions/RTR_Enveloppe"
+        "RTR_Envelope": {
+            "$ref": "#/definitions/RTR_Envelope"
         }
     },
     "definitions": {
         "RedistributionTransactionRequest-assembly-model": {
             "$ref": "#"
         },
-        "RTR_Enveloppe": {
-            "id": "#RTR_Enveloppe",
-            "title": "RTR_Enveloppe",
+        "RTR_Envelope": {
+            "id": "#RTR_Envelope",
+            "title": "RTR_Envelope",
             "description": "",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Enveloppe",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Envelope",
             "type": "object",
             "additionalProperties": false,
             "properties": {
