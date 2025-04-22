@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:Prefix="TargetNamespace" xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:cimp="http://www.iec.ch/cimprofile" xmlns:TargetNamespace="https://eddie.energy/CIM" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://eddie.energy/CIM" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="" namespace="urn:entsoe.eu:wgedi:codelists" />
-  <xs:element name="VHD_Enveloppe" type="TargetNamespace:VHD_Enveloppe" />
+  <xs:element name="VHD_Envelope" type="TargetNamespace:VHD_Envelope" />
   <xs:simpleType name="Position_Integer" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Integer">
     <xs:annotation>
       <xs:documentation>An integer value, this value is used as a sequential value representing the relative position of an entity within a space such as a time interval.</xs:documentation>
@@ -15,28 +15,64 @@
   </xs:simpleType>
   <xs:simpleType name="QuantityTypeKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#QuantityTypeKind">
     <xs:annotation>
+      <xs:documentation cimp:category="Stereotype" cimp:notes="manage codes">CodeList</xs:documentation>
       <xs:documentation cimp:category="Stereotype" cimp:notes="EDDIE">EDDIE</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
-      <xs:enumeration value="electricityTariff_Euro">
+      <xs:enumeration value="0">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">TotalActiveEnergyConsumed_import_kWh</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="EnergyDeliveredTariff2_Euro">
+      <xs:enumeration value="1">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">TotalActiveEnergyProduced_export_kWh</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="GasTotalEnergyConsumptionLastHour_M3">
+      <xs:enumeration value="2">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousActivePowerConsumption_import__kW</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="InstantaneousActivePowerConsumption_W">
+      <xs:enumeration value="3">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousActivePowerGeneration_export_kW</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="InstantaneousActivePowerGeneration_W">
+      <xs:enumeration value="4">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousVoltage_V_on_phaseL1</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="InstantaneousReAactivePowerGeneration_W">
+      <xs:enumeration value="5">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousVoltage_V_on_phaseL2</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="InstantaneousReactivePowerConsumption_W">
+      <xs:enumeration value="6">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousVoltage_V_on_phaseL3</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="PowerDelivered_l1_Euro">
+      <xs:enumeration value="7">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousCurrent_A_on_phaseL1</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="TotalActiveEnergyConsumption_kWh">
+      <xs:enumeration value="8">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousCurrent_A_on_phaseL2</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="TotalActiveEnergyProduction_kWh">
+      <xs:enumeration value="9">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">InstantaneousCurrent_A_on_phaseL3</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="10">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">PowerFactor</xs:documentation>
+        </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
@@ -247,6 +283,19 @@ The association role provides the information about what is expressed.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="timeInterval" type="TargetNamespace:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.timeInterval">
+        <xs:annotation>
+          <xs:documentation>The start and end time of the period.</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">1</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Point" type="TargetNamespace:Point" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.Point">
+        <xs:annotation>
+          <xs:documentation>The Point information associated with a given Series_Period.within a TimeSeries.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="reason.code" type="TargetNamespace:ReasonCode_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Reason.code">
         <xs:annotation>
           <xs:documentation>The motivation of an act in coded form.
@@ -263,19 +312,6 @@ The association role provides the information about what is expressed.
 
 --- The reason information associated with a Series_Period providing motivation information.</xs:documentation>
           <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">4</xs:documentation>
-          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="1" maxOccurs="unbounded" name="Point" type="TargetNamespace:Point" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.Point">
-        <xs:annotation>
-          <xs:documentation>The Point information associated with a given Series_Period.within a TimeSeries.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="timeInterval" type="TargetNamespace:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.timeInterval">
-        <xs:annotation>
-          <xs:documentation>The start and end time of the period.</xs:documentation>
-          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">1</xs:documentation>
           <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
           </xs:documentation>
         </xs:annotation>
@@ -372,6 +408,7 @@ In the ESMP context, it is an authorized issuing office that provides an agreed 
   <xs:simpleType name="AccumulationKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#AccumulationKind">
     <xs:annotation>
       <xs:documentation>Kind of accumulation behaviour for read / measured values from individual end points.</xs:documentation>
+      <xs:documentation cimp:category="Stereotype" cimp:notes="manage codes">CodeList</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="0">
@@ -427,6 +464,232 @@ In the ESMP context, it is an authorized issuing office that provides an agreed 
       <xs:enumeration value="14">
         <xs:annotation>
           <xs:documentation cimp:category="enumValue">boundedQuantity</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AggregateKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#AggregateKind">
+    <xs:annotation>
+      <xs:documentation>Kind of aggregation for read / measured values from multiple end points.</xs:documentation>
+      <xs:documentation cimp:category="Stereotype" cimp:notes="manage codes">CodeList</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="0">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">none</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">average</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="4">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">excess</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="5">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">highThreshold</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="7">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">lowThreshold</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="8">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">maximum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="9">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">minimum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="11">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">nominal</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="12">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">normal</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="16">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">secondMaximum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="17">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">secondMinimum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="23">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">thirdMaximum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="24">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">fourthMaximum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="25">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">fifthMaximum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="26">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">sum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CommodityKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#CommodityKind">
+    <xs:annotation>
+      <xs:documentation>Kind of commodity being measured.</xs:documentation>
+      <xs:documentation cimp:category="Stereotype" cimp:notes="manage codes">CodeList</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="26">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">H2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">none</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">electricitySecondaryMetered</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">electricityPrimaryMetered</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="3">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">communication</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="4">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">air</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="5">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">insulativeGas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="6">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">insulativeOil</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="7">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">naturalGas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="8">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">propane</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="9">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">potableWater</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="10">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">steam</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="11">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">wasteWater</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="12">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">heatingFluid</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="13">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">coolingFluid</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="14">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">nonpotableWater</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="15">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">nox</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="16">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">so2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="17">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">ch4</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="18">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">co2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="19">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">carbon</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="20">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">hch</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="21">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">pfc</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="22">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">sf6</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="23">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">tvLicence</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="24">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">internet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="25">
+        <xs:annotation>
+          <xs:documentation cimp:category="enumValue">refuse</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -506,6 +769,11 @@ In the ESMP profile, the TimeSeries provides not only time-ordered quantities bu
           <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">3</xs:documentation>
           <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
           </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Period" type="TargetNamespace:Series_Period" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#TimeSeries.Period">
+        <xs:annotation>
+          <xs:documentation>The time interval and resolution  for a period associated with a TimeSeries.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.mRID" type="TargetNamespace:ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
@@ -688,7 +956,82 @@ For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the m
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="marketEvaluationPoint.meterReadings.readings.readingType.accumulation" type="TargetNamespace:AccumulationKind" />
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.readingType.accumulation" type="TargetNamespace:AccumulationKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#ReadingType.accumulation">
+        <xs:annotation>
+          <xs:documentation>Accumulation behaviour of a reading over time, usually 'measuringPeriod', to be used with individual endpoints (as opposed to 'macroPeriod' and 'aggregate' that are used to describe aggregations of data from individual endpoints).
+
+
+
+--- The identification of a measurement point associated with a TimeSeries.
+--- All meter readings obtained from this usage point.
+--- All reading values contained within this meter reading.
+--- Type information for this reading value.</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">18</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.readingType.aggregate" type="TargetNamespace:AggregateKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#ReadingType.aggregate">
+        <xs:annotation>
+          <xs:documentation>Salient attribute of the reading data aggregated from individual endpoints. This is mainly used to define a mathematical operation carried out over 'macroPeriod', but may also be used to describe an attribute of the data when the 'macroPeriod' is not defined.
+
+
+
+--- The identification of a measurement point associated with a TimeSeries.
+--- All meter readings obtained from this usage point.
+--- All reading values contained within this meter reading.
+--- Type information for this reading value.</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">19</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.meterReadings.readings.readingType.commodity" type="TargetNamespace:CommodityKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#ReadingType.commodity">
+        <xs:annotation>
+          <xs:documentation>Commodity being measured.
+
+
+
+--- The identification of a measurement point associated with a TimeSeries.
+--- All meter readings obtained from this usage point.
+--- All reading values contained within this meter reading.
+--- Type information for this reading value.</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">20</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="marketEvaluationPoint.usagePointLocation.geoInfoReference" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Location.geoInfoReference">
+        <xs:annotation>
+          <xs:documentation>(if applicable) Reference to geographical information source, often external to the utility.
+
+--- The identification of a measurement point associated with a TimeSeries.
+--- Location of this usage point.</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">21</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="reason.code" type="TargetNamespace:ReasonCode_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Reason.code">
+        <xs:annotation>
+          <xs:documentation>The motivation of an act in coded form.
+
+--- The reason information associated with a TimeSeries providing motivation information.</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">22</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="reason.text" type="TargetNamespace:ReasonText_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Reason.text">
+        <xs:annotation>
+          <xs:documentation>The textual explanation corresponding to the reason code.
+
+--- The reason information associated with a TimeSeries providing motivation information.</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">23</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:simpleType name="ESMP_DateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#DateTime">
@@ -701,7 +1044,7 @@ For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the m
       <xs:pattern value="((([0-9]{4})[\-](0[13578]|1[02])[\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\-]((0[469])|(11))[\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\-](02)[\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\-](02)[\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)" />
     </xs:restriction>
   </xs:simpleType>
-  <xs:complexType name="VHD_Enveloppe" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Enveloppe">
+  <xs:complexType name="VHD_Envelope" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Envelope">
     <xs:annotation>
       <xs:documentation cimp:category="TagValue" cimp:subcategory="businessProcessContextValue">
       </xs:documentation>
@@ -801,7 +1144,7 @@ This is applicable if you have the need to know the content without having to op
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="MarketDocument" type="TargetNamespace:VHD_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Enveloppe.MarketDocument">
+      <xs:element minOccurs="0" maxOccurs="1" name="MarketDocument" type="TargetNamespace:VHD_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Envelope.MarketDocument">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
@@ -916,6 +1259,11 @@ For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about a
           </xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="TimeSeries" type="TargetNamespace:TimeSeries" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.TimeSeries">
+        <xs:annotation>
+          <xs:documentation>The time series that is associated with an electronic document.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element minOccurs="1" maxOccurs="1" name="sender_MarketParticipant.mRID" type="TargetNamespace:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID">
         <xs:annotation>
           <xs:documentation>The identification of a party in the energy market.
@@ -968,15 +1316,6 @@ For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about a
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="process.processType" type="TargetNamespace:ProcessKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Process.processType">
-        <xs:annotation>
-          <xs:documentation>The identification of the nature of process that the document addresses.
---- The Process associated with an electronic document header that is valid for the whole document.</xs:documentation>
-          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">8</xs:documentation>
-          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element minOccurs="1" maxOccurs="1" name="period.timeInterval" type="TargetNamespace:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Period.timeInterval">
         <xs:annotation>
           <xs:documentation>The start and end date and time for a given interval.
@@ -987,9 +1326,13 @@ For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about a
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="unbounded" name="TimeSeries" type="TargetNamespace:TimeSeries" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.TimeSeries">
+      <xs:element minOccurs="1" maxOccurs="1" name="process.processType" type="TargetNamespace:ProcessKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim15#Process.processType">
         <xs:annotation>
-          <xs:documentation>The time series that is associated with an electronic document.</xs:documentation>
+          <xs:documentation>The identification of the nature of process that the document addresses.
+--- The Process associated with an electronic document header that is valid for the whole document.</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">8</xs:documentation>
+          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
+          </xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>

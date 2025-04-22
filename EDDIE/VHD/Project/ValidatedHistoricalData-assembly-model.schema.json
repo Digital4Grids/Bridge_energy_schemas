@@ -1,14 +1,14 @@
 {
     "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/ValidatedHistoricalData-assembly-model.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "ValidatedHistoricalData-assembly-model  profile generated 2025-02-06 10:34:20.727939",
+    "title": "ValidatedHistoricalData-assembly-model  profile generated 2025-04-15 17:03:49.001060",
     "description": "",
     "namespace": "http://iec.ch/TC57/2020/ValidatedHistoricalData-assembly-model#",
     "type": "object",
     "additionalProperties": false,
     "properties": {
-        "VHD_Enveloppe": {
-            "$ref": "#/definitions/VHD_Enveloppe"
+        "VHD_Envelope": {
+            "$ref": "#/definitions/VHD_Envelope"
         }
     },
     "definitions": {
@@ -61,126 +61,6 @@
             },
             "required": [
                 "position"
-            ]
-        },
-        "VHD_Enveloppe": {
-            "id": "#VHD_Enveloppe",
-            "title": "VHD_Enveloppe",
-            "description": "",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Enveloppe",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "messageDocumentHeader.creationDateTime": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#messageDocumentHeader.creationDateTime",
-                    "$ref": "#/definitions/ESMP_DateTime"
-                },
-                "messageDocumentHeader.metaInformation.connectionId": {
-                    "description": "A reference (id) to the established connection used for the communication of this document.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.connectionId",
-                    "type": "string"
-                },
-                "messageDocumentHeader.metaInformation.dataNeedId": {
-                    "description": "A reference (id) to a predefined filter on a documentType sometimes in combination with a specific timeperiod.\r\n\r\nNote:\r\ne.g. Near realtime data for the past 3 month for electricity only.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.dataNeedId",
-                    "type": "string"
-                },
-                "messageDocumentHeader.metaInformation.documentType": {
-                    "description": "A qualification of the type of document, comparable to the MessageTypeList in the CIM part of the message.\r\n\r\nNote:\r\nThis is applicable if you have the need to know the content without having to open the complete document. DocumentType might contain messages not (yet) part of the MessageTypeList.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.documentType",
-                    "type": "string"
-                },
-                "messageDocumentHeader.metaInformation.permissionId": {
-                    "description": "A reference (id) to the established permission allowing for the communication of this document.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.permissionId",
-                    "type": "string"
-                },
-                "messageDocumentHeader.metaInformation.region.connector": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.region.connector",
-                    "type": "string"
-                },
-                "messageDocumentHeader.metaInformation.region.country": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.region.country",
-                    "type": "string"
-                },
-                "MarketDocument": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Enveloppe.MarketDocument",
-                    "$ref": "#/definitions/VHD_MarketDocument"
-                }
-            }
-        },
-        "VHD_MarketDocument": {
-            "id": "#VHD_MarketDocument",
-            "title": "VHD_MarketDocument",
-            "description": "An electronic document containing the information necessary to satisfy the requirements of a given business process.",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "mRID": {
-                    "description": "The unique identification of the document being exchanged within a business process flow.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as a party (originator of the exchange) that provides an identification in the context of a business exchange such as document identification, ...\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.mRID",
-                    "$ref": "#/definitions/ID_String"
-                },
-                "createdDateTime": {
-                    "description": "The date and time of the creation of the document.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.createdDateTime",
-                    "$ref": "#/definitions/ESMP_DateTime"
-                },
-                "period.timeInterval": {
-                    "description": "The start and end date and time for a given interval.\r\n\n\r--- The time interval that is associated with an electronic document and which is valid for the whole document.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#period.timeInterval",
-                    "$ref": "#/definitions/ESMP_DateTimeInterval"
-                },
-                "process.processType": {
-                    "description": "The identification of the nature of process that the document addresses.\n\r--- The Process associated with an electronic document header that is valid for the whole document.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#process.processType",
-                    "$ref": "#/definitions/ProcessKind_String"
-                },
-                "receiver_MarketParticipant.mRID": {
-                    "description": "The identification of a party in the energy market.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.\n\r--- The MarketParticipant associated with an electronic document header.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketParticipant.mRID",
-                    "$ref": "#/definitions/PartyID_String"
-                },
-                "receiver_MarketParticipant.marketRole.type": {
-                    "description": "The identification of the role played by a market player.\n\r\n\r--- The MarketParticipant associated with an electronic document header.\n\r--- The role associated with a MarketParticipant.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#marketRole.type",
-                    "$ref": "#/definitions/MarketRoleKind_String"
-                },
-                "sender_MarketParticipant.mRID": {
-                    "description": "The identification of a party in the energy market.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.\n\r--- The MarketParticipant associated with an electronic document header.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketParticipant.mRID",
-                    "$ref": "#/definitions/PartyID_String"
-                },
-                "sender_MarketParticipant.marketRole.type": {
-                    "description": "The identification of the role played by a market player.\n\r\n\r--- The MarketParticipant associated with an electronic document header.\n\r--- The role associated with a MarketParticipant.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#marketRole.type",
-                    "$ref": "#/definitions/MarketRoleKind_String"
-                },
-                "TimeSeries": {
-                    "description": "The time series that is associated with an electronic document.",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.TimeSeries",
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/TimeSeries"
-                    },
-                    "minItems": 1
-                }
-            },
-            "required": [
-                "mRID",
-                "createdDateTime",
-                "sender_MarketParticipant.mRID",
-                "sender_MarketParticipant.marketRole.type",
-                "receiver_MarketParticipant.mRID",
-                "receiver_MarketParticipant.marketRole.type",
-                "period.timeInterval",
-                "process.processType",
-                "TimeSeries"
             ]
         },
         "Series_Period": {
@@ -368,6 +248,126 @@
                 "flowDirection.direction"
             ]
         },
+        "VHD_Envelope": {
+            "id": "#VHD_Envelope",
+            "title": "VHD_Envelope",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Envelope",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "messageDocumentHeader.creationDateTime": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#messageDocumentHeader.creationDateTime",
+                    "$ref": "#/definitions/ESMP_DateTime"
+                },
+                "messageDocumentHeader.metaInformation.connectionId": {
+                    "description": "A reference (id) to the established connection used for the communication of this document.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.connectionId",
+                    "type": "string"
+                },
+                "messageDocumentHeader.metaInformation.dataNeedId": {
+                    "description": "A reference (id) to a predefined filter on a documentType sometimes in combination with a specific timeperiod.\r\n\r\nNote:\r\ne.g. Near realtime data for the past 3 month for electricity only.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.dataNeedId",
+                    "type": "string"
+                },
+                "messageDocumentHeader.metaInformation.documentType": {
+                    "description": "A qualification of the type of document, comparable to the MessageTypeList in the CIM part of the message.\r\n\r\nNote:\r\nThis is applicable if you have the need to know the content without having to open the complete document. DocumentType might contain messages not (yet) part of the MessageTypeList.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.documentType",
+                    "type": "string"
+                },
+                "messageDocumentHeader.metaInformation.permissionId": {
+                    "description": "A reference (id) to the established permission allowing for the communication of this document.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.permissionId",
+                    "type": "string"
+                },
+                "messageDocumentHeader.metaInformation.region.connector": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.region.connector",
+                    "type": "string"
+                },
+                "messageDocumentHeader.metaInformation.region.country": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#metaInformation.region.country",
+                    "type": "string"
+                },
+                "MarketDocument": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#Envelope.MarketDocument",
+                    "$ref": "#/definitions/VHD_MarketDocument"
+                }
+            }
+        },
+        "VHD_MarketDocument": {
+            "id": "#VHD_MarketDocument",
+            "title": "VHD_MarketDocument",
+            "description": "An electronic document containing the information necessary to satisfy the requirements of a given business process.",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "The unique identification of the document being exchanged within a business process flow.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as a party (originator of the exchange) that provides an identification in the context of a business exchange such as document identification, ...\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.mRID",
+                    "$ref": "#/definitions/ID_String"
+                },
+                "createdDateTime": {
+                    "description": "The date and time of the creation of the document.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.createdDateTime",
+                    "$ref": "#/definitions/ESMP_DateTime"
+                },
+                "period.timeInterval": {
+                    "description": "The start and end date and time for a given interval.\r\n\n\r--- The time interval that is associated with an electronic document and which is valid for the whole document.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#period.timeInterval",
+                    "$ref": "#/definitions/ESMP_DateTimeInterval"
+                },
+                "process.processType": {
+                    "description": "The identification of the nature of process that the document addresses.\n\r--- The Process associated with an electronic document header that is valid for the whole document.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#process.processType",
+                    "$ref": "#/definitions/ProcessKind_String"
+                },
+                "receiver_MarketParticipant.mRID": {
+                    "description": "The identification of a party in the energy market.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.\n\r--- The MarketParticipant associated with an electronic document header.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketParticipant.mRID",
+                    "$ref": "#/definitions/PartyID_String"
+                },
+                "receiver_MarketParticipant.marketRole.type": {
+                    "description": "The identification of the role played by a market player.\n\r\n\r--- The MarketParticipant associated with an electronic document header.\n\r--- The role associated with a MarketParticipant.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#marketRole.type",
+                    "$ref": "#/definitions/MarketRoleKind_String"
+                },
+                "sender_MarketParticipant.mRID": {
+                    "description": "The identification of a party in the energy market.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.\n\r--- The MarketParticipant associated with an electronic document header.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketParticipant.mRID",
+                    "$ref": "#/definitions/PartyID_String"
+                },
+                "sender_MarketParticipant.marketRole.type": {
+                    "description": "The identification of the role played by a market player.\n\r\n\r--- The MarketParticipant associated with an electronic document header.\n\r--- The role associated with a MarketParticipant.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#marketRole.type",
+                    "$ref": "#/definitions/MarketRoleKind_String"
+                },
+                "TimeSeries": {
+                    "description": "The time series that is associated with an electronic document.",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#MarketDocument.TimeSeries",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TimeSeries"
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": [
+                "mRID",
+                "createdDateTime",
+                "sender_MarketParticipant.mRID",
+                "sender_MarketParticipant.marketRole.type",
+                "receiver_MarketParticipant.mRID",
+                "receiver_MarketParticipant.marketRole.type",
+                "period.timeInterval",
+                "process.processType",
+                "TimeSeries"
+            ]
+        },
         "Position_Integer": {
             "id": "#Position_Integer",
             "title": "Position_Integer",
@@ -398,84 +398,6 @@
                 "value": {
                     "description": "Main Core value Space.",
                     "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/QualityTypeList"
-                }
-            },
-            "required": [
-                "value"
-            ]
-        },
-        "ESMP_DateTime": {
-            "id": "#ESMP_DateTime",
-            "title": "ESMP_DateTime",
-            "description": "In ESMP, the dateTime shall be expressed in UTC as YYYY-MM-DDThh:mm:ssZ.",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#DateTime",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "value": {
-                    "description": "Main Core value Space.",
-                    "type": "string",
-                    "pattern": "^((([0-9]{4})[\\-](0[13578]|1[02])[\\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\\-]((0[469])|(11))[\\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)$"
-                }
-            },
-            "required": [
-                "value"
-            ]
-        },
-        "ID_String": {
-            "id": "#ID_String",
-            "title": "ID_String",
-            "description": "A code to uniquely distinguish one occurrence of an entity from another.\r\n\r\nIn the ESMP context, the code is defined either by:\r\n- an emitting company that provides an agreed identification unique within a business context such as capacity auction identification, market agreement identification, etc.\r\n- a party (originator of the exchange) that provides a unique identification in the framework of a business exchange such as document identification, time series identification, bid identification, ...",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "value": {
-                    "description": "Main Core value Space.",
-                    "type": "string",
-                    "maxLength": 60
-                }
-            },
-            "required": [
-                "value"
-            ]
-        },
-        "PartyID_String": {
-            "id": "#PartyID_String",
-            "title": "PartyID_String",
-            "description": "The identification of an actor in the energy market.\r\n\r\nIn the ESMP context, it is an authorized issuing office that provides an agreed identification coding scheme for market participant identification.",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "codingScheme": {
-                    "description": "DomainQualification.",
-                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/CodingSchemeTypeList",
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String.codingScheme"
-                },
-                "value": {
-                    "description": "Main Core value Space.",
-                    "type": "string",
-                    "maxLength": 16,
-                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String.value"
-                }
-            },
-            "required": [
-                "codingScheme",
-                "value"
-            ]
-        },
-        "MarketRoleKind_String": {
-            "id": "#MarketRoleKind_String",
-            "title": "MarketRoleKind_String",
-            "description": "The identification of the role played by a party.",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "value": {
-                    "description": "Main Core value Space.",
-                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/RoleTypeList"
                 }
             },
             "required": [
@@ -522,23 +444,6 @@
             "required": [
                 "start",
                 "end"
-            ]
-        },
-        "ProcessKind_String": {
-            "id": "#ProcessKind_String",
-            "title": "ProcessKind_String",
-            "description": "The coded identification of the nature of process.",
-            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "value": {
-                    "description": "Main Core value Space.",
-                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/ProcessTypeList"
-                }
-            },
-            "required": [
-                "value"
             ]
         },
         "ReasonCode_String": {
@@ -628,6 +533,31 @@
                 "value"
             ]
         },
+        "MeasurementPointID_String": {
+            "id": "#MeasurementPointID_String",
+            "title": "MeasurementPointID_String",
+            "description": "The coded identification of a domain covering a number of related objects, such as metering point, accounting point, etc.\r\n\r\nIn the ESMP context, it is an authorized issuing office that provides an agreed identification coding scheme for measurement point identification.",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codingScheme": {
+                    "description": "DomainQualification.",
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/CodingSchemeTypeList",
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String.codingScheme"
+                },
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String.value"
+                }
+            },
+            "required": [
+                "codingScheme",
+                "value"
+            ]
+        },
         "ResourceID_String": {
             "id": "#ResourceID_String",
             "title": "ResourceID_String",
@@ -704,10 +634,46 @@
                 "value"
             ]
         },
-        "MeasurementPointID_String": {
-            "id": "#MeasurementPointID_String",
-            "title": "MeasurementPointID_String",
-            "description": "The coded identification of a domain covering a number of related objects, such as metering point, accounting point, etc.\r\n\r\nIn the ESMP context, it is an authorized issuing office that provides an agreed identification coding scheme for measurement point identification.",
+        "ESMP_DateTime": {
+            "id": "#ESMP_DateTime",
+            "title": "ESMP_DateTime",
+            "description": "In ESMP, the dateTime shall be expressed in UTC as YYYY-MM-DDThh:mm:ssZ.",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#DateTime",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "pattern": "^((([0-9]{4})[\\-](0[13578]|1[02])[\\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\\-]((0[469])|(11))[\\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)$"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ID_String": {
+            "id": "#ID_String",
+            "title": "ID_String",
+            "description": "A code to uniquely distinguish one occurrence of an entity from another.\r\n\r\nIn the ESMP context, the code is defined either by:\r\n- an emitting company that provides an agreed identification unique within a business context such as capacity auction identification, market agreement identification, etc.\r\n- a party (originator of the exchange) that provides a unique identification in the framework of a business exchange such as document identification, time series identification, bid identification, ...",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "maxLength": 60
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "PartyID_String": {
+            "id": "#PartyID_String",
+            "title": "PartyID_String",
+            "description": "The identification of an actor in the energy market.\r\n\r\nIn the ESMP context, it is an authorized issuing office that provides an agreed identification coding scheme for market participant identification.",
             "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
             "type": "object",
             "additionalProperties": false,
@@ -720,12 +686,46 @@
                 "value": {
                     "description": "Main Core value Space.",
                     "type": "string",
-                    "maxLength": 60,
+                    "maxLength": 16,
                     "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String.value"
                 }
             },
             "required": [
                 "codingScheme",
+                "value"
+            ]
+        },
+        "MarketRoleKind_String": {
+            "id": "#MarketRoleKind_String",
+            "title": "MarketRoleKind_String",
+            "description": "The identification of the role played by a party.",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/RoleTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ProcessKind_String": {
+            "id": "#ProcessKind_String",
+            "title": "ProcessKind_String",
+            "description": "The coded identification of the nature of process.",
+            "modelReference": "http://iec.ch/TC57/2010/CIM-schema-cim15#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/ProcessTypeList"
+                }
+            },
+            "required": [
                 "value"
             ]
         },
@@ -737,16 +737,17 @@
             "$id": "#QuantityTypeKind",
             "type": "string",
             "enum": [
-                "TotalActiveEnergyProduction_kWh",
-                "TotalActiveEnergyConsumption_kWh",
-                "InstantaneousActivePowerGeneration_W",
-                "InstantaneousActivePowerConsumption_W",
-                "GasTotalEnergyConsumptionLastHour_M3",
-                "electricityTariff_Euro",
-                "EnergyDeliveredTariff2_Euro",
-                "PowerDelivered_l1_Euro",
-                "InstantaneousReAactivePowerGeneration_W",
-                "InstantaneousReactivePowerConsumption_W"
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
             ]
         },
         "AccumulationKind": {
@@ -803,12 +804,6 @@
             "$id": "#CommodityKind",
             "type": "string",
             "enum": [
-                "20",
-                "21",
-                "22",
-                "23",
-                "24",
-                "25",
                 "26",
                 "0",
                 "1",
@@ -829,7 +824,13 @@
                 "16",
                 "17",
                 "18",
-                "19"
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25"
             ]
         }
     }
