@@ -1,0 +1,1 @@
+ReferenceEnergyCurveBaselineNotification model and message.
