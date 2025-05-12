@@ -1,0 +1,1 @@
+ResourceQualification model and message.
