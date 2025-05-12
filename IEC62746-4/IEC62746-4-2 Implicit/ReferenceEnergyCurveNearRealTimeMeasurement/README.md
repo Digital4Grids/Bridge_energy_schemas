@@ -1,0 +1,1 @@
+ReferenceEnergyCurveNearRealTimeMeasurement model and message.
