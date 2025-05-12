@@ -1,0 +1,1 @@
+ReferenceEnergyCurveHistoricalData model and message.

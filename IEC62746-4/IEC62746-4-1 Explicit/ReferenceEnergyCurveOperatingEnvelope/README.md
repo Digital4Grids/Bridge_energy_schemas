@@ -1,0 +1,1 @@
+ReferenceEnergyCurveOperatingEnvelope model and message.

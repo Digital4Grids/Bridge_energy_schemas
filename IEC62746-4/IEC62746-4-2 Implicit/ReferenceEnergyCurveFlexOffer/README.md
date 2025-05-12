@@ -1,0 +1,1 @@
+ReferenceEnergyCurveFlexOffer model and message.
