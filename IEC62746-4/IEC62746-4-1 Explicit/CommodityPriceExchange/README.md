@@ -1,1 +1,0 @@
-CommodityPriceExchange model and message.
