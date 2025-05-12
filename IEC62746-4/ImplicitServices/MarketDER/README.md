@@ -1,1 +1,0 @@
-MarketDER model and message.
