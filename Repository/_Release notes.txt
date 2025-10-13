@@ -1,3 +1,75 @@
+
+****Releasenotes v1.05 23-07-2025**
+Extended the CodingSchemeTypeLists of the non-CIMEDDIE  Accountingpoint and Permission messages
+
+**Releasenotes v1.04 24-06-2025**
+EDDIE RealTimeData Document diagram remodelled. No functional changes.
+
+**Releasenotes v1.03 11-06-2025**
+Check-out version
+
+
+**Releasenotes v01.01 - 04-06-2025** 
+File name changed to iec61970cim18v02_iec61968cim14v00_iec62325cim04v14_ESMPcim04v01_iec62746cim01v01.eapiec61970cim18v02_iec61968cim14v00_iec62325cim04v14_baseline_WG21Profiles_v6-dcbel_v0.92.eap should be deprecated.
+
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.1 ESMP.ReferenceEnergyCurveNearRealTimeMeasurement contextual model]
+Change of EvaluationMarketPoint class to AccountingPoint class
+
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.2 ESMP.ReferenceEnergyCurveNearRealTimeMeasurement contextual model]
+Change of EvaluationMarketPoint class to AccountingPoint class
+
+[Model.EuropeanStyleMarketProfile.IEC62325-351 Ed.3.IEC62746DataTypes]
+Creation of QuantityTypeKind enumeration
+
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.1 ESMP.ReferenceEnergyCurveRealTimeData contextual model]
+Creation of the contextual model
+
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.2 ESMP.ReferenceEnergyCurveRealTimeData contextual model]
+Creation of the contextual model
+
+[Model.ProfilesIEC62325.EDDIE_Profiles.RealTimeData Document.Pre-standardized CIM version]
+QuantityTypeKind datatype from IEC62746DataTypes selected for Quantity.type attribute instead of datatype from EDDIE_ESMP_Ext
+
+[Model.ProfilesIEC62325.EDDIE_Profiles.RealTimeData Document.Project version RTD]
+QuantityTypeKind datatype from IEC62746DataTypes selected for Quantity.type attribute instead of datatype from EDDIE_ESMP_Ext
+
+[Model.EuropeanStyleMarketProfile.IEC62325-351 Ed.3.EDDIE_ESMP_Ext]
+Suppresssion of QuantityTypeKind enumeration
+
+**Releasenotes v0.92.09 - 02-06-2025**
+[Model.ProfilesIEC62325.EDDIE_Profiles.ValidatedHistoricalData Document]
+Made the attribute TimeSeries.energyQuality_Measurement_Unit.name optional
+
+**Releasenotes v0.92.08 - 23-05-2025**
+[Model.ProfilesIEC62325.EDDIE_Profiles.ValidatedHistoricalData Document]
+
+With the creation of version v0.91.08 using the CimConteXtor tooling for the Validated Historical Data, some attribute were left out inadvertedly. This was corrected. It concerned:
+For the VHD Market Document class: Description, RevisionNumber,  Type
+For TimeSeries class: mRID, product, businessType, EnergyQualityMeasurementUnitName
+For RegisteredResource: Name, Description, LocationName, CapacityList
+
+
+**Releasenotes v0.92.07 - 22-05-2025**
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.1 ESMP.CommodityPriceExchange contextual model]
+Change of diagram name from "CommodityPrice Exchange contextual model" to "CommodityPriceExchange contextual model"
+
+[Model.ProfilesIEC62325.IEC62746-4-1 Ed.1.CommodityPriceExchange contextual model]
+Change of diagram name from "CommodityPrice Exchange contextual model" to "CommodityPriceExchange contextual model"
+
+[Model.ProfilesIEC62325.IEC62746-4-2 Ed.1.CommodityPriceExchange contextual model]
+Change of diagram name from "CommodityPrice Exchange contextual model" to "CommodityPriceExchange contextual model"
+
+
+**Releasenotes v0.92.06 - 15-04-2025**
+[Model.ProfilesIEC62325.EDDIE_Profiles.RealTimeData Document]
+Repaired a problem with Quant‌ity class of Realtime data document contextual model refering to the QuantityKind for the prestandardised versions.
+
+[Model.ProfilesIEC62325.EDDIE_Profiles.ValidatedHistoricalData Document]
+Repaired the 'VHD' qualifier that was inadvertedly copy/pasted as 'RTD'.
+
+**Releasenotes v0.92.05 - 14-04-2025**
+Checkout version to prevent synchronisation issues between Francois and Wout
+
 Releasenotes v0.92.04 - 23-03-2025
 IEC62746-4 Ed1. ESMP
 1) Updated MarketDER
@@ -190,4 +262,5 @@ MarketDER Document
 MarketDERBidOffer Document
 MarketDERInstruction Document
 ReferenceEnergyCurve Document
+
 
