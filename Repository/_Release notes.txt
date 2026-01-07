@@ -1,4 +1,4 @@
-****Releasenotes v1.105 07-017-2026**
+**Releasenotes v1.10 07-01-2026**
 Renamed EDDIE stereotype to CEEDS (Common European Enewrgy Data Space)
 Added the CEEDS_Extension packages with the imported Permission class from ESMPv5.0
 
@@ -288,6 +288,7 @@ MarketDER Document
 MarketDERBidOffer Document
 MarketDERInstruction Document
 ReferenceEnergyCurve Document
+
 
 
 
