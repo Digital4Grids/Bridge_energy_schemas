@@ -1,5 +1,31 @@
+****Releasenotes v1.105 07-017-2026**
+Renamed EDDIE stereotype to CEEDS (Common European Enewrgy Data Space)
+Added the CEEDS_Extension packages with the imported Permission class from ESMPv5.0
 
-****Releasenotes v1.05 23-07-2025**
+[Model.ProfilesIEC62325.CEEDS_Profiles]
+CEEDS Request Permission Document
+synchronised the MessageDocumentHeader section with all optional attributes
+Based the message on the original Permission class, thus making it a CIM compliant instead of CIM-like.
+
+CEEDS ValidatedHistoricalData Document
+synchronised the MessageDocumentHeader section with all optional attributes
+Made the Quantity.type optional as this is the OBIS code translation for direct meter access following the DLMS/COSEM standard.
+
+CEEDS RealTimeData Document
+synchronised the MessageDocumentHeader section with all optional attributes
+Added the (optional) Accountingpoint to the model
+
+CEEDS RedistributionTransactionRequest Document
+synchronised the MessageDocumentHeader section with all optional attributes
+
+[Model.ProfilesIEC62325.IEC62746-4-1 Ed.1].ReferenceEnergyCurveRealTimeData Document
+Added the (optional) Accountingpoint to the model
+
+[Model.ProfilesIEC62325.IEC62746-4-2 Ed.1.ReferenceEnergyCurveRealTimeData Document]
+Added the (optional) Accountingpoint to the model
+
+
+**Releasenotes v1.05 23-07-2025**
 Extended the CodingSchemeTypeLists of the non-CIMEDDIE  Accountingpoint and Permission messages
 
 **Releasenotes v1.04 24-06-2025**
@@ -262,5 +288,6 @@ MarketDER Document
 MarketDERBidOffer Document
 MarketDERInstruction Document
 ReferenceEnergyCurve Document
+
 
 
