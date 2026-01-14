@@ -1,3 +1,18 @@
+**Releasenotes v1.10 12-01-2026**
+Add "(Explicit)" to the name of IEC62746-4-1 Ed.1
+
+Add "(Implicit)" to the name of IEC62746-4-2 Ed.1
+
+Updated date and version number of IEC62746-4-1ESMPVersion
+Date: 2026-01-12
+Version: 02v01
+
+Updated date and version number of IEC62746-4-2ESMPVersion
+Date: 2026-01-12
+Version: 02v01
+
+
+
 **Releasenotes v1.10 07-01-2026**
 Renamed EDDIE stereotype to CEEDS (Common European Enewrgy Data Space)
 Added the CEEDS_Extension packages with the imported Permission class from ESMPv5.0
