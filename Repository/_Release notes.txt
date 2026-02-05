@@ -1,3 +1,14 @@
+**Releasenotes v1.12 06-02-2026**
+New message (re)created CEEDS_ReferenceEnergyCurveMinMaxOperatingEnveloppe Document
+MetaInformation class restructured: new attributes regionConnection and regionCountry, asset attribue=te deleted
+Region class replaced by Asset class with attributes type, operatorId and meterId
+
+BusinessKind extended with entry connectionLimit
+**Releasenotes v1.11 31-01-2026**
+New message created Activation Test Document
+MetaInformation class extended with new attribute defaultValues
+
+
 **Releasenotes v1.10 12-01-2026**
 Add "(Explicit)" to the name of IEC62746-4-1 Ed.1
 
@@ -11,6 +22,12 @@ Updated date and version number of IEC62746-4-2ESMPVersion
 Date: 2026-01-12
 Version: 02v01
 
+Added Physical Meter ID and Accounting Point ID(s) to RTD
+QualityTypeKind attributes updated:
+InstantaneousVoltage_A was misspelled and should be called InstantaneousCurrent_A
+InstantaneousVoltage_A_in_phase_neutral was misspelled and should be called InstantaneousCurrent_A_in_phase_neutral
+separate the words with additional underscores (_)?
+Total_Active_Energy_Consumed_import_kWh instead of TotalActiveEnergyConsumed_import_kWh
 
 
 **Releasenotes v1.10 07-01-2026**
@@ -303,6 +320,7 @@ MarketDER Document
 MarketDERBidOffer Document
 MarketDERInstruction Document
 ReferenceEnergyCurve Document
+
 
 
 
