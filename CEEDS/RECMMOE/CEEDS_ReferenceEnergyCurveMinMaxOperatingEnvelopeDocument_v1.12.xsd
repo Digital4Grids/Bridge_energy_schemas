@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://eddie.energy/CEEDS_ReferenceEnergyCurveMinMaxOperatingEnvelopeDocument_v1.12.xsd" xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://eddie.energy/CEEDS_ReferenceEnergyCurveMinMaxOperatingEnvelopeDocument_v1.12.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="C:\Data\urn-entsoe-eu-wgedi-codelists.xsd" namespace="urn:entsoe.eu:wgedi:codelists" />
+  <xs:element name="RECMMOE_Envelope" type="dl:RECMMOE_Envelope" />
+  <xs:complexType name="Asset" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Asset">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="type" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Asset.type">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="operatorId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Asset.operatorId">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="meterId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Asset.meterId">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ESMP_DateTime" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ESMP_DateTime">
+    <xs:restriction base="xs:dateTime">
+      <xs:pattern value="((([0-9]{4})[\-](0[13578]|1[02])[\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\-]((0[469])|(11))[\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\-](02)[\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\-](02)[\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="MessageDocumentHeader" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MessageDocumentHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="creationDateTime" type="dl:ESMP_DateTime" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MessageDocumentHeader.creationDateTime">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MetaInformation" type="dl:MetaInformation" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MessageDocumentHeader.MetaInformation">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MetaInformation" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="connectionId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.connectionId">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="requestPermissionId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.requestPermissionId">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="dataNeedId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.dataNeedId">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="documentType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.documentType">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="finalCustomerId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.finalCustomerId">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="dataSourceId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.dataSourceId">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="defaultValues" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.defaultValues">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="regionConnector" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.regionConnector">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="regionCountry" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.regionCountry">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="Asset" type="dl:Asset" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.Asset">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="Position_Integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Position_Integer">
+    <xs:restriction base="xs:integer">
+      <xs:maxInclusive value="999999" />
+      <xs:minInclusive value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Quality_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quality_String">
+    <xs:restriction base="ecl:QualityTypeList" />
+  </xs:simpleType>
+  <xs:complexType name="Point" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Point">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="position" type="dl:Position_Integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Point.position">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="min_Quantity.quantity" type="xs:decimal" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quantity">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="min_Quantity.quality" type="dl:Quality_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quality">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="max_Quantity.quantity" type="xs:decimal" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quantity">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="max_Quantity.quality" type="dl:Quality_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quality">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RECMMOE_Envelope" sawsdl:modelReference="http://iec.ch/TC57/CIM100#RECMMOE_Envelope">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="MessageDocumentHeader" type="dl:MessageDocumentHeader" sawsdl:modelReference="http://iec.ch/TC57/CIM100#RECMMOE_Envelope.MessageDocumentHeader">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MarketDocument" type="dl:RECMMOE_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/CIM100#RECMMOE_Envelope.MarketDocument">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ID_String">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="60" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ESMPVersion_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ESMPVersion_String">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[1-9]([0-9]){0,2}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PartyID_String-base" sawsdl:modelReference="http://iec.ch/TC57/CIM100#PartyID_String">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#PartyID_String">
+    <xs:simpleContent>
+      <xs:extension base="dl:PartyID_String-base">
+        <xs:attribute name="codingScheme" type="ecl:CodingSchemeTypeList" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MarketRoleKind_String">
+    <xs:restriction base="ecl:RoleTypeList" />
+  </xs:simpleType>
+  <xs:simpleType name="ProcessKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ProcessKind_String">
+    <xs:restriction base="ecl:ProcessTypeList" />
+  </xs:simpleType>
+  <xs:simpleType name="YMDHM_DateTime" sawsdl:modelReference="http://iec.ch/TC57/CIM100#YMDHM_DateTime">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="((([0-9]{4})[\-](0[13578]|1[02])[\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\-]((0[469])|(11))[\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\-](02)[\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\-](02)[\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9])Z)" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ESMP_DateTimeInterval">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="start" type="dl:YMDHM_DateTime" sawsdl:modelReference="http://iec.ch/TC57/CIM100#DateTimeInterval.start">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="end" type="dl:YMDHM_DateTime" sawsdl:modelReference="http://iec.ch/TC57/CIM100#DateTimeInterval.end">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RECMMOE_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/CIM100#RECMMOE_MarketDocument">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="mRID" type="dl:ID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.description">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="revisionNumber" type="dl:ESMPVersion_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Document.revisionNumber">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="lastModifiedDateTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Document.lastModifiedDateTime">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="comment" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Document.comment">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="sender_MarketParticipant.mRID" type="dl:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="sender_MarketParticipant.name" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.name">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="sender_MarketParticipant.marketRole.type" type="dl:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MarketRole.type">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="receiver_MarketParticipant.mRID" type="dl:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="receiver_MarketParticipant.name" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.name">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="receiver_MarketParticipant.marketRole.type" type="dl:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MarketRole.type">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="process.processType" type="dl:ProcessKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Process.processType">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="period.timeInterval" type="dl:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Period.timeInterval">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TimeSeries_Series" type="dl:TimeSeries_Series" sawsdl:modelReference="http://iec.ch/TC57/CIM100#RECMMOE_MarketDocument.TimeSeries_Series">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Series" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Series">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Period" type="dl:Series_Period" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Series.Period">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Series_Period" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Series_Period">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="resolution" type="xs:duration" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Period.resolution">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="timeInterval" type="dl:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Period.timeInterval">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Point" type="dl:Point" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Series_Period.Point">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="BusinessKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#BusinessKind_String">
+    <xs:restriction base="ecl:BusinessTypeList" />
+  </xs:simpleType>
+  <xs:simpleType name="CurveType_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CurveType_String">
+    <xs:restriction base="ecl:CurveTypeList" />
+  </xs:simpleType>
+  <xs:simpleType name="ScheduleKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ScheduleKind">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="generation">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a generation resource, where a positive amount corresponds to an injection of energy and/or grid support services to the grid.  The amount of energy is an absolute level understood to be a production setpoint.  Negative values are acceptable and represent an energy withdrawal setpoint.  For energy storage resources, a positive amount represents a setpoint in the discharging state.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="generationIncrease">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a variable generator, where a positive amount corresponds to a relative generation increase.  The level is relative, generally as an upward offset to a reference level such as the current generation or a calculated baseline generation. Negative values are acceptable and represent a generation reduction offset.  For energy storage resources, a positive amount represents a faster rate of discharge, a state change from charging (or offline) to discharge, or a slower rate of charge.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="generationReduction">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a flexible generator, where a positive amount corresponds to a relative generation reduction.  The level is relative, generally as an downward offset to a reference level such as the current generation or a calculated baseline generation.  Negative values are acceptable and represent a generation increase offset.  For energy storage resources, a positive amount represents a slower rate of discharge, a state change from discharging (or offline) to charging, or a faster rate of charge.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="load">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a load resource, where a positive amount corresponds to a withdrawal of energy and/or support services from the grid.  The amount of energy is an absolute level understood to be a consumption setpoint.  Negative values are acceptable and represent an energy injection setpoint. For energy storage resources, a positive amount represents a setpoint in the charging state.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="loadIncrease">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a variable load, where a positive amount corresponds to a relative load increase.  The level is relative, generally as an upward offset to a reference level such as the current consumption or a calculated baseline consumption. Negative values are acceptable and represent a load reduction offset.  For energy storage resources, a positive amount represents a faster rate of charge, a state change from discharging (or offline) to charge, or a slower rate of discharge.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="loadReduction">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a curtailable load, where a positive amount corresponds to a relative load reduction.  The level is relative, generally as an downward offset to a reference level such as the current consumption or a calculated baseline consumption.  Negative values are acceptable and represent a load increase offset.  For energy storage resources, a positive amount represents a slower rate of charge, a state change from charging (or offline) to discharging, or a faster rate of discharge.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DirectionKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#DirectionKind_String">
+    <xs:restriction base="ecl:DirectionTypeList" />
+  </xs:simpleType>
+  <xs:simpleType name="ResourceID_String-base" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ResourceID_String">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="60" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ResourceID_String">
+    <xs:simpleContent>
+      <xs:extension base="dl:ResourceID_String-base">
+        <xs:attribute name="codingScheme" type="ecl:CodingSchemeTypeList" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TimeSeries_Series" sawsdl:modelReference="http://iec.ch/TC57/CIM100#TimeSeries_Series">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="mRID" type="dl:ID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="businessType" type="dl:BusinessKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#TimeSeries.businessType">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="curveType" type="dl:CurveType_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#TimeSeries.curveType">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="resourceTimeSeries.value1ScheduleType" type="dl:ScheduleKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ResourceTimeSeries.value1ScheduleType">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="flowDirection.direction" type="dl:DirectionKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#FlowDirection.direction">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.mRID" type="dl:ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.name" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.name">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="registeredResource.description" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.description">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Series" type="dl:Series" sawsdl:modelReference="http://iec.ch/TC57/CIM100#TimeSeries_Series.Series">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
