@@ -1,0 +1,474 @@
+{
+    "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/RTD-assembly-model.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "RTD-assembly-model  profile generated 2026-02-09 17:45:18.704004",
+    "description": "",
+    "namespace": "http://iec.ch/TC57/2020/RTD-assembly-model#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "RTD_Envelope": {
+            "$ref": "#/definitions/RTD_Envelope"
+        }
+    },
+    "definitions": {
+        "RTD-assembly-model": {
+            "$ref": "#"
+        },
+        "AccountingPoint": {
+            "id": "#AccountingPoint",
+            "title": "AccountingPoint",
+            "description": "An administrative point where Energy Supplier change can take place and for which commercial business processes are defined.",
+            "modelReference": "http://iec.ch/TC57/CIM100#AccountingPoint",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "A unique identification of the measurement point.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#AccountingPoint.mRID",
+                    "$ref": "#/definitions/MeasurementPointID_String"
+                },
+                "description": {
+                    "description": "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#AccountingPoint.description",
+                    "type": "string"
+                },
+                "MeterReadings": {
+                    "description": "All meter readings obtained from this usage point.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#AccountingPoint.MeterReadings",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/MeterReading"
+                    },
+                    "minItems": 0
+                }
+            },
+            "required": [
+                "mRID"
+            ]
+        },
+        "Asset": {
+            "id": "#Asset",
+            "title": "Asset",
+            "description": "asset is an energy data space specific attribute referring to the Asset from which data is being requested",
+            "modelReference": "http://iec.ch/TC57/CIM100#Asset",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "meterId": {
+                    "description": "meterId is an energy data space specific attribute that specifies the id of the meter that measures the asset.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Asset.meterId",
+                    "type": "string"
+                },
+                "operatorId": {
+                    "description": "operatorId is an energy data space specific attribute that specifies the id operator of the asset refered to.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Asset.operatorId",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "type is an energy data space specific attribute that specifies type of asset refered to.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Asset.type",
+                    "type": "string"
+                }
+            }
+        },
+        "MessageDocumentHeader": {
+            "id": "#MessageDocumentHeader",
+            "title": "MessageDocumentHeader",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#MessageDocumentHeader",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "creationDateTime": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MessageDocumentHeader.creationDateTime",
+                    "$ref": "#/definitions/ESMP_DateTime"
+                },
+                "MetaInformation": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MessageDocumentHeader.MetaInformation",
+                    "$ref": "#/definitions/MetaInformation"
+                }
+            }
+        },
+        "MetaInformation": {
+            "id": "#MetaInformation",
+            "title": "MetaInformation",
+            "description": "MetaInformation is an energy data space specific entity referring to the information concerning the technical and functional context of the MarketDocument.",
+            "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "connectionId": {
+                    "description": "connectionId is an energy data space specific attribute referring to the established connection used for the communication of this document.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.connectionId",
+                    "type": "string"
+                },
+                "dataNeedId": {
+                    "description": "dataNeedId is an energy data space specific attribute holding the type of data need requested, like \u2018last 24 hours at 1 hour interval\u201d.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.dataNeedId",
+                    "type": "string"
+                },
+                "dataSourceId": {
+                    "description": "dataSourceId is an energy data space specific attribute referring to the datasource from which the requested data is being queried.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.dataSourceId",
+                    "type": "string"
+                },
+                "defaultValues": {
+                    "description": "defaultValues is a energy data space specific attribute to hold relevant default values. The format to use can freely be chosen based on the implementation. Most commonly you would expect a semi-colon separated name value pair, like: \"minPower=value; maxPower=value; avgPower=value\".",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.defaultValues",
+                    "type": "string"
+                },
+                "documentType": {
+                    "description": "documentType is an energy data space specific attribute referring to the type of document, comparable to the MessageTypeList in the CIM part of the message.\r\nNote:\r\nThis is applicable if you have the need to know the content without having to open the complete document. DocumentType might contain messages not (yet) part of the MessageTypeList.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.documentType",
+                    "type": "string"
+                },
+                "finalCustomerId": {
+                    "description": "The finalCustomerId  is an energy data space specific attribute identifying the actor doing the request for data or data sharing.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.finalCustomerId",
+                    "type": "string"
+                },
+                "regionConnector": {
+                    "description": "regionConnector is an energy data space specific attribute that specifies the regional connector being used to retrieve the data requested. ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.regionConnector",
+                    "type": "string"
+                },
+                "regionCountry": {
+                    "description": "regionCountry is an energy data space specific attribute that specifies the country where the regional connector is located.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.regionCountry",
+                    "type": "string"
+                },
+                "requestPermissionId": {
+                    "description": "The requestPermissionId is energy data space specific identification attribute holding an unique identifier issued by the energy data space to allow for tracing of the permission through serveral message exchanges.\r\nNote: the requestPermissionId is NOT the identifier issued by the Identity Service Provider as specified in the EU Implementing Act on access to Metering and Consumption Data.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.requestPermissionId",
+                    "type": "string"
+                },
+                "Asset": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.Asset",
+                    "$ref": "#/definitions/Asset"
+                }
+            }
+        },
+        "MeterReading": {
+            "id": "#MeterReading",
+            "title": "MeterReading",
+            "description": "Set of values obtained from the meter.",
+            "modelReference": "http://iec.ch/TC57/CIM100#MeterReading",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "The unique identification of the meter reading.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as a party (originator of the exchange) that provides an identification in the context of a business exchange.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\r\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MeterReading.mRID",
+                    "$ref": "#/definitions/ResourceID_String"
+                },
+                "name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MeterReading.name",
+                    "type": "string"
+                }
+            }
+        },
+        "Quantity": {
+            "id": "#Quantity",
+            "title": "Quantity",
+            "description": "Description of quantities needed in the data exchange. \r\nThe type of the quantity is described either by the role of the association or the quantityType attribute.\r\nThe quality attribute provides the information about the quality of the quantity (measured, estimated, etc.).",
+            "modelReference": "http://iec.ch/TC57/CIM100#Quantity",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "quality": {
+                    "description": "The description of the quality of the quantity.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Quantity.quality",
+                    "$ref": "#/definitions/Quality_String"
+                },
+                "quantity": {
+                    "description": "The quantity value.\r\nThe association role provides the information about what is expressed.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Quantity.quantity",
+                    "type": "number"
+                },
+                "type": {
+                    "description": "The description of the type of the quantity.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Quantity.type",
+                    "$ref": "#/definitions/QuantityTypeKind"
+                }
+            },
+            "required": [
+                "quantity",
+                "type"
+            ]
+        },
+        "RTD_Envelope": {
+            "id": "#RTD_Envelope",
+            "title": "RTD_Envelope",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#Envelope",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "MarketDocument": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Envelope.MarketDocument",
+                    "$ref": "#/definitions/RTD_MarketDocument"
+                },
+                "MessageDocumentHeader": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Envelope.MessageDocumentHeader",
+                    "$ref": "#/definitions/MessageDocumentHeader"
+                }
+            }
+        },
+        "RTD_MarketDocument": {
+            "id": "#RTD_MarketDocument",
+            "title": "RTD_MarketDocument",
+            "description": "An electronic document containing the information necessary to satisfy the requirements of a given business process.",
+            "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "The unique identification of the document being exchanged within a business process flow.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as a party (originator of the exchange) that provides an identification in the context of a business exchange such as document identification, ...\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.mRID",
+                    "$ref": "#/definitions/ID_String"
+                },
+                "createdDateTime": {
+                    "description": "The date and time of the creation of the document.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.createdDateTime",
+                    "$ref": "#/definitions/ESMP_DateTime"
+                },
+                "TimeSeries": {
+                    "description": "The time series that is associated with an electronic document.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.TimeSeries",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TimeSeries"
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": [
+                "mRID",
+                "createdDateTime",
+                "TimeSeries"
+            ]
+        },
+        "TimeSeries": {
+            "id": "#TimeSeries",
+            "title": "TimeSeries",
+            "description": "A set of time-ordered quantities being exchanged in relation to a product.\r\nIn the ESMP profile, the TimeSeries provides not only time-ordered quantities but also time-ordered information.",
+            "modelReference": "http://iec.ch/TC57/CIM100#TimeSeries",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "dateAndOrTime.dateTime": {
+                    "description": "Date and time as per ISO 8601 YYYY-MM-DDThh:mm:ss.sssZ.\n\r--- A date and/or time associated with a TimeSeries.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#dateAndOrTime.dateTime",
+                    "type": "string",
+                    "pattern": "^(-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)$"
+                },
+                "registeredResource.mRID": {
+                    "description": "The unique identification of a resource.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.\n\r--- The identification of a resource associated with a TimeSeries.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#registeredResource.mRID",
+                    "$ref": "#/definitions/ResourceID_String"
+                },
+                "version": {
+                    "description": "The identification of the version of the time series.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#TimeSeries.version",
+                    "$ref": "#/definitions/ESMPVersion_String"
+                },
+                "AccountingPoint": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#TimeSeries.AccountingPoint",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AccountingPoint"
+                    },
+                    "minItems": 0
+                },
+                "Quantity": {
+                    "description": "The quantity information associated to a TimeSeries.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#TimeSeries.Quantity",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Quantity"
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": [
+                "version",
+                "Quantity"
+            ]
+        },
+        "MeasurementPointID_String": {
+            "id": "#MeasurementPointID_String",
+            "title": "MeasurementPointID_String",
+            "description": "The coded identification of a domain covering a number of related objects, such as metering point, accounting point, etc.\r\n\r\nIn the ESMP context, it is an authorized issuing office that provides an agreed identification coding scheme for measurement point identification.",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codingScheme": {
+                    "description": "DomainQualification.",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/CodingSchemeTypeList",
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.codingScheme"
+                },
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.value"
+                }
+            },
+            "required": [
+                "codingScheme",
+                "value"
+            ]
+        },
+        "ESMP_DateTime": {
+            "id": "#ESMP_DateTime",
+            "title": "ESMP_DateTime",
+            "description": "In ESMP, the dateTime shall be expressed in UTC as YYYY-MM-DDThh:mm:ssZ.",
+            "modelReference": "http://iec.ch/TC57/CIM100#DateTime",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "pattern": "^((([0-9]{4})[\\-](0[13578]|1[02])[\\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\\-]((0[469])|(11))[\\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)$"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ResourceID_String": {
+            "id": "#ResourceID_String",
+            "title": "ResourceID_String",
+            "description": "The identification of a resource object in the energy market.\r\n\r\nIn the ESMP context, it is an authorized issuing office that provides an agreed identification coding scheme for resources (generator, lines, substations, etc.) identification.",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codingScheme": {
+                    "description": "DomainQualification.",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/CodingSchemeTypeList",
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.codingScheme"
+                },
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.value"
+                }
+            },
+            "required": [
+                "codingScheme",
+                "value"
+            ]
+        },
+        "Quality_String": {
+            "id": "#Quality_String",
+            "title": "Quality_String",
+            "description": "The coded identification of the quality of the information.",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/QualityTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ID_String": {
+            "id": "#ID_String",
+            "title": "ID_String",
+            "description": "A code to uniquely distinguish one occurrence of an entity from another.\r\n\r\nIn the ESMP context, the code is defined either by:\r\n- an emitting company that provides an agreed identification unique within a business context such as capacity auction identification, market agreement identification, etc.\r\n- a party (originator of the exchange) that provides a unique identification in the framework of a business exchange such as document identification, time series identification, bid identification, ...",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "maxLength": 60
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ESMPVersion_String": {
+            "id": "#ESMPVersion_String",
+            "title": "ESMPVersion_String",
+            "description": "In ESMP, the coded value is restricted to digits.\r\n\r\nA code that distinguishes one evolution of an identified object from another. Information about a specific object may be sent several times, each transmission being identified by a different version number.",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "pattern": "^[1-9]([0-9]){0,2}$"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "QuantityTypeKind": {
+            "id": "#QuantityTypeKind",
+            "title": "QuantityTypeKind",
+            "description": "CEEDS specific enumeration for the mapping of OBIS codes in the DLMS/COSEM definition cf. IEC 62056",
+            "modelReference": "http://iec.ch/TC57/CIM100#QuantityTypeKind",
+            "$id": "#QuantityTypeKind",
+            "type": "string",
+            "enum": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35"
+            ]
+        }
+    }
+}
