@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.83cm" height="27.75cm" viewBox="0 0 825 1049">
+<title></title>
+<desc>Created with Enterprise Architect (Build: 1629) 2</desc>
+
+<g style="fill:#FFFFFF;fill-opacity:1.00;">
+	 <rect x="0" y="0" width="825" height="1049" shape-rendering="auto"/>
+</g><g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 6 6 L 6 1043 L 819 1043 L 819 6 L 6 6" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="6 26 246 26 259 12 259 6 6 6 6 26" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="11.00" y="19.00" textLength="233" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 11.00 19.00)">Business Process UC1b Technical Aggregator Registration </text>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+ <rect x="37" y="780" width="699" height="236" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="37" y="780" width="699" height="236" rx="2.00" shape-rendering="auto"  />
+  <path d="M 57 780 L 57 1016" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="50.00" y="943.00" textLength="89" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-90.00 50.00 943.00)">«Pool» Final Customer</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+ <rect x="35" y="427" width="702" height="318" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="35" y="427" width="702" height="318" rx="2.00" shape-rendering="auto"  />
+  <path d="M 55 427 L 55 745" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="48.00" y="634.00" textLength="96" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-90.00 48.00 634.00)">«Pool» Service Provider</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+ <rect x="36" y="40" width="701" height="357" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="36" y="40" width="701" height="357" rx="2.00" shape-rendering="auto"  />
+  <path d="M 56 40 L 56 397" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="49.00" y="262.00" textLength="86" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-90.00 49.00 262.00)">«Pool» DER Operator</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCC5C2;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+<ellipse cx="78.00" cy="81.00" rx="15.00" ry="15.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="121" y="47" width="110" height="60" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="146.00" y="79.00" textLength="60" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 146.00 79.00)">1.1 Request for</text>
+	<text x="153.00" y="92.00" textLength="45" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 153.00 92.00)">registration</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 123 49 L 139 49 L 139 63 L 123 63 L 123 49 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 123 49 L 131 57" shape-rendering="auto"/>
+  <path d="M 131 57 L 139 49" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="120" y="476" width="110" height="60" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="128.00" y="508.00" textLength="93" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 128.00 508.00)">1.2 Validate request for</text>
+	<text x="152.00" y="521.00" textLength="45" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 152.00 521.00)">registration</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 142 493 L 146 493" shape-rendering="auto"/>
+  <path d="M 146 493 L 146 491" shape-rendering="auto"/>
+  <path d="M 146 491 L 142 491" shape-rendering="auto"/>
+  <path d="M 141 491 L 141 491 A 6.00 6.00 27.35 1 0 141 488" shape-rendering="auto"/>
+  <path d="M 141 489 L 144 486" shape-rendering="auto"/>
+  <path d="M 144 486 L 142 485" shape-rendering="auto"/>
+  <path d="M 142 485 L 140 487" shape-rendering="auto"/>
+  <path d="M 139 487 L 139 487 A 6.00 6.00 21.50 1 0 137 486" shape-rendering="auto"/>
+  <path d="M 137 486" shape-rendering="auto"/>
+  <path d="M 137 486 L 137 482" shape-rendering="auto"/>
+  <path d="M 137 482 L 135 482" shape-rendering="auto"/>
+  <path d="M 135 482 L 135 486" shape-rendering="auto"/>
+  <path d="M 135 486 L 135 486 A 6.00 6.00 29.20 1 0 132 487" shape-rendering="auto"/>
+  <path d="M 133 487 L 130 485" shape-rendering="auto"/>
+  <path d="M 130 485 L 128 486" shape-rendering="auto"/>
+  <path d="M 128 486 L 131 489" shape-rendering="auto"/>
+  <path d="M 131 489 L 131 489 A 6.00 6.00 21.50 0 0 130 491" shape-rendering="auto"/>
+  <path d="M 130 491 L 126 491" shape-rendering="auto"/>
+  <path d="M 126 491 L 126 493" shape-rendering="auto"/>
+  <path d="M 126 493 L 130 493" shape-rendering="auto"/>
+  <path d="M 130 493 L 130 493 A 6.00 6.00 21.50 0 0 131 495" shape-rendering="auto"/>
+  <path d="M 131 496 L 128 499" shape-rendering="auto"/>
+  <path d="M 128 499 L 130 500" shape-rendering="auto"/>
+  <path d="M 130 500 L 133 497" shape-rendering="auto"/>
+  <path d="M 132 497 L 132 497 A 6.00 6.00 29.20 0 0 135 498" shape-rendering="auto"/>
+  <path d="M 135 498 L 135 502" shape-rendering="auto"/>
+  <path d="M 135 502 L 137 502" shape-rendering="auto"/>
+  <path d="M 137 502 L 137 498" shape-rendering="auto"/>
+  <path d="M 137 498 L 137 498 A 6.00 6.00 21.50 0 0 139 497" shape-rendering="auto"/>
+  <path d="M 139 497 L 142 500" shape-rendering="auto"/>
+  <path d="M 142 500 L 144 499" shape-rendering="auto"/>
+  <path d="M 144 499 L 141 496" shape-rendering="auto"/>
+  <path d="M 141 495 L 141 495 A 6.00 6.00 19.65 0 0 141 493" shape-rendering="auto"/>
+  <path d="M 139 493 L 141 493" shape-rendering="auto"/>
+  <path d="M 141 493 L 141 492" shape-rendering="auto"/>
+  <path d="M 141 492 L 139 492" shape-rendering="auto"/>
+  <path d="M 138 491 L 138 491 A 3.00 3.00 18.43 1 0 138 490" shape-rendering="auto"/>
+  <path d="M 138 490 L 140 489" shape-rendering="auto"/>
+  <path d="M 140 489 L 139 488" shape-rendering="auto"/>
+  <path d="M 139 488 L 137 490" shape-rendering="auto"/>
+  <path d="M 137 489 L 137 489 A 3.00 3.00 18.43 1 0 136 489" shape-rendering="auto"/>
+  <path d="M 136 489" shape-rendering="auto"/>
+  <path d="M 136 489 L 136 487" shape-rendering="auto"/>
+  <path d="M 136 487 L 135 487" shape-rendering="auto"/>
+  <path d="M 135 487 L 135 489" shape-rendering="auto"/>
+  <path d="M 135 489 L 135 489 A 3.00 3.00 26.57 1 0 133 489" shape-rendering="auto"/>
+  <path d="M 134 490 L 133 488" shape-rendering="auto"/>
+  <path d="M 133 488 L 132 489" shape-rendering="auto"/>
+  <path d="M 132 489 L 133 491" shape-rendering="auto"/>
+  <path d="M 133 490 L 133 490 A 3.00 3.00 19.65 0 0 132 491" shape-rendering="auto"/>
+  <path d="M 133 492 L 131 492" shape-rendering="auto"/>
+  <path d="M 131 492 L 131 493" shape-rendering="auto"/>
+  <path d="M 131 493 L 133 493" shape-rendering="auto"/>
+  <path d="M 132 492 L 132 492 A 3.00 3.00 18.43 0 0 133 493" shape-rendering="auto"/>
+  <path d="M 133 494 L 132 495" shape-rendering="auto"/>
+  <path d="M 132 495 L 133 496" shape-rendering="auto"/>
+  <path d="M 133 496 L 134 495" shape-rendering="auto"/>
+  <path d="M 133 494 L 133 494 A 3.00 3.00 37.87 0 0 135 495" shape-rendering="auto"/>
+  <path d="M 135 495 L 135 497" shape-rendering="auto"/>
+  <path d="M 135 497 L 136 497" shape-rendering="auto"/>
+  <path d="M 136 497 L 136 495" shape-rendering="auto"/>
+  <path d="M 136 495 L 136 495 A 3.00 3.00 26.57 0 0 137 494" shape-rendering="auto"/>
+  <path d="M 137 495 L 139 496" shape-rendering="auto"/>
+  <path d="M 139 496 L 140 495" shape-rendering="auto"/>
+  <path d="M 140 495 L 138 494" shape-rendering="auto"/>
+  <path d="M 138 493 L 138 493 A 3.00 3.00 26.57 0 0 138 492" shape-rendering="auto"/>
+  <path d="M 136 484 L 139 481" shape-rendering="auto"/>
+  <path d="M 139 481 L 137 479" shape-rendering="auto"/>
+  <path d="M 137 479 L 135 482" shape-rendering="auto"/>
+  <path d="M 136 486 L 136 486 A 6.00 6.00 27.35 1 0 136 483" shape-rendering="auto"/>
+  <path d="M 134 482 L 134 482 A 6.00 6.00 21.50 1 0 132 481" shape-rendering="auto"/>
+  <path d="M 132 481" shape-rendering="auto"/>
+  <path d="M 132 481 L 132 477" shape-rendering="auto"/>
+  <path d="M 132 477 L 130 477" shape-rendering="auto"/>
+  <path d="M 130 477 L 130 481" shape-rendering="auto"/>
+  <path d="M 130 481 L 130 481 A 6.00 6.00 29.20 1 0 127 482" shape-rendering="auto"/>
+  <path d="M 128 482 L 125 479" shape-rendering="auto"/>
+  <path d="M 125 479 L 123 481" shape-rendering="auto"/>
+  <path d="M 123 481 L 126 484" shape-rendering="auto"/>
+  <path d="M 126 483 L 126 483 A 6.00 6.00 29.20 0 0 125 486" shape-rendering="auto"/>
+  <path d="M 125 486 L 121 486" shape-rendering="auto"/>
+  <path d="M 121 486 L 121 488" shape-rendering="auto"/>
+  <path d="M 121 488 L 125 488" shape-rendering="auto"/>
+  <path d="M 125 488 L 125 488 A 6.00 6.00 21.50 0 0 126 490" shape-rendering="auto"/>
+  <path d="M 126 491 L 123 494" shape-rendering="auto"/>
+  <path d="M 123 494 L 125 495" shape-rendering="auto"/>
+  <path d="M 125 495 L 126 494" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FF0000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+<ellipse cx="221.00" cy="476.00" rx="15.00" ry="15.00" shape-rendering="auto"  />
+<ellipse cx="221.00" cy="476.00" rx="12.00" ry="12.00" shape-rendering="auto"  />
+  <path d="M 213 484 L 218 469 L 223 474 L 229 468 L 223 483 L 218 478 L 213 484 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="242.00" y="474.00" textLength="39" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 242.00 474.00)">validation</text>
+	<text x="250.00" y="487.00" textLength="22" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 487.00)">failed</text>
+</g>
+<g style="stroke-width:3;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCC5C2;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 696 484 C 696 476 703 469 711 469 719 469 726 476 726 484 726 492 719 499 711 499 703 499 696 492 696 484 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 703 484 C 703 480 707 476 711 476 715 476 719 480 719 484 719 488 715 492 711 492 707 492 703 488 703 484 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="115" y="558" width="110" height="75" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="138.00" y="590.00" textLength="64" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 138.00 590.00)">1.3 Execute DER</text>
+	<text x="128.00" y="603.00" textLength="83" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 128.00 603.00)">Operator registration</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 137 575 L 141 575" shape-rendering="auto"/>
+  <path d="M 141 575 L 141 573" shape-rendering="auto"/>
+  <path d="M 141 573 L 137 573" shape-rendering="auto"/>
+  <path d="M 136 573 L 136 573 A 6.00 6.00 27.35 1 0 136 570" shape-rendering="auto"/>
+  <path d="M 136 571 L 139 568" shape-rendering="auto"/>
+  <path d="M 139 568 L 137 567" shape-rendering="auto"/>
+  <path d="M 137 567 L 135 569" shape-rendering="auto"/>
+  <path d="M 134 569 L 134 569 A 6.00 6.00 21.50 1 0 132 568" shape-rendering="auto"/>
+  <path d="M 132 568" shape-rendering="auto"/>
+  <path d="M 132 568 L 132 564" shape-rendering="auto"/>
+  <path d="M 132 564 L 130 564" shape-rendering="auto"/>
+  <path d="M 130 564 L 130 568" shape-rendering="auto"/>
+  <path d="M 130 568 L 130 568 A 6.00 6.00 29.20 1 0 127 569" shape-rendering="auto"/>
+  <path d="M 128 569 L 125 567" shape-rendering="auto"/>
+  <path d="M 125 567 L 123 568" shape-rendering="auto"/>
+  <path d="M 123 568 L 126 571" shape-rendering="auto"/>
+  <path d="M 126 571 L 126 571 A 6.00 6.00 21.50 0 0 125 573" shape-rendering="auto"/>
+  <path d="M 125 573 L 121 573" shape-rendering="auto"/>
+  <path d="M 121 573 L 121 575" shape-rendering="auto"/>
+  <path d="M 121 575 L 125 575" shape-rendering="auto"/>
+  <path d="M 125 575 L 125 575 A 6.00 6.00 21.50 0 0 126 577" shape-rendering="auto"/>
+  <path d="M 126 578 L 123 581" shape-rendering="auto"/>
+  <path d="M 123 581 L 125 582" shape-rendering="auto"/>
+  <path d="M 125 582 L 128 579" shape-rendering="auto"/>
+  <path d="M 127 579 L 127 579 A 6.00 6.00 29.20 0 0 130 580" shape-rendering="auto"/>
+  <path d="M 130 580 L 130 584" shape-rendering="auto"/>
+  <path d="M 130 584 L 132 584" shape-rendering="auto"/>
+  <path d="M 132 584 L 132 580" shape-rendering="auto"/>
+  <path d="M 132 580 L 132 580 A 6.00 6.00 21.50 0 0 134 579" shape-rendering="auto"/>
+  <path d="M 134 579 L 137 582" shape-rendering="auto"/>
+  <path d="M 137 582 L 139 581" shape-rendering="auto"/>
+  <path d="M 139 581 L 136 578" shape-rendering="auto"/>
+  <path d="M 136 577 L 136 577 A 6.00 6.00 19.65 0 0 136 575" shape-rendering="auto"/>
+  <path d="M 134 575 L 136 575" shape-rendering="auto"/>
+  <path d="M 136 575 L 136 574" shape-rendering="auto"/>
+  <path d="M 136 574 L 134 574" shape-rendering="auto"/>
+  <path d="M 133 573 L 133 573 A 3.00 3.00 18.43 1 0 133 572" shape-rendering="auto"/>
+  <path d="M 133 572 L 135 571" shape-rendering="auto"/>
+  <path d="M 135 571 L 134 570" shape-rendering="auto"/>
+  <path d="M 134 570 L 132 572" shape-rendering="auto"/>
+  <path d="M 132 571 L 132 571 A 3.00 3.00 18.43 1 0 131 571" shape-rendering="auto"/>
+  <path d="M 131 571" shape-rendering="auto"/>
+  <path d="M 131 571 L 131 569" shape-rendering="auto"/>
+  <path d="M 131 569 L 130 569" shape-rendering="auto"/>
+  <path d="M 130 569 L 130 571" shape-rendering="auto"/>
+  <path d="M 130 571 L 130 571 A 3.00 3.00 26.57 1 0 128 571" shape-rendering="auto"/>
+  <path d="M 129 572 L 128 570" shape-rendering="auto"/>
+  <path d="M 128 570 L 127 571" shape-rendering="auto"/>
+  <path d="M 127 571 L 128 573" shape-rendering="auto"/>
+  <path d="M 128 572 L 128 572 A 3.00 3.00 19.65 0 0 127 573" shape-rendering="auto"/>
+  <path d="M 128 574 L 126 574" shape-rendering="auto"/>
+  <path d="M 126 574 L 126 575" shape-rendering="auto"/>
+  <path d="M 126 575 L 128 575" shape-rendering="auto"/>
+  <path d="M 127 574 L 127 574 A 3.00 3.00 18.43 0 0 128 575" shape-rendering="auto"/>
+  <path d="M 128 576 L 127 577" shape-rendering="auto"/>
+  <path d="M 127 577 L 128 578" shape-rendering="auto"/>
+  <path d="M 128 578 L 129 577" shape-rendering="auto"/>
+  <path d="M 128 576 L 128 576 A 3.00 3.00 37.87 0 0 130 577" shape-rendering="auto"/>
+  <path d="M 130 577 L 130 579" shape-rendering="auto"/>
+  <path d="M 130 579 L 131 579" shape-rendering="auto"/>
+  <path d="M 131 579 L 131 577" shape-rendering="auto"/>
+  <path d="M 131 577 L 131 577 A 3.00 3.00 26.57 0 0 132 576" shape-rendering="auto"/>
+  <path d="M 132 577 L 134 578" shape-rendering="auto"/>
+  <path d="M 134 578 L 135 577" shape-rendering="auto"/>
+  <path d="M 135 577 L 133 576" shape-rendering="auto"/>
+  <path d="M 133 575 L 133 575 A 3.00 3.00 26.57 0 0 133 574" shape-rendering="auto"/>
+  <path d="M 131 566 L 134 563" shape-rendering="auto"/>
+  <path d="M 134 563 L 132 561" shape-rendering="auto"/>
+  <path d="M 132 561 L 130 564" shape-rendering="auto"/>
+  <path d="M 131 568 L 131 568 A 6.00 6.00 27.35 1 0 131 565" shape-rendering="auto"/>
+  <path d="M 129 564 L 129 564 A 6.00 6.00 21.50 1 0 127 563" shape-rendering="auto"/>
+  <path d="M 127 563" shape-rendering="auto"/>
+  <path d="M 127 563 L 127 559" shape-rendering="auto"/>
+  <path d="M 127 559 L 125 559" shape-rendering="auto"/>
+  <path d="M 125 559 L 125 563" shape-rendering="auto"/>
+  <path d="M 125 563 L 125 563 A 6.00 6.00 29.20 1 0 122 564" shape-rendering="auto"/>
+  <path d="M 123 564 L 120 561" shape-rendering="auto"/>
+  <path d="M 120 561 L 118 563" shape-rendering="auto"/>
+  <path d="M 118 563 L 121 566" shape-rendering="auto"/>
+  <path d="M 121 565 L 121 565 A 6.00 6.00 29.20 0 0 120 568" shape-rendering="auto"/>
+  <path d="M 120 568 L 116 568" shape-rendering="auto"/>
+  <path d="M 116 568 L 116 570" shape-rendering="auto"/>
+  <path d="M 116 570 L 120 570" shape-rendering="auto"/>
+  <path d="M 120 570 L 120 570 A 6.00 6.00 21.50 0 0 121 572" shape-rendering="auto"/>
+  <path d="M 121 573 L 118 576" shape-rendering="auto"/>
+  <path d="M 118 576 L 120 577" shape-rendering="auto"/>
+  <path d="M 120 577 L 121 576" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="248" y="565" width="110" height="60" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="261.00" y="597.00" textLength="84" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 261.00 597.00)">1.4 Send Registration</text>
+	<text x="292.00" y="610.00" textLength="22" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 292.00 610.00)">result</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 250 567 L 266 567 L 266 581 L 250 581 L 250 567 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 250 567 L 258 575" shape-rendering="auto"/>
+  <path d="M 258 575 L 266 567" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="187" y="201" width="110" height="60" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="194.00" y="233.00" textLength="95" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 194.00 233.00)">1.4 Receive Registration</text>
+	<text x="231.00" y="246.00" textLength="22" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 231.00 246.00)">result</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 189 203 L 205 203 L 205 217 L 189 217 L 189 203 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 189 203 L 197 211" shape-rendering="auto"/>
+  <path d="M 197 211 L 205 203" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="358" y="295" width="110" height="60" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="383.00" y="327.00" textLength="60" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 383.00 327.00)">1.7 Request for</text>
+	<text x="384.00" y="340.00" textLength="57" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 384.00 340.00)">authentication</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 360 297 L 376 297 L 376 311 L 360 311 L 360 297 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 360 297 L 368 305" shape-rendering="auto"/>
+  <path d="M 368 305 L 376 297" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="389" y="902" width="110" height="90" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="400.00" y="934.00" textLength="88" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 400.00 934.00)">1.8 Send Authenticate</text>
+	<text x="397.00" y="947.00" textLength="93" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 397.00 947.00)">Final Customer in a DER</text>
+	<text x="398.00" y="960.00" textLength="91" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 398.00 960.00)">Operator / Controllable</text>
+	<text x="417.00" y="973.00" textLength="54" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 417.00 973.00)">Unit Operator</text>
+	<text x="418.00" y="986.00" textLength="51" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 418.00 986.00)">environment</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 391 904 L 407 904 L 407 918 L 391 918 L 391 904 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 391 904 L 399 912" shape-rendering="auto"/>
+  <path d="M 399 912 L 407 904" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="255" y="78" width="110" height="60" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="269.00" y="110.00" textLength="82" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 269.00 110.00)">1.5 Execute Ensuring</text>
+	<text x="263.00" y="123.00" textLength="93" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 263.00 123.00)">data exchange integrity</text>
+	<text x="284.00" y="136.00" textLength="52" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 284.00 136.00)">and accuracy</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 277 95 L 281 95" shape-rendering="auto"/>
+  <path d="M 281 95 L 281 93" shape-rendering="auto"/>
+  <path d="M 281 93 L 277 93" shape-rendering="auto"/>
+  <path d="M 276 93 L 276 93 A 6.00 6.00 27.35 1 0 276 90" shape-rendering="auto"/>
+  <path d="M 276 91 L 279 88" shape-rendering="auto"/>
+  <path d="M 279 88 L 277 87" shape-rendering="auto"/>
+  <path d="M 277 87 L 275 89" shape-rendering="auto"/>
+  <path d="M 274 89 L 274 89 A 6.00 6.00 21.50 1 0 272 88" shape-rendering="auto"/>
+  <path d="M 272 88" shape-rendering="auto"/>
+  <path d="M 272 88 L 272 84" shape-rendering="auto"/>
+  <path d="M 272 84 L 270 84" shape-rendering="auto"/>
+  <path d="M 270 84 L 270 88" shape-rendering="auto"/>
+  <path d="M 270 88 L 270 88 A 6.00 6.00 29.20 1 0 267 89" shape-rendering="auto"/>
+  <path d="M 268 89 L 265 87" shape-rendering="auto"/>
+  <path d="M 265 87 L 263 88" shape-rendering="auto"/>
+  <path d="M 263 88 L 266 91" shape-rendering="auto"/>
+  <path d="M 266 91 L 266 91 A 6.00 6.00 21.50 0 0 265 93" shape-rendering="auto"/>
+  <path d="M 265 93 L 261 93" shape-rendering="auto"/>
+  <path d="M 261 93 L 261 95" shape-rendering="auto"/>
+  <path d="M 261 95 L 265 95" shape-rendering="auto"/>
+  <path d="M 265 95 L 265 95 A 6.00 6.00 21.50 0 0 266 97" shape-rendering="auto"/>
+  <path d="M 266 98 L 263 101" shape-rendering="auto"/>
+  <path d="M 263 101 L 265 102" shape-rendering="auto"/>
+  <path d="M 265 102 L 268 99" shape-rendering="auto"/>
+  <path d="M 267 99 L 267 99 A 6.00 6.00 29.20 0 0 270 100" shape-rendering="auto"/>
+  <path d="M 270 100 L 270 104" shape-rendering="auto"/>
+  <path d="M 270 104 L 272 104" shape-rendering="auto"/>
+  <path d="M 272 104 L 272 100" shape-rendering="auto"/>
+  <path d="M 272 100 L 272 100 A 6.00 6.00 21.50 0 0 274 99" shape-rendering="auto"/>
+  <path d="M 274 99 L 277 102" shape-rendering="auto"/>
+  <path d="M 277 102 L 279 101" shape-rendering="auto"/>
+  <path d="M 279 101 L 276 98" shape-rendering="auto"/>
+  <path d="M 276 97 L 276 97 A 6.00 6.00 19.65 0 0 276 95" shape-rendering="auto"/>
+  <path d="M 274 95 L 276 95" shape-rendering="auto"/>
+  <path d="M 276 95 L 276 94" shape-rendering="auto"/>
+  <path d="M 276 94 L 274 94" shape-rendering="auto"/>
+  <path d="M 273 93 L 273 93 A 3.00 3.00 18.43 1 0 273 92" shape-rendering="auto"/>
+  <path d="M 273 92 L 275 91" shape-rendering="auto"/>
+  <path d="M 275 91 L 274 90" shape-rendering="auto"/>
+  <path d="M 274 90 L 272 92" shape-rendering="auto"/>
+  <path d="M 272 91 L 272 91 A 3.00 3.00 18.43 1 0 271 91" shape-rendering="auto"/>
+  <path d="M 271 91" shape-rendering="auto"/>
+  <path d="M 271 91 L 271 89" shape-rendering="auto"/>
+  <path d="M 271 89 L 270 89" shape-rendering="auto"/>
+  <path d="M 270 89 L 270 91" shape-rendering="auto"/>
+  <path d="M 270 91 L 270 91 A 3.00 3.00 26.57 1 0 268 91" shape-rendering="auto"/>
+  <path d="M 269 92 L 268 90" shape-rendering="auto"/>
+  <path d="M 268 90 L 267 91" shape-rendering="auto"/>
+  <path d="M 267 91 L 268 93" shape-rendering="auto"/>
+  <path d="M 268 92 L 268 92 A 3.00 3.00 19.65 0 0 267 93" shape-rendering="auto"/>
+  <path d="M 268 94 L 266 94" shape-rendering="auto"/>
+  <path d="M 266 94 L 266 95" shape-rendering="auto"/>
+  <path d="M 266 95 L 268 95" shape-rendering="auto"/>
+  <path d="M 267 94 L 267 94 A 3.00 3.00 18.43 0 0 268 95" shape-rendering="auto"/>
+  <path d="M 268 96 L 267 97" shape-rendering="auto"/>
+  <path d="M 267 97 L 268 98" shape-rendering="auto"/>
+  <path d="M 268 98 L 269 97" shape-rendering="auto"/>
+  <path d="M 268 96 L 268 96 A 3.00 3.00 37.87 0 0 270 97" shape-rendering="auto"/>
+  <path d="M 270 97 L 270 99" shape-rendering="auto"/>
+  <path d="M 270 99 L 271 99" shape-rendering="auto"/>
+  <path d="M 271 99 L 271 97" shape-rendering="auto"/>
+  <path d="M 271 97 L 271 97 A 3.00 3.00 26.57 0 0 272 96" shape-rendering="auto"/>
+  <path d="M 272 97 L 274 98" shape-rendering="auto"/>
+  <path d="M 274 98 L 275 97" shape-rendering="auto"/>
+  <path d="M 275 97 L 273 96" shape-rendering="auto"/>
+  <path d="M 273 95 L 273 95 A 3.00 3.00 26.57 0 0 273 94" shape-rendering="auto"/>
+  <path d="M 271 86 L 274 83" shape-rendering="auto"/>
+  <path d="M 274 83 L 272 81" shape-rendering="auto"/>
+  <path d="M 272 81 L 270 84" shape-rendering="auto"/>
+  <path d="M 271 88 L 271 88 A 6.00 6.00 27.35 1 0 271 85" shape-rendering="auto"/>
+  <path d="M 269 84 L 269 84 A 6.00 6.00 21.50 1 0 267 83" shape-rendering="auto"/>
+  <path d="M 267 83" shape-rendering="auto"/>
+  <path d="M 267 83 L 267 79" shape-rendering="auto"/>
+  <path d="M 267 79 L 265 79" shape-rendering="auto"/>
+  <path d="M 265 79 L 265 83" shape-rendering="auto"/>
+  <path d="M 265 83 L 265 83 A 6.00 6.00 29.20 1 0 262 84" shape-rendering="auto"/>
+  <path d="M 263 84 L 260 81" shape-rendering="auto"/>
+  <path d="M 260 81 L 258 83" shape-rendering="auto"/>
+  <path d="M 258 83 L 261 86" shape-rendering="auto"/>
+  <path d="M 261 85 L 261 85 A 6.00 6.00 29.20 0 0 260 88" shape-rendering="auto"/>
+  <path d="M 260 88 L 256 88" shape-rendering="auto"/>
+  <path d="M 256 88 L 256 90" shape-rendering="auto"/>
+  <path d="M 256 90 L 260 90" shape-rendering="auto"/>
+  <path d="M 260 90 L 260 90 A 6.00 6.00 21.50 0 0 261 92" shape-rendering="auto"/>
+  <path d="M 261 93 L 258 96" shape-rendering="auto"/>
+  <path d="M 258 96 L 260 97" shape-rendering="auto"/>
+  <path d="M 260 97 L 261 96" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="313" y="201" width="110" height="60" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="332.00" y="233.00" textLength="71" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 332.00 233.00)">1.6 Notify on data</text>
+	<text x="323.00" y="246.00" textLength="90" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 323.00 246.00)">exchange integrity and</text>
+	<text x="338.00" y="259.00" textLength="59" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 338.00 259.00)">accuracy result</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 315 203 L 331 203 L 331 217 L 315 217 L 315 203 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 315 203 L 323 211" shape-rendering="auto"/>
+  <path d="M 323 211 L 331 203" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="359" y="809" width="110" height="60" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="368.00" y="841.00" textLength="91" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 368.00 841.00)">1.7 Receive request for</text>
+	<text x="385.00" y="854.00" textLength="57" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 385.00 854.00)">authentication</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 361 811 L 377 811 L 377 825 L 361 825 L 361 811 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 361 811 L 369 819" shape-rendering="auto"/>
+  <path d="M 369 819 L 377 811" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="573" y="910" width="110" height="74" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="581.00" y="942.00" textLength="98" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 581.00 942.00)">1.11 Request for consent</text>
+	<text x="590.00" y="955.00" textLength="76" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 590.00 955.00)">registration of Final</text>
+	<text x="581.00" y="968.00" textLength="98" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 581.00 968.00)">Customer to DER Group /</text>
+	<text x="581.00" y="981.00" textLength="94" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 581.00 981.00)">Service Providing Group</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 575 912 L 591 912 L 591 926 L 575 926 L 575 912 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 575 912 L 583 920" shape-rendering="auto"/>
+  <path d="M 583 920 L 591 912" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="560" y="513" width="110" height="75" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="567.00" y="545.00" textLength="95" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 567.00 545.00)">1.12 Register consent of</text>
+	<text x="571.00" y="558.00" textLength="87" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 571.00 558.00)">Final Customer to DER</text>
+	<text x="568.00" y="571.00" textLength="100" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 568.00 571.00)">Group / Service Providing</text>
+	<text x="603.00" y="584.00" textLength="24" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 603.00 584.00)">Group</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 582 530 L 586 530" shape-rendering="auto"/>
+  <path d="M 586 530 L 586 528" shape-rendering="auto"/>
+  <path d="M 586 528 L 582 528" shape-rendering="auto"/>
+  <path d="M 581 528 L 581 528 A 6.00 6.00 27.35 1 0 581 525" shape-rendering="auto"/>
+  <path d="M 581 526 L 584 523" shape-rendering="auto"/>
+  <path d="M 584 523 L 582 522" shape-rendering="auto"/>
+  <path d="M 582 522 L 580 524" shape-rendering="auto"/>
+  <path d="M 579 524 L 579 524 A 6.00 6.00 21.50 1 0 577 523" shape-rendering="auto"/>
+  <path d="M 577 523" shape-rendering="auto"/>
+  <path d="M 577 523 L 577 519" shape-rendering="auto"/>
+  <path d="M 577 519 L 575 519" shape-rendering="auto"/>
+  <path d="M 575 519 L 575 523" shape-rendering="auto"/>
+  <path d="M 575 523 L 575 523 A 6.00 6.00 29.20 1 0 572 524" shape-rendering="auto"/>
+  <path d="M 573 524 L 570 522" shape-rendering="auto"/>
+  <path d="M 570 522 L 568 523" shape-rendering="auto"/>
+  <path d="M 568 523 L 571 526" shape-rendering="auto"/>
+  <path d="M 571 526 L 571 526 A 6.00 6.00 21.50 0 0 570 528" shape-rendering="auto"/>
+  <path d="M 570 528 L 566 528" shape-rendering="auto"/>
+  <path d="M 566 528 L 566 530" shape-rendering="auto"/>
+  <path d="M 566 530 L 570 530" shape-rendering="auto"/>
+  <path d="M 570 530 L 570 530 A 6.00 6.00 21.50 0 0 571 532" shape-rendering="auto"/>
+  <path d="M 571 533 L 568 536" shape-rendering="auto"/>
+  <path d="M 568 536 L 570 537" shape-rendering="auto"/>
+  <path d="M 570 537 L 573 534" shape-rendering="auto"/>
+  <path d="M 572 534 L 572 534 A 6.00 6.00 29.20 0 0 575 535" shape-rendering="auto"/>
+  <path d="M 575 535 L 575 539" shape-rendering="auto"/>
+  <path d="M 575 539 L 577 539" shape-rendering="auto"/>
+  <path d="M 577 539 L 577 535" shape-rendering="auto"/>
+  <path d="M 577 535 L 577 535 A 6.00 6.00 21.50 0 0 579 534" shape-rendering="auto"/>
+  <path d="M 579 534 L 582 537" shape-rendering="auto"/>
+  <path d="M 582 537 L 584 536" shape-rendering="auto"/>
+  <path d="M 584 536 L 581 533" shape-rendering="auto"/>
+  <path d="M 581 532 L 581 532 A 6.00 6.00 19.65 0 0 581 530" shape-rendering="auto"/>
+  <path d="M 579 530 L 581 530" shape-rendering="auto"/>
+  <path d="M 581 530 L 581 529" shape-rendering="auto"/>
+  <path d="M 581 529 L 579 529" shape-rendering="auto"/>
+  <path d="M 578 528 L 578 528 A 3.00 3.00 18.43 1 0 578 527" shape-rendering="auto"/>
+  <path d="M 578 527 L 580 526" shape-rendering="auto"/>
+  <path d="M 580 526 L 579 525" shape-rendering="auto"/>
+  <path d="M 579 525 L 577 527" shape-rendering="auto"/>
+  <path d="M 577 526 L 577 526 A 3.00 3.00 18.43 1 0 576 526" shape-rendering="auto"/>
+  <path d="M 576 526" shape-rendering="auto"/>
+  <path d="M 576 526 L 576 524" shape-rendering="auto"/>
+  <path d="M 576 524 L 575 524" shape-rendering="auto"/>
+  <path d="M 575 524 L 575 526" shape-rendering="auto"/>
+  <path d="M 575 526 L 575 526 A 3.00 3.00 26.57 1 0 573 526" shape-rendering="auto"/>
+  <path d="M 574 527 L 573 525" shape-rendering="auto"/>
+  <path d="M 573 525 L 572 526" shape-rendering="auto"/>
+  <path d="M 572 526 L 573 528" shape-rendering="auto"/>
+  <path d="M 573 527 L 573 527 A 3.00 3.00 19.65 0 0 572 528" shape-rendering="auto"/>
+  <path d="M 573 529 L 571 529" shape-rendering="auto"/>
+  <path d="M 571 529 L 571 530" shape-rendering="auto"/>
+  <path d="M 571 530 L 573 530" shape-rendering="auto"/>
+  <path d="M 572 529 L 572 529 A 3.00 3.00 18.43 0 0 573 530" shape-rendering="auto"/>
+  <path d="M 573 531 L 572 532" shape-rendering="auto"/>
+  <path d="M 572 532 L 573 533" shape-rendering="auto"/>
+  <path d="M 573 533 L 574 532" shape-rendering="auto"/>
+  <path d="M 573 531 L 573 531 A 3.00 3.00 37.87 0 0 575 532" shape-rendering="auto"/>
+  <path d="M 575 532 L 575 534" shape-rendering="auto"/>
+  <path d="M 575 534 L 576 534" shape-rendering="auto"/>
+  <path d="M 576 534 L 576 532" shape-rendering="auto"/>
+  <path d="M 576 532 L 576 532 A 3.00 3.00 26.57 0 0 577 531" shape-rendering="auto"/>
+  <path d="M 577 532 L 579 533" shape-rendering="auto"/>
+  <path d="M 579 533 L 580 532" shape-rendering="auto"/>
+  <path d="M 580 532 L 578 531" shape-rendering="auto"/>
+  <path d="M 578 530 L 578 530 A 3.00 3.00 26.57 0 0 578 529" shape-rendering="auto"/>
+  <path d="M 576 521 L 579 518" shape-rendering="auto"/>
+  <path d="M 579 518 L 577 516" shape-rendering="auto"/>
+  <path d="M 577 516 L 575 519" shape-rendering="auto"/>
+  <path d="M 576 523 L 576 523 A 6.00 6.00 27.35 1 0 576 520" shape-rendering="auto"/>
+  <path d="M 574 519 L 574 519 A 6.00 6.00 21.50 1 0 572 518" shape-rendering="auto"/>
+  <path d="M 572 518" shape-rendering="auto"/>
+  <path d="M 572 518 L 572 514" shape-rendering="auto"/>
+  <path d="M 572 514 L 570 514" shape-rendering="auto"/>
+  <path d="M 570 514 L 570 518" shape-rendering="auto"/>
+  <path d="M 570 518 L 570 518 A 6.00 6.00 29.20 1 0 567 519" shape-rendering="auto"/>
+  <path d="M 568 519 L 565 516" shape-rendering="auto"/>
+  <path d="M 565 516 L 563 518" shape-rendering="auto"/>
+  <path d="M 563 518 L 566 521" shape-rendering="auto"/>
+  <path d="M 566 520 L 566 520 A 6.00 6.00 29.20 0 0 565 523" shape-rendering="auto"/>
+  <path d="M 565 523 L 561 523" shape-rendering="auto"/>
+  <path d="M 561 523 L 561 525" shape-rendering="auto"/>
+  <path d="M 561 525 L 565 525" shape-rendering="auto"/>
+  <path d="M 565 525 L 565 525 A 6.00 6.00 21.50 0 0 566 527" shape-rendering="auto"/>
+  <path d="M 566 528 L 563 531" shape-rendering="auto"/>
+  <path d="M 563 531 L 565 532" shape-rendering="auto"/>
+  <path d="M 565 532 L 566 531" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="440" y="45" width="110" height="93" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="448.00" y="77.00" textLength="99" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 448.00 77.00)">1.8 Receive Authenticate</text>
+	<text x="448.00" y="90.00" textLength="93" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 448.00 90.00)">Final Customer in a DER</text>
+	<text x="449.00" y="103.00" textLength="91" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 449.00 103.00)">Operator / Controllable</text>
+	<text x="468.00" y="116.00" textLength="54" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 468.00 116.00)">Unit Operator</text>
+	<text x="469.00" y="129.00" textLength="51" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 469.00 129.00)">environment</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 442 47 L 458 47 L 458 61 L 442 61 L 442 47 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 442 47 L 450 55" shape-rendering="auto"/>
+  <path d="M 450 55 L 458 47" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="490" y="163" width="110" height="120" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="502.00" y="195.00" textLength="86" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 502.00 195.00)">1.9 Notify on Validate</text>
+	<text x="497.00" y="208.00" textLength="95" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 497.00 208.00)">Terms and Conditions to</text>
+	<text x="498.00" y="221.00" textLength="94" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 498.00 221.00)">enroll to DER Operator /</text>
+	<text x="512.00" y="234.00" textLength="65" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 512.00 234.00)">Controllable Unit</text>
+	<text x="497.00" y="247.00" textLength="95" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 497.00 247.00)">Operator environment /</text>
+	<text x="512.00" y="260.00" textLength="65" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 512.00 260.00)">Controllable Unit</text>
+	<text x="509.00" y="273.00" textLength="72" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 509.00 273.00)">Operator platform</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 492 165 L 508 165 L 508 179 L 492 179 L 492 165 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 492 165 L 500 173" shape-rendering="auto"/>
+  <path d="M 500 173 L 508 165" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="533" y="307" width="110" height="85" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="550.00" y="339.00" textLength="75" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 550.00 339.00)">1.10 Send Validate</text>
+	<text x="540.00" y="352.00" textLength="95" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 540.00 352.00)">Terms and Conditions to</text>
+	<text x="553.00" y="365.00" textLength="70" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 553.00 365.00)">enroll to a specific</text>
+	<text x="552.00" y="378.00" textLength="71" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 552.00 378.00)">flexibility products</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 535 309 L 551 309 L 551 323 L 535 323 L 535 309 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#FBF7DB; stroke-opacity:1.00">
+  <path d="M 535 309 L 543 317" shape-rendering="auto"/>
+  <path d="M 543 317 L 551 309" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="523" y="818" width="110" height="77" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="535.00" y="850.00" textLength="85" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 535.00 850.00)">1.10 Receive validate</text>
+	<text x="530.00" y="863.00" textLength="95" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 530.00 863.00)">Terms and Conditions to</text>
+	<text x="543.00" y="876.00" textLength="70" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 543.00 876.00)">enroll to a specific</text>
+	<text x="542.00" y="889.00" textLength="71" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 542.00 889.00)">flexibility products</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 525 820 L 541 820 L 541 834 L 525 834 L 525 820 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 525 820 L 533 828" shape-rendering="auto"/>
+  <path d="M 533 828 L 541 820" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="560" y="625" width="110" height="95" rx="5.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="568.00" y="657.00" textLength="98" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 568.00 657.00)">1.11 Receive Request for</text>
+	<text x="571.00" y="670.00" textLength="88" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 571.00 670.00)">consent registration of</text>
+	<text x="571.00" y="683.00" textLength="87" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 571.00 683.00)">Final Customer to DER</text>
+	<text x="568.00" y="696.00" textLength="100" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 568.00 696.00)">Group / Service Providing</text>
+	<text x="603.00" y="709.00" textLength="24" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 603.00 709.00)">Group</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FBF7DB;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 562 627 L 578 627 L 578 641 L 562 641 L 562 627 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 562 627 L 570 635" shape-rendering="auto"/>
+  <path d="M 570 635 L 578 627" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:3;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCC5C2;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 687 551 C 687 543 694 536 702 536 710 536 717 543 717 551 717 559 710 566 702 566 694 566 687 559 687 551 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 225 595 L 248 595" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 248 595 L 232 589 L 232 601 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00" stroke-dasharray="6,3">
+  <path d="M 546 392 L 546 818" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 540 398 C 540 395 543 392 546 392 549 392 552 395 552 398 552 401 549 404 546 404 543 404 540 401 540 398 Z" shape-rendering="auto"/>
+  <path d="M 546 818 L 552 802 L 540 802 L 546 818 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 670 542 L 687 542" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 687 542 L 671 536 L 671 548 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 436 869 L 436 902" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 436 902 L 442 886 L 430 886 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00" stroke-dasharray="6,3">
+  <path d="M 636 910 L 636 720" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 642 904 C 642 901 639 898 636 898 633 898 630 901 630 904 630 907 633 910 636 910 639 910 642 907 642 904 Z" shape-rendering="auto"/>
+  <path d="M 636 720 L 630 736 L 642 736 L 636 720 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 269 201 L 269 138" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 269 138 L 263 154 L 275 154 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00" stroke-dasharray="6,3">
+  <path d="M 410 355 L 410 809" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 404 361 C 404 358 407 355 410 355 413 355 416 358 416 361 416 364 413 367 410 367 407 367 404 364 404 361 Z" shape-rendering="auto"/>
+  <path d="M 410 809 L 416 793 L 404 793 L 410 809 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 350 138 L 350 201" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 350 201 L 356 185 L 344 185 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00" stroke-dasharray="6,3">
+  <path d="M 340 261 L 340 427" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 334 267 C 334 264 337 261 340 261 343 261 346 264 346 267 346 270 343 273 340 273 337 273 334 270 334 267 Z" shape-rendering="auto"/>
+  <path d="M 340 427 L 346 411 L 334 411 L 340 427 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 401 261 L 401 295" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 401 295 L 407 279 L 395 279 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00" stroke-dasharray="6,3">
+  <path d="M 175 107 L 175 476" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 169 113 C 169 110 172 107 175 107 178 107 181 110 181 113 181 116 178 119 175 119 172 119 169 116 169 113 Z" shape-rendering="auto"/>
+  <path d="M 175 476 L 181 460 L 169 460 L 175 476 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 519 138 L 519 163" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 519 163 L 525 147 L 513 147 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00" stroke-dasharray="6,3">
+  <path d="M 248 565 L 244 565" shape-rendering="auto"/>
+  <path d="M 244 565 C 242 564 240 562 239 560 M 238 558" shape-rendering="auto"/>
+  <path d="M 238 559 L 238 261" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 248 565 C 248 562 245 559 242 559 239 559 236 562 236 565 236 568 239 571 242 571 245 571 248 568 248 565 Z" shape-rendering="auto"/>
+  <path d="M 238 261 L 232 277 L 244 277 L 238 261 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00" stroke-dasharray="6,3">
+  <path d="M 663 513 L 663 397" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 669 507 C 669 504 666 501 663 501 660 501 657 504 657 507 657 510 660 513 663 513 666 513 669 510 669 507 Z" shape-rendering="auto"/>
+  <path d="M 663 397 L 657 413 L 669 413 L 663 397 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 614 625 L 614 588" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 614 588 L 608 604 L 620 604 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 173 536 L 173 558" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 173 558 L 179 542 L 167 542 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#DC143C; stroke-opacity:1.00">
+  <path d="M 236 479 L 696 479" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#DC143C;fill-opacity:1.00; stroke:#DC143C; stroke-opacity:1.00">
+  <path d="M 696 479 L 680 473 L 680 485 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#FF0000; stroke-opacity:1.00" stroke-dasharray="7,4">
+  <path d="M 221 461 L 221 397" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#FF0000; stroke-opacity:1.00">
+  <path d="M 227 455 C 227 452 224 449 221 449 218 449 215 452 215 455 215 458 218 461 221 461 224 461 227 458 227 455 Z" shape-rendering="auto"/>
+  <path d="M 221 397 L 215 413 L 227 413 L 221 397 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00" stroke-dasharray="6,3">
+  <path d="M 290 625 L 290 780" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 284 631 C 284 628 287 625 290 625 293 625 296 628 296 631 296 634 293 637 290 637 287 637 284 634 284 631 Z" shape-rendering="auto"/>
+  <path d="M 290 780 L 296 764 L 284 764 L 290 780 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00" stroke-dasharray="6,3">
+  <path d="M 477 902 L 477 138" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 483 896 C 483 893 480 890 477 890 474 890 471 893 471 896 471 899 474 902 477 902 480 902 483 899 483 896 Z" shape-rendering="auto"/>
+  <path d="M 477 138 L 471 154 L 483 154 L 477 138 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 573 283 L 573 307" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 573 307 L 579 291 L 567 291 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 93 80 L 121 80" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 121 80 L 105 74 L 105 86 Z" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="152.00" y="363.00" textLength="48" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 152.00 363.00)">message 1b</text>
+</g>
+</svg>
