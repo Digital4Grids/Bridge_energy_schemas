@@ -1,0 +1,174 @@
+2026-04-21 14:04:46,027 - INFO - db=C:\EM\Github\Bridge_energy_schemas\Reference Data Dictionary\INSIEME Prototype CEEDs\CEEDS_iec61970cim18v02_iec61968cim14v00_iec62325cim04v14_ESMPcim04v01_iec62746cim01v_20260305_json.eap
+2026-04-21 14:04:46,111 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,113 - INFO - l550
+2026-04-21 14:04:46,115 - INFO - l550
+2026-04-21 14:04:46,115 - INFO - l550
+2026-04-21 14:04:46,115 - INFO - l550
+2026-04-21 14:04:46,115 - INFO - l550
+2026-04-21 14:04:46,115 - INFO - l550
+2026-04-21 14:04:46,115 - INFO - l550
+2026-04-21 14:04:46,117 - INFO - --------------------Lancement  Export Profile RedistributionTransactionRequest-assembly-model -----------------------
+2026-04-21 14:04:46,117 - INFO - TEST  init Package 332
+2026-04-21 14:04:46,134 - INFO - TEST init EA.Eelement packid=330 elt=RedistributionTransactionRequest assembly model
+2026-04-21 14:04:46,137 - INFO - TEST init connector pour elt=RedistributionTransactionRequest assembly model source=None target=None
+2026-04-21 14:04:46,139 - INFO - TEST init connector pour elt=RedistributionTransactionRequest assembly model source=None target=None
+2026-04-21 14:04:46,142 - INFO - TEST init EA.Eelement packid=332 elt=Asset
+2026-04-21 14:04:46,142 - INFO - TEST init Attribute elt=Asset atr=type classifierID=323
+2026-04-21 14:04:46,142 - INFO - TEST  init Package 17
+2026-04-21 14:04:46,150 - INFO - TEST init EA.Eelement packid=16 elt=Domain
+2026-04-21 14:04:46,150 - INFO - TEST init connector pour elt=Domain source=None target=None
+2026-04-21 14:04:46,156 - INFO - TEST init connector pour elt=Domain source=None target=None
+2026-04-21 14:04:46,156 - INFO - Package creation 
+2026-04-21 14:04:46,158 - INFO - TEST init EA.Eelement packid=17 elt=String
+2026-04-21 14:04:46,160 - INFO - TEST creation classifier=323 dans pack=17
+2026-04-21 14:04:46,160 - INFO - TEST init Attribute elt=Asset atr=operatorId classifierID=323
+2026-04-21 14:04:46,162 - INFO - TEST init Attribute elt=Asset atr=meterId classifierID=323
+2026-04-21 14:04:46,164 - INFO - TEST init connector pour elt=Asset source=MetaInformation target=Asset
+2026-04-21 14:04:46,169 - INFO - TEST init connector pour elt=Asset source=None target=None
+2026-04-21 14:04:46,178 - INFO - TEST init EA.Eelement packid=332 elt=MessageDocumentHeader
+2026-04-21 14:04:46,178 - INFO - TEST init Attribute elt=MessageDocumentHeader atr=creationDateTime classifierID=5228
+2026-04-21 14:04:46,180 - INFO - TEST  init Package 363
+2026-04-21 14:04:46,184 - INFO - TEST init EA.Eelement packid=361 elt=ESMPDataTypes
+2026-04-21 14:04:46,188 - INFO - Package creation 
+2026-04-21 14:04:46,188 - INFO - TEST init EA.Eelement packid=363 elt=ESMP_DateTime
+2026-04-21 14:04:46,188 - INFO - TEST init Attribute elt=ESMP_DateTime atr=value classifierID=5189
+2026-04-21 14:04:46,188 - INFO - TEST init EA.Eelement packid=363 elt=DateTime
+2026-04-21 14:04:46,188 - INFO - TEST creation classifier=5189 dans pack=363
+2026-04-21 14:04:46,188 - INFO - TEST init connector pour elt=ESMP_DateTime source=None target=None
+2026-04-21 14:04:46,200 - INFO - TEST creation classifier=5228 dans pack=363
+2026-04-21 14:04:46,200 - INFO - TEST init connector pour elt=MessageDocumentHeader source=None target=MessageDocumentHeader
+2026-04-21 14:04:46,204 - INFO - TEST init connector pour elt=MessageDocumentHeader source=MessageDocumentHeader target=MetaInformation
+2026-04-21 14:04:46,204 - INFO - TEST init connector pour elt=MessageDocumentHeader source=None target=None
+2026-04-21 14:04:46,204 - INFO - TEST init EA.Eelement packid=332 elt=MetaInformation
+2026-04-21 14:04:46,204 - INFO - TEST init Attribute elt=MetaInformation atr=connectionId classifierID=323
+2026-04-21 14:04:46,217 - INFO - TEST init Attribute elt=MetaInformation atr=requestPermissionId classifierID=323
+2026-04-21 14:04:46,223 - INFO - TEST init Attribute elt=MetaInformation atr=dataNeedId classifierID=323
+2026-04-21 14:04:46,225 - INFO - TEST init Attribute elt=MetaInformation atr=documentType classifierID=323
+2026-04-21 14:04:46,227 - INFO - TEST init Attribute elt=MetaInformation atr=finalCustomerId classifierID=323
+2026-04-21 14:04:46,229 - INFO - TEST init Attribute elt=MetaInformation atr=dataSourceId classifierID=323
+2026-04-21 14:04:46,231 - INFO - TEST init Attribute elt=MetaInformation atr=defaultValues classifierID=323
+2026-04-21 14:04:46,234 - INFO - TEST init Attribute elt=MetaInformation atr=regionConnector classifierID=323
+2026-04-21 14:04:46,235 - INFO - TEST init Attribute elt=MetaInformation atr=regionCountry classifierID=323
+2026-04-21 14:04:46,239 - INFO - TEST init connector pour elt=MetaInformation source=None target=None
+2026-04-21 14:04:46,247 - INFO - TEST init EA.Eelement packid=332 elt=RTR_Envelope
+2026-04-21 14:04:46,252 - INFO - TEST init connector pour elt=RTR_Envelope source=None target=MarketDocument
+2026-04-21 14:04:46,252 - INFO - TEST init connector pour elt=RTR_Envelope source=None target=None
+2026-04-21 14:04:46,252 - INFO - TEST init EA.Eelement packid=332 elt=RTR_MarketDocument
+2026-04-21 14:04:46,252 - INFO - TEST init Attribute elt=RTR_MarketDocument atr=mRID classifierID=5235
+2026-04-21 14:04:46,268 - INFO - TEST init EA.Eelement packid=363 elt=ID_String
+2026-04-21 14:04:46,270 - INFO - TEST init Attribute elt=ID_String atr=value classifierID=5194
+2026-04-21 14:04:46,272 - INFO - TEST init EA.Eelement packid=363 elt=String
+2026-04-21 14:04:46,274 - INFO - TEST creation classifier=5194 dans pack=363
+2026-04-21 14:04:46,274 - INFO - TEST init connector pour elt=ID_String source=None target=None
+2026-04-21 14:04:46,276 - INFO - TEST creation classifier=5235 dans pack=363
+2026-04-21 14:04:46,276 - INFO - TEST init Attribute elt=RTR_MarketDocument atr=period.timeInterval classifierID=5198
+2026-04-21 14:04:46,280 - INFO - TEST init EA.Eelement packid=363 elt=ESMP_DateTimeInterval
+2026-04-21 14:04:46,285 - INFO - TEST init Attribute elt=ESMP_DateTimeInterval atr=start classifierID=5260
+2026-04-21 14:04:46,290 - INFO - TEST init EA.Eelement packid=363 elt=YMDHM_DateTime
+2026-04-21 14:04:46,290 - INFO - TEST init Attribute elt=YMDHM_DateTime atr=value classifierID=5189
+2026-04-21 14:04:46,294 - INFO - TEST init connector pour elt=YMDHM_DateTime source=None target=None
+2026-04-21 14:04:46,294 - INFO - TEST creation classifier=5260 dans pack=363
+2026-04-21 14:04:46,296 - INFO - TEST init Attribute elt=ESMP_DateTimeInterval atr=end classifierID=5260
+2026-04-21 14:04:46,298 - INFO - TEST creation classifier=5198 dans pack=363
+2026-04-21 14:04:46,302 - INFO - TEST init connector pour elt=RTR_MarketDocument source=None target=None
+2026-04-21 14:04:46,305 - INFO - TEST init connector pour elt=RTR_MarketDocument source=None target=None
+2026-04-21 14:04:46,312 - INFO - Package creation 
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts RedistributionTransactionRequest assembly model
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts pack=RedistributionTransactionRequest assembly model elt=Asset
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts pack=RedistributionTransactionRequest assembly model elt=MessageDocumentHeader
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts pack=RedistributionTransactionRequest assembly model elt=MetaInformation
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts pack=RedistributionTransactionRequest assembly model elt=RTR_Envelope
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts pack=RedistributionTransactionRequest assembly model elt=RTR_MarketDocument
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts Domain
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts ESMPDataTypes
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts pack=ESMPDataTypes elt=ESMP_DateTime
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts pack=ESMPDataTypes elt=ID_String
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts pack=ESMPDataTypes elt=YMDHM_DateTime
+2026-04-21 14:04:46,312 - INFO - Test  getAllProfElts pack=ESMPDataTypes elt=ESMP_DateTimeInterval
+2026-04-21 14:04:46,313 - INFO -  demarrage de la creaton du Profile Schema
+2026-04-21 14:04:48,589 - INFO - Execute creatSubSchema Asset
+2026-04-21 14:04:48,589 - INFO - l550
+2026-04-21 14:04:48,590 - INFO - l550
+2026-04-21 14:04:48,590 - INFO - l550
+2026-04-21 14:04:48,590 - INFO - l550
+2026-04-21 14:04:48,590 - INFO - Execute creatSubSchema MessageDocumentHeader
+2026-04-21 14:04:48,590 - INFO - l550
+2026-04-21 14:04:48,590 - INFO - l550
+2026-04-21 14:04:48,591 - INFO - l550
+2026-04-21 14:04:48,591 - INFO - Execute creatSubSchema MetaInformation
+2026-04-21 14:04:48,591 - INFO - l550
+2026-04-21 14:04:48,591 - INFO - l550
+2026-04-21 14:04:48,591 - INFO - l550
+2026-04-21 14:04:48,591 - INFO - l550
+2026-04-21 14:04:48,592 - INFO - l550
+2026-04-21 14:04:48,592 - INFO - l550
+2026-04-21 14:04:48,592 - INFO - l550
+2026-04-21 14:04:48,592 - INFO - l550
+2026-04-21 14:04:48,592 - INFO - l550
+2026-04-21 14:04:48,592 - INFO - l550
+2026-04-21 14:04:48,592 - INFO - l550
+2026-04-21 14:04:48,592 - INFO - Execute creatSubSchema RTR_Envelope
+2026-04-21 14:04:48,592 - INFO - l550
+2026-04-21 14:04:48,592 - INFO - l557
+2026-04-21 14:04:48,593 - INFO - l550
+2026-04-21 14:04:48,593 - INFO - l557
+2026-04-21 14:04:48,593 - INFO - l550
+2026-04-21 14:04:48,593 - INFO - l557
+2026-04-21 14:04:48,593 - INFO - Execute creatSubSchema RTR_MarketDocument
+2026-04-21 14:04:48,593 - INFO - l550
+2026-04-21 14:04:48,593 - INFO - l557
+2026-04-21 14:04:48,593 - INFO - l550
+2026-04-21 14:04:48,593 - INFO - l557
+2026-04-21 14:04:48,593 - INFO - l550
+2026-04-21 14:04:48,593 - INFO - Execute creatSubSchema ESMP_DateTime
+2026-04-21 14:04:48,593 - INFO - Execute traitdatatype ESMP_DateTime
+2026-04-21 14:04:48,593 - INFO - l550
+2026-04-21 14:04:48,594 - INFO - l557
+2026-04-21 14:04:48,594 - INFO - l550
+2026-04-21 14:04:48,594 - INFO - Execute creatSubSchema ID_String
+2026-04-21 14:04:48,594 - INFO - Execute traitdatatype ID_String
+2026-04-21 14:04:48,594 - INFO - l550
+2026-04-21 14:04:48,594 - INFO - l557
+2026-04-21 14:04:48,594 - INFO - l550
+2026-04-21 14:04:48,594 - INFO - Execute creatSubSchema YMDHM_DateTime
+2026-04-21 14:04:48,594 - INFO - Execute traitdatatype YMDHM_DateTime
+2026-04-21 14:04:48,594 - INFO - l550
+2026-04-21 14:04:48,594 - INFO - l557
+2026-04-21 14:04:48,595 - INFO - l550
+2026-04-21 14:04:48,595 - INFO - Execute creatSubSchema ESMP_DateTimeInterval
+2026-04-21 14:04:48,595 - INFO - Execute traitcompound ESMP_DateTimeInterval
+2026-04-21 14:04:48,595 - INFO - l550
+2026-04-21 14:04:48,595 - INFO - l557
+2026-04-21 14:04:48,595 - INFO - l550
+2026-04-21 14:04:48,595 - INFO - l557
+2026-04-21 14:04:48,595 - INFO - l550
+2026-04-21 14:04:48,595 - INFO - l557

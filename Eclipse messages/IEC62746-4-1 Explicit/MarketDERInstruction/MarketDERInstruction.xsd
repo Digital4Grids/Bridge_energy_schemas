@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:Prefix="m" xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:cimp="http://www.iec.ch/cimprofile" xmlns:TargetNamespace="http://IEC/62746" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://IEC/62746" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="urn-entsoe-eu-wgedi-codelists.xsd" namespace="urn:entsoe.eu:wgedi:codelists" />
+  <xs:element name="MarketDERInstruction_MarketDocument" type="TargetNamespace:MarketDERInstruction_MarketDocument" />
+  <xs:complexType name="DistributedResourceActualEvent" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#DistributedResourceActualEvent">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="actualEventEndDateTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketEvent.actualEventEndDateTime">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="actualEventStartDateTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketEvent.actualEventStartDateTime">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="eventComments" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketEvent.eventComments">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="eventStatus" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketEvent.eventStatus">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="eventType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketEvent.eventType">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="AreaID_String-base" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="18" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="AreaID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:simpleContent>
+      <xs:extension base="TargetNamespace:AreaID_String-base">
+        <xs:attribute name="codingScheme" type="ecl:CodingSchemeTypeList" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Domain" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Domain">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="TargetNamespace:AreaID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#IdentifiedObject.mRID">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InstructionClearing" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#InstructionClearing">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="intervalEndTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketFactors.intervalEndTime">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="intervalStartTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketFactors.intervalStartTime">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="Connecting_Domain" type="TargetNamespace:Domain" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#InstructionClearing.Domain">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="Acquiring_Domain" type="TargetNamespace:Domain" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#InstructionClearing.Domain">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Instructions" type="TargetNamespace:Instructions" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#InstructionClearing.Instructions">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ScheduleKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#ScheduleKind">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="generation">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a generation resource, where a positive amount corresponds to an injection of energy and/or grid support services to the grid.  The amount of energy is an absolute level understood to be a production setpoint.  Negative values are acceptable and represent an energy withdrawal setpoint.  For energy storage resources, a positive amount represents a setpoint in the discharging state.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="generationIncrease">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a variable generator, where a positive amount corresponds to a relative generation increase.  The level is relative, generally as an upward offset to a reference level such as the current generation or a calculated baseline generation. Negative values are acceptable and represent a generation reduction offset.  For energy storage resources, a positive amount represents a faster rate of discharge, a state change from charging (or offline) to discharge, or a slower rate of charge.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="generationReduction">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a flexible generator, where a positive amount corresponds to a relative generation reduction.  The level is relative, generally as an downward offset to a reference level such as the current generation or a calculated baseline generation.  Negative values are acceptable and represent a generation increase offset.  For energy storage resources, a positive amount represents a slower rate of discharge, a state change from discharging (or offline) to charging, or a faster rate of charge.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="load">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a load resource, where a positive amount corresponds to a withdrawal of energy and/or support services from the grid.  The amount of energy is an absolute level understood to be a consumption setpoint.  Negative values are acceptable and represent an energy injection setpoint. For energy storage resources, a positive amount represents a setpoint in the charging state.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="loadIncrease">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a variable load, where a positive amount corresponds to a relative load increase.  The level is relative, generally as an upward offset to a reference level such as the current consumption or a calculated baseline consumption. Negative values are acceptable and represent a load reduction offset.  For energy storage resources, a positive amount represents a faster rate of charge, a state change from discharging (or offline) to charge, or a slower rate of discharge.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="loadReduction">
+        <xs:annotation>
+          <xs:documentation>The resource operates as a curtailable load, where a positive amount corresponds to a relative load reduction.  The level is relative, generally as an downward offset to a reference level such as the current consumption or a calculated baseline consumption.  Negative values are acceptable and represent a load increase offset.  For energy storage resources, a positive amount represents a slower rate of charge, a state change from charging (or offline) to discharging, or a faster rate of discharge.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="YesNo" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#YesNo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NO">
+      </xs:enumeration>
+      <xs:enumeration value="YES">
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AutomaticDispInstTypeCommitment" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#AutomaticDispInstTypeCommitment">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACTIVATE">
+        <xs:annotation>
+          <xs:documentation>Activate represents a call to provide grid services. The call generally comes from the grid operator or through an aggregator and interrupts local control. A call could represent any number of actions including the increase or decrease of power consumption and/or production.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ADJUSTMENT">
+        <xs:annotation>
+          <xs:documentation>Adjustment represents a change in the level of the grid services provided.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RELEASE">
+        <xs:annotation>
+          <xs:documentation>Release represents the end of the call to provide grid services. This allows the resource to perform its own activity.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SHUT_DOWN">
+        <xs:annotation>
+          <xs:documentation>Shut down instruction type</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="START_UP">
+        <xs:annotation>
+          <xs:documentation>Start up instruction type</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ESMP_Float" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Float">
+    <xs:restriction base="xs:float">
+      <xs:pattern value="([0-9]*\.?[0-9]*)" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="UnitSymbol" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#UnitSymbol">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A">
+        <xs:annotation>
+          <xs:documentation>Current in amperes.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A2">
+        <xs:annotation>
+          <xs:documentation>Amperes squared (A²).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A2h">
+        <xs:annotation>
+          <xs:documentation>Ampere-squared hour, ampere-squared hour.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A2s">
+        <xs:annotation>
+          <xs:documentation>Ampere squared time in square amperes (A²s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ah">
+        <xs:annotation>
+          <xs:documentation>Ampere-hours, ampere-hours.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="anglemin">
+        <xs:annotation>
+          <xs:documentation>Plane angle, minutes.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="anglesec">
+        <xs:annotation>
+          <xs:documentation>Plane angle, seconds.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="APerA">
+        <xs:annotation>
+          <xs:documentation>Current, ratio of amperages.   Note: Users may need to supply a prefix such as ‘m’ to show rates such as ‘mA/A’.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="APerm">
+        <xs:annotation>
+          <xs:documentation>A/m, magnetic field strength, amperes per metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="As">
+        <xs:annotation>
+          <xs:documentation>Ampere seconds (A·s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="bar">
+        <xs:annotation>
+          <xs:documentation>Pressure in bars, (1 bar = 100 kPa).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bq">
+        <xs:annotation>
+          <xs:documentation>Radioactivity in becquerels (1/s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Btu">
+        <xs:annotation>
+          <xs:documentation>Energy, British Thermal Units.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C">
+        <xs:annotation>
+          <xs:documentation>Electric charge in coulombs (A·s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="cd">
+        <xs:annotation>
+          <xs:documentation>Luminous intensity in candelas.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="character">
+        <xs:annotation>
+          <xs:documentation>Number of characters.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="charPers">
+        <xs:annotation>
+          <xs:documentation>Data rate (baud) in characters per second.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="cosPhi">
+        <xs:annotation>
+          <xs:documentation>Power factor, dimensionless.
+Note 1: This definition of power factor only holds for balanced systems. See the alternative definition under code 153.
+Note 2 : Beware of differing sign conventions in use between the IEC and EEI. It is assumed that the data consumer understands the type of meter in use and the sign convention in use by the utility.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="count">
+        <xs:annotation>
+          <xs:documentation>Amount of substance, Counter value.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CPerkg">
+        <xs:annotation>
+          <xs:documentation>Exposure (x rays), coulombs per kilogram.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CPerm2">
+        <xs:annotation>
+          <xs:documentation>Surface charge density, coulombs per square metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CPerm3">
+        <xs:annotation>
+          <xs:documentation>Electric charge density, coulombs per cubic metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="d">
+        <xs:annotation>
+          <xs:documentation>Time in days, day = 24 h = 86400 s.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="dB">
+        <xs:annotation>
+          <xs:documentation>Sound pressure level in decibels. Note:  multiplier “d” is included in this unit symbol for compatibility with IEC 61850-7-3.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="dBm">
+        <xs:annotation>
+          <xs:documentation>Power level (logarithmic ratio of signal strength , Bel-mW), normalized to 1mW. Note:  multiplier “d” is included in this unit symbol for compatibility with IEC 61850-7-3.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="deg">
+        <xs:annotation>
+          <xs:documentation>Plane angle in degrees.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="degC">
+        <xs:annotation>
+          <xs:documentation>Relative temperature in degrees Celsius.
+In the SI unit system the symbol is °C. Electric charge is measured in coulomb that has the unit symbol C. To distinguish degree Celsius from coulomb the symbol used in the UML is degC. The reason for not using °C is that the special character ° is difficult to manage in software.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F">
+        <xs:annotation>
+          <xs:documentation>Electric capacitance in farads (C/V).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FPerm">
+        <xs:annotation>
+          <xs:documentation>Permittivity, farads per metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ft3">
+        <xs:annotation>
+          <xs:documentation>Volume, cubic feet.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="G">
+        <xs:annotation>
+          <xs:documentation>Magnetic flux density, gausses (1 G = 10-4 T).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="gal">
+        <xs:annotation>
+          <xs:documentation>Volume in gallons, US gallon (1 gal = 231 in3 = 128 fl ounce).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="gPerg">
+        <xs:annotation>
+          <xs:documentation>Concentration, The ratio of the mass of a solute divided by the mass of  the solution. Note: Users may need use a prefix such a ‘µ’ to express a quantity such as ‘µg/g’.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Gy">
+        <xs:annotation>
+          <xs:documentation>Absorbed dose in grays (J/kg).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GyPers">
+        <xs:annotation>
+          <xs:documentation>Absorbed dose rate, grays per second.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="h">
+        <xs:annotation>
+          <xs:documentation>Time in hours, hour = 60 min = 3600 s.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="H">
+        <xs:annotation>
+          <xs:documentation>Electric inductance in henrys (Wb/A).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ha">
+        <xs:annotation>
+          <xs:documentation>Area, hectares.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HPerm">
+        <xs:annotation>
+          <xs:documentation>Permeability, henrys per metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hz">
+        <xs:annotation>
+          <xs:documentation>Frequency in hertz (1/s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HzPerHz">
+        <xs:annotation>
+          <xs:documentation>Frequency, rate of frequency change.   Note: Users may need to supply a prefix such as ‘m’ to show rates such as ‘mHz/Hz’.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HzPers">
+        <xs:annotation>
+          <xs:documentation>Rate of change of frequency in hertz per second.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="J">
+        <xs:annotation>
+          <xs:documentation>Energy in joules (N·m = C·V = W·s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JPerK">
+        <xs:annotation>
+          <xs:documentation>Heat capacity in joules/kelvin.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JPerkg">
+        <xs:annotation>
+          <xs:documentation>Specific energy, Joules / kg.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JPerkgK">
+        <xs:annotation>
+          <xs:documentation>Specific heat capacity, specific entropy, joules per kilogram Kelvin.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JPerm2">
+        <xs:annotation>
+          <xs:documentation>Insulation energy density, joules per square metre or watt second per square metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JPerm3">
+        <xs:annotation>
+          <xs:documentation>Energy density, joules per cubic metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JPermol">
+        <xs:annotation>
+          <xs:documentation>Molar energy, joules per mole.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JPermolK">
+        <xs:annotation>
+          <xs:documentation>Molar entropy, molar heat capacity, joules per mole kelvin.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JPers">
+        <xs:annotation>
+          <xs:documentation>Energy rate in joules per second (J/s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="K">
+        <xs:annotation>
+          <xs:documentation>Temperature in kelvins.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="kat">
+        <xs:annotation>
+          <xs:documentation>Catalytic activity, katal = mol / s.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="katPerm3">
+        <xs:annotation>
+          <xs:documentation>Catalytic activity concentration, katals per cubic metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="kg">
+        <xs:annotation>
+          <xs:documentation>Mass in kilograms. Note: multiplier “k” is included in this unit symbol for compatibility with IEC 61850-7-3.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="kgm">
+        <xs:annotation>
+          <xs:documentation>Moment of mass in kilogram metres (kg·m) (first moment of mass). Note: multiplier “k” is included in this unit symbol for compatibility with IEC 61850-7-3.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="kgm2">
+        <xs:annotation>
+          <xs:documentation>Moment of mass in kilogram square metres (kg·m²) (Second moment of mass, commonly called the moment of inertia). Note: multiplier “k” is included in this unit symbol for compatibility with IEC 61850-7-3.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="kgPerJ">
+        <xs:annotation>
+          <xs:documentation>Weight per energy in kilograms per joule (kg/J). Note: multiplier “k” is included in this unit symbol for compatibility with IEC 61850-7-3.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="kgPerm3">
+        <xs:annotation>
+          <xs:documentation>Density in kilogram/cubic metres (kg/m³). Note: multiplier “k” is included in this unit symbol for compatibility with IEC 61850-7-3.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="kn">
+        <xs:annotation>
+          <xs:documentation>Speed, knots (1 kn = 1852/3600) m/s.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KPers">
+        <xs:annotation>
+          <xs:documentation>Temperature change rate in kelvins per second.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="l">
+        <xs:annotation>
+          <xs:documentation>Volume in litres, litre = dm3 = m3/1000.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="lm">
+        <xs:annotation>
+          <xs:documentation>Luminous flux in lumens (cd·sr).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="lPerh">
+        <xs:annotation>
+          <xs:documentation>Volumetric flow rate, litres per hour.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="lPerl">
+        <xs:annotation>
+          <xs:documentation>Concentration, The ratio of the volume of a solute divided by the volume of  the solution. Note: Users may need use a prefix such a ‘µ’ to express a quantity such as ‘µL/L’.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="lPers">
+        <xs:annotation>
+          <xs:documentation>Volumetric flow rate in litres per second.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="lx">
+        <xs:annotation>
+          <xs:documentation>Illuminance in lux (lm/m²).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m">
+        <xs:annotation>
+          <xs:documentation>Length in metres.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="M">
+        <xs:annotation>
+          <xs:documentation>Length, nautical miles (1 M = 1852 m).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m2">
+        <xs:annotation>
+          <xs:documentation>Area in square metres (m²).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m2Pers">
+        <xs:annotation>
+          <xs:documentation>Viscosity in square metres / second (m²/s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m3">
+        <xs:annotation>
+          <xs:documentation>Volume in cubic metres (m³).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m3Compensated">
+        <xs:annotation>
+          <xs:documentation>Volume, cubic metres, with the value compensated for weather effects.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m3Perh">
+        <xs:annotation>
+          <xs:documentation>Volumetric flow rate, cubic metres per hour.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m3Perkg">
+        <xs:annotation>
+          <xs:documentation>Specific volume, cubic metres per kilogram, v.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m3Pers">
+        <xs:annotation>
+          <xs:documentation>Volumetric flow rate in cubic metres per second (m³/s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m3Uncompensated">
+        <xs:annotation>
+          <xs:documentation>Volume, cubic metres, with the value uncompensated for weather effects.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="min">
+        <xs:annotation>
+          <xs:documentation>Time in minutes, minute  = 60 s.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mmHg">
+        <xs:annotation>
+          <xs:documentation>Pressure, millimetres of mercury (1 mmHg is approximately 133.3 Pa).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mol">
+        <xs:annotation>
+          <xs:documentation>Amount of substance in moles.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="molPerkg">
+        <xs:annotation>
+          <xs:documentation>Concentration, Molality, the amount of solute in moles and the amount of solvent in kilograms.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="molPerm3">
+        <xs:annotation>
+          <xs:documentation>Concentration, The amount of substance concentration, (c), the amount of solvent in moles divided by the volume of solution in m³.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="molPermol">
+        <xs:annotation>
+          <xs:documentation>Concentration, Molar fraction, the ratio of the molar amount of a solute divided by the molar amount of the solution.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mPerm3">
+        <xs:annotation>
+          <xs:documentation>Fuel efficiency in metres per cubic metres (m/m³).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mPers">
+        <xs:annotation>
+          <xs:documentation>Velocity in metres per second (m/s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mPers2">
+        <xs:annotation>
+          <xs:documentation>Acceleration in metres per second squared (m/s²).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Mx">
+        <xs:annotation>
+          <xs:documentation>Magnetic flux, maxwells (1 Mx = 10-8 Wb).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="N">
+        <xs:annotation>
+          <xs:documentation>Force in newtons (kg·m/s²).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Nm">
+        <xs:annotation>
+          <xs:documentation>Moment of force, newton metres.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="none">
+        <xs:annotation>
+          <xs:documentation>Dimension less quantity, e.g. count, per unit, etc.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NPerm">
+        <xs:annotation>
+          <xs:documentation>Surface tension, newton per metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Oe">
+        <xs:annotation>
+          <xs:documentation>Magnetic field in oersteds, (1 Oe = (103/4p) A/m).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ohm">
+        <xs:annotation>
+          <xs:documentation>Electric resistance in ohms (V/A).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ohmm">
+        <xs:annotation>
+          <xs:documentation>Resistivity, ohm metres, (rho).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ohmPerm">
+        <xs:annotation>
+          <xs:documentation>Electric resistance per length in ohms per metre ((V/A)/m).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="onePerHz">
+        <xs:annotation>
+          <xs:documentation>Reciprocal of frequency (1/Hz).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="onePerm">
+        <xs:annotation>
+          <xs:documentation>Wavenumber, reciprocal metres,  (1/m).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Pa">
+        <xs:annotation>
+          <xs:documentation>Pressure in pascals (N/m²). Note: the absolute or relative measurement of pressure is implied with this entry. See below for more explicit forms.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PaPers">
+        <xs:annotation>
+          <xs:documentation>Pressure change rate in pascals per second.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Pas">
+        <xs:annotation>
+          <xs:documentation>Dynamic viscosity, pascal seconds.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ppm">
+        <xs:annotation>
+          <xs:documentation>Concentration in parts per million.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Q">
+        <xs:annotation>
+          <xs:documentation>Quantity power, Q.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Qh">
+        <xs:annotation>
+          <xs:documentation>Quantity energy, Qh.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="rad">
+        <xs:annotation>
+          <xs:documentation>Plane angle in radians (m/m).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="radPers">
+        <xs:annotation>
+          <xs:documentation>Angular velocity in radians per second (rad/s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="radPers2">
+        <xs:annotation>
+          <xs:documentation>Angular acceleration, radians per second squared.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="rev">
+        <xs:annotation>
+          <xs:documentation>Amount of rotation, revolutions.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="rotPers">
+        <xs:annotation>
+          <xs:documentation>Rotations per second (1/s). See also Hz (1/s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="s">
+        <xs:annotation>
+          <xs:documentation>Time in seconds.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="S">
+        <xs:annotation>
+          <xs:documentation>Conductance in siemens.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SPerm">
+        <xs:annotation>
+          <xs:documentation>Conductance per length (F/m).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="sPers">
+        <xs:annotation>
+          <xs:documentation>Time, Ratio of time.  Note: Users may need to supply a prefix such as ‘&amp;#181;’ to show rates such as ‘&amp;#181;s/s’.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="sr">
+        <xs:annotation>
+          <xs:documentation>Solid angle in steradians (m2/m2).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sv">
+        <xs:annotation>
+          <xs:documentation>Dose equivalent in sieverts (J/kg).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="T">
+        <xs:annotation>
+          <xs:documentation>Magnetic flux density in teslas (Wb/m2).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="therm">
+        <xs:annotation>
+          <xs:documentation>Energy, therms.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="tonne">
+        <xs:annotation>
+          <xs:documentation>Mass in tons, “tonne” or “metric  ton” (1000 kg = 1 Mg).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="V">
+        <xs:annotation>
+          <xs:documentation>Electric potential in volts (W/A).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="V2">
+        <xs:annotation>
+          <xs:documentation>Volt squared (W²/A²).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="V2h">
+        <xs:annotation>
+          <xs:documentation>Volt-squared hour, volt-squared-hours.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VA">
+        <xs:annotation>
+          <xs:documentation>Apparent power in volt amperes. See also real power and reactive power.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAh">
+        <xs:annotation>
+          <xs:documentation>Apparent energy in volt ampere hours.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAr">
+        <xs:annotation>
+          <xs:documentation>Reactive power in volt amperes reactive. The “reactive” or “imaginary” component of electrical power (VIsin(phi)). (See also real power and apparent power).
+Note: Different meter designs use different methods to arrive at their results. Some meters may compute reactive power as an arithmetic value, while others compute the value vectorially. The data consumer should determine the method in use and the suitability of the measurement for the intended purpose.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VArh">
+        <xs:annotation>
+          <xs:documentation>Reactive energy in volt ampere reactive hours.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Vh">
+        <xs:annotation>
+          <xs:documentation>Volt-hour, Volt hours.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VPerHz">
+        <xs:annotation>
+          <xs:documentation>Magnetic flux in volt per hertz.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VPerm">
+        <xs:annotation>
+          <xs:documentation>Electric field strength, volts per metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VPerV">
+        <xs:annotation>
+          <xs:documentation>Voltage, ratio of voltages.  Note: Users may need to supply a prefix such as ‘m’ to show rates such as ‘mV/V’.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VPerVA">
+        <xs:annotation>
+          <xs:documentation>Power factor, PF, the ratio of the active power to the apparent power.  Note: The sign convention used for power factor will differ between IEC meters and EEI (ANSI) meters. It is assumed that the data consumers understand the type of meter being used and agree on the sign convention in use at any given utility.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VPerVAr">
+        <xs:annotation>
+          <xs:documentation>Power factor, PF, the ratio of the active power to the apparent power. Note: The sign convention used for power factor will differ between IEC meters and EEI (ANSI) meters. It is assumed that the data consumers understand the type of meter being used and agree on the sign convention in use at any given utility.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Vs">
+        <xs:annotation>
+          <xs:documentation>Volt seconds (Ws/A).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="W">
+        <xs:annotation>
+          <xs:documentation>Real power in watts (J/s). Electrical power may have real and reactive components. The real portion of electrical power (I&amp;#178;R or VIcos(phi)), is expressed in Watts. See also apparent power and reactive power.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wb">
+        <xs:annotation>
+          <xs:documentation>Magnetic flux in webers (V·s).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wh">
+        <xs:annotation>
+          <xs:documentation>Real energy in watt hours.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WPerA">
+        <xs:annotation>
+          <xs:documentation>Active power per current flow, watts per Ampere.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WPerm2">
+        <xs:annotation>
+          <xs:documentation>Heat flux density, irradiance, watts per square metre.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WPerm2sr">
+        <xs:annotation>
+          <xs:documentation>Radiance, watts per square metre steradian.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WPermK">
+        <xs:annotation>
+          <xs:documentation>Thermal conductivity in watt/metres kelvin.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WPers">
+        <xs:annotation>
+          <xs:documentation>Ramp rate in watts per second.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WPersr">
+        <xs:annotation>
+          <xs:documentation>Radiant intensity, watts per steradian.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WPerW">
+        <xs:annotation>
+          <xs:documentation>Signal Strength, ratio of power.   Note: Users may need to supply a prefix such as ‘m’ to show rates such as ‘mW/W’.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="UnitMultiplier" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#UnitMultiplier">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="a">
+        <xs:annotation>
+          <xs:documentation>Atto 10**-18.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="c">
+        <xs:annotation>
+          <xs:documentation>Centi 10**-2.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="d">
+        <xs:annotation>
+          <xs:documentation>Deci 10**-1.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="da">
+        <xs:annotation>
+          <xs:documentation>Deca 10**1.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E">
+        <xs:annotation>
+          <xs:documentation>Exa 10**18.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="f">
+        <xs:annotation>
+          <xs:documentation>Femto 10**-15.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="G">
+        <xs:annotation>
+          <xs:documentation>Giga 10**9.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="h">
+        <xs:annotation>
+          <xs:documentation>Hecto 10**2.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="k">
+        <xs:annotation>
+          <xs:documentation>Kilo 10**3.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="m">
+        <xs:annotation>
+          <xs:documentation>Milli 10**-3.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="M">
+        <xs:annotation>
+          <xs:documentation>Mega 10**6.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="micro">
+        <xs:annotation>
+          <xs:documentation>Micro 10**-6.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="n">
+        <xs:annotation>
+          <xs:documentation>Nano 10**-9.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="none">
+        <xs:annotation>
+          <xs:documentation>No multiplier or equivalently multiply by 1.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="p">
+        <xs:annotation>
+          <xs:documentation>Pico 10**-12.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="P">
+        <xs:annotation>
+          <xs:documentation>Peta 10**15.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="T">
+        <xs:annotation>
+          <xs:documentation>Tera 10**12.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="y">
+        <xs:annotation>
+          <xs:documentation>Yocto 10**-24.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y">
+        <xs:annotation>
+          <xs:documentation>Yotta 10**24.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="z">
+        <xs:annotation>
+          <xs:documentation>Zepto 10**-21.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Z">
+        <xs:annotation>
+          <xs:documentation>Zetta 10**21.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="FloatQuantity" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#FloatQuantity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="value" type="TargetNamespace:ESMP_Float" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#FloatQuantity.value">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="unit" type="TargetNamespace:UnitSymbol" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#FloatQuantity.unit">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="multiplier" type="TargetNamespace:UnitMultiplier" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#FloatQuantity.multiplier">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Instructions" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Instructions">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="bindingDOTType" type="TargetNamespace:ScheduleKind" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Instructions.bindingDOTType">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="bindingInstruction" type="TargetNamespace:YesNo" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Instructions.bindingInstruction">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="instructionStartTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Instructions.instructionStartTime">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="instructionType" type="TargetNamespace:AutomaticDispInstTypeCommitment" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Instructions.instructionType">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="bindingDOT" type="TargetNamespace:FloatQuantity" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Instructions.bindingDOT">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="RegisteredDistributedResource" type="TargetNamespace:RegisteredDistributedResource" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Instructions.RegisteredDistributedResource">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="MarketProduct" type="TargetNamespace:MarketProduct" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Instructions.MarketProduct">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="60" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ESMPVersion_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[1-9]([0-9]){0,2}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ESMP_DateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#DateTime">
+    <xs:restriction base="xs:dateTime">
+      <xs:pattern value="((([0-9]{4})[\-](0[13578]|1[02])[\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\-]((0[469])|(11))[\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\-](02)[\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\-](02)[\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="MarketDERInstruction_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="TargetNamespace:ID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="revisionNumber" type="TargetNamespace:ESMPVersion_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Document.revisionNumber">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="createdDateTime" type="TargetNamespace:ESMP_DateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Document.createdDateTime">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="lastModifiedDateTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Document.lastModifiedDateTime">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="Process" type="TargetNamespace:Process" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument.Process">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="Period" type="TargetNamespace:Time_Period" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument.Period">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="Domain" type="TargetNamespace:Domain" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument.Domain">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="Sender_MarketParticipant" type="TargetNamespace:MarketParticipant" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument.MarketParticipant">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="Receiver_MarketParticipant" type="TargetNamespace:MarketParticipant" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument.MarketParticipant">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="Order_MarketDocument" type="TargetNamespace:Order_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument.MarketDocument">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="DistributedResourceActualEvent" type="TargetNamespace:DistributedResourceActualEvent" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument.DistributedResourceActualEvent">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="InstructionClearing" type="TargetNamespace:InstructionClearing" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument.InstructionClearing">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MarketOccurence_TimeSeries" type="TargetNamespace:TimeSeries" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument.TimeSeries">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="PartyID_String-base" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:simpleContent>
+      <xs:extension base="TargetNamespace:PartyID_String-base">
+        <xs:attribute name="codingScheme" type="ecl:CodingSchemeTypeList" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MarketParticipant" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketParticipant">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="TargetNamespace:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="MarketRole" type="TargetNamespace:MarketRole" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketParticipant.MarketRole">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="MarketProductKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:restriction base="ecl:MarketProductTypeList" />
+  </xs:simpleType>
+  <xs:complexType name="MarketProduct" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketProduct">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="marketProductType" type="TargetNamespace:MarketProductKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketProduct.marketProductType">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:restriction base="ecl:RoleTypeList" />
+  </xs:simpleType>
+  <xs:complexType name="MarketRole" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketRole">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="type" type="TargetNamespace:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketRole.type">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Order_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#MarketDocument">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="TargetNamespace:ID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="revisionNumber" type="TargetNamespace:ESMPVersion_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Document.revisionNumber">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ProcessKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:restriction base="ecl:ProcessTypeList" />
+  </xs:simpleType>
+  <xs:complexType name="Process" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Process">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="processType" type="TargetNamespace:ProcessKind_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Process.processType">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ResourceID_String-base" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="60" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#String">
+    <xs:simpleContent>
+      <xs:extension base="TargetNamespace:ResourceID_String-base">
+        <xs:attribute name="codingScheme" type="ecl:CodingSchemeTypeList" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RegisteredDistributedResource" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#RegisteredDistributedResource">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="TargetNamespace:ResourceID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#IdentifiedObject.mRID">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="YMDHM_DateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#DateTime">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="((([0-9]{4})[\-](0[13578]|1[02])[\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\-]((0[469])|(11))[\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\-](02)[\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\-](02)[\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9])Z)" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#DateTimeInterval">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="start" type="TargetNamespace:YMDHM_DateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#DateTimeInterval.start">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="end" type="TargetNamespace:YMDHM_DateTime" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#DateTimeInterval.end">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Series_Period" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Period">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="resolution" type="xs:duration" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Period.resolution">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="timeInterval" type="TargetNamespace:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Period.timeInterval">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Time_Period" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Period">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="timeInterval" type="TargetNamespace:ESMP_DateTimeInterval" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#Period.timeInterval">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TimeSeries" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#TimeSeries">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="TargetNamespace:ID_String" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="MarketHorizon_Period" type="TargetNamespace:Series_Period" sawsdl:modelReference="http://iec.ch/TC57/2010/CIM-schema-cim100#TimeSeries.Period">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

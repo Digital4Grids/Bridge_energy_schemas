@@ -1,0 +1,327 @@
+**Releasenotes v1.12 06-02-2026**
+New message (re)created CEEDS_ReferenceEnergyCurveMinMaxOperatingEnveloppe Document
+MetaInformation class restructured: new attributes regionConnection and regionCountry, asset attribue=te deleted
+Region class replaced by Asset class with attributes type, operatorId and meterId
+
+BusinessKind extended with entry connectionLimit
+**Releasenotes v1.11 31-01-2026**
+New message created Activation Test Document
+MetaInformation class extended with new attribute defaultValues
+
+
+**Releasenotes v1.10 12-01-2026**
+Add "(Explicit)" to the name of IEC62746-4-1 Ed.1
+
+Add "(Implicit)" to the name of IEC62746-4-2 Ed.1
+
+Updated date and version number of IEC62746-4-1ESMPVersion
+Date: 2026-01-12
+Version: 02v01
+
+Updated date and version number of IEC62746-4-2ESMPVersion
+Date: 2026-01-12
+Version: 02v01
+
+Added Physical Meter ID and Accounting Point ID(s) to RTD
+QualityTypeKind attributes updated:
+InstantaneousVoltage_A was misspelled and should be called InstantaneousCurrent_A
+InstantaneousVoltage_A_in_phase_neutral was misspelled and should be called InstantaneousCurrent_A_in_phase_neutral
+separate the words with additional underscores (_)?
+Total_Active_Energy_Consumed_import_kWh instead of TotalActiveEnergyConsumed_import_kWh
+
+
+**Releasenotes v1.10 07-01-2026**
+Renamed EDDIE stereotype to CEEDS (Common European Enewrgy Data Space)
+Added the CEEDS_Extension packages with the imported Permission class from ESMPv5.0
+
+[Model.ProfilesIEC62325.CEEDS_Profiles]
+CEEDS Request Permission Document
+synchronised the MessageDocumentHeader section with all optional attributes
+Based the message on the original Permission class, thus making it a CIM compliant instead of CIM-like.
+
+CEEDS ValidatedHistoricalData Document
+synchronised the MessageDocumentHeader section with all optional attributes
+Made the Quantity.type optional as this is the OBIS code translation for direct meter access following the DLMS/COSEM standard.
+
+CEEDS RealTimeData Document
+synchronised the MessageDocumentHeader section with all optional attributes
+Added the (optional) Accountingpoint to the model
+
+CEEDS RedistributionTransactionRequest Document
+synchronised the MessageDocumentHeader section with all optional attributes
+
+[Model.ProfilesIEC62325.IEC62746-4-1 Ed.1].ReferenceEnergyCurveRealTimeData Document
+Added the (optional) Accountingpoint to the model
+
+[Model.ProfilesIEC62325.IEC62746-4-2 Ed.1.ReferenceEnergyCurveRealTimeData Document]
+Added the (optional) Accountingpoint to the model
+
+
+**Releasenotes v1.05 23-07-2025**
+Extended the CodingSchemeTypeLists of the non-CIMEDDIE  Accountingpoint and Permission messages
+
+**Releasenotes v1.04 24-06-2025**
+EDDIE RealTimeData Document diagram remodelled. No functional changes.
+
+**Releasenotes v1.03 11-06-2025**
+Check-out version
+
+
+**Releasenotes v01.01 - 04-06-2025** 
+File name changed to iec61970cim18v02_iec61968cim14v00_iec62325cim04v14_ESMPcim04v01_iec62746cim01v01.eapiec61970cim18v02_iec61968cim14v00_iec62325cim04v14_baseline_WG21Profiles_v6-dcbel_v0.92.eap should be deprecated.
+
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.1 ESMP.ReferenceEnergyCurveNearRealTimeMeasurement contextual model]
+Change of EvaluationMarketPoint class to AccountingPoint class
+
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.2 ESMP.ReferenceEnergyCurveNearRealTimeMeasurement contextual model]
+Change of EvaluationMarketPoint class to AccountingPoint class
+
+[Model.EuropeanStyleMarketProfile.IEC62325-351 Ed.3.IEC62746DataTypes]
+Creation of QuantityTypeKind enumeration
+
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.1 ESMP.ReferenceEnergyCurveRealTimeData contextual model]
+Creation of the contextual model
+
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.2 ESMP.ReferenceEnergyCurveRealTimeData contextual model]
+Creation of the contextual model
+
+[Model.ProfilesIEC62325.EDDIE_Profiles.RealTimeData Document.Pre-standardized CIM version]
+QuantityTypeKind datatype from IEC62746DataTypes selected for Quantity.type attribute instead of datatype from EDDIE_ESMP_Ext
+
+[Model.ProfilesIEC62325.EDDIE_Profiles.RealTimeData Document.Project version RTD]
+QuantityTypeKind datatype from IEC62746DataTypes selected for Quantity.type attribute instead of datatype from EDDIE_ESMP_Ext
+
+[Model.EuropeanStyleMarketProfile.IEC62325-351 Ed.3.EDDIE_ESMP_Ext]
+Suppresssion of QuantityTypeKind enumeration
+
+**Releasenotes v0.92.09 - 02-06-2025**
+[Model.ProfilesIEC62325.EDDIE_Profiles.ValidatedHistoricalData Document]
+Made the attribute TimeSeries.energyQuality_Measurement_Unit.name optional
+
+**Releasenotes v0.92.08 - 23-05-2025**
+[Model.ProfilesIEC62325.EDDIE_Profiles.ValidatedHistoricalData Document]
+
+With the creation of version v0.91.08 using the CimConteXtor tooling for the Validated Historical Data, some attribute were left out inadvertedly. This was corrected. It concerned:
+For the VHD Market Document class: Description, RevisionNumber,  Type
+For TimeSeries class: mRID, product, businessType, EnergyQualityMeasurementUnitName
+For RegisteredResource: Name, Description, LocationName, CapacityList
+
+
+**Releasenotes v0.92.07 - 22-05-2025**
+[Model.ProfilesIEC62325.IEC 62746-4 Ed.1 ESMP.CommodityPriceExchange contextual model]
+Change of diagram name from "CommodityPrice Exchange contextual model" to "CommodityPriceExchange contextual model"
+
+[Model.ProfilesIEC62325.IEC62746-4-1 Ed.1.CommodityPriceExchange contextual model]
+Change of diagram name from "CommodityPrice Exchange contextual model" to "CommodityPriceExchange contextual model"
+
+[Model.ProfilesIEC62325.IEC62746-4-2 Ed.1.CommodityPriceExchange contextual model]
+Change of diagram name from "CommodityPrice Exchange contextual model" to "CommodityPriceExchange contextual model"
+
+
+**Releasenotes v0.92.06 - 15-04-2025**
+[Model.ProfilesIEC62325.EDDIE_Profiles.RealTimeData Document]
+Repaired a problem with Quant‌ity class of Realtime data document contextual model refering to the QuantityKind for the prestandardised versions.
+
+[Model.ProfilesIEC62325.EDDIE_Profiles.ValidatedHistoricalData Document]
+Repaired the 'VHD' qualifier that was inadvertedly copy/pasted as 'RTD'.
+
+**Releasenotes v0.92.05 - 14-04-2025**
+Checkout version to prevent synchronisation issues between Francois and Wout
+
+Releasenotes v0.92.04 - 23-03-2025
+IEC62746-4 Ed1. ESMP
+1) Updated MarketDER
+* Suppressed link between Domain and MarketDER_MarketDERDocument
+* Created link between Domain and RegisteredResource as Connecting_Domain
+* Added zPosition as optional in PositionPoint library
+* Created Assembly model
+
+2) Suppressed ReferenceEnergyCurveBaselineNotification Document
+3) Suppressed ReferenceEnergyCurveFlexOffer Document
+4) Suppressed ReferenceEnergyCurveHistoricalData Document
+5) Suppressed ReferenceEnergyCurveImbalance Document
+6) Suppressed ReferenceEnergyCurveNearRealTimeMeasurement Document
+7) Suppressed ReferenceEnergyCurveOperatingEnvelope Document
+
+IEC62746-4-1 Ed.1 (Explicit)
+1) Added Business Process
+2) Added CommodityPriceExchange Document
+3) Added MarketDER Document
+4) Added MarketDERInstruction Document
+5) Added ReferenceEnergyCurveBaselineNotification Document
+6) Added ReferenceEnergyCurveFlexOffer Document
+7) Added ReferenceEnergyCurveHistoricalData Document
+8) Added ReferenceEnergyCurveImbalance Document
+9) Added ReferenceEnergyCurveNearRealTimeMeasurement Document
+10) Added ReferenceEnergyCurveOperatingEnvelope Document
+
+IEC62746-4-2 Ed.1 (Implicit)
+1) Added Business Process
+2) Added CommodityPriceExchange Document
+3) Added MarketDER Document
+4) Added MarketDERInstruction Document
+5) Added ReferenceEnergyCurveBaselineNotification Document
+6) Added ReferenceEnergyCurveFlexOffer Document
+7) Added ReferenceEnergyCurveHistoricalData Document
+8) Added ReferenceEnergyCurveImbalance Document
+9) Added ReferenceEnergyCurveNearRealTimeMeasurement Document
+10) Added ReferenceEnergyCurveOperatingEnvelope Document
+
+
+Release notes v0.92.03 - March 2025
+1)Package names made unique. Several messages had the same name "Project Version" 
+2)Repaired a problem with attribute documentType of MetaInformation ACC and ABIEs classes.
+3)Repaired a problem with Quant‌ity class of ValidatedHistoricalData contextual model refering to the QuantityKind.
+
+
+Release notes v0.92.02 - 05 March 2025
+
+1) Added the Official IEC62746-4 Ed1 CIM model in "ProfilesIEC62325" directory under the name "62746-4 Ed1 - Official" for reference of all the changes to create an ESMP model
+Model geenerated from the official UCA xml files.
+
+2)  
+
+
+Release notes v0.91.08 - 03 Febr. 2025
+
+Split the messages in two versions: pre-standardised and project version.The last one has anadded toplevel Enveloppe class branching into the MarketDocument tree (=pre-standardised) and a branch with contextual data (MarketDocumentHeader).
+
+Renamed the messages avoiding abbreviations conform the IEC 62746-4 example
+VHD -> ValidatedHistoricalData Document
+RTD -> RealTimeData Document
+RTR -> RedistributionTransactionRequest Document
+
+Removed the Legend object in the VHD messages to the folder Object Container to avoid error with CIMSyntaxGen.
+
+
+Release notes v0.91.07 - 20 Jan. 2025
+
+Added the Project EDDIE Accountingpoint and Permission message definitions. These messages are not generated by the CimConteXtor tooling as they need the Permission  and Accountingpoint ESMP definitions which are under construction.
+
+Release notes v0.91.06 - 12 Dec. 2024
+
+
+Integration of the IEC 62746-4 repository with the Project EDDIE repository
+
+IEC 62746-4
+Copied the ResourceQualification message from the Interrface package to the 62846_Profiles package
+
+Project EDDIE
+1) Incorporated the EDDIE_Extension package under the root Model (CIM level) with:
+* the Enveloppe class (Message Information Header functionality)
+* CommodityKindExt - EDDIE extensions of the CommodityKind TypeList with an entry for Hydrogen
+
+2) Incorporated the EDDIE_ESMP_Ext package under EuropeanStyleMarketProfile/IEC62325-351 Ed.3 (ESMP level) with:
+* TypeList extensions MessageTypeListEx, RoleTypeListExt, CodingSchemeTypeListExt, StatusTypeListExt and ReasonCodeTypeList
+* Imported enumerations from the IEC61968 Metering profile: AccumulationKind, AggregateKind and CommodityKind.
+* New enumeration QuantityTypeKind for the BRIDGE_RTD (real time Data) message.
+* Import of the ReadingType class from the IEC61968 Metering profile into the ESMP environment with the relation to the Reading class.
+* Import of the Enveloppe classes from her CIM to the ESMP environment
+
+3) EDDIE_Profiles: New message definition for the RTD (real-time data exchange).
+
+
+Release note v0.90.12 - 29 Nov. 2024
+
+IEC 62746-4 repository
+1) Introducing the 62746_Extension package under the root Model (CIM level) with:
+* RegisteredResourceExt - extensions of the RegisteredResource class with attribute isAnAggregate-YesNo.
+* CommodityDefinitionExt - extensions of the CommodityDefinition class
+* MarketDocumentExt extensions of the MarketDocument class 
+* DomainExt extensions of the Domain class
+
+* Added many to many association between RegisteredResourceExt and MarketDocumentExt 
+* Added many to many association between MarketDocumentExt and CommodityDefinitionExt 
+* Added many to many association between DomainExt and CommodityDefinitionExt 
+
+* BidTimeSeriesExt- extensions of the BidTimeSeries class with attribute bindingInstruction - YesNo.
+* PriceExt extensions of the Price class 
+* PeriodExt extensions of the Period class
+* Added many to many association between PriceExt and PeriodExt 
+
+
+2) Incorporated the IEC62746_Classes package under EuropeanStyleMarketProfile/IEC62325-351 Ed.3 (ESMP level) with:
+~IEC62746ClassesCommodity~
+*Added Classes
+CommodityDefinition
+Pnode
+CommodityPrice
+DSRI_MarketRole
+
+Added attribute to existing classes
+marketType and marketType to PriceDescriptor
+IsAnAgregate, isAggregatedRes and registrationStatus to RegisteredResource
+
+Added shared aggregation association (inheritance) to CommodityDefinition from
+Domain
+Pnode
+CommodityPrice
+RegisteredResource
+MarketProduct
+
+Added shared aggregation association (inheritance) to CommodityPrice from
+PriceDescriptor
+
+Added shared aggregation association (inheritance) to MarketParticipant from
+DSRI_MarketRole
+
+~IEC62746ClassesMarketDER~
+*Added Classes
+RegisteredDistributedResource
+ResourceCertification
+ContractResourceCertificationAgreement
+IndividualPnode
+
+
+Added shared aggregation association (inheritance) to RegisteredResource from
+RegisteredDistributedResource
+ResourceCertification
+Pnode
+
+
+Added shared aggregation association (inheritance) to MarketDocument from
+RegisteredResource
+Domain
+
+Added shared aggregation association (inheritance) to Pnode from
+IndividualPnode
+
+
+~IEC62746ESMPEtension~
+Added shared aggregation association (inheritance) to RegisteredResource from
+TimeSeries
+
+~IEC62746Price~
+Added shared aggregation association (inheritance) to Series_Period from
+Price
+
+
+~IMarketDocumentClass~
+Added shared aggregation association (inheritance) to MarketDocument from
+RegisteredResource
+CommodityDefinition
+
+Added shared aggregation association (inheritance) to CommodityDefinition from
+RegisteredResource
+
+
+*Added Datatypes
+MarketType
+YesNo
+ResourceRegistrationStatus
+PriorityKind
+PriceTypeKind
+QuantityTypeKind
+
+
+3) 62746_Profiles: message definitions 
+CommodityPriceExchange Document
+MarketDER Document
+MarketDERBidOffer Document
+MarketDERInstruction Document
+ReferenceEnergyCurve Document
+
+
+
+
+
