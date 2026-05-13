@@ -1,0 +1,1236 @@
+{
+    "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/Grid-Hosting-Capacity-Document-assembly-model.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Grid-Hosting-Capacity-Document-assembly-model  profile generated 2026-05-13 12:12:10.564867",
+    "description": "",
+    "namespace": "http://iec.ch/TC57/2020/Grid-Hosting-Capacity-Document-assembly-model#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "GHC_Envelope": {
+            "$ref": "#/definitions/GHC_Envelope"
+        }
+    },
+    "definitions": {
+        "Grid-Hosting-Capacity-Document-assembly-model": {
+            "$ref": "#"
+        },
+        "Asset": {
+            "id": "#Asset",
+            "title": "Asset",
+            "description": "asset is an energy data space specific attribute referring to the Asset from which data is being requested",
+            "modelReference": "http://iec.ch/TC57/CIM100#Asset",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "meterId": {
+                    "description": "meterId is an energy data space specific attribute that specifies the id of the meter that measures the asset.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Asset.meterId",
+                    "type": "string"
+                },
+                "operatorId": {
+                    "description": "operatorId is an energy data space specific attribute that specifies the id operator of the asset refered to.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Asset.operatorId",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "type is an energy data space specific attribute that specifies type of asset refered to.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Asset.type",
+                    "type": "string"
+                }
+            }
+        },
+        "Cadastre": {
+            "id": "#Cadastre",
+            "title": "Cadastre",
+            "description": "A singular complete record of all land parcels within some hierarchical level of administrative jurisdiction.  The cadastre provides the ability to find the results of land parcel surveys typically used for land management and planning.",
+            "modelReference": "http://iec.ch/TC57/CIM100#Cadastre",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in IETF RFC 4122, for the mRID. The use of UUID is strongly recommended.\r\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.mRID",
+                    "type": "string"
+                },
+                "administrationLevel": {
+                    "description": "Administrative level is referring to the organisation that is administrative authority for managing the a hierarchical division of a geographic area into land, property groups. This typically established by government that has the responsibility of managing governance, services, taxation, and legal jurisdiction, such as municipalities, townships, counties, or regions.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.administrationLevel",
+                    "type": "string"
+                },
+                "aliasName": {
+                    "description": "The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy.\r\nThe attribute aliasName is retained because of backwards compatibility between CIM releases. It is however recommended to replace aliasName with the Name class as aliasName is planned for retirement at a future time.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.aliasName",
+                    "type": "string"
+                },
+                "cadastralReference": {
+                    "description": "Local or national unique identification reference for the cadastral  for land parcel, ensuring effective land management, ownership tracking, and legal compliance.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.cadastralReference",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.description",
+                    "type": "string"
+                },
+                "energyIdentCodeEic": {
+                    "description": "The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code. For details on EIC scheme please refer to ENTSO-E web site.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.energyIdentCodeEic",
+                    "type": "string"
+                },
+                "identifier": {
+                    "description": "A universally unique object identifier. Used to uniquely identify persistent objects between CIM messages.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.identifier",
+                    "type": "string",
+                    "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                },
+                "levelFourDivision": {
+                    "description": "Level Four Division refers to a further subdivision of a Level Three Division within a cadastral hierarchy, typically used to represent specific units or sections within a shared property or structure, such as apartments, condominiums, or co-owned facilities.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.levelFourDivision",
+                    "type": "string"
+                },
+                "levelOneDivision": {
+                    "description": "Level One Division refers to the highest organizational or reference unit within a cadastral hierarchy, typically representing a primary division of land, such as a farm or property group, which can be further subdivided into smaller parcels.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.levelOneDivision",
+                    "type": "string"
+                },
+                "levelThreeDivision": {
+                    "description": "Level Three Division refers to a further subdivision of a Level Two Division within a cadastral hierarchy, typically used to represent specialized land units such as leased parcels, easements, or other secondary divisions associated with distinct legal or usage rights.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.levelThreeDivision",
+                    "type": "string"
+                },
+                "levelTwoDivision": {
+                    "description": "Level Two Division refers to a subdivision of a Level One Parcel within a cadastral hierarchy, representing smaller, distinct land units typically used for individual ownership, usage, or development, such as specific plots or lots within a farm or property group.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.levelTwoDivision",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.name",
+                    "type": "string"
+                },
+                "shortName": {
+                    "description": "The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.shortName",
+                    "type": "string"
+                },
+                "PhysicalAddress": {
+                    "description": "Physical addresses encompassed within a given cadastre.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Cadastre.PhysicalAddress",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PhysicalAddress"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "Circle": {
+            "id": "#Circle",
+            "title": "Circle",
+            "description": "A circular area in space, described by a center point and radius. Any circle object must have a center and an outer radius and may have an inner radius. If an inner radius is specified, the area within the inner radius is to be excluded from the area within the outer radius, forming a ring shape.",
+            "modelReference": "http://iec.ch/TC57/CIM100#Circle",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "innerRadius": {
+                    "description": "A circle may have an inner radius. If specified the area described by the inner radius is to be excluded from the area within the outer radius, forming a ring shape.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Circle.innerRadius",
+                    "$ref": "#/definitions/ESMP_Length"
+                },
+                "outerRadius": {
+                    "description": "Every circle must have an outer radius which describes the outer limit of the circular area.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Circle.outerRadius",
+                    "$ref": "#/definitions/ESMP_Length"
+                },
+                "CircleCenterPositionPoint": {
+                    "description": "A point representing the center of a circular area. Any circle object must have one CircleCenter.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Circle.CircleCenterPositionPoint",
+                    "$ref": "#/definitions/PositionPoint"
+                }
+            }
+        },
+        "Geometry": {
+            "id": "#Geometry",
+            "title": "Geometry",
+            "description": "Geo-spatial representation of a physical location. A location may be represented as a Point, Line, Polygon, or Circle.",
+            "modelReference": "http://iec.ch/TC57/CIM100#Geometry",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in IETF RFC 4122, for the mRID. The use of UUID is strongly recommended.\r\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Geometry.mRID",
+                    "type": "string"
+                },
+                "coordinateSystem.crsUrn": {
+                    "description": "A Uniform Resource Name (URN) for the coordinate reference system (crs) used to define 'Location.PositionPoints'.\r\nAn example would be the European Petroleum Survey Group (EPSG) code for a coordinate reference system, defined in URN under the Open Geospatial Consortium (OGC) namespace as: urn:ogc:def:uom:EPSG::XXXX, where XXXX is an EPSG code (a full list of codes can be found at the EPSG Registry web site http://www.epsg-registry.org/). To define the coordinate system as being WGS84 (latitude, longitude) using an EPSG OGC, this attribute would be urn:ogc:def:uom:EPSG::4236.\r\nA profile should limit this code to a set of allowed URNs agreed to by all sending and receiving parties.\n\r--- The coordinate system used for a given geometry.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#coordinateSystem.crsUrn",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Geometry.name",
+                    "type": "string"
+                },
+                "Polygon": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Geometry.Polygon",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Polygon"
+                    },
+                    "minItems": 0
+                },
+                "LinearCoordinate": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Geometry.LinearCoordinate",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LinearCoordinate"
+                    },
+                    "minItems": 0
+                },
+                "PositionPoint": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Geometry.PositionPoint",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PositionPoint"
+                    },
+                    "minItems": 0
+                },
+                "LineElement": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Geometry.LineElement",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LineElement"
+                    },
+                    "minItems": 0
+                },
+                "Circle": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Geometry.Circle",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Circle"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "GHC_Envelope": {
+            "id": "#GHC_Envelope",
+            "title": "GHC_Envelope",
+            "description": "The envelope entity  is a non-CIM object used in an energy data space environment to serve as a central top-level entity connecting the MarketDocumentHeader (energy data space specific context information block) with the regular CIM MarketDocument.",
+            "modelReference": "http://iec.ch/TC57/CIM100#Envelope",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "MessageDocumentHeader": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Envelope.MessageDocumentHeader",
+                    "$ref": "#/definitions/MessageDocumentHeader"
+                },
+                "MarketDocument": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Envelope.MarketDocument",
+                    "$ref": "#/definitions/GHC_MarketDocument"
+                }
+            }
+        },
+        "GHC_MarketDocument": {
+            "id": "#GHC_MarketDocument",
+            "title": "GHC_MarketDocument",
+            "description": "An electronic document containing the information necessary to satisfy the requirements of a given business process.",
+            "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "The unique identification of the document being exchanged within a business process flow.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as a party (originator of the exchange) that provides an identification in the context of a business exchange such as document identification, ...\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.mRID",
+                    "$ref": "#/definitions/ID_String"
+                },
+                "createdDateTime": {
+                    "description": "The date and time of the creation of the document.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.createdDateTime",
+                    "$ref": "#/definitions/ESMP_DateTime"
+                },
+                "description": {
+                    "description": "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.description",
+                    "type": "string"
+                },
+                "legalInformationText": {
+                    "description": "Text with the required legal information from the information provider (Connecting System operator=CSO) ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.legalInformationText",
+                    "type": "string"
+                },
+                "legalInformationWebsites": {
+                    "description": "\t\r\nURL pointing to the required legal information from the information provider (Connecting System operator=CSO) ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.legalInformationWebsites",
+                    "type": "string"
+                },
+                "publishedDateTime": {
+                    "description": "The date time the legal information is published",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.publishedDateTime",
+                    "type": "string",
+                    "pattern": "^(-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)$"
+                },
+                "receiver_MarketParticipant.mRID": {
+                    "description": "The identification of a party in the energy market.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.\n\r--- The MarketParticipant associated with an electronic document header.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.mRID",
+                    "$ref": "#/definitions/PartyID_String"
+                },
+                "receiver_MarketParticipant.marketRole.type": {
+                    "description": "The identification of the role played by a market player.\n\r\n\r--- The MarketParticipant associated with an electronic document header.\n\r--- The role associated with a MarketParticipant.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#marketRole.type",
+                    "$ref": "#/definitions/MarketRoleKind_String"
+                },
+                "receiver_MarketParticipant.name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.\n\r--- The MarketParticipant associated with an electronic document header.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.name",
+                    "type": "string"
+                },
+                "revisionNumber": {
+                    "description": "The identification of the version that distinguishes one evolution of a document from another.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.revisionNumber",
+                    "$ref": "#/definitions/ESMPVersion_String"
+                },
+                "sender_MarketParticipant.mRID": {
+                    "description": "The identification of a party in the energy market.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.\n\r--- The MarketParticipant associated with an electronic document header.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.mRID",
+                    "$ref": "#/definitions/PartyID_String"
+                },
+                "sender_MarketParticipant.marketRole.type": {
+                    "description": "The identification of the role played by a market player.\n\r\n\r--- The MarketParticipant associated with an electronic document header.\n\r--- The role associated with a MarketParticipant.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#marketRole.type",
+                    "$ref": "#/definitions/MarketRoleKind_String"
+                },
+                "sender_MarketParticipant.name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.\n\r--- The MarketParticipant associated with an electronic document header.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.name",
+                    "type": "string"
+                },
+                "ServiceArea": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.ServiceArea",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ServiceArea"
+                    },
+                    "minItems": 0
+                },
+                "VoltageLevel": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.VoltageLevel",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/VoltageLevel"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "HostingCapacity": {
+            "id": "#HostingCapacity",
+            "title": "HostingCapacity",
+            "description": "A structure for a set of information on grid hosting capacity.",
+            "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacity",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in IETF RFC 4122, for the mRID. The use of UUID is strongly recommended.\r\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacity.mRID",
+                    "type": "string"
+                },
+                "capacityDataDetails": {
+                    "description": "Informational field for further information on \r\n<ul>\r\n\t<li>timing (e.g. is time for capacity available for connection a <b>snapshot </b>or is it the time when connection can be <b>performed</b>) </li>\r\n</ul>\r\n<ul>\r\n\t<li>description of the SO description of the data provided, </li>\r\n\t<li>description of the meaning of the different colours</li>\r\n</ul>",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacity.capacityDataDetails",
+                    "type": "string"
+                },
+                "firstConnectionYear": {
+                    "description": "The year that the capacity is applicable. ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacity.firstConnectionYear",
+                    "type": "string"
+                },
+                "identifier": {
+                    "description": "A universally unique object identifier. Used to uniquely identify persistent objects between CIM messages.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacity.identifier",
+                    "type": "string",
+                    "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                },
+                "name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacity.name",
+                    "type": "string"
+                },
+                "publicationDate": {
+                    "description": "The date when the data was produced or when it can be available ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacity.publicationDate",
+                    "type": "string",
+                    "pattern": "^(-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)$"
+                },
+                "HostingCapacityDetails": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacity.HostingCapacityDetails",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/HostingCapacityDetail"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "HostingCapacityDetail": {
+            "id": "#HostingCapacityDetail",
+            "title": "HostingCapacityDetail",
+            "description": "A structure for grid hosting capacity information at a certain year and duration for a certain customerconnectiontype.",
+            "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "FlexibleConnectionCapacity": {
+                    "description": "Information on possibility of flexible connection capacity in MW. Requirement for grid hosting capacity information in (EU) 2019/943 and (EU) 2019/944",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.FlexibleConnectionCapacity",
+                    "type": "integer"
+                },
+                "appliesFromYear": {
+                    "description": "The year that the capacity is first applicable.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.appliesFromYear",
+                    "type": "integer"
+                },
+                "capacityAvailableForConnection": {
+                    "description": "Information on firm capacity available for new connections in MW. Requirement for grid hosting capacity information in (EU) 2019/943 and (EU) 2019/944  ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityAvailableForConnection",
+                    "type": "integer"
+                },
+                "capacityUnderConnectionRequest": {
+                    "description": "Information on connections requests in \r\nMW. Requirement for grid hosting capacity \r\ninformation in (EU) 2019/943 and (EU) \r\n2019/944 ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityUnderConnectionRequest",
+                    "type": "integer"
+                },
+                "customerConnectionType": {
+                    "description": "Information on customer connection types for which grid hosting capacity information is applicable.\r\n\r\nPossible values are:\r\n\r\n<b>Consumption</b>\r\n<b>Production\r\n</b><b><sup>Energy storage\r\n</sup></b><b>Hybrid park </b>",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerConnectionType",
+                    "$ref": "#/definitions/CustomerConnectionTypeKind"
+                },
+                "customerSubConnectionType": {
+                    "description": "Information on customer connection types (subgroups) for which grid hosting capacity information is applicable.\r\n\r\nPossible values are:\r\n<b>Solar</b>\r\n<b>Wind\r\n</b><b><sup>EV charger</sup></b>\r\n<b><sup>Industry</sup></b>",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerSubConnectionType",
+                    "$ref": "#/definitions/CustomerSubConnectionTypeKind"
+                },
+                "customerSubSubConnectionType": {
+                    "description": "Information on customer connection types (subsubgroups) for which grid hosting capacity information is applicable.\r\n\r\nPossible values are:\r\n\r\n<b><sup>EV charger light vehicle </sup></b>\r\n<b><sup>EV charger heavy duty vehicle\r\nIndustry - High usage\r\nIndustry - Average usage  </sup></b>",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerSubSubConnectionType",
+                    "$ref": "#/definitions/CustomerSubSubConnectionTypeKind"
+                },
+                "durationApplicable": {
+                    "description": "The period in years starting from appliesYearFrom that the capacity is available.\r\n\r\nSo:\r\nappliesYearFrom=2028\r\ndurationApplicable=2\r\n\r\nresulting period: 2028-2030",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.durationApplicable",
+                    "type": "integer"
+                },
+                "levelOfFlexibility": {
+                    "description": "Description of flexible connection agreement (e.g. \" 2 percent of yearly energy\", \"20 percent of capacity\", \"seasonal difference of capacity') ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.levelOfFlexibility",
+                    "type": "string"
+                },
+                "totalCapacity": {
+                    "description": "Information on total capacity in MW.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.totalCapacity",
+                    "type": "integer"
+                },
+                "withConsiderationOfCapacityFromOverlyingGrid": {
+                    "description": "The capacity shown is with (TRUE) or without (FALSE) consideration of available capacity from overlying grid. ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.withConsiderationOfCapacityFromOverlyingGrid",
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "customerConnectionType",
+                "customerSubConnectionType",
+                "customerSubSubConnectionType"
+            ]
+        },
+        "LinearCoordinate": {
+            "id": "#LinearCoordinate",
+            "title": "LinearCoordinate",
+            "description": "Specifies a point on a line segment, including a sequence number and bulge. To visualize the line segment, each linear coordinate is to be connected in the order specified by the sequence attribute. Each linear coordinate must have a sequence value.",
+            "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "bulge": {
+                    "description": "Bulge is a factor that describes a curved line segment between two points. bulge=0 is a straight line: bulge=1 is a curve along the edge of a circle.  A bulge can be associated only with the second point of a line segment.  A negative bulge factor causes the line to bulge to the left as viewed from the first point to the second; a positive bulge causes the line to be curved to the right as viewed from the first point to the second.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate.bulge",
+                    "type": "number"
+                },
+                "relativeHeight.verticalOffset": {
+                    "description": "Distance above (positive value) or below (negative value) the specified vertical offset reference.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#relativeHeight.verticalOffset",
+                    "$ref": "#/definitions/ESMP_Length"
+                },
+                "relativeHeight.verticalOffsetReference": {
+                    "description": "The height from which vertical offset is measured. Examples include \u201cGround Level\u201d, \u201cPole Top\u201d, \u201cTower Top\u201d, etc.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#relativeHeight.verticalOffsetReference",
+                    "type": "string"
+                },
+                "sequenceNumber": {
+                    "description": "The order in which linear coordinates are to be connected to form the line described. Sequence is required for all linear coordinates.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate.sequenceNumber",
+                    "type": "integer"
+                },
+                "Line": {
+                    "description": "A line defined by linear coordinates.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate.Line",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LineElement"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "LineElement": {
+            "id": "#LineElement",
+            "title": "LineElement",
+            "description": "A geometric line segment, described by 2 or more coordinate tuples with linear interpolation between them. A line must contain at least 2 linear coordinates.",
+            "modelReference": "http://iec.ch/TC57/CIM100#LineElement",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {}
+        },
+        "Location": {
+            "id": "#Location",
+            "title": "Location",
+            "description": "The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It can be defined with one or more position points (coordinates) in a given coordinate system.",
+            "modelReference": "http://iec.ch/TC57/CIM100#Location",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "The unique identification of a location.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification, location, etc.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Location.mRID",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Location.name",
+                    "type": "string"
+                },
+                "Site": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Location.Site",
+                    "$ref": "#/definitions/Site"
+                },
+                "Geometry": {
+                    "description": "The geometry for a given location.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Location.Geometry",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Geometry"
+                    },
+                    "minItems": 0
+                },
+                "Cadastre": {
+                    "description": "Cadastre encompassing a location.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Location.Cadastre",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Cadastre"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "MessageDocumentHeader": {
+            "id": "#MessageDocumentHeader",
+            "title": "MessageDocumentHeader",
+            "description": "MessageDocumentHeader  is an energy data space specific entity with the creationDateTime of this document. ",
+            "modelReference": "http://iec.ch/TC57/CIM100#MessageDocumentHeader",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "creationDateTime": {
+                    "description": "The date and time the MessageDocumenHeader was created. ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MessageDocumentHeader.creationDateTime",
+                    "$ref": "#/definitions/ESMP_DateTime"
+                },
+                "MetaInformation": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MessageDocumentHeader.MetaInformation",
+                    "$ref": "#/definitions/MetaInformation"
+                }
+            }
+        },
+        "MetaInformation": {
+            "id": "#MetaInformation",
+            "title": "MetaInformation",
+            "description": "MetaInformation is an energy data space specific entity referring to the information concerning the technical and functional context of the MarketDocument.",
+            "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "connectionId": {
+                    "description": "connectionId is an energy data space specific attribute referring to the established connection used for the communication of this document.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.connectionId",
+                    "type": "string"
+                },
+                "dataNeedId": {
+                    "description": "dataNeedId is an energy data space specific attribute holding the type of data need requested, like \u2018last 24 hours at 1 hour interval\u201d.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.dataNeedId",
+                    "type": "string"
+                },
+                "dataSourceId": {
+                    "description": "dataSourceId is an energy data space specific attribute referring to the datasource from which the requested data is being queried.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.dataSourceId",
+                    "type": "string"
+                },
+                "defaultValues": {
+                    "description": "defaultValues is a energy data space specific attribute to hold relevant default values. The format to use can freely be chosen based on the implementation. Most commonly you would expect a semi-colon separated name value pair, like: \"minPower=value; maxPower=value; avgPower=value\".",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.defaultValues",
+                    "type": "string"
+                },
+                "documentType": {
+                    "description": "documentType is an energy data space specific attribute referring to the type of document, comparable to the MessageTypeList in the CIM part of the message.\r\nNote:\r\nThis is applicable if you have the need to know the content without having to open the complete document. DocumentType might contain messages not (yet) part of the MessageTypeList.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.documentType",
+                    "type": "string"
+                },
+                "finalCustomerId": {
+                    "description": "The finalCustomerId  is an energy data space specific attribute identifying the actor doing the request for data or data sharing.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.finalCustomerId",
+                    "type": "string"
+                },
+                "regionConnector": {
+                    "description": "regionConnector is an energy data space specific attribute that specifies the regional connector being used to retrieve the data requested. ",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.regionConnector",
+                    "type": "string"
+                },
+                "regionCountry": {
+                    "description": "regionCountry is an energy data space specific attribute that specifies the country where the regional connector is located.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.regionCountry",
+                    "type": "string"
+                },
+                "requestPermissionId": {
+                    "description": "The requestPermissionId is energy data space specific identification attribute holding an unique identifier issued by the energy data space to allow for tracing of the permission through serveral message exchanges.\r\nNote: the requestPermissionId is NOT the identifier issued by the Identity Service Provider as specified in the EU Implementing Act on access to Metering and Consumption Data.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.requestPermissionId",
+                    "type": "string"
+                },
+                "Asset": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.Asset",
+                    "$ref": "#/definitions/Asset"
+                }
+            }
+        },
+        "PhysicalAddress": {
+            "id": "#PhysicalAddress",
+            "title": "PhysicalAddress",
+            "description": "The structured geographic and administrative context of a physical place  where an organisation, person, or activity is located. \r\n\r\nPhysicalAddress is used for precisely identifying, classifying, and locating entities for regulatory, logistical, or informational purposes.",
+            "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in IETF RFC 4122, for the mRID. The use of UUID is strongly recommended.\r\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.mRID",
+                    "type": "string"
+                },
+                "aliasName": {
+                    "description": "The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy.\r\nThe attribute aliasName is retained because of backwards compatibility between CIM releases. It is however recommended to replace aliasName with the Name class as aliasName is planned for retirement at a future time.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.aliasName",
+                    "type": "string"
+                },
+                "cityCode": {
+                    "description": "City code.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.cityCode",
+                    "type": "string"
+                },
+                "cityName": {
+                    "description": "Name of the city.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.cityName",
+                    "type": "string"
+                },
+                "community": {
+                    "description": "Community in which the locality is, and which is in the municipality, city or town.. For example, Anderston, Glasgow City, Scotland or another appropriate fourth-level administrative division",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.community",
+                    "type": "string"
+                },
+                "country": {
+                    "description": "Name of the country in which the address is located. It is recommended to use either the 3-letter ISO 3166-1 alpha 3 code such as \"SGP,\" or the full country name such as \"Singapore.\"",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.country",
+                    "type": "string"
+                },
+                "county": {
+                    "description": "Name of the second-level Administrative division of a country in which the address is located. The term used for the second-level Administrative division in a county varies from country to country and between first-level Administrative divisions within a country. For example, California has counties, Louisiana has parishes, British Columbia, Canada has regional districts, and Queensland Australia has shires and regions. Counties are usually made up of cities, towns, and rural populations.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.county",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.description",
+                    "type": "string"
+                },
+                "energyIdentCodeEic": {
+                    "description": "The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code. For details on EIC scheme please refer to ENTSO-E web site.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.energyIdentCodeEic",
+                    "type": "string"
+                },
+                "fullAddress": {
+                    "description": "A concatenated string specifying the complete address in a single string which may include delimiters.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.fullAddress",
+                    "type": "string"
+                },
+                "globalLocationNumber": {
+                    "description": "Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.globalLocationNumber",
+                    "type": "string"
+                },
+                "identifier": {
+                    "description": "A universally unique object identifier. Used to uniquely identify persistent objects between CIM messages.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.identifier",
+                    "type": "string",
+                    "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                },
+                "isWithinTownLimits": {
+                    "description": "If TRUE, this street is within the legal geographical boundaries of the specified town (default).",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.isWithinTownLimits",
+                    "type": "boolean"
+                },
+                "isicV4": {
+                    "description": "International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.isicV4",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.name",
+                    "type": "string"
+                },
+                "postalCode": {
+                    "description": "Postal code for the address.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.postalCode",
+                    "type": "string"
+                },
+                "region": {
+                    "description": "Name of the first-level Administrative division of a country in which the address is located. For example, California, Quebec, and Queensland are states and provinces of the United States of America, Canada, and Australia, respectively.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.region",
+                    "type": "string"
+                },
+                "shortName": {
+                    "description": "The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.shortName",
+                    "type": "string"
+                },
+                "status": {
+                    "description": "Current status of the address e.g. pending, approved",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.status",
+                    "$ref": "#/definitions/Status"
+                },
+                "streetCode": {
+                    "description": "(if applicable) Utilities often make use of external reference systems, such as those of the town-planner's department or surveyor general's mapping system, that allocate global reference codes to streets.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.streetCode",
+                    "type": "string"
+                },
+                "streetName": {
+                    "description": "Name of the street.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.streetName",
+                    "type": "string"
+                },
+                "streetNumber": {
+                    "description": "Designator of the specific location on the street.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.streetNumber",
+                    "type": "string"
+                },
+                "streetPrefix": {
+                    "description": "Prefix to the street name. For example: North, South, East, West.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.streetPrefix",
+                    "type": "string"
+                },
+                "streetSuffix": {
+                    "description": "Suffix to the street name. For example: North, South, East, West.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.streetSuffix",
+                    "type": "string"
+                },
+                "suiteNumber": {
+                    "description": "Number of the apartment or suite.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PhysicalAddress.suiteNumber",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "globalLocationNumber",
+                "community",
+                "isicV4",
+                "fullAddress"
+            ]
+        },
+        "Polygon": {
+            "id": "#Polygon",
+            "title": "Polygon",
+            "description": "One or more self-closing line segments representing a polygonal area. In order to be self-closing, the first and last linear coordinates of each line segment must be identical. A polygon must have one outer boundary and may have one or more inner boundaries. If an inner boundary is specified, the area within the inner boundary is to be excluded from the area within the outer boundary. Each line description within a polygon (both outer and inner boundaries) must contain at least 4 linear coordinates.  ",
+            "modelReference": "http://iec.ch/TC57/CIM100#Polygon",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "InnerBoundaryLineElement": {
+                    "description": "Optional for all polygons. If specified, an inner boundary must contain at least 4 linear coordinates. The first and last coordinates in the sequence must be identical. The area described by an inner boundary is to be excluded from the area described by the outer boundary in order to complete the description of a complex polygon. The entire area described by an inner boundary should fall within the area described by the outer boundary.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Polygon.InnerBoundaryLineElement",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LineElement"
+                    },
+                    "minItems": 0
+                },
+                "OuterBoundaryLineElement": {
+                    "description": "One or more self-closing line segments representing a polygonal area. In order to be self-closing, the first and last linear coordinates of each line segment must be identical. A polygon must have one outer boundary and may have one or more inner boundaries. If an inner boundary is specified, the area within the inner boundary is to be excluded from the area within the outer boundary. Each line description within a polygon (both outer and inner boundaries) must contain at least 4 linear coordinates.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Polygon.OuterBoundaryLineElement",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LineElement"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "PositionPoint": {
+            "id": "#PositionPoint",
+            "title": "PositionPoint",
+            "description": "Set of spatial coordinates that determine a point, defined in the coordinate system specified in 'Location.CoordinateSystem'. Use a single position point instance to describe a point-oriented location. Use a sequence of position points to describe a line-oriented object (physical location of non-point oriented objects like cables or lines), or area of an object (like a substation or a geographical zone - in this case, have first and last position point with the same values).",
+            "modelReference": "http://iec.ch/TC57/CIM100#PositionPoint",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "relativeHeight.verticalOffset": {
+                    "description": "Distance above (positive value) or below (negative value) the specified vertical offset reference.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#relativeHeight.verticalOffset",
+                    "$ref": "#/definitions/ESMP_Length"
+                },
+                "relativeHeight.verticalOffsetReference": {
+                    "description": "The height from which vertical offset is measured. Examples include \u201cGround Level\u201d, \u201cPole Top\u201d, \u201cTower Top\u201d, etc.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#relativeHeight.verticalOffsetReference",
+                    "type": "string"
+                },
+                "xPosition": {
+                    "description": "X axis position.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PositionPoint.xPosition",
+                    "type": "string"
+                },
+                "yPosition": {
+                    "description": "Y axis position.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PositionPoint.yPosition",
+                    "type": "string"
+                },
+                "zPosition": {
+                    "description": "(if applicable) Z axis position.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#PositionPoint.zPosition",
+                    "type": "string"
+                }
+            }
+        },
+        "ServiceArea": {
+            "id": "#ServiceArea",
+            "title": "ServiceArea",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in IETF RFC 4122, for the mRID. The use of UUID is strongly recommended.\r\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.mRID",
+                    "type": "string"
+                },
+                "identifier": {
+                    "description": "A universally unique object identifier. Used to uniquely identify persistent objects between CIM messages.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.identifier",
+                    "type": "string",
+                    "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                },
+                "licenseArea.mRID": {
+                    "description": "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in IETF RFC 4122, for the mRID. The use of UUID is strongly recommended.\r\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#licenseArea.mRID",
+                    "type": "string"
+                },
+                "licenseArea.name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#licenseArea.name",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.name",
+                    "type": "string"
+                },
+                "stationName": {
+                    "description": "The human readable name of the station.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.stationName",
+                    "type": "string"
+                },
+                "Location": {
+                    "description": "Location of this power system resource.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.Location",
+                    "$ref": "#/definitions/Location"
+                },
+                "HostingCapacity": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.HostingCapacity",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/HostingCapacity"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "Site": {
+            "id": "#Site",
+            "title": "Site",
+            "description": "Area of ground on which work can be executed, organisation can be hosted, and building (including substation and power line) can be located.",
+            "modelReference": "http://iec.ch/TC57/CIM100#Site",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "PhysicalAddress": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Site.PhysicalAddress",
+                    "$ref": "#/definitions/PhysicalAddress"
+                }
+            }
+        },
+        "UsagePointLocation": {
+            "id": "#UsagePointLocation",
+            "title": "UsagePointLocation",
+            "description": "Location of an individual usage point.",
+            "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "accessMethod": {
+                    "description": "Method for the service person to access this usage point location. For example, a description of where to obtain a key if the facility is unmanned and secured.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.accessMethod",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.description",
+                    "type": "string"
+                },
+                "geoInfoReference": {
+                    "description": "(if applicable) Reference to geographical information source, often external to the utility.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.geoInfoReference",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "Classification by utility's corporate standards and practices, relative to the location itself (e.g., geographical, functional accounting, etc., not a given property that happens to exist at that location).",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.type",
+                    "type": "string"
+                },
+                "Site": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.Site",
+                    "$ref": "#/definitions/Site"
+                },
+                "Geometry": {
+                    "description": "The geometry for a given location.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.Geometry",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Geometry"
+                    },
+                    "minItems": 0
+                },
+                "Cadastre": {
+                    "description": "Cadastre encompassing a location.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.Cadastre",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Cadastre"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "VoltageLevel": {
+            "id": "#VoltageLevel",
+            "title": "VoltageLevel",
+            "description": "For a production unit or a generating unit, the high voltage level at the network side.\r\nFor other network equipment the voltage level.",
+            "modelReference": "http://iec.ch/TC57/CIM100#VoltageLevel",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in IETF RFC 4122, for the mRID. The use of UUID is strongly recommended.\r\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#VoltageLevel.mRID",
+                    "type": "string"
+                },
+                "baseVoltage.nominalVoltage": {
+                    "description": "The power system resource's base voltage, expressed on a phase-to-phase (line-to-line) basis. Shall be a positive value and not zero.\n\r--- The base voltage used for all equipment within the voltage level.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#baseVoltage.nominalVoltage",
+                    "$ref": "#/definitions/ESMP_Voltage"
+                },
+                "highVoltageLimit": {
+                    "description": "The bus bar's high voltage limit",
+                    "modelReference": "http://iec.ch/TC57/CIM100#VoltageLevel.highVoltageLimit",
+                    "$ref": "#/definitions/ESMP_Voltage"
+                },
+                "identifier": {
+                    "description": "A universally unique object identifier. Used to uniquely identify persistent objects between CIM messages.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#VoltageLevel.identifier",
+                    "type": "string",
+                    "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                },
+                "lowVoltageLimit": {
+                    "description": "The bus bar's low voltage limit",
+                    "modelReference": "http://iec.ch/TC57/CIM100#VoltageLevel.lowVoltageLimit",
+                    "$ref": "#/definitions/ESMP_Voltage"
+                },
+                "name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#VoltageLevel.name",
+                    "type": "string"
+                },
+                "UsagePointLocation": {
+                    "description": "Location of this power system resource.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#VoltageLevel.UsagePointLocation",
+                    "$ref": "#/definitions/UsagePointLocation"
+                },
+                "Location": {
+                    "description": "Location of this power system resource.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#VoltageLevel.Location",
+                    "$ref": "#/definitions/Location"
+                }
+            },
+            "required": [
+                "highVoltageLimit"
+            ]
+        },
+        "ESMP_Length": {
+            "id": "#ESMP_Length",
+            "title": "ESMP_Length",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#Length",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "type": "number",
+                    "pattern": "^([0-9]*\\.?[0-9]*)$",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Length.value"
+                },
+                "unit": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/UnitSymbol",
+                    "const": "MTR",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Length.unit"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ]
+        },
+        "ID_String": {
+            "id": "#ID_String",
+            "title": "ID_String",
+            "description": "A code to uniquely distinguish one occurrence of an entity from another.\r\n\r\nIn the ESMP context, the code is defined either by:\r\n- an emitting company that provides an agreed identification unique within a business context such as capacity auction identification, market agreement identification, etc.\r\n- a party (originator of the exchange) that provides a unique identification in the framework of a business exchange such as document identification, time series identification, bid identification, ...",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "maxLength": 60
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ESMPVersion_String": {
+            "id": "#ESMPVersion_String",
+            "title": "ESMPVersion_String",
+            "description": "In ESMP, the coded value is restricted to digits.\r\n\r\nA code that distinguishes one evolution of an identified object from another. Information about a specific object may be sent several times, each transmission being identified by a different version number.",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "pattern": "^[1-9]([0-9]){0,2}$"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ESMP_DateTime": {
+            "id": "#ESMP_DateTime",
+            "title": "ESMP_DateTime",
+            "description": "In ESMP, the dateTime shall be expressed in UTC as YYYY-MM-DDThh:mm:ssZ.",
+            "modelReference": "http://iec.ch/TC57/CIM100#DateTime",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "pattern": "^((([0-9]{4})[\\-](0[13578]|1[02])[\\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\\-]((0[469])|(11))[\\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)$"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "PartyID_String": {
+            "id": "#PartyID_String",
+            "title": "PartyID_String",
+            "description": "The identification of an actor in the energy market.\r\n\r\nIn the ESMP context, it is an authorized issuing office that provides an agreed identification coding scheme for market participant identification.",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codingScheme": {
+                    "description": "DomainQualification.",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/CodingSchemeTypeList",
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.codingScheme"
+                },
+                "value": {
+                    "description": "Main Core value Space.",
+                    "type": "string",
+                    "maxLength": 16,
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.value"
+                }
+            },
+            "required": [
+                "codingScheme",
+                "value"
+            ]
+        },
+        "MarketRoleKind_String": {
+            "id": "#MarketRoleKind_String",
+            "title": "MarketRoleKind_String",
+            "description": "The identification of the role played by a party.",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/RoleTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "CustomerConnectionTypeKind": {
+            "id": "#CustomerConnectionTypeKind",
+            "title": "CustomerConnectionTypeKind",
+            "description": " CODELIST:[3,Energy storage,The customer type relevant for the capacity data is Industry customer \u2013 energy storage,],[4,Hybrid park,,],[2,Production,,],[1,Consumption,,]",
+            "modelReference": "http://iec.ch/TC57/CIM100#CustomerConnectionTypeKind",
+            "$id": "#CustomerConnectionTypeKind",
+            "type": "string",
+            "enum": [
+                "3",
+                "4",
+                "2",
+                "1"
+            ]
+        },
+        "CustomerSubConnectionTypeKind": {
+            "id": "#CustomerSubConnectionTypeKind",
+            "title": "CustomerSubConnectionTypeKind",
+            "description": " CODELIST:[3,EV charger,The customer type relevant for the capacity data is EV chargers Light vehicles ,],[4,Industry,The customer type relevant for the capacity data is Industry customer \u2013 high users ,],[1,Solar,,],[2,Wind,,]",
+            "modelReference": "http://iec.ch/TC57/CIM100#CustomerSubConnectionTypeKind",
+            "$id": "#CustomerSubConnectionTypeKind",
+            "type": "string",
+            "enum": [
+                "3",
+                "4",
+                "1",
+                "2"
+            ]
+        },
+        "CustomerSubSubConnectionTypeKind": {
+            "id": "#CustomerSubSubConnectionTypeKind",
+            "title": "CustomerSubSubConnectionTypeKind",
+            "description": " CODELIST:[1,EV charger light vehicle,The customer type relevant for the capacity data is EV chargers Light vehicles ,],[2,EV charger heavy duty vehicle,The customer type relevant for the capacity data is EV chargers Heavy Duty ,],[3,Industry - High usage,The customer type relevant for the capacity data is Industry customer \u2013 high users ,],[4,Industry - Average usage,The customer type relevant for the capacity data is Industry customer \u2013 average users ,]",
+            "modelReference": "http://iec.ch/TC57/CIM100#CustomerSubSubConnectionTypeKind",
+            "$id": "#CustomerSubSubConnectionTypeKind",
+            "type": "string",
+            "enum": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        "Status": {
+            "id": "#Status",
+            "title": "Status",
+            "description": "Current status information relevant to an entity.",
+            "modelReference": "http://iec.ch/TC57/CIM100#Status",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "dateTime": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Status.dateTime",
+                    "type": "string",
+                    "pattern": "^((([0-9]{4})[\\-](0[13578]|1[02])[\\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\\-]((0[469])|(11))[\\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)$"
+                },
+                "value": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Status.value",
+                    "type": "string",
+                    "maxLength": 16
+                },
+                "remark": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Status.remark",
+                    "type": "string",
+                    "maxLength": 16
+                },
+                "reason": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Status.reason",
+                    "type": "string",
+                    "maxLength": 16
+                }
+            }
+        },
+        "ESMP_Voltage": {
+            "id": "#ESMP_Voltage",
+            "title": "ESMP_Voltage",
+            "description": "The coded identification of a voltage value.",
+            "modelReference": "http://iec.ch/TC57/CIM100#Voltage",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "Main Core value Space.\r\nThe value is expressed as a simple precision and no mantisse.",
+                    "type": "number",
+                    "pattern": "^([0-9]*\\.?[0-9]*)$",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Voltage.value"
+                },
+                "unit": {
+                    "description": "The unit of the value, the UN/CEFACT recommendation 20 is used as coding scheme of the unit.",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/UnitSymbol",
+                    "const": "KVT",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Voltage.unit"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ]
+        }
+    }
+}
