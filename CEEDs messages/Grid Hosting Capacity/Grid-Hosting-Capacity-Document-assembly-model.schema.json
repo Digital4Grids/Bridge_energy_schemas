@@ -1,7 +1,7 @@
 {
     "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/Grid-Hosting-Capacity-Document-assembly-model.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Grid-Hosting-Capacity-Document-assembly-model  profile generated 2026-05-13 15:41:05.606648",
+    "title": "Grid-Hosting-Capacity-Document-assembly-model  profile generated 2026-05-22 15:21:10.763241",
     "description": "",
     "namespace": "http://iec.ch/TC57/2020/Grid-Hosting-Capacity-Document-assembly-model#",
     "type": "object",
@@ -14,31 +14,6 @@
     "definitions": {
         "Grid-Hosting-Capacity-Document-assembly-model": {
             "$ref": "#"
-        },
-        "Asset": {
-            "id": "#Asset",
-            "title": "Asset",
-            "description": "",
-            "modelReference": "http://iec.ch/TC57/CIM100#Asset",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "meterId": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#Asset.meterId",
-                    "type": "string"
-                },
-                "operatorId": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#Asset.operatorId",
-                    "type": "string"
-                },
-                "type": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#Asset.type",
-                    "type": "string"
-                }
-            }
         },
         "Cadastre": {
             "id": "#Cadastre",
@@ -143,10 +118,40 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#Circle.outerRadius",
                     "$ref": "#/definitions/ESMP_Length"
                 },
+                "CircleCenter_LinearCoordinate": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate",
+                    "$ref": "#/definitions/LinearCoordinate"
+                },
                 "CircleCenterPositionPoint": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#Circle.CircleCenterPositionPoint",
                     "$ref": "#/definitions/PositionPoint"
+                }
+            }
+        },
+        "EnvAsset": {
+            "id": "#EnvAsset",
+            "title": "EnvAsset",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#EnvAsset",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "meterId": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#EnvAsset.meterId",
+                    "type": "string"
+                },
+                "operatorId": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#EnvAsset.operatorId",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#EnvAsset.type",
+                    "type": "string"
                 }
             }
         },
@@ -233,9 +238,9 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#Envelope.MessageDocumentHeader",
                     "$ref": "#/definitions/MessageDocumentHeader"
                 },
-                "MarketDocument": {
+                "GHC_MarketDocument": {
                     "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#Envelope.MarketDocument",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Envelope.GHC_MarketDocument",
                     "$ref": "#/definitions/GHC_MarketDocument"
                 }
             }
@@ -355,7 +360,7 @@
                 "firstConnectionYear": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacity.firstConnectionYear",
-                    "type": "string"
+                    "type": "integer"
                 },
                 "identifier": {
                     "description": "",
@@ -396,7 +401,7 @@
                 "FlexibleConnectionCapacity": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.FlexibleConnectionCapacity",
-                    "type": "integer"
+                    "$ref": "#/definitions/CEEDS_ActivePower"
                 },
                 "appliesFromYear": {
                     "description": "",
@@ -406,12 +411,12 @@
                 "capacityAvailableForConnection": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityAvailableForConnection",
-                    "type": "integer"
+                    "$ref": "#/definitions/CEEDS_ActivePower"
                 },
                 "capacityUnderConnectionRequest": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityUnderConnectionRequest",
-                    "type": "integer"
+                    "$ref": "#/definitions/CEEDS_ActivePower"
                 },
                 "customerConnectionType": {
                     "description": "",
@@ -441,7 +446,7 @@
                 "totalCapacity": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#HostingCapacityDetail.totalCapacity",
-                    "type": "integer"
+                    "$ref": "#/definitions/CEEDS_ActivePower"
                 },
                 "withConsiderationOfCapacityFromOverlyingGrid": {
                     "description": "",
@@ -483,14 +488,20 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate.sequenceNumber",
                     "type": "integer"
                 },
-                "Line": {
+                "xPosition": {
                     "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate.Line",
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/LineElement"
-                    },
-                    "minItems": 0
+                    "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate.xPosition",
+                    "type": "string"
+                },
+                "yPosition": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate.yPosition",
+                    "type": "string"
+                },
+                "zPosition": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate.zPosition",
+                    "type": "string"
                 }
             }
         },
@@ -501,7 +512,17 @@
             "modelReference": "http://iec.ch/TC57/CIM100#LineElement",
             "type": "object",
             "additionalProperties": false,
-            "properties": {}
+            "properties": {
+                "LinearCoordinate": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#LineElement.LinearCoordinate",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LinearCoordinate"
+                    },
+                    "minItems": 0
+                }
+            }
         },
         "Location": {
             "id": "#Location",
@@ -521,6 +542,15 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#Location.name",
                     "type": "string"
                 },
+                "Cadastre": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Location.Cadastre",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Cadastre"
+                    },
+                    "minItems": 0
+                },
                 "Site": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#Location.Site",
@@ -532,15 +562,6 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Geometry"
-                    },
-                    "minItems": 0
-                },
-                "Cadastre": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#Location.Cadastre",
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Cadastre"
                     },
                     "minItems": 0
                 }
@@ -619,10 +640,10 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.requestPermissionId",
                     "type": "string"
                 },
-                "Asset": {
+                "EnvAsset": {
                     "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.Asset",
-                    "$ref": "#/definitions/Asset"
+                    "modelReference": "http://iec.ch/TC57/CIM100#MetaInformation.EnvAsset",
+                    "$ref": "#/definitions/EnvAsset"
                 }
             }
         },
@@ -762,9 +783,9 @@
                 }
             },
             "required": [
+                "isicV4",
                 "globalLocationNumber",
                 "community",
-                "isicV4",
                 "fullAddress"
             ]
         },
@@ -870,6 +891,11 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.stationName",
                     "type": "string"
                 },
+                "UsagePointLocation": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.UsagePointLocation",
+                    "$ref": "#/definitions/UsagePointLocation"
+                },
                 "Location": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.Location",
@@ -929,6 +955,15 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.type",
                     "type": "string"
                 },
+                "Cadastre": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.Cadastre",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Cadastre"
+                    },
+                    "minItems": 0
+                },
                 "Site": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.Site",
@@ -940,15 +975,6 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Geometry"
-                    },
-                    "minItems": 0
-                },
-                "Cadastre": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.Cadastre",
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Cadastre"
                     },
                     "minItems": 0
                 }
@@ -1130,6 +1156,32 @@
                 "value"
             ]
         },
+        "CEEDS_ActivePower": {
+            "id": "#CEEDS_ActivePower",
+            "title": "CEEDS_ActivePower",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#ActivePower",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "unit": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/UnitSymbol",
+                    "const": "MAW",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ActivePower.unit"
+                },
+                "value": {
+                    "description": "",
+                    "type": "number",
+                    "pattern": "^('^\\d{4}$')$",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ActivePower.value"
+                }
+            },
+            "required": [
+                "unit",
+                "value"
+            ]
+        },
         "CustomerConnectionTypeKind": {
             "id": "#CustomerConnectionTypeKind",
             "title": "CustomerConnectionTypeKind",
@@ -1189,20 +1241,17 @@
                 "value": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#Status.value",
-                    "type": "string",
-                    "maxLength": 16
+                    "type": "string"
                 },
                 "remark": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#Status.remark",
-                    "type": "string",
-                    "maxLength": 16
+                    "type": "string"
                 },
                 "reason": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#Status.reason",
-                    "type": "string",
-                    "maxLength": 16
+                    "type": "string"
                 }
             }
         },

@@ -2,16 +2,6 @@
 <xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://eddie.energy/GridHostingCapacity" xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://eddie.energy/GridHostingCapacity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="c:\data\urn-entsoe-eu-wgedi-codelists.xsd" namespace="urn:entsoe.eu:wgedi:codelists" />
   <xs:element name="GHC_Envelope" type="dl:GHC_Envelope" />
-  <xs:complexType name="Asset" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Asset">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="type" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Asset.type">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="operatorId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Asset.operatorId">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="meterId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Asset.meterId">
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="Cadastre" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Cadastre">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
@@ -62,9 +52,19 @@
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="outerRadius" type="dl:ESMP_Length" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Circle.outerRadius">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="LinearCoordinate" type="dl:LinearCoordinate" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Circle.CircleCenterPositionPoint">
+      <xs:element minOccurs="0" maxOccurs="1" name="CircleCenter_LinearCoordinate" type="dl:LinearCoordinate" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Circle.CircleCenter_LinearCoordinate">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="PositionPoint" type="dl:PositionPoint" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Circle.CircleCenterPositionPoint">
+      <xs:element minOccurs="0" maxOccurs="1" name="CircleCenterPositionPoint" type="dl:PositionPoint" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Circle.CircleCenterPositionPoint">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EnvAsset" sawsdl:modelReference="http://iec.ch/TC57/CIM100#EnvAsset">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="type" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#EnvAsset.type">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="operatorId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#EnvAsset.operatorId">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="meterId" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#EnvAsset.meterId">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
@@ -90,7 +90,7 @@
   </xs:complexType>
   <xs:complexType name="GHC_Envelope" sawsdl:modelReference="http://iec.ch/TC57/CIM100#GHC_Envelope">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="MarketDocument" type="dl:GHC_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/CIM100#GHC_Envelope.MarketDocument">
+      <xs:element minOccurs="0" maxOccurs="1" name="GHC_MarketDocument" type="dl:GHC_MarketDocument" sawsdl:modelReference="http://iec.ch/TC57/CIM100#GHC_Envelope.GHC_MarketDocument">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="MessageDocumentHeader" type="dl:MessageDocumentHeader" sawsdl:modelReference="http://iec.ch/TC57/CIM100#GHC_Envelope.MessageDocumentHeader">
       </xs:element>
@@ -168,7 +168,7 @@
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="firstConnectionYear" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.firstConnectionYear">
+      <xs:element minOccurs="0" maxOccurs="1" name="firstConnectionYear" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.firstConnectionYear">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.name">
       </xs:element>
@@ -177,6 +177,18 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="HostingCapacityDetails" type="dl:HostingCapacityDetail" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.HostingCapacityDetails">
       </xs:element>
     </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="CEEDS_ActivePower-base" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CEEDS_ActivePower">
+    <xs:restriction base="xs:float">
+      <xs:pattern value="('^\d{4}$')" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CEEDS_ActivePower">
+    <xs:simpleContent>
+      <xs:extension base="dl:CEEDS_ActivePower-base">
+        <xs:attribute fixed="MAW" name="unit" type="ecl:UnitSymbol" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
   </xs:complexType>
   <xs:simpleType name="CustomerConnectionTypeKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CustomerConnectionTypeKind">
     <xs:restriction base="xs:string">
@@ -288,15 +300,15 @@
   </xs:simpleType>
   <xs:complexType name="HostingCapacityDetail" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="capacityAvailableForConnection" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityAvailableForConnection">
+      <xs:element minOccurs="0" maxOccurs="1" name="capacityAvailableForConnection" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityAvailableForConnection">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="totalCapacity" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.totalCapacity">
+      <xs:element minOccurs="0" maxOccurs="1" name="totalCapacity" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.totalCapacity">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="capacityUnderConnectionRequest" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityUnderConnectionRequest">
+      <xs:element minOccurs="0" maxOccurs="1" name="capacityUnderConnectionRequest" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityUnderConnectionRequest">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="withConsiderationOfCapacityFromOverlyingGrid" type="xs:boolean" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.withConsiderationOfOverlyingGrid">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="FlexibleConnectionCapacity" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.possibilityOfFlexibleConnection">
+      <xs:element minOccurs="0" maxOccurs="1" name="FlexibleConnectionCapacity" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.flexibleConnectionCapacity">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="levelOfFlexibility" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.levelOfFlexibility">
       </xs:element>
@@ -306,7 +318,7 @@
       </xs:element>
       <xs:element minOccurs="1" maxOccurs="1" name="customerSubSubConnectionType" type="dl:CustomerSubSubConnectionTypeKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerSubSubConnectionType">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="appliesFromYear" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.appliesFromDate">
+      <xs:element minOccurs="0" maxOccurs="1" name="appliesFromYear" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.appliesFromYear">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="durationApplicable" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.durationApplicable">
       </xs:element>
@@ -318,16 +330,23 @@
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="bulge" type="xs:decimal" sawsdl:modelReference="http://iec.ch/TC57/CIM100#LinearCoordinate.bulge">
       </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="xPosition" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#PositionPoint.xPosition">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="yPosition" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#PositionPoint.yPosition">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="zPosition" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#PositionPoint.zPosition">
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="relativeHeight.verticalOffset" type="dl:ESMP_Length" sawsdl:modelReference="http://iec.ch/TC57/CIM100#RelativeHeight.verticalOffset">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="relativeHeight.verticalOffsetReference" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#RelativeHeight.verticalOffsetReference">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Line" type="dl:LineElement" sawsdl:modelReference="http://iec.ch/TC57/CIM100#LinearCoordinate.Line">
-      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="LineElement" sawsdl:modelReference="http://iec.ch/TC57/CIM100#LineElement">
-    <xs:sequence />
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LinearCoordinate" type="dl:LinearCoordinate" sawsdl:modelReference="http://iec.ch/TC57/CIM100#LineElement.LinearCoordinate">
+      </xs:element>
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Location" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Location">
     <xs:sequence>
@@ -371,7 +390,7 @@
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="regionCountry" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.regionCountry">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="Asset" type="dl:Asset" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.Asset">
+      <xs:element minOccurs="0" maxOccurs="1" name="EnvAsset" type="dl:EnvAsset" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MetaInformation.EnvAsset">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
@@ -481,7 +500,7 @@
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="Location" type="dl:Location" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ServiceArea.Location">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="UsagePointLocation" type="dl:UsagePointLocation" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ServiceArea.Location">
+      <xs:element minOccurs="0" maxOccurs="1" name="UsagePointLocation" type="dl:UsagePointLocation" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ServiceArea.UsagePointLocation">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
