@@ -1,7 +1,7 @@
 {
     "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/Grid-Hosting-Capacity-Document-assembly-model.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Grid-Hosting-Capacity-Document-assembly-model  profile generated 2026-05-22 15:21:48.444035",
+    "title": "Grid-Hosting-Capacity-Document-assembly-model  profile generated 2026-05-28 11:58:34.570518",
     "description": "",
     "namespace": "http://iec.ch/TC57/2020/Grid-Hosting-Capacity-Document-assembly-model#",
     "type": "object",
@@ -98,7 +98,10 @@
                     },
                     "minItems": 0
                 }
-            }
+            },
+            "required": [
+                "mRID"
+            ]
         },
         "Circle": {
             "id": "#Circle",
@@ -178,6 +181,15 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#Geometry.name",
                     "type": "string"
                 },
+                "Circle": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Geometry.Circle",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Circle"
+                    },
+                    "minItems": 0
+                },
                 "Polygon": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#Geometry.Polygon",
@@ -213,17 +225,11 @@
                         "$ref": "#/definitions/LineElement"
                     },
                     "minItems": 0
-                },
-                "Circle": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#Geometry.Circle",
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Circle"
-                    },
-                    "minItems": 0
                 }
-            }
+            },
+            "required": [
+                "mRID"
+            ]
         },
         "GHC_Envelope": {
             "id": "#GHC_Envelope",
@@ -337,7 +343,14 @@
                     },
                     "minItems": 0
                 }
-            }
+            },
+            "required": [
+                "mRID",
+                "sender_MarketParticipant.mRID",
+                "sender_MarketParticipant.marketRole.type",
+                "receiver_MarketParticipant.mRID",
+                "receiver_MarketParticipant.marketRole.type"
+            ]
         },
         "HostingCapacity": {
             "id": "#HostingCapacity",
@@ -388,7 +401,10 @@
                     },
                     "minItems": 0
                 }
-            }
+            },
+            "required": [
+                "mRID"
+            ]
         },
         "HostingCapacityDetail": {
             "id": "#HostingCapacityDetail",
@@ -503,7 +519,10 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#LinearCoordinate.zPosition",
                     "type": "string"
                 }
-            }
+            },
+            "required": [
+                "sequenceNumber"
+            ]
         },
         "LineElement": {
             "id": "#LineElement",
@@ -520,9 +539,12 @@
                     "items": {
                         "$ref": "#/definitions/LinearCoordinate"
                     },
-                    "minItems": 0
+                    "minItems": 1
                 }
-            }
+            },
+            "required": [
+                "LinearCoordinate"
+            ]
         },
         "Location": {
             "id": "#Location",
@@ -542,15 +564,6 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#Location.name",
                     "type": "string"
                 },
-                "Cadastre": {
-                    "description": "Cadastre encompassing a location.",
-                    "modelReference": "http://iec.ch/TC57/CIM100#Location.Cadastre",
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Cadastre"
-                    },
-                    "minItems": 0
-                },
                 "Site": {
                     "description": "",
                     "modelReference": "http://iec.ch/TC57/CIM100#Location.Site",
@@ -564,8 +577,20 @@
                         "$ref": "#/definitions/Geometry"
                     },
                     "minItems": 0
+                },
+                "Cadastre": {
+                    "description": "Cadastre encompassing a location.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Location.Cadastre",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Cadastre"
+                    },
+                    "minItems": 0
                 }
-            }
+            },
+            "required": [
+                "mRID"
+            ]
         },
         "MessageDocumentHeader": {
             "id": "#MessageDocumentHeader",
@@ -783,9 +808,10 @@
                 }
             },
             "required": [
-                "isicV4",
+                "mRID",
                 "globalLocationNumber",
                 "community",
+                "isicV4",
                 "fullAddress"
             ]
         },
@@ -891,6 +917,15 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.stationName",
                     "type": "string"
                 },
+                "HostingCapacity": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.HostingCapacity",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/HostingCapacity"
+                    },
+                    "minItems": 0
+                },
                 "UsagePointLocation": {
                     "description": "Location of this power system resource.",
                     "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.UsagePointLocation",
@@ -900,17 +935,11 @@
                     "description": "Location of this power system resource.",
                     "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.Location",
                     "$ref": "#/definitions/Location"
-                },
-                "HostingCapacity": {
-                    "description": "",
-                    "modelReference": "http://iec.ch/TC57/CIM100#ServiceArea.HostingCapacity",
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/HostingCapacity"
-                    },
-                    "minItems": 0
                 }
-            }
+            },
+            "required": [
+                "mRID"
+            ]
         },
         "Site": {
             "id": "#Site",
@@ -925,7 +954,10 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#Site.PhysicalAddress",
                     "$ref": "#/definitions/PhysicalAddress"
                 }
-            }
+            },
+            "required": [
+                "PhysicalAddress"
+            ]
         },
         "UsagePointLocation": {
             "id": "#UsagePointLocation",
@@ -935,6 +967,11 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
+                "mRID": {
+                    "description": "The unique identification of a location.\r\n\r\nIn the ESMP context, the \"model authority\" is defined as an authorized issuing office that provides an agreed identification coding scheme for market participant, domain, measurement point, resources (generator, lines, substations, etc.) identification, location, etc.\r\n\r\nMaster resource identifier issued by a model authority. The mRID is globally unique within an exchange context.\r\nGlobal uniqueness is easily achieved by using a UUID for the mRID. It is strongly recommended to do this.\r\nFor CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.mRID",
+                    "type": "string"
+                },
                 "accessMethod": {
                     "description": "Method for the service person to access this usage point location. For example, a description of where to obtain a key if the facility is unmanned and secured.",
                     "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.accessMethod",
@@ -950,19 +987,15 @@
                     "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.geoInfoReference",
                     "type": "string"
                 },
+                "name": {
+                    "description": "The name is any free human readable and possibly non unique text naming the object.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.name",
+                    "type": "string"
+                },
                 "type": {
                     "description": "Classification by utility's corporate standards and practices, relative to the location itself (e.g., geographical, functional accounting, etc., not a given property that happens to exist at that location).",
                     "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.type",
                     "type": "string"
-                },
-                "Cadastre": {
-                    "description": "Cadastre encompassing a location.",
-                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.Cadastre",
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Cadastre"
-                    },
-                    "minItems": 0
                 },
                 "Site": {
                     "description": "",
@@ -977,8 +1010,20 @@
                         "$ref": "#/definitions/Geometry"
                     },
                     "minItems": 0
+                },
+                "Cadastre": {
+                    "description": "Cadastre encompassing a location.",
+                    "modelReference": "http://iec.ch/TC57/CIM100#UsagePointLocation.Cadastre",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Cadastre"
+                    },
+                    "minItems": 0
                 }
-            }
+            },
+            "required": [
+                "mRID"
+            ]
         },
         "VoltageLevel": {
             "id": "#VoltageLevel",
@@ -1031,7 +1076,9 @@
                 }
             },
             "required": [
-                "highVoltageLimit"
+                "highVoltageLimit",
+                "mRID",
+                "baseVoltage.nominalVoltage"
             ]
         },
         "ESMP_Length": {
