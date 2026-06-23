@@ -1,0 +1,1482 @@
+2026-06-23 11:22:27,092 - INFO - db=C:\EM\Github\Bridge_energy_schemas\Reference Data Dictionary\D4E INSIEME CEEDs\CEEDS_20251021_ESMPv5 CIM_Grid18v15_Enterprise14v04_Market04v18.eap
+2026-06-23 11:22:27,187 - INFO - TEST  init Package 12
+2026-06-23 11:22:27,187 - INFO - TEST init EA.Eelement packid=11 elt=Grid
+2026-06-23 11:22:27,187 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,202 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,206 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,206 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,206 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,206 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,206 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,206 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,218 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,218 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,218 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,218 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,218 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,218 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,218 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,234 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,234 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,234 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,234 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,234 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,234 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,234 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,234 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,234 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,249 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,249 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,249 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,249 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,249 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,265 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,265 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,265 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,265 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,265 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,265 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,265 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,281 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,281 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,281 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,281 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,281 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,281 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,281 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,297 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,297 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,297 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,297 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,297 - INFO - TEST init connector pour elt=Grid source=None target=None
+2026-06-23 11:22:27,297 - INFO - TEST  init Package 13
+2026-06-23 11:22:27,297 - INFO - TEST init EA.Eelement packid=12 elt=Base
+2026-06-23 11:22:27,297 - INFO - TEST init connector pour elt=Base source=None target=None
+2026-06-23 11:22:27,312 - INFO - TEST init connector pour elt=Base source=None target=None
+2026-06-23 11:22:27,312 - INFO - TEST init connector pour elt=Base source=None target=None
+2026-06-23 11:22:27,312 - INFO - TEST init connector pour elt=Base source=None target=None
+2026-06-23 11:22:27,312 - INFO - TEST  init Package 14
+2026-06-23 11:22:27,312 - INFO - TEST init EA.Eelement packid=13 elt=Control
+2026-06-23 11:22:27,312 - INFO - Package creation 
+2026-06-23 11:22:27,312 - INFO - TEST  init Package 15
+2026-06-23 11:22:27,312 - INFO - TEST init EA.Eelement packid=13 elt=Core
+2026-06-23 11:22:27,312 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,328 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,328 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,328 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,328 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,328 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,328 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,328 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,328 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,344 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,344 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,344 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,344 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,344 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,344 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,344 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,344 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,360 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,360 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,360 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,360 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,360 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,360 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,360 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,360 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,375 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,375 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,375 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,375 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,375 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,375 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,375 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,375 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,391 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,391 - INFO - TEST init connector pour elt=Core source=None target=None
+2026-06-23 11:22:27,391 - INFO - Package creation 
+2026-06-23 11:22:27,391 - INFO - TEST  init Package 16
+2026-06-23 11:22:27,391 - INFO - TEST init EA.Eelement packid=13 elt=Domain
+2026-06-23 11:22:27,391 - INFO - TEST init connector pour elt=Domain source=None target=None
+2026-06-23 11:22:27,391 - INFO - TEST init connector pour elt=Domain source=None target=None
+2026-06-23 11:22:27,391 - INFO - Package creation 
+2026-06-23 11:22:27,391 - INFO - TEST  init Package 17
+2026-06-23 11:22:27,391 - INFO - TEST init EA.Eelement packid=13 elt=Wires
+2026-06-23 11:22:27,391 - INFO - TEST init connector pour elt=Wires source=None target=None
+2026-06-23 11:22:27,407 - INFO - TEST init connector pour elt=Wires source=None target=None
+2026-06-23 11:22:27,407 - INFO - TEST init connector pour elt=Wires source=None target=None
+2026-06-23 11:22:27,407 - INFO - TEST init connector pour elt=Wires source=None target=None
+2026-06-23 11:22:27,407 - INFO - TEST init connector pour elt=Wires source=None target=None
+2026-06-23 11:22:27,407 - INFO - TEST init connector pour elt=Wires source=None target=None
+2026-06-23 11:22:27,407 - INFO - TEST init connector pour elt=Wires source=None target=None
+2026-06-23 11:22:27,407 - INFO - TEST init connector pour elt=Wires source=None target=None
+2026-06-23 11:22:27,407 - INFO - TEST init connector pour elt=Wires source=None target=None
+2026-06-23 11:22:27,407 - INFO - Package creation 
+2026-06-23 11:22:27,423 - INFO - TEST  init Package 18
+2026-06-23 11:22:27,423 - INFO - TEST init EA.Eelement packid=13 elt=LoadModel
+2026-06-23 11:22:27,423 - INFO - TEST init connector pour elt=LoadModel source=None target=None
+2026-06-23 11:22:27,423 - INFO - Package creation 
+2026-06-23 11:22:27,423 - INFO - TEST  init Package 19
+2026-06-23 11:22:27,423 - INFO - TEST init EA.Eelement packid=13 elt=Generation
+2026-06-23 11:22:27,423 - INFO - TEST  init Package 20
+2026-06-23 11:22:27,423 - INFO - TEST init EA.Eelement packid=19 elt=GenerationTrainingSimulation
+2026-06-23 11:22:27,423 - INFO - Package creation 
+2026-06-23 11:22:27,423 - INFO - TEST  init Package 21
+2026-06-23 11:22:27,423 - INFO - TEST init EA.Eelement packid=19 elt=Production
+2026-06-23 11:22:27,423 - INFO - TEST init connector pour elt=Production source=None target=None
+2026-06-23 11:22:27,438 - INFO - TEST init connector pour elt=Production source=None target=None
+2026-06-23 11:22:27,438 - INFO - Package creation 
+2026-06-23 11:22:27,438 - INFO - Package creation 
+2026-06-23 11:22:27,438 - INFO - TEST  init Package 22
+2026-06-23 11:22:27,438 - INFO - TEST init EA.Eelement packid=13 elt=DC
+2026-06-23 11:22:27,438 - INFO - TEST  init Package 23
+2026-06-23 11:22:27,438 - INFO - TEST init EA.Eelement packid=22 elt=DocDC
+2026-06-23 11:22:27,438 - INFO - TEST  init Package 24
+2026-06-23 11:22:27,438 - INFO - TEST init EA.Eelement packid=23 elt=DCDetailedDiagrams
+2026-06-23 11:22:27,438 - INFO - Package creation 
+2026-06-23 11:22:27,438 - INFO - Package creation 
+2026-06-23 11:22:27,438 - INFO - Package creation 
+2026-06-23 11:22:27,438 - INFO - TEST  init Package 25
+2026-06-23 11:22:27,438 - INFO - TEST init EA.Eelement packid=13 elt=Equivalents
+2026-06-23 11:22:27,438 - INFO - Package creation 
+2026-06-23 11:22:27,438 - INFO - TEST  init Package 26
+2026-06-23 11:22:27,456 - INFO - TEST init EA.Eelement packid=13 elt=AuxiliaryEquipment
+2026-06-23 11:22:27,456 - INFO - Package creation 
+2026-06-23 11:22:27,456 - INFO - TEST  init Package 27
+2026-06-23 11:22:27,456 - INFO - TEST init EA.Eelement packid=13 elt=Meas
+2026-06-23 11:22:27,456 - INFO - TEST init connector pour elt=Meas source=None target=None
+2026-06-23 11:22:27,456 - INFO - TEST init connector pour elt=Meas source=None target=None
+2026-06-23 11:22:27,456 - INFO - TEST init connector pour elt=Meas source=None target=None
+2026-06-23 11:22:27,456 - INFO - TEST init connector pour elt=Meas source=None target=None
+2026-06-23 11:22:27,456 - INFO - TEST init connector pour elt=Meas source=None target=None
+2026-06-23 11:22:27,470 - INFO - TEST init connector pour elt=Meas source=None target=None
+2026-06-23 11:22:27,470 - INFO - Package creation 
+2026-06-23 11:22:27,470 - INFO - TEST  init Package 28
+2026-06-23 11:22:27,470 - INFO - TEST init EA.Eelement packid=13 elt=Topology
+2026-06-23 11:22:27,470 - INFO - TEST init connector pour elt=Topology source=None target=None
+2026-06-23 11:22:27,470 - INFO - Package creation 
+2026-06-23 11:22:27,470 - INFO - TEST  init Package 29
+2026-06-23 11:22:27,470 - INFO - TEST init EA.Eelement packid=13 elt=DiagramLayout
+2026-06-23 11:22:27,470 - INFO - Package creation 
+2026-06-23 11:22:27,470 - INFO - TEST  init Package 30
+2026-06-23 11:22:27,470 - INFO - TEST init EA.Eelement packid=13 elt=FACTS
+2026-06-23 11:22:27,470 - INFO - Package creation 
+2026-06-23 11:22:27,470 - INFO - TEST  init Package 31
+2026-06-23 11:22:27,470 - INFO - TEST init EA.Eelement packid=13 elt=OperationalLimits
+2026-06-23 11:22:27,486 - INFO - TEST init connector pour elt=OperationalLimits source=None target=None
+2026-06-23 11:22:27,486 - INFO - Package creation 
+2026-06-23 11:22:27,486 - INFO - TEST  init Package 32
+2026-06-23 11:22:27,486 - INFO - TEST init EA.Eelement packid=13 elt=ControlArea
+2026-06-23 11:22:27,486 - INFO - Package creation 
+2026-06-23 11:22:27,486 - INFO - TEST  init Package 33
+2026-06-23 11:22:27,486 - INFO - TEST init EA.Eelement packid=13 elt=Contingency
+2026-06-23 11:22:27,486 - INFO - Package creation 
+2026-06-23 11:22:27,486 - INFO - TEST  init Package 34
+2026-06-23 11:22:27,486 - INFO - TEST init EA.Eelement packid=13 elt=StateVariables
+2026-06-23 11:22:27,486 - INFO - Package creation 
+2026-06-23 11:22:27,486 - INFO - TEST  init Package 35
+2026-06-23 11:22:27,486 - INFO - TEST init EA.Eelement packid=13 elt=Protection
+2026-06-23 11:22:27,502 - INFO - TEST  init Package 36
+2026-06-23 11:22:27,502 - INFO - TEST init EA.Eelement packid=35 elt=62361Draft
+2026-06-23 11:22:27,502 - INFO - Package creation 
+2026-06-23 11:22:27,502 - INFO - Package creation 
+2026-06-23 11:22:27,502 - INFO - TEST  init Package 37
+2026-06-23 11:22:27,502 - INFO - TEST init EA.Eelement packid=13 elt=Faults
+2026-06-23 11:22:27,502 - INFO - Package creation 
+2026-06-23 11:22:27,502 - INFO - TEST  init Package 38
+2026-06-23 11:22:27,502 - INFO - TEST init EA.Eelement packid=13 elt=SCADA
+2026-06-23 11:22:27,502 - INFO - TEST init connector pour elt=SCADA source=None target=None
+2026-06-23 11:22:27,502 - INFO - Package creation 
+2026-06-23 11:22:27,502 - INFO - TEST  init Package 39
+2026-06-23 11:22:27,502 - INFO - TEST init EA.Eelement packid=13 elt=ICCPConfiguration
+2026-06-23 11:22:27,502 - INFO - TEST  init Package 40
+2026-06-23 11:22:27,502 - INFO - TEST init EA.Eelement packid=39 elt=DocICCPConfiguration
+2026-06-23 11:22:27,518 - INFO - Package creation 
+2026-06-23 11:22:27,518 - INFO - Package creation 
+2026-06-23 11:22:27,518 - INFO - TEST  init Package 41
+2026-06-23 11:22:27,518 - INFO - TEST init EA.Eelement packid=13 elt=DocBase
+2026-06-23 11:22:27,518 - INFO - Package creation 
+2026-06-23 11:22:27,518 - INFO - TEST  init Package 42
+2026-06-23 11:22:27,518 - INFO - TEST init EA.Eelement packid=13 elt=SecurityLimit
+2026-06-23 11:22:27,518 - INFO - TEST init connector pour elt=SecurityLimit source=None target=None
+2026-06-23 11:22:27,518 - INFO - TEST init connector pour elt=SecurityLimit source=None target=None
+2026-06-23 11:22:27,518 - INFO - Package creation 
+2026-06-23 11:22:27,518 - INFO - TEST  init Package 43
+2026-06-23 11:22:27,518 - INFO - TEST init EA.Eelement packid=13 elt=SIPS
+2026-06-23 11:22:27,518 - INFO - TEST init connector pour elt=SIPS source=None target=None
+2026-06-23 11:22:27,533 - INFO - Package creation 
+2026-06-23 11:22:27,533 - INFO - Package creation 
+2026-06-23 11:22:27,533 - INFO - TEST  init Package 44
+2026-06-23 11:22:27,533 - INFO - TEST init EA.Eelement packid=12 elt=Dynamics
+2026-06-23 11:22:27,533 - INFO - TEST  init Package 45
+2026-06-23 11:22:27,533 - INFO - TEST init EA.Eelement packid=44 elt=StandardInterconnections
+2026-06-23 11:22:27,533 - INFO - TEST  init Package 46
+2026-06-23 11:22:27,533 - INFO - TEST init EA.Eelement packid=45 elt=WindModels
+2026-06-23 11:22:27,533 - INFO - Package creation 
+2026-06-23 11:22:27,533 - INFO - Package creation 
+2026-06-23 11:22:27,533 - INFO - TEST  init Package 47
+2026-06-23 11:22:27,533 - INFO - TEST init EA.Eelement packid=44 elt=StandardModels
+2026-06-23 11:22:27,533 - INFO - TEST  init Package 48
+2026-06-23 11:22:27,533 - INFO - TEST init EA.Eelement packid=47 elt=SynchronousMachineDynamics
+2026-06-23 11:22:27,549 - INFO - Package creation 
+2026-06-23 11:22:27,549 - INFO - TEST  init Package 49
+2026-06-23 11:22:27,549 - INFO - TEST init EA.Eelement packid=47 elt=AsynchronousMachineDynamics
+2026-06-23 11:22:27,549 - INFO - Package creation 
+2026-06-23 11:22:27,549 - INFO - TEST  init Package 50
+2026-06-23 11:22:27,549 - INFO - TEST init EA.Eelement packid=47 elt=TurbineGovernorDynamics
+2026-06-23 11:22:27,549 - INFO - Package creation 
+2026-06-23 11:22:27,549 - INFO - TEST  init Package 51
+2026-06-23 11:22:27,549 - INFO - TEST init EA.Eelement packid=47 elt=TurbineLoadControllerDynamics
+2026-06-23 11:22:27,549 - INFO - Package creation 
+2026-06-23 11:22:27,549 - INFO - TEST  init Package 52
+2026-06-23 11:22:27,549 - INFO - TEST init EA.Eelement packid=47 elt=MechanicalLoadDynamics
+2026-06-23 11:22:27,549 - INFO - Package creation 
+2026-06-23 11:22:27,549 - INFO - TEST  init Package 53
+2026-06-23 11:22:27,549 - INFO - TEST init EA.Eelement packid=47 elt=ExcitationSystemDynamics
+2026-06-23 11:22:27,549 - INFO - TEST  init Package 54
+2026-06-23 11:22:27,565 - INFO - TEST init EA.Eelement packid=53 elt=IEEE4215from2005
+2026-06-23 11:22:27,565 - INFO - Package creation 
+2026-06-23 11:22:27,565 - INFO - TEST  init Package 55
+2026-06-23 11:22:27,565 - INFO - TEST init EA.Eelement packid=53 elt=IEEE4215from2016
+2026-06-23 11:22:27,565 - INFO - Package creation 
+2026-06-23 11:22:27,565 - INFO - Package creation 
+2026-06-23 11:22:27,565 - INFO - TEST  init Package 56
+2026-06-23 11:22:27,565 - INFO - TEST init EA.Eelement packid=47 elt=OverexcitationLimiterDynamics
+2026-06-23 11:22:27,565 - INFO - Package creation 
+2026-06-23 11:22:27,565 - INFO - TEST  init Package 57
+2026-06-23 11:22:27,565 - INFO - TEST init EA.Eelement packid=47 elt=UnderexcitationLimiterDynamics
+2026-06-23 11:22:27,565 - INFO - Package creation 
+2026-06-23 11:22:27,565 - INFO - TEST  init Package 58
+2026-06-23 11:22:27,581 - INFO - TEST init EA.Eelement packid=47 elt=PowerSystemStabilizerDynamics
+2026-06-23 11:22:27,581 - INFO - Package creation 
+2026-06-23 11:22:27,581 - INFO - TEST  init Package 59
+2026-06-23 11:22:27,581 - INFO - TEST init EA.Eelement packid=47 elt=DiscontinuousExcitationControlDynamics
+2026-06-23 11:22:27,581 - INFO - Package creation 
+2026-06-23 11:22:27,581 - INFO - TEST  init Package 60
+2026-06-23 11:22:27,581 - INFO - TEST init EA.Eelement packid=47 elt=PFVArControllerType1Dynamics
+2026-06-23 11:22:27,581 - INFO - Package creation 
+2026-06-23 11:22:27,581 - INFO - TEST  init Package 61
+2026-06-23 11:22:27,581 - INFO - TEST init EA.Eelement packid=47 elt=PFVArControllerType2Dynamics
+2026-06-23 11:22:27,581 - INFO - Package creation 
+2026-06-23 11:22:27,581 - INFO - TEST  init Package 62
+2026-06-23 11:22:27,581 - INFO - TEST init EA.Eelement packid=47 elt=VoltageAdjusterDynamics
+2026-06-23 11:22:27,581 - INFO - Package creation 
+2026-06-23 11:22:27,581 - INFO - TEST  init Package 63
+2026-06-23 11:22:27,581 - INFO - TEST init EA.Eelement packid=47 elt=VoltageCompensatorDynamics
+2026-06-23 11:22:27,596 - INFO - Package creation 
+2026-06-23 11:22:27,596 - INFO - TEST  init Package 64
+2026-06-23 11:22:27,596 - INFO - TEST init EA.Eelement packid=47 elt=WindDynamics
+2026-06-23 11:22:27,596 - INFO - Package creation 
+2026-06-23 11:22:27,596 - INFO - TEST  init Package 65
+2026-06-23 11:22:27,596 - INFO - TEST init EA.Eelement packid=47 elt=WindDynamicsEd2
+2026-06-23 11:22:27,596 - INFO - Package creation 
+2026-06-23 11:22:27,596 - INFO - TEST  init Package 66
+2026-06-23 11:22:27,596 - INFO - TEST init EA.Eelement packid=47 elt=LoadDynamics
+2026-06-23 11:22:27,596 - INFO - TEST  init Package 67
+2026-06-23 11:22:27,596 - INFO - TEST init EA.Eelement packid=66 elt=LoadCompositeWECC
+2026-06-23 11:22:27,596 - INFO - Package creation 
+2026-06-23 11:22:27,596 - INFO - Package creation 
+2026-06-23 11:22:27,596 - INFO - TEST  init Package 68
+2026-06-23 11:22:27,596 - INFO - TEST init EA.Eelement packid=47 elt=HVDCDynamics
+2026-06-23 11:22:27,612 - INFO - Package creation 
+2026-06-23 11:22:27,612 - INFO - TEST  init Package 69
+2026-06-23 11:22:27,612 - INFO - TEST init EA.Eelement packid=47 elt=RelayDynamics
+2026-06-23 11:22:27,612 - INFO - Package creation 
+2026-06-23 11:22:27,612 - INFO - TEST  init Package 70
+2026-06-23 11:22:27,612 - INFO - TEST init EA.Eelement packid=47 elt=StatorCurrentLimiterDynamics
+2026-06-23 11:22:27,612 - INFO - Package creation 
+2026-06-23 11:22:27,612 - INFO - TEST  init Package 71
+2026-06-23 11:22:27,612 - INFO - TEST init EA.Eelement packid=47 elt=StaticVarCompensatorDynamics
+2026-06-23 11:22:27,612 - INFO - Package creation 
+2026-06-23 11:22:27,612 - INFO - TEST  init Package 72
+2026-06-23 11:22:27,612 - INFO - TEST init EA.Eelement packid=47 elt=ShuntCompensatorDynamics
+2026-06-23 11:22:27,612 - INFO - Package creation 
+2026-06-23 11:22:27,612 - INFO - TEST  init Package 73
+2026-06-23 11:22:27,612 - INFO - TEST init EA.Eelement packid=47 elt=StatcomDynamics
+2026-06-23 11:22:27,612 - INFO - Package creation 
+2026-06-23 11:22:27,612 - INFO - TEST  init Package 74
+2026-06-23 11:22:27,628 - INFO - TEST init EA.Eelement packid=47 elt=WECCDynamics
+2026-06-23 11:22:27,628 - INFO - Package creation 
+2026-06-23 11:22:27,628 - INFO - TEST  init Package 75
+2026-06-23 11:22:27,628 - INFO - TEST init EA.Eelement packid=47 elt=IEEE1547Dynamics
+2026-06-23 11:22:27,628 - INFO - Package creation 
+2026-06-23 11:22:27,628 - INFO - TEST  init Package 76
+2026-06-23 11:22:27,628 - INFO - TEST init EA.Eelement packid=47 elt=InfHVDCDynamics
+2026-06-23 11:22:27,628 - INFO - TEST  init Package 77
+2026-06-23 11:22:27,628 - INFO - TEST init EA.Eelement packid=76 elt=CSC
+2026-06-23 11:22:27,628 - INFO - TEST init connector pour elt=CSC source=None target=None
+2026-06-23 11:22:27,628 - INFO - Package creation 
+2026-06-23 11:22:27,628 - INFO - TEST  init Package 78
+2026-06-23 11:22:27,628 - INFO - TEST init EA.Eelement packid=76 elt=VSC
+2026-06-23 11:22:27,643 - INFO - TEST init connector pour elt=VSC source=None target=None
+2026-06-23 11:22:27,643 - INFO - Package creation 
+2026-06-23 11:22:27,643 - INFO - Package creation 
+2026-06-23 11:22:27,643 - INFO - Package creation 
+2026-06-23 11:22:27,643 - INFO - TEST  init Package 79
+2026-06-23 11:22:27,643 - INFO - TEST init EA.Eelement packid=44 elt=UserDefinedModels
+2026-06-23 11:22:27,643 - INFO - Package creation 
+2026-06-23 11:22:27,643 - INFO - TEST  init Package 80
+2026-06-23 11:22:27,643 - INFO - TEST init EA.Eelement packid=44 elt=DetailedModelDescription
+2026-06-23 11:22:27,643 - INFO - Package creation 
+2026-06-23 11:22:27,643 - INFO - TEST  init Package 81
+2026-06-23 11:22:27,643 - INFO - TEST init EA.Eelement packid=44 elt=SimulationResult
+2026-06-23 11:22:27,643 - INFO - Package creation 
+2026-06-23 11:22:27,643 - INFO - TEST  init Package 82
+2026-06-23 11:22:27,643 - INFO - TEST init EA.Eelement packid=44 elt=Examples
+2026-06-23 11:22:27,643 - INFO - Package creation 
+2026-06-23 11:22:27,643 - INFO - Package creation 
+2026-06-23 11:22:27,643 - INFO - TEST  init Package 83
+2026-06-23 11:22:27,659 - INFO - TEST init EA.Eelement packid=12 elt=InfGrid
+2026-06-23 11:22:27,659 - INFO - TEST  init Package 84
+2026-06-23 11:22:27,659 - INFO - TEST init EA.Eelement packid=83 elt=InfExtEUNetworkCodes
+2026-06-23 11:22:27,659 - INFO - TEST  init Package 85
+2026-06-23 11:22:27,659 - INFO - TEST init EA.Eelement packid=84 elt=ExtNetworkCodes
+2026-06-23 11:22:27,659 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,659 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,659 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,659 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,659 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,659 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,675 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,675 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,675 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,675 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,675 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,675 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,675 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,675 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,675 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,691 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,691 - INFO - TEST init connector pour elt=ExtNetworkCodes source=None target=None
+2026-06-23 11:22:27,691 - INFO - TEST  init Package 86
+2026-06-23 11:22:27,691 - INFO - TEST init EA.Eelement packid=85 elt=ExtArea
+2026-06-23 11:22:27,691 - INFO - Package creation 
+2026-06-23 11:22:27,691 - INFO - TEST  init Package 87
+2026-06-23 11:22:27,691 - INFO - TEST init EA.Eelement packid=85 elt=ExtAssessedElement
+2026-06-23 11:22:27,691 - INFO - Package creation 
+2026-06-23 11:22:27,691 - INFO - TEST  init Package 88
+2026-06-23 11:22:27,691 - INFO - TEST init EA.Eelement packid=85 elt=ExtAvailabilitySchedule
+2026-06-23 11:22:27,691 - INFO - Package creation 
+2026-06-23 11:22:27,691 - INFO - TEST  init Package 89
+2026-06-23 11:22:27,691 - INFO - TEST init EA.Eelement packid=85 elt=ExtContingency
+2026-06-23 11:22:27,691 - INFO - Package creation 
+2026-06-23 11:22:27,691 - INFO - TEST  init Package 90
+2026-06-23 11:22:27,707 - INFO - TEST init EA.Eelement packid=85 elt=ExtEquivalent
+2026-06-23 11:22:27,707 - INFO - Package creation 
+2026-06-23 11:22:27,707 - INFO - TEST  init Package 91
+2026-06-23 11:22:27,707 - INFO - TEST init EA.Eelement packid=85 elt=ExtFaultsPRA
+2026-06-23 11:22:27,707 - INFO - TEST  init Package 92
+2026-06-23 11:22:27,707 - INFO - TEST init EA.Eelement packid=91 elt=ExtFaultCause
+2026-06-23 11:22:27,707 - INFO - Package creation 
+2026-06-23 11:22:27,707 - INFO - TEST  init Package 93
+2026-06-23 11:22:27,707 - INFO - TEST init EA.Eelement packid=91 elt=ExtFaultOutage
+2026-06-23 11:22:27,707 - INFO - Package creation 
+2026-06-23 11:22:27,707 - INFO - TEST  init Package 94
+2026-06-23 11:22:27,707 - INFO - TEST init EA.Eelement packid=91 elt=ExtGridDisturbance
+2026-06-23 11:22:27,723 - INFO - Package creation 
+2026-06-23 11:22:27,723 - INFO - Package creation 
+2026-06-23 11:22:27,723 - INFO - TEST  init Package 95
+2026-06-23 11:22:27,723 - INFO - TEST init EA.Eelement packid=85 elt=ExtPowerShiftKey
+2026-06-23 11:22:27,726 - INFO - TEST  init Package 96
+2026-06-23 11:22:27,727 - INFO - TEST init EA.Eelement packid=95 elt=ObjectPowerShiftKey
+2026-06-23 11:22:27,728 - INFO - Package creation 
+2026-06-23 11:22:27,728 - INFO - Package creation 
+2026-06-23 11:22:27,728 - INFO - TEST  init Package 97
+2026-06-23 11:22:27,728 - INFO - TEST init EA.Eelement packid=85 elt=ExtImpactAssessmentMatrix
+2026-06-23 11:22:27,728 - INFO - Package creation 
+2026-06-23 11:22:27,728 - INFO - TEST  init Package 98
+2026-06-23 11:22:27,728 - INFO - TEST init EA.Eelement packid=85 elt=ExtObjectRegistry
+2026-06-23 11:22:27,728 - INFO - Package creation 
+2026-06-23 11:22:27,728 - INFO - TEST  init Package 99
+2026-06-23 11:22:27,728 - INFO - TEST init EA.Eelement packid=85 elt=ExtPowerTransferCorridor
+2026-06-23 11:22:27,738 - INFO - Package creation 
+2026-06-23 11:22:27,738 - INFO - TEST  init Package 100
+2026-06-23 11:22:27,738 - INFO - TEST init EA.Eelement packid=85 elt=ExtPowerSystemProject
+2026-06-23 11:22:27,738 - INFO - Package creation 
+2026-06-23 11:22:27,738 - INFO - TEST  init Package 101
+2026-06-23 11:22:27,738 - INFO - TEST init EA.Eelement packid=85 elt=ExtRemedialAction
+2026-06-23 11:22:27,738 - INFO - Package creation 
+2026-06-23 11:22:27,738 - INFO - TEST  init Package 102
+2026-06-23 11:22:27,738 - INFO - TEST init EA.Eelement packid=85 elt=ExtRole
+2026-06-23 11:22:27,738 - INFO - Package creation 
+2026-06-23 11:22:27,738 - INFO - TEST  init Package 103
+2026-06-23 11:22:27,738 - INFO - TEST init EA.Eelement packid=85 elt=ExtSecurityAnalysisResult
+2026-06-23 11:22:27,738 - INFO - Package creation 
+2026-06-23 11:22:27,738 - INFO - TEST  init Package 104
+2026-06-23 11:22:27,738 - INFO - TEST init EA.Eelement packid=85 elt=ExtSensitivityMatrix
+2026-06-23 11:22:27,738 - INFO - Package creation 
+2026-06-23 11:22:27,738 - INFO - TEST  init Package 105
+2026-06-23 11:22:27,754 - INFO - TEST init EA.Eelement packid=85 elt=ExtSchedule
+2026-06-23 11:22:27,754 - INFO - Package creation 
+2026-06-23 11:22:27,754 - INFO - Package creation 
+2026-06-23 11:22:27,754 - INFO - TEST  init Package 106
+2026-06-23 11:22:27,754 - INFO - TEST init EA.Eelement packid=84 elt=ExtHeaderMetadata
+2026-06-23 11:22:27,754 - INFO - TEST init connector pour elt=ExtHeaderMetadata source=None target=None
+2026-06-23 11:22:27,754 - INFO - TEST init connector pour elt=ExtHeaderMetadata source=None target=None
+2026-06-23 11:22:27,754 - INFO - TEST  init Package 107
+2026-06-23 11:22:27,754 - INFO - TEST init EA.Eelement packid=106 elt=DatasetMetadata
+2026-06-23 11:22:27,754 - INFO - Package creation 
+2026-06-23 11:22:27,754 - INFO - TEST  init Package 108
+2026-06-23 11:22:27,754 - INFO - TEST init EA.Eelement packid=106 elt=ExtPart552FileHeader
+2026-06-23 11:22:27,754 - INFO - TEST init connector pour elt=ExtPart552FileHeader source=None target=None
+2026-06-23 11:22:27,770 - INFO - TEST init connector pour elt=ExtPart552FileHeader source=None target=None
+2026-06-23 11:22:27,770 - INFO - Package creation 
+2026-06-23 11:22:27,770 - INFO - Package creation 
+2026-06-23 11:22:27,770 - INFO - TEST  init Package 109
+2026-06-23 11:22:27,770 - INFO - TEST init EA.Eelement packid=84 elt=W3Contology
+2026-06-23 11:22:27,770 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,770 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,770 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,770 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,770 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,770 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,770 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,770 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,786 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,786 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,786 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,786 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,786 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,786 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,786 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,786 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,801 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,801 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,801 - INFO - TEST init connector pour elt=W3Contology source=None target=None
+2026-06-23 11:22:27,801 - INFO - TEST  init Package 110
+2026-06-23 11:22:27,801 - INFO - TEST init EA.Eelement packid=109 elt=prov-ontology
+2026-06-23 11:22:27,801 - INFO - TEST  init Package 111
+2026-06-23 11:22:27,801 - INFO - TEST init EA.Eelement packid=110 elt=owl
+2026-06-23 11:22:27,801 - INFO - Package creation 
+2026-06-23 11:22:27,801 - INFO - TEST  init Package 112
+2026-06-23 11:22:27,801 - INFO - TEST init EA.Eelement packid=110 elt=prov
+2026-06-23 11:22:27,801 - INFO - Package creation 
+2026-06-23 11:22:27,801 - INFO - Package creation 
+2026-06-23 11:22:27,801 - INFO - TEST  init Package 113
+2026-06-23 11:22:27,801 - INFO - TEST init EA.Eelement packid=109 elt=time-ontology
+2026-06-23 11:22:27,817 - INFO - TEST  init Package 114
+2026-06-23 11:22:27,817 - INFO - TEST init EA.Eelement packid=113 elt=owl
+2026-06-23 11:22:27,817 - INFO - Package creation 
+2026-06-23 11:22:27,817 - INFO - TEST  init Package 115
+2026-06-23 11:22:27,817 - INFO - TEST init EA.Eelement packid=113 elt=time
+2026-06-23 11:22:27,817 - INFO - Package creation 
+2026-06-23 11:22:27,817 - INFO - Package creation 
+2026-06-23 11:22:27,817 - INFO - TEST  init Package 116
+2026-06-23 11:22:27,817 - INFO - TEST init EA.Eelement packid=109 elt=Ext501
+2026-06-23 11:22:27,817 - INFO - TEST init connector pour elt=Ext501 source=None target=None
+2026-06-23 11:22:27,817 - INFO - TEST init connector pour elt=Ext501 source=None target=None
+2026-06-23 11:22:27,817 - INFO - TEST init connector pour elt=Ext501 source=None target=None
+2026-06-23 11:22:27,817 - INFO - TEST init connector pour elt=Ext501 source=None target=None
+2026-06-23 11:22:27,817 - INFO - TEST init connector pour elt=Ext501 source=None target=None
+2026-06-23 11:22:27,833 - INFO - TEST  init Package 117
+2026-06-23 11:22:27,833 - INFO - TEST init EA.Eelement packid=116 elt=DCAT
+2026-06-23 11:22:27,833 - INFO - TEST init connector pour elt=DCAT source=None target=None
+2026-06-23 11:22:27,833 - INFO - Package creation 
+2026-06-23 11:22:27,833 - INFO - TEST  init Package 118
+2026-06-23 11:22:27,833 - INFO - TEST init EA.Eelement packid=116 elt=DX-PROF
+2026-06-23 11:22:27,833 - INFO - Package creation 
+2026-06-23 11:22:27,833 - INFO - TEST  init Package 119
+2026-06-23 11:22:27,833 - INFO - TEST init EA.Eelement packid=116 elt=OWL
+2026-06-23 11:22:27,833 - INFO - Package creation 
+2026-06-23 11:22:27,833 - INFO - Package creation 
+2026-06-23 11:22:27,833 - INFO - Package creation 
+2026-06-23 11:22:27,833 - INFO - Package creation 
+2026-06-23 11:22:27,833 - INFO - TEST  init Package 120
+2026-06-23 11:22:27,833 - INFO - TEST init EA.Eelement packid=83 elt=InfProtectionControlExtentions
+2026-06-23 11:22:27,833 - INFO - TEST  init Package 121
+2026-06-23 11:22:27,833 - INFO - TEST init EA.Eelement packid=120 elt=GridExtension
+2026-06-23 11:22:27,833 - INFO - TEST  init Package 122
+2026-06-23 11:22:27,849 - INFO - TEST init EA.Eelement packid=121 elt=BaseExtension
+2026-06-23 11:22:27,849 - INFO - TEST  init Package 123
+2026-06-23 11:22:27,849 - INFO - TEST init EA.Eelement packid=122 elt=CoreExtension
+2026-06-23 11:22:27,849 - INFO - Package creation 
+2026-06-23 11:22:27,849 - INFO - TEST  init Package 124
+2026-06-23 11:22:27,849 - INFO - TEST init EA.Eelement packid=122 elt=ProtectionExtension
+2026-06-23 11:22:27,849 - INFO - TEST  init Package 125
+2026-06-23 11:22:27,849 - INFO - TEST init EA.Eelement packid=124 elt=ExampleOfProtectionRelayLogic
+2026-06-23 11:22:27,849 - INFO - Package creation 
+2026-06-23 11:22:27,849 - INFO - TEST  init Package 126
+2026-06-23 11:22:27,849 - INFO - TEST init EA.Eelement packid=124 elt=ExmapleOfSettingValuesOfProtectionRelayScheme
+2026-06-23 11:22:27,849 - INFO - Package creation 
+2026-06-23 11:22:27,849 - INFO - Package creation 
+2026-06-23 11:22:27,849 - INFO - Package creation 
+2026-06-23 11:22:27,849 - INFO - Package creation 
+2026-06-23 11:22:27,849 - INFO - Package creation 
+2026-06-23 11:22:27,849 - INFO - TEST  init Package 127
+2026-06-23 11:22:27,849 - INFO - TEST init EA.Eelement packid=83 elt=DocExtGrid
+2026-06-23 11:22:27,849 - INFO - Package creation 
+2026-06-23 11:22:27,849 - INFO - TEST  init Package 128
+2026-06-23 11:22:27,864 - INFO - TEST init EA.Eelement packid=83 elt=InfFeeder
+2026-06-23 11:22:27,864 - INFO - Package creation 
+2026-06-23 11:22:27,864 - INFO - TEST  init Package 129
+2026-06-23 11:22:27,864 - INFO - TEST init EA.Eelement packid=83 elt=ExtGBShortCircuit
+2026-06-23 11:22:27,864 - INFO - Package creation 
+2026-06-23 11:22:27,864 - INFO - TEST  init Package 130
+2026-06-23 11:22:27,864 - INFO - TEST init EA.Eelement packid=83 elt=Metadata
+2026-06-23 11:22:27,864 - INFO - TEST  init Package 131
+2026-06-23 11:22:27,864 - INFO - TEST init EA.Eelement packid=130 elt=AlternateModels
+2026-06-23 11:22:27,864 - INFO - Package creation 
+2026-06-23 11:22:27,864 - INFO - TEST  init Package 132
+2026-06-23 11:22:27,864 - INFO - TEST init EA.Eelement packid=130 elt=GenericDataSet
+2026-06-23 11:22:27,864 - INFO - TEST  init Package 133
+2026-06-23 11:22:27,864 - INFO - TEST init EA.Eelement packid=132 elt=DetailedDiagrams
+2026-06-23 11:22:27,864 - INFO - Package creation 
+2026-06-23 11:22:27,864 - INFO - Package creation 
+2026-06-23 11:22:27,864 - INFO - TEST  init Package 134
+2026-06-23 11:22:27,864 - INFO - TEST init EA.Eelement packid=130 elt=InfGenericDataset
+2026-06-23 11:22:27,864 - INFO - TEST  init Package 135
+2026-06-23 11:22:27,880 - INFO - TEST init EA.Eelement packid=134 elt=InfGenericDatasetInstanceDiagrams
+2026-06-23 11:22:27,880 - INFO - Package creation 
+2026-06-23 11:22:27,880 - INFO - TEST  init Package 136
+2026-06-23 11:22:27,880 - INFO - TEST init EA.Eelement packid=134 elt=InfGenericDatasetInstanceExamples
+2026-06-23 11:22:27,880 - INFO - TEST  init Package 137
+2026-06-23 11:22:27,880 - INFO - TEST init EA.Eelement packid=136 elt=ApplyChangeModelOperationExample
+2026-06-23 11:22:27,880 - INFO - Package creation 
+2026-06-23 11:22:27,880 - INFO - TEST  init Package 138
+2026-06-23 11:22:27,880 - INFO - TEST init EA.Eelement packid=136 elt=CustomModelOperationExample
+2026-06-23 11:22:27,880 - INFO - Package creation 
+2026-06-23 11:22:27,880 - INFO - TEST  init Package 139
+2026-06-23 11:22:27,880 - INFO - TEST init EA.Eelement packid=136 elt=PrimitiveIncrementals
+2026-06-23 11:22:27,880 - INFO - TEST  init Package 140
+2026-06-23 11:22:27,880 - INFO - TEST init EA.Eelement packid=139 elt=create
+2026-06-23 11:22:27,880 - INFO - Package creation 
+2026-06-23 11:22:27,880 - INFO - TEST  init Package 141
+2026-06-23 11:22:27,896 - INFO - TEST init EA.Eelement packid=139 elt=delTyped
+2026-06-23 11:22:27,896 - INFO - Package creation 
+2026-06-23 11:22:27,896 - INFO - TEST  init Package 142
+2026-06-23 11:22:27,896 - INFO - TEST init EA.Eelement packid=139 elt=delUntyped
+2026-06-23 11:22:27,896 - INFO - Package creation 
+2026-06-23 11:22:27,896 - INFO - TEST  init Package 143
+2026-06-23 11:22:27,896 - INFO - TEST init EA.Eelement packid=139 elt=modPrecondition
+2026-06-23 11:22:27,896 - INFO - Package creation 
+2026-06-23 11:22:27,896 - INFO - TEST  init Package 144
+2026-06-23 11:22:27,896 - INFO - TEST init EA.Eelement packid=139 elt=modUpdateOnly
+2026-06-23 11:22:27,896 - INFO - Package creation 
+2026-06-23 11:22:27,896 - INFO - Package creation 
+2026-06-23 11:22:27,896 - INFO - TEST  init Package 145
+2026-06-23 11:22:27,896 - INFO - TEST init EA.Eelement packid=136 elt=InstanceExampleTopology
+2026-06-23 11:22:27,896 - INFO - Package creation 
+2026-06-23 11:22:27,896 - INFO - TEST  init Package 146
+2026-06-23 11:22:27,896 - INFO - TEST init EA.Eelement packid=136 elt=registry
+2026-06-23 11:22:27,896 - INFO - Package creation 
+2026-06-23 11:22:27,896 - INFO - Package creation 
+2026-06-23 11:22:27,896 - INFO - Package creation 
+2026-06-23 11:22:27,896 - INFO - TEST  init Package 147
+2026-06-23 11:22:27,912 - INFO - TEST init EA.Eelement packid=130 elt=ModelOperations
+2026-06-23 11:22:27,912 - INFO - Package creation 
+2026-06-23 11:22:27,912 - INFO - TEST  init Package 148
+2026-06-23 11:22:27,912 - INFO - TEST init EA.Eelement packid=130 elt=NetworkModelFrames
+2026-06-23 11:22:27,912 - INFO - TEST  init Package 149
+2026-06-23 11:22:27,912 - INFO - TEST init EA.Eelement packid=148 elt=unused
+2026-06-23 11:22:27,912 - INFO - Package creation 
+2026-06-23 11:22:27,912 - INFO - Package creation 
+2026-06-23 11:22:27,912 - INFO - TEST  init Package 150
+2026-06-23 11:22:27,912 - INFO - TEST init EA.Eelement packid=130 elt=NetworkModelProjects
+2026-06-23 11:22:27,912 - INFO - Package creation 
+2026-06-23 11:22:27,912 - INFO - Package creation 
+2026-06-23 11:22:27,912 - INFO - Package creation 
+2026-06-23 11:22:27,912 - INFO - Package creation 
+2026-06-23 11:22:27,912 - INFO - TEST  init Package 151
+2026-06-23 11:22:27,912 - INFO - TEST init EA.Eelement packid=11 elt=Enterprise
+2026-06-23 11:22:27,912 - INFO - TEST init connector pour elt=Enterprise source=None target=None
+2026-06-23 11:22:27,912 - INFO - TEST init connector pour elt=Enterprise source=None target=None
+2026-06-23 11:22:27,927 - INFO - TEST init connector pour elt=Enterprise source=None target=None
+2026-06-23 11:22:27,927 - INFO - TEST init connector pour elt=Enterprise source=None target=None
+2026-06-23 11:22:27,927 - INFO - TEST init connector pour elt=Enterprise source=None target=None
+2026-06-23 11:22:27,927 - INFO - TEST init connector pour elt=Enterprise source=None target=None
+2026-06-23 11:22:27,927 - INFO - TEST init connector pour elt=Enterprise source=None target=None
+2026-06-23 11:22:27,927 - INFO - TEST init connector pour elt=Enterprise source=None target=None
+2026-06-23 11:22:27,927 - INFO - TEST init connector pour elt=Enterprise source=None target=None
+2026-06-23 11:22:27,927 - INFO - TEST  init Package 152
+2026-06-23 11:22:27,927 - INFO - TEST init EA.Eelement packid=151 elt=Assets
+2026-06-23 11:22:27,943 - INFO - TEST init connector pour elt=Assets source=None target=None
+2026-06-23 11:22:27,943 - INFO - TEST init connector pour elt=Assets source=None target=None
+2026-06-23 11:22:27,943 - INFO - TEST init connector pour elt=Assets source=None target=None
+2026-06-23 11:22:27,943 - INFO - TEST init connector pour elt=Assets source=None target=None
+2026-06-23 11:22:27,943 - INFO - TEST init connector pour elt=Assets source=None target=None
+2026-06-23 11:22:27,943 - INFO - TEST init connector pour elt=Assets source=None target=None
+2026-06-23 11:22:27,943 - INFO - TEST  init Package 153
+2026-06-23 11:22:27,943 - INFO - TEST init EA.Eelement packid=152 elt=Merge Diagrams
+2026-06-23 11:22:27,943 - INFO - Package creation 
+2026-06-23 11:22:27,943 - INFO - TEST  init Package 154
+2026-06-23 11:22:27,959 - INFO - TEST init EA.Eelement packid=152 elt=DetailedDiagrams
+2026-06-23 11:22:27,959 - INFO - TEST  init Package 155
+2026-06-23 11:22:27,959 - INFO - TEST init EA.Eelement packid=154 elt=Part 4_RedMine Issues
+2026-06-23 11:22:27,959 - INFO - Package creation 
+2026-06-23 11:22:27,959 - INFO - Package creation 
+2026-06-23 11:22:27,959 - INFO - Package creation 
+2026-06-23 11:22:27,959 - INFO - TEST  init Package 156
+2026-06-23 11:22:27,959 - INFO - TEST init EA.Eelement packid=151 elt=AssetInfo
+2026-06-23 11:22:27,959 - INFO - TEST init connector pour elt=AssetInfo source=None target=None
+2026-06-23 11:22:27,959 - INFO - TEST init connector pour elt=AssetInfo source=None target=None
+2026-06-23 11:22:27,959 - INFO - TEST  init Package 157
+2026-06-23 11:22:27,959 - INFO - TEST init EA.Eelement packid=156 elt=DetailedDiagrams
+2026-06-23 11:22:27,959 - INFO - Package creation 
+2026-06-23 11:22:27,959 - INFO - TEST  init Package 158
+2026-06-23 11:22:27,959 - INFO - TEST init EA.Eelement packid=156 elt=AssetInfo Impact Assessment Diagrams
+2026-06-23 11:22:27,975 - INFO - Package creation 
+2026-06-23 11:22:27,975 - INFO - Package creation 
+2026-06-23 11:22:27,975 - INFO - TEST  init Package 159
+2026-06-23 11:22:27,975 - INFO - TEST init EA.Eelement packid=151 elt=AssetMeas
+2026-06-23 11:22:27,975 - INFO - Package creation 
+2026-06-23 11:22:27,975 - INFO - TEST  init Package 160
+2026-06-23 11:22:27,975 - INFO - TEST init EA.Eelement packid=151 elt=Common
+2026-06-23 11:22:27,975 - INFO - TEST init connector pour elt=Common source=None target=None
+2026-06-23 11:22:27,975 - INFO - TEST init connector pour elt=Common source=None target=None
+2026-06-23 11:22:27,975 - INFO - TEST init connector pour elt=Common source=None target=None
+2026-06-23 11:22:27,975 - INFO - TEST init connector pour elt=Common source=None target=None
+2026-06-23 11:22:27,975 - INFO - TEST init connector pour elt=Common source=None target=None
+2026-06-23 11:22:27,975 - INFO - TEST init connector pour elt=Common source=None target=None
+2026-06-23 11:22:27,990 - INFO - TEST init connector pour elt=Common source=None target=None
+2026-06-23 11:22:27,990 - INFO - TEST init connector pour elt=Common source=None target=None
+2026-06-23 11:22:27,990 - INFO - TEST init connector pour elt=Common source=None target=None
+2026-06-23 11:22:27,990 - INFO - TEST  init Package 161
+2026-06-23 11:22:27,990 - INFO - TEST init EA.Eelement packid=160 elt=DetailedDiagrams
+2026-06-23 11:22:27,990 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:27,990 - INFO - Package creation 
+2026-06-23 11:22:27,990 - INFO - Package creation 
+2026-06-23 11:22:27,990 - INFO - TEST  init Package 162
+2026-06-23 11:22:27,990 - INFO - TEST init EA.Eelement packid=151 elt=Customers
+2026-06-23 11:22:27,990 - INFO - TEST init connector pour elt=Customers source=None target=None
+2026-06-23 11:22:27,990 - INFO - Package creation 
+2026-06-23 11:22:27,990 - INFO - TEST  init Package 163
+2026-06-23 11:22:27,990 - INFO - TEST init EA.Eelement packid=151 elt=DER
+2026-06-23 11:22:28,006 - INFO - TEST init connector pour elt=DER source=None target=None
+2026-06-23 11:22:28,006 - INFO - Package creation 
+2026-06-23 11:22:28,006 - INFO - TEST  init Package 164
+2026-06-23 11:22:28,006 - INFO - TEST init EA.Eelement packid=151 elt=Design
+2026-06-23 11:22:28,006 - INFO - TEST init connector pour elt=Design source=None target=None
+2026-06-23 11:22:28,006 - INFO - Package creation 
+2026-06-23 11:22:28,006 - INFO - TEST  init Package 165
+2026-06-23 11:22:28,006 - INFO - TEST init EA.Eelement packid=151 elt=LoadControl
+2026-06-23 11:22:28,006 - INFO - TEST init connector pour elt=LoadControl source=None target=None
+2026-06-23 11:22:28,006 - INFO - Package creation 
+2026-06-23 11:22:28,006 - INFO - TEST  init Package 166
+2026-06-23 11:22:28,006 - INFO - TEST init EA.Eelement packid=151 elt=Metering
+2026-06-23 11:22:28,006 - INFO - TEST init connector pour elt=Metering source=None target=None
+2026-06-23 11:22:28,006 - INFO - TEST init connector pour elt=Metering source=None target=None
+2026-06-23 11:22:28,022 - INFO - TEST init connector pour elt=Metering source=None target=None
+2026-06-23 11:22:28,022 - INFO - TEST init connector pour elt=Metering source=None target=None
+2026-06-23 11:22:28,022 - INFO - TEST  init Package 167
+2026-06-23 11:22:28,022 - INFO - TEST init EA.Eelement packid=166 elt=DetailedDiagrams
+2026-06-23 11:22:28,022 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,022 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,022 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,022 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,038 - INFO - Package creation 
+2026-06-23 11:22:28,038 - INFO - Package creation 
+2026-06-23 11:22:28,038 - INFO - TEST  init Package 168
+2026-06-23 11:22:28,038 - INFO - TEST init EA.Eelement packid=151 elt=ObjectIdentificationRevision
+2026-06-23 11:22:28,038 - INFO - Package creation 
+2026-06-23 11:22:28,038 - INFO - TEST  init Package 169
+2026-06-23 11:22:28,038 - INFO - TEST init EA.Eelement packid=151 elt=Operations
+2026-06-23 11:22:28,038 - INFO - TEST  init Package 170
+2026-06-23 11:22:28,038 - INFO - TEST init EA.Eelement packid=169 elt=DetailedDiagrams
+2026-06-23 11:22:28,038 - INFO - Package creation 
+2026-06-23 11:22:28,038 - INFO - TEST  init Package 171
+2026-06-23 11:22:28,038 - INFO - TEST init EA.Eelement packid=169 elt=ModifiedClasses
+2026-06-23 11:22:28,038 - INFO - Package creation 
+2026-06-23 11:22:28,038 - INFO - Package creation 
+2026-06-23 11:22:28,038 - INFO - TEST  init Package 172
+2026-06-23 11:22:28,038 - INFO - TEST init EA.Eelement packid=151 elt=PaymentMetering
+2026-06-23 11:22:28,038 - INFO - TEST  init Package 173
+2026-06-23 11:22:28,053 - INFO - TEST init EA.Eelement packid=172 elt=DetailedDiagrams
+2026-06-23 11:22:28,053 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,053 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,053 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,053 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,053 - INFO - Package creation 
+2026-06-23 11:22:28,053 - INFO - Package creation 
+2026-06-23 11:22:28,053 - INFO - TEST  init Package 174
+2026-06-23 11:22:28,053 - INFO - TEST init EA.Eelement packid=151 elt=Work
+2026-06-23 11:22:28,053 - INFO - TEST  init Package 175
+2026-06-23 11:22:28,053 - INFO - TEST init EA.Eelement packid=174 elt=DetailedDiagrams
+2026-06-23 11:22:28,053 - INFO - Package creation 
+2026-06-23 11:22:28,053 - INFO - Package creation 
+2026-06-23 11:22:28,053 - INFO - TEST  init Package 176
+2026-06-23 11:22:28,069 - INFO - TEST init EA.Eelement packid=151 elt=DocIEC61968
+2026-06-23 11:22:28,069 - INFO - Package creation 
+2026-06-23 11:22:28,069 - INFO - TEST  init Package 177
+2026-06-23 11:22:28,069 - INFO - TEST init EA.Eelement packid=151 elt=InfEnterprise
+2026-06-23 11:22:28,069 - INFO - TEST  init Package 178
+2026-06-23 11:22:28,069 - INFO - TEST init EA.Eelement packid=177 elt=InfAssetInfo
+2026-06-23 11:22:28,069 - INFO - Package creation 
+2026-06-23 11:22:28,069 - INFO - TEST  init Package 179
+2026-06-23 11:22:28,069 - INFO - TEST init EA.Eelement packid=177 elt=InfCommon
+2026-06-23 11:22:28,069 - INFO - Package creation 
+2026-06-23 11:22:28,069 - INFO - TEST  init Package 180
+2026-06-23 11:22:28,069 - INFO - TEST init EA.Eelement packid=177 elt=InfDesign
+2026-06-23 11:22:28,069 - INFO - TEST  init Package 181
+2026-06-23 11:22:28,069 - INFO - TEST init EA.Eelement packid=180 elt=Use Case Model
+2026-06-23 11:22:28,069 - INFO - TEST  init Package 182
+2026-06-23 11:22:28,069 - INFO - TEST init EA.Eelement packid=181 elt=Use Cases
+2026-06-23 11:22:28,069 - INFO - Package creation 
+2026-06-23 11:22:28,069 - INFO - TEST  init Package 183
+2026-06-23 11:22:28,085 - INFO - TEST init EA.Eelement packid=181 elt=Actors
+2026-06-23 11:22:28,085 - INFO - Package creation 
+2026-06-23 11:22:28,085 - INFO - TEST  init Package 184
+2026-06-23 11:22:28,085 - INFO - TEST init EA.Eelement packid=181 elt=Templates
+2026-06-23 11:22:28,085 - INFO - Package creation 
+2026-06-23 11:22:28,085 - INFO - TEST  init Package 185
+2026-06-23 11:22:28,085 - INFO - TEST init EA.Eelement packid=181 elt=Design Components
+2026-06-23 11:22:28,085 - INFO - TEST  init Package 186
+2026-06-23 11:22:28,085 - INFO - TEST init EA.Eelement packid=185 elt=Design
+2026-06-23 11:22:28,085 - INFO - Package creation 
+2026-06-23 11:22:28,085 - INFO - Package creation 
+2026-06-23 11:22:28,085 - INFO - Package creation 
+2026-06-23 11:22:28,085 - INFO - TEST  init Package 187
+2026-06-23 11:22:28,085 - INFO - TEST init EA.Eelement packid=180 elt=Compatible Unit
+2026-06-23 11:22:28,085 - INFO - Package creation 
+2026-06-23 11:22:28,085 - INFO - TEST  init Package 188
+2026-06-23 11:22:28,085 - INFO - TEST init EA.Eelement packid=180 elt=Design
+2026-06-23 11:22:28,101 - INFO - Package creation 
+2026-06-23 11:22:28,101 - INFO - TEST  init Package 189
+2026-06-23 11:22:28,101 - INFO - TEST init EA.Eelement packid=180 elt=Design examples
+2026-06-23 11:22:28,101 - INFO - TEST  init Package 190
+2026-06-23 11:22:28,116 - INFO - TEST init EA.Eelement packid=189 elt=New transmission line (Svein)
+2026-06-23 11:22:28,116 - INFO - Package creation 
+2026-06-23 11:22:28,116 - INFO - Package creation 
+2026-06-23 11:22:28,116 - INFO - TEST  init Package 191
+2026-06-23 11:22:28,116 - INFO - TEST init EA.Eelement packid=180 elt=BIM
+2026-06-23 11:22:28,116 - INFO - TEST  init Package 192
+2026-06-23 11:22:28,116 - INFO - TEST init EA.Eelement packid=191 elt=BIM Core
+2026-06-23 11:22:28,116 - INFO - Package creation 
+2026-06-23 11:22:28,116 - INFO - TEST  init Package 193
+2026-06-23 11:22:28,116 - INFO - TEST init EA.Eelement packid=191 elt=BIM Resource
+2026-06-23 11:22:28,116 - INFO - Package creation 
+2026-06-23 11:22:28,116 - INFO - Package creation 
+2026-06-23 11:22:28,116 - INFO - Package creation 
+2026-06-23 11:22:28,116 - INFO - TEST  init Package 194
+2026-06-23 11:22:28,116 - INFO - TEST init EA.Eelement packid=177 elt=InfWork
+2026-06-23 11:22:28,116 - INFO - Package creation 
+2026-06-23 11:22:28,116 - INFO - TEST  init Package 195
+2026-06-23 11:22:28,116 - INFO - TEST init EA.Eelement packid=177 elt=Archive
+2026-06-23 11:22:28,116 - INFO - TEST  init Package 196
+2026-06-23 11:22:28,132 - INFO - TEST init EA.Eelement packid=195 elt=Sandbox
+2026-06-23 11:22:28,132 - INFO - TEST  init Package 197
+2026-06-23 11:22:28,132 - INFO - TEST init EA.Eelement packid=196 elt=InfNewAssets
+2026-06-23 11:22:28,132 - INFO - TEST init connector pour elt=InfNewAssets source=None target=None
+2026-06-23 11:22:28,132 - INFO - Package creation 
+2026-06-23 11:22:28,132 - INFO - Package creation 
+2026-06-23 11:22:28,132 - INFO - TEST  init Package 198
+2026-06-23 11:22:28,132 - INFO - TEST init EA.Eelement packid=195 elt=InfAssets
+2026-06-23 11:22:28,132 - INFO - TEST init connector pour elt=InfAssets source=None target=None
+2026-06-23 11:22:28,132 - INFO - TEST init connector pour elt=InfAssets source=None target=None
+2026-06-23 11:22:28,132 - INFO - TEST  init Package 199
+2026-06-23 11:22:28,132 - INFO - TEST init EA.Eelement packid=198 elt=DetailedDiagrams
+2026-06-23 11:22:28,132 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,148 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,148 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,148 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,148 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,148 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,148 - INFO - Package creation 
+2026-06-23 11:22:28,148 - INFO - Package creation 
+2026-06-23 11:22:28,148 - INFO - TEST  init Package 200
+2026-06-23 11:22:28,148 - INFO - TEST init EA.Eelement packid=195 elt=InfAssetInfo
+2026-06-23 11:22:28,148 - INFO - TEST init connector pour elt=InfAssetInfo source=None target=None
+2026-06-23 11:22:28,148 - INFO - TEST init connector pour elt=InfAssetInfo source=None target=None
+2026-06-23 11:22:28,148 - INFO - Package creation 
+2026-06-23 11:22:28,148 - INFO - TEST  init Package 201
+2026-06-23 11:22:28,163 - INFO - TEST init EA.Eelement packid=195 elt=InfCommon
+2026-06-23 11:22:28,163 - INFO - TEST init connector pour elt=InfCommon source=None target=None
+2026-06-23 11:22:28,163 - INFO - TEST init connector pour elt=InfCommon source=None target=None
+2026-06-23 11:22:28,163 - INFO - TEST init connector pour elt=InfCommon source=None target=None
+2026-06-23 11:22:28,163 - INFO - TEST init connector pour elt=InfCommon source=None target=None
+2026-06-23 11:22:28,163 - INFO - TEST init connector pour elt=InfCommon source=None target=None
+2026-06-23 11:22:28,163 - INFO - TEST init connector pour elt=InfCommon source=None target=None
+2026-06-23 11:22:28,163 - INFO - TEST  init Package 202
+2026-06-23 11:22:28,163 - INFO - TEST init EA.Eelement packid=201 elt=DetailedDiagrams
+2026-06-23 11:22:28,163 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,179 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,179 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,179 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,179 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,179 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,179 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,179 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,179 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,179 - INFO - Package creation 
+2026-06-23 11:22:28,179 - INFO - Package creation 
+2026-06-23 11:22:28,179 - INFO - TEST  init Package 203
+2026-06-23 11:22:28,195 - INFO - TEST init EA.Eelement packid=195 elt=InfCustomers
+2026-06-23 11:22:28,195 - INFO - TEST init connector pour elt=InfCustomers source=None target=None
+2026-06-23 11:22:28,195 - INFO - Package creation 
+2026-06-23 11:22:28,195 - INFO - TEST  init Package 204
+2026-06-23 11:22:28,195 - INFO - TEST init EA.Eelement packid=195 elt=InfERPSupport
+2026-06-23 11:22:28,195 - INFO - TEST  init Package 205
+2026-06-23 11:22:28,195 - INFO - TEST init EA.Eelement packid=204 elt=DetailedDiagrams
+2026-06-23 11:22:28,195 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,195 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,195 - INFO - Package creation 
+2026-06-23 11:22:28,195 - INFO - Package creation 
+2026-06-23 11:22:28,195 - INFO - TEST  init Package 206
+2026-06-23 11:22:28,195 - INFO - TEST init EA.Eelement packid=195 elt=InfLocations
+2026-06-23 11:22:28,195 - INFO - TEST init connector pour elt=InfLocations source=None target=None
+2026-06-23 11:22:28,211 - INFO - TEST init connector pour elt=InfLocations source=None target=None
+2026-06-23 11:22:28,212 - INFO - TEST init connector pour elt=InfLocations source=None target=None
+2026-06-23 11:22:28,212 - INFO - Package creation 
+2026-06-23 11:22:28,212 - INFO - TEST  init Package 207
+2026-06-23 11:22:28,212 - INFO - TEST init EA.Eelement packid=195 elt=InfMetering
+2026-06-23 11:22:28,212 - INFO - Package creation 
+2026-06-23 11:22:28,212 - INFO - TEST  init Package 208
+2026-06-23 11:22:28,212 - INFO - TEST init EA.Eelement packid=195 elt=InfOperations
+2026-06-23 11:22:28,212 - INFO - TEST init connector pour elt=InfOperations source=None target=None
+2026-06-23 11:22:28,212 - INFO - Package creation 
+2026-06-23 11:22:28,212 - INFO - TEST  init Package 209
+2026-06-23 11:22:28,212 - INFO - TEST init EA.Eelement packid=195 elt=InfTypeAsset
+2026-06-23 11:22:28,212 - INFO - Package creation 
+2026-06-23 11:22:28,212 - INFO - TEST  init Package 210
+2026-06-23 11:22:28,227 - INFO - TEST init EA.Eelement packid=195 elt=InfWiresExt
+2026-06-23 11:22:28,227 - INFO - Package creation 
+2026-06-23 11:22:28,227 - INFO - TEST  init Package 211
+2026-06-23 11:22:28,227 - INFO - TEST init EA.Eelement packid=195 elt=InfWork
+2026-06-23 11:22:28,227 - INFO - Package creation 
+2026-06-23 11:22:28,227 - INFO - Package creation 
+2026-06-23 11:22:28,227 - INFO - TEST  init Package 212
+2026-06-23 11:22:28,227 - INFO - TEST init EA.Eelement packid=177 elt=Legends
+2026-06-23 11:22:28,227 - INFO - Package creation 
+2026-06-23 11:22:28,227 - INFO - Package creation 
+2026-06-23 11:22:28,227 - INFO - Package creation 
+2026-06-23 11:22:28,227 - INFO - TEST  init Package 213
+2026-06-23 11:22:28,227 - INFO - TEST init EA.Eelement packid=11 elt=Market
+2026-06-23 11:22:28,227 - INFO - TEST init connector pour elt=Market source=None target=None
+2026-06-23 11:22:28,227 - INFO - TEST init connector pour elt=Market source=None target=None
+2026-06-23 11:22:28,227 - INFO - TEST init connector pour elt=Market source=None target=None
+2026-06-23 11:22:28,227 - INFO - TEST init connector pour elt=Market source=None target=None
+2026-06-23 11:22:28,242 - INFO - TEST init connector pour elt=Market source=None target=None
+2026-06-23 11:22:28,242 - INFO - TEST init connector pour elt=Market source=None target=None
+2026-06-23 11:22:28,242 - INFO - TEST init connector pour elt=Market source=None target=None
+2026-06-23 11:22:28,242 - INFO - TEST init connector pour elt=Market source=None target=None
+2026-06-23 11:22:28,242 - INFO - TEST  init Package 214
+2026-06-23 11:22:28,242 - INFO - TEST init EA.Eelement packid=213 elt=DocMarket
+2026-06-23 11:22:28,242 - INFO - Package creation 
+2026-06-23 11:22:28,242 - INFO - TEST  init Package 215
+2026-06-23 11:22:28,242 - INFO - TEST init EA.Eelement packid=213 elt=MarketCommon
+2026-06-23 11:22:28,242 - INFO - TEST init connector pour elt=MarketCommon source=None target=None
+2026-06-23 11:22:28,242 - INFO - TEST init connector pour elt=MarketCommon source=None target=None
+2026-06-23 11:22:28,242 - INFO - TEST  init Package 216
+2026-06-23 11:22:28,258 - INFO - TEST init EA.Eelement packid=215 elt=DetailedDiagrams
+2026-06-23 11:22:28,258 - INFO - Package creation 
+2026-06-23 11:22:28,258 - INFO - Package creation 
+2026-06-23 11:22:28,258 - INFO - TEST  init Package 217
+2026-06-23 11:22:28,258 - INFO - TEST init EA.Eelement packid=213 elt=MarketManagement
+2026-06-23 11:22:28,258 - INFO - TEST  init Package 218
+2026-06-23 11:22:28,258 - INFO - TEST init EA.Eelement packid=217 elt=DetailedDiagrams
+2026-06-23 11:22:28,258 - INFO - Package creation 
+2026-06-23 11:22:28,258 - INFO - Package creation 
+2026-06-23 11:22:28,258 - INFO - TEST  init Package 219
+2026-06-23 11:22:28,258 - INFO - TEST init EA.Eelement packid=213 elt=MarketOperations
+2026-06-23 11:22:28,258 - INFO - TEST  init Package 220
+2026-06-23 11:22:28,258 - INFO - TEST init EA.Eelement packid=219 elt=DetailedDiagrams
+2026-06-23 11:22:28,258 - INFO - TEST  init Package 221
+2026-06-23 11:22:28,258 - INFO - TEST init EA.Eelement packid=220 elt=DemandSideResourceInterfaceProfiles_IEC62746-4
+2026-06-23 11:22:28,258 - INFO - Package creation 
+2026-06-23 11:22:28,258 - INFO - Package creation 
+2026-06-23 11:22:28,258 - INFO - TEST  init Package 222
+2026-06-23 11:22:28,274 - INFO - TEST init EA.Eelement packid=219 elt=CongestionRevenueRights
+2026-06-23 11:22:28,274 - INFO - TEST init connector pour elt=CongestionRevenueRights source=None target=None
+2026-06-23 11:22:28,274 - INFO - TEST init connector pour elt=CongestionRevenueRights source=None target=None
+2026-06-23 11:22:28,274 - INFO - TEST init connector pour elt=CongestionRevenueRights source=None target=None
+2026-06-23 11:22:28,274 - INFO - TEST init connector pour elt=CongestionRevenueRights source=None target=None
+2026-06-23 11:22:28,274 - INFO - TEST  init Package 223
+2026-06-23 11:22:28,274 - INFO - TEST init EA.Eelement packid=222 elt=DetailedDiagrams
+2026-06-23 11:22:28,274 - INFO - Package creation 
+2026-06-23 11:22:28,274 - INFO - Package creation 
+2026-06-23 11:22:28,274 - INFO - TEST  init Package 224
+2026-06-23 11:22:28,290 - INFO - TEST init EA.Eelement packid=219 elt=MarketOpCommon
+2026-06-23 11:22:28,290 - INFO - TEST init connector pour elt=MarketOpCommon source=None target=None
+2026-06-23 11:22:28,290 - INFO - TEST init connector pour elt=MarketOpCommon source=None target=None
+2026-06-23 11:22:28,290 - INFO - TEST  init Package 225
+2026-06-23 11:22:28,290 - INFO - TEST init EA.Eelement packid=224 elt=DetailedDiagrams
+2026-06-23 11:22:28,290 - INFO - Package creation 
+2026-06-23 11:22:28,290 - INFO - Package creation 
+2026-06-23 11:22:28,290 - INFO - TEST  init Package 226
+2026-06-23 11:22:28,290 - INFO - TEST init EA.Eelement packid=219 elt=MarketPlan
+2026-06-23 11:22:28,290 - INFO - TEST init connector pour elt=MarketPlan source=None target=None
+2026-06-23 11:22:28,290 - INFO - TEST init connector pour elt=MarketPlan source=None target=None
+2026-06-23 11:22:28,290 - INFO - TEST init connector pour elt=MarketPlan source=None target=None
+2026-06-23 11:22:28,290 - INFO - TEST  init Package 227
+2026-06-23 11:22:28,305 - INFO - TEST init EA.Eelement packid=226 elt=DetailedDiagrams
+2026-06-23 11:22:28,305 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,305 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,305 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,305 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,305 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,305 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,305 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,305 - INFO - Package creation 
+2026-06-23 11:22:28,305 - INFO - Package creation 
+2026-06-23 11:22:28,305 - INFO - TEST  init Package 228
+2026-06-23 11:22:28,321 - INFO - TEST init EA.Eelement packid=219 elt=MarketQualitySystem
+2026-06-23 11:22:28,323 - INFO - TEST init connector pour elt=MarketQualitySystem source=None target=None
+2026-06-23 11:22:28,326 - INFO - TEST init connector pour elt=MarketQualitySystem source=None target=None
+2026-06-23 11:22:28,326 - INFO - TEST  init Package 229
+2026-06-23 11:22:28,326 - INFO - TEST init EA.Eelement packid=228 elt=DetailedDiagrams
+2026-06-23 11:22:28,326 - INFO - Package creation 
+2026-06-23 11:22:28,326 - INFO - Package creation 
+2026-06-23 11:22:28,326 - INFO - TEST  init Package 230
+2026-06-23 11:22:28,326 - INFO - TEST init EA.Eelement packid=219 elt=MarketSystem
+2026-06-23 11:22:28,326 - INFO - TEST  init Package 231
+2026-06-23 11:22:28,326 - INFO - TEST init EA.Eelement packid=230 elt=ExternalInputs
+2026-06-23 11:22:28,337 - INFO - TEST init connector pour elt=ExternalInputs source=None target=None
+2026-06-23 11:22:28,337 - INFO - TEST init connector pour elt=ExternalInputs source=None target=None
+2026-06-23 11:22:28,337 - INFO - TEST  init Package 232
+2026-06-23 11:22:28,337 - INFO - TEST init EA.Eelement packid=231 elt=DetailedDiagrams
+2026-06-23 11:22:28,337 - INFO - Package creation 
+2026-06-23 11:22:28,337 - INFO - Package creation 
+2026-06-23 11:22:28,337 - INFO - TEST  init Package 233
+2026-06-23 11:22:28,337 - INFO - TEST init EA.Eelement packid=230 elt=MarketResults
+2026-06-23 11:22:28,337 - INFO - TEST init connector pour elt=MarketResults source=None target=None
+2026-06-23 11:22:28,337 - INFO - TEST init connector pour elt=MarketResults source=None target=None
+2026-06-23 11:22:28,337 - INFO - TEST init connector pour elt=MarketResults source=None target=None
+2026-06-23 11:22:28,337 - INFO - TEST  init Package 234
+2026-06-23 11:22:28,353 - INFO - TEST init EA.Eelement packid=233 elt=DetailedDiagrams
+2026-06-23 11:22:28,353 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,353 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,353 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,353 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,353 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,353 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,353 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,353 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,368 - INFO - Package creation 
+2026-06-23 11:22:28,368 - INFO - Package creation 
+2026-06-23 11:22:28,368 - INFO - Package creation 
+2026-06-23 11:22:28,368 - INFO - TEST  init Package 235
+2026-06-23 11:22:28,368 - INFO - TEST init EA.Eelement packid=219 elt=MktDomain
+2026-06-23 11:22:28,368 - INFO - TEST init connector pour elt=MktDomain source=None target=None
+2026-06-23 11:22:28,368 - INFO - TEST init connector pour elt=MktDomain source=None target=None
+2026-06-23 11:22:28,368 - INFO - TEST  init Package 236
+2026-06-23 11:22:28,368 - INFO - TEST init EA.Eelement packid=235 elt=DetailedDiagrams
+2026-06-23 11:22:28,368 - INFO - Package creation 
+2026-06-23 11:22:28,368 - INFO - Package creation 
+2026-06-23 11:22:28,368 - INFO - TEST  init Package 237
+2026-06-23 11:22:28,368 - INFO - TEST init EA.Eelement packid=219 elt=ParticipantInterfaces
+2026-06-23 11:22:28,368 - INFO - TEST init connector pour elt=ParticipantInterfaces source=None target=None
+2026-06-23 11:22:28,368 - INFO - TEST  init Package 238
+2026-06-23 11:22:28,368 - INFO - TEST init EA.Eelement packid=237 elt=DetailedDiagrams
+2026-06-23 11:22:28,384 - INFO - Package creation 
+2026-06-23 11:22:28,384 - INFO - Package creation 
+2026-06-23 11:22:28,384 - INFO - TEST  init Package 239
+2026-06-23 11:22:28,384 - INFO - TEST init EA.Eelement packid=219 elt=ReferenceData
+2026-06-23 11:22:28,384 - INFO - TEST init connector pour elt=ReferenceData source=None target=None
+2026-06-23 11:22:28,384 - INFO - TEST  init Package 240
+2026-06-23 11:22:28,384 - INFO - TEST init EA.Eelement packid=239 elt=DetailedDiagrams
+2026-06-23 11:22:28,384 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,384 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,384 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,384 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,384 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,384 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,400 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,400 - INFO - Package creation 
+2026-06-23 11:22:28,400 - INFO - Package creation 
+2026-06-23 11:22:28,400 - INFO - Package creation 
+2026-06-23 11:22:28,400 - INFO - TEST  init Package 241
+2026-06-23 11:22:28,400 - INFO - TEST init EA.Eelement packid=213 elt=Environmental
+2026-06-23 11:22:28,400 - INFO - TEST init connector pour elt=Environmental source=None target=None
+2026-06-23 11:22:28,400 - INFO - TEST  init Package 242
+2026-06-23 11:22:28,400 - INFO - TEST init EA.Eelement packid=241 elt=DetailedDiagrams
+2026-06-23 11:22:28,400 - INFO - Package creation 
+2026-06-23 11:22:28,400 - INFO - TEST  init Package 243
+2026-06-23 11:22:28,400 - INFO - TEST init EA.Eelement packid=241 elt=EnvDomain
+2026-06-23 11:22:28,400 - INFO - Package creation 
+2026-06-23 11:22:28,400 - INFO - Package creation 
+2026-06-23 11:22:28,400 - INFO - TEST  init Package 244
+2026-06-23 11:22:28,400 - INFO - TEST init EA.Eelement packid=213 elt=InfMarket
+2026-06-23 11:22:28,400 - INFO - TEST  init Package 245
+2026-06-23 11:22:28,415 - INFO - TEST init EA.Eelement packid=244 elt=InfMarketOpCommon
+2026-06-23 11:22:28,415 - INFO - Package creation 
+2026-06-23 11:22:28,415 - INFO - TEST  init Package 246
+2026-06-23 11:22:28,415 - INFO - TEST init EA.Eelement packid=244 elt=InfReferenceData
+2026-06-23 11:22:28,415 - INFO - Package creation 
+2026-06-23 11:22:28,415 - INFO - TEST  init Package 247
+2026-06-23 11:22:28,415 - INFO - TEST init EA.Eelement packid=244 elt=InfCongestionRevenueRights
+2026-06-23 11:22:28,415 - INFO - Package creation 
+2026-06-23 11:22:28,415 - INFO - TEST  init Package 248
+2026-06-23 11:22:28,415 - INFO - TEST init EA.Eelement packid=244 elt=InfDomain
+2026-06-23 11:22:28,415 - INFO - Package creation 
+2026-06-23 11:22:28,415 - INFO - TEST  init Package 249
+2026-06-23 11:22:28,415 - INFO - TEST init EA.Eelement packid=244 elt=InfExternalInputs
+2026-06-23 11:22:28,415 - INFO - Package creation 
+2026-06-23 11:22:28,415 - INFO - TEST  init Package 250
+2026-06-23 11:22:28,415 - INFO - TEST init EA.Eelement packid=244 elt=InfMarketOperations
+2026-06-23 11:22:28,415 - INFO - Package creation 
+2026-06-23 11:22:28,415 - INFO - TEST  init Package 251
+2026-06-23 11:22:28,415 - INFO - TEST init EA.Eelement packid=244 elt=InfMarketResults
+2026-06-23 11:22:28,415 - INFO - Package creation 
+2026-06-23 11:22:28,415 - INFO - TEST  init Package 252
+2026-06-23 11:22:28,431 - INFO - TEST init EA.Eelement packid=244 elt=InfParticipantInterfaces
+2026-06-23 11:22:28,431 - INFO - Package creation 
+2026-06-23 11:22:28,431 - INFO - TEST  init Package 253
+2026-06-23 11:22:28,431 - INFO - TEST init EA.Eelement packid=244 elt=DetailedDiagrams
+2026-06-23 11:22:28,431 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,431 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,431 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,431 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,431 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,431 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,431 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,431 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,447 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,463 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,463 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,463 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,468 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,468 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,468 - INFO - TEST init connector pour elt=DetailedDiagrams source=None target=None
+2026-06-23 11:22:28,468 - INFO - Package creation 
+2026-06-23 11:22:28,468 - INFO - TEST  init Package 254
+2026-06-23 11:22:28,468 - INFO - TEST init EA.Eelement packid=244 elt=InfEnergyScheduling
+2026-06-23 11:22:28,468 - INFO - Package creation 
+2026-06-23 11:22:28,468 - INFO - TEST  init Package 255
+2026-06-23 11:22:28,468 - INFO - TEST init EA.Eelement packid=244 elt=InfFinancial
+2026-06-23 11:22:28,468 - INFO - Package creation 
+2026-06-23 11:22:28,468 - INFO - TEST  init Package 256
+2026-06-23 11:22:28,479 - INFO - TEST init EA.Eelement packid=244 elt=InfReservation
+2026-06-23 11:22:28,479 - INFO - Package creation 
+2026-06-23 11:22:28,479 - INFO - Package creation 
+2026-06-23 11:22:28,479 - INFO - Package creation 
+2026-06-23 11:22:28,479 - INFO - --------------------Lancement  Export Profile CEEDS_Activation-assembly-model -----------------------
+2026-06-23 11:22:28,479 - INFO - TEST  init Package 1007
+2026-06-23 11:22:28,479 - INFO - TEST init EA.Eelement packid=1006 elt=CEEDS_Activation assembly model
+2026-06-23 11:22:28,479 - INFO - TEST init connector pour elt=CEEDS_Activation assembly model source=None target=None
+2026-06-23 11:22:28,494 - INFO - TEST init connector pour elt=CEEDS_Activation assembly model source=None target=None
+2026-06-23 11:22:28,494 - INFO - TEST init EA.Eelement packid=1007 elt=EnvAsset
+2026-06-23 11:22:28,494 - INFO - TEST init Attribute elt=EnvAsset atr=type classifierID=333
+2026-06-23 11:22:28,494 - INFO - TEST init EA.Eelement packid=16 elt=String
+2026-06-23 11:22:28,494 - INFO - TEST creation classifier=333 dans pack=16
+2026-06-23 11:22:28,494 - INFO - TEST init Attribute elt=EnvAsset atr=operatorId classifierID=333
+2026-06-23 11:22:28,510 - INFO - TEST init Attribute elt=EnvAsset atr=meterId classifierID=333
+2026-06-23 11:22:28,510 - INFO - TEST init connector pour elt=EnvAsset source=None target=EnvAsset
+2026-06-23 11:22:28,510 - INFO - TEST init connector pour elt=EnvAsset source=None target=None
+2026-06-23 11:22:28,510 - INFO - TEST init EA.Eelement packid=1007 elt=MessageDocumentHeader
+2026-06-23 11:22:28,510 - INFO - TEST init Attribute elt=MessageDocumentHeader atr=creationDateTime classifierID=5385
+2026-06-23 11:22:28,526 - INFO - TEST  init Package 300
+2026-06-23 11:22:28,526 - INFO - TEST init EA.Eelement packid=298 elt=ESMPDataTypes
+2026-06-23 11:22:28,526 - INFO - Package creation 
+2026-06-23 11:22:28,526 - INFO - TEST init EA.Eelement packid=300 elt=ESMP_DateTime
+2026-06-23 11:22:28,526 - INFO - TEST init Attribute elt=ESMP_DateTime atr=value classifierID=5343
+2026-06-23 11:22:28,526 - INFO - TEST init EA.Eelement packid=300 elt=DateTime
+2026-06-23 11:22:28,526 - INFO - TEST creation classifier=5343 dans pack=300
+2026-06-23 11:22:28,526 - INFO - TEST init connector pour elt=ESMP_DateTime source=None target=None
+2026-06-23 11:22:28,526 - INFO - TEST creation classifier=5385 dans pack=300
+2026-06-23 11:22:28,526 - INFO - TEST init connector pour elt=MessageDocumentHeader source=None target=MetaInformation
+2026-06-23 11:22:28,542 - INFO - TEST init connector pour elt=MessageDocumentHeader source=None target=MessageDocumentHeader
+2026-06-23 11:22:28,542 - INFO - TEST init connector pour elt=MessageDocumentHeader source=None target=None
+2026-06-23 11:22:28,542 - INFO - TEST init EA.Eelement packid=1007 elt=MetaInformation
+2026-06-23 11:22:28,542 - INFO - TEST init Attribute elt=MetaInformation atr=connectionId classifierID=5388
+2026-06-23 11:22:28,542 - INFO - TEST init EA.Eelement packid=300 elt=String
+2026-06-23 11:22:28,557 - INFO - TEST creation classifier=5388 dans pack=300
+2026-06-23 11:22:28,557 - INFO - TEST init Attribute elt=MetaInformation atr=requestPermissionId classifierID=5388
+2026-06-23 11:22:28,557 - INFO - TEST init Attribute elt=MetaInformation atr=dataNeedId classifierID=5388
+2026-06-23 11:22:28,557 - INFO - TEST init Attribute elt=MetaInformation atr=documentType classifierID=5388
+2026-06-23 11:22:28,557 - INFO - TEST init Attribute elt=MetaInformation atr=finalCustomerId classifierID=5388
+2026-06-23 11:22:28,557 - INFO - TEST init Attribute elt=MetaInformation atr=dataSourceId classifierID=5388
+2026-06-23 11:22:28,557 - INFO - TEST init Attribute elt=MetaInformation atr=defaultValues classifierID=5388
+2026-06-23 11:22:28,557 - INFO - TEST init Attribute elt=MetaInformation atr=regionConnector classifierID=5388
+2026-06-23 11:22:28,573 - INFO - TEST init Attribute elt=MetaInformation atr=regionCountry classifierID=5388
+2026-06-23 11:22:28,573 - INFO - TEST init connector pour elt=MetaInformation source=None target=None
+2026-06-23 11:22:28,573 - INFO - TEST init EA.Eelement packid=1007 elt=Point
+2026-06-23 11:22:28,573 - INFO - TEST init Attribute elt=Point atr=position classifierID=5331
+2026-06-23 11:22:28,589 - INFO - TEST init EA.Eelement packid=300 elt=Position_Integer
+2026-06-23 11:22:28,591 - INFO - TEST init Attribute elt=Position_Integer atr=value classifierID=5380
+2026-06-23 11:22:28,594 - INFO - TEST init EA.Eelement packid=300 elt=Integer
+2026-06-23 11:22:28,594 - INFO - TEST creation classifier=5380 dans pack=300
+2026-06-23 11:22:28,594 - INFO - TEST init connector pour elt=Position_Integer source=None target=None
+2026-06-23 11:22:28,594 - INFO - TEST creation classifier=5331 dans pack=300
+2026-06-23 11:22:28,594 - INFO - TEST init Attribute elt=Point atr=quantity classifierID=5327
+2026-06-23 11:22:28,594 - INFO - TEST init EA.Eelement packid=300 elt=Decimal
+2026-06-23 11:22:28,594 - INFO - TEST creation classifier=5327 dans pack=300
+2026-06-23 11:22:28,594 - INFO - TEST init connector pour elt=Point source=None target=Point
+2026-06-23 11:22:28,605 - INFO - TEST init connector pour elt=Point source=None target=Reason
+2026-06-23 11:22:28,605 - INFO - TEST init connector pour elt=Point source=None target=None
+2026-06-23 11:22:28,605 - INFO - TEST init connector pour elt=Point source=None target=Quantity
+2026-06-23 11:22:28,605 - INFO - TEST init EA.Eelement packid=1007 elt=Quantity
+2026-06-23 11:22:28,605 - INFO - TEST init Attribute elt=Quantity atr=quantity classifierID=5327
+2026-06-23 11:22:28,605 - INFO - TEST init Attribute elt=Quantity atr=quality classifierID=5403
+2026-06-23 11:22:28,605 - INFO - TEST init EA.Eelement packid=300 elt=Quality_String
+2026-06-23 11:22:28,621 - INFO - TEST init Attribute elt=Quality_String atr=value classifierID=5439
+2026-06-23 11:22:28,621 - INFO - TEST  init Package 301
+2026-06-23 11:22:28,621 - INFO - TEST init EA.Eelement packid=298 elt=ESMPEnumerations
+2026-06-23 11:22:28,621 - INFO - Package creation 
+2026-06-23 11:22:28,621 - INFO - TEST init EA.Eelement packid=301 elt=QualityTypeList
+2026-06-23 11:22:28,621 - INFO - TEST creation classifier=5439 dans pack=301
+2026-06-23 11:22:28,621 - INFO - TEST init connector pour elt=Quality_String source=None target=None
+2026-06-23 11:22:28,621 - INFO - TEST creation classifier=5403 dans pack=300
+2026-06-23 11:22:28,621 - INFO - TEST init Attribute elt=Quantity atr=type classifierID=5388
+2026-06-23 11:22:28,621 - INFO - TEST init connector pour elt=Quantity source=None target=None
+2026-06-23 11:22:28,636 - INFO - TEST init EA.Eelement packid=1007 elt=Reason
+2026-06-23 11:22:28,636 - INFO - TEST init Attribute elt=Reason atr=code classifierID=5337
+2026-06-23 11:22:28,636 - INFO - TEST init EA.Eelement packid=300 elt=ReasonCode_String
+2026-06-23 11:22:28,636 - INFO - TEST init Attribute elt=ReasonCode_String atr=value classifierID=5427
+2026-06-23 11:22:28,636 - INFO - TEST init EA.Eelement packid=301 elt=ReasonCodeTypeList
+2026-06-23 11:22:28,636 - INFO - TEST creation classifier=5427 dans pack=301
+2026-06-23 11:22:28,652 - INFO - TEST init connector pour elt=ReasonCode_String source=None target=None
+2026-06-23 11:22:28,652 - INFO - TEST creation classifier=5337 dans pack=300
+2026-06-23 11:22:28,652 - INFO - TEST init Attribute elt=Reason atr=text classifierID=5392
+2026-06-23 11:22:28,652 - INFO - TEST init EA.Eelement packid=300 elt=ReasonText_String
+2026-06-23 11:22:28,652 - INFO - TEST init Attribute elt=ReasonText_String atr=value classifierID=5388
+2026-06-23 11:22:28,652 - INFO - TEST init connector pour elt=ReasonText_String source=None target=None
+2026-06-23 11:22:28,652 - INFO - TEST creation classifier=5392 dans pack=300
+2026-06-23 11:22:28,652 - INFO - TEST init connector pour elt=Reason source=None target=Reason
+2026-06-23 11:22:28,652 - INFO - TEST init connector pour elt=Reason source=None target=None
+2026-06-23 11:22:28,668 - INFO - TEST init EA.Eelement packid=1007 elt=Series_Period
+2026-06-23 11:22:28,668 - INFO - TEST init Attribute elt=Series_Period atr=timeInterval classifierID=5326
+2026-06-23 11:22:28,668 - INFO - TEST init EA.Eelement packid=300 elt=ESMP_DateTimeInterval
+2026-06-23 11:22:28,668 - INFO - TEST init Attribute elt=ESMP_DateTimeInterval atr=start classifierID=5371
+2026-06-23 11:22:28,668 - INFO - TEST init EA.Eelement packid=300 elt=YMDHM_DateTime
+2026-06-23 11:22:28,668 - INFO - TEST init Attribute elt=YMDHM_DateTime atr=value classifierID=5343
+2026-06-23 11:22:28,668 - INFO - TEST init connector pour elt=YMDHM_DateTime source=None target=None
+2026-06-23 11:22:28,668 - INFO - TEST creation classifier=5371 dans pack=300
+2026-06-23 11:22:28,668 - INFO - TEST init Attribute elt=ESMP_DateTimeInterval atr=end classifierID=5371
+2026-06-23 11:22:28,668 - INFO - TEST creation classifier=5326 dans pack=300
+2026-06-23 11:22:28,684 - INFO - TEST init Attribute elt=Series_Period atr=resolution classifierID=5383
+2026-06-23 11:22:28,684 - INFO - TEST init EA.Eelement packid=300 elt=Duration
+2026-06-23 11:22:28,684 - INFO - TEST creation classifier=5383 dans pack=300
+2026-06-23 11:22:28,684 - INFO - TEST init connector pour elt=Series_Period source=None target=Period
+2026-06-23 11:22:28,684 - INFO - TEST init connector pour elt=Series_Period source=None target=None
+2026-06-23 11:22:28,684 - INFO - TEST init EA.Eelement packid=1007 elt=TimeSeries
+2026-06-23 11:22:28,684 - INFO - TEST init Attribute elt=TimeSeries atr=mRID classifierID=5333
+2026-06-23 11:22:28,684 - INFO - TEST init EA.Eelement packid=300 elt=ID_String
+2026-06-23 11:22:28,699 - INFO - TEST init Attribute elt=ID_String atr=value classifierID=5388
+2026-06-23 11:22:28,699 - INFO - TEST init connector pour elt=ID_String source=None target=None
+2026-06-23 11:22:28,699 - INFO - TEST creation classifier=5333 dans pack=300
+2026-06-23 11:22:28,699 - INFO - TEST init Attribute elt=TimeSeries atr=businessType classifierID=5359
+2026-06-23 11:22:28,699 - INFO - TEST init EA.Eelement packid=300 elt=BusinessKind_String
+2026-06-23 11:22:28,699 - INFO - TEST init Attribute elt=BusinessKind_String atr=value classifierID=5423
+2026-06-23 11:22:28,699 - INFO - TEST init EA.Eelement packid=301 elt=BusinessTypeList
+2026-06-23 11:22:28,699 - INFO - TEST creation classifier=5423 dans pack=301
+2026-06-23 11:22:28,699 - INFO - TEST init connector pour elt=BusinessKind_String source=None target=None
+2026-06-23 11:22:28,699 - INFO - TEST creation classifier=5359 dans pack=300
+2026-06-23 11:22:28,699 - INFO - TEST init Attribute elt=TimeSeries atr=resourceProvider_MarketParticipant.mRID classifierID=5379
+2026-06-23 11:22:28,715 - INFO - TEST init EA.Eelement packid=300 elt=PartyID_String
+2026-06-23 11:22:28,715 - INFO - TEST init Attribute elt=PartyID_String atr=codingScheme classifierID=5425
+2026-06-23 11:22:28,715 - INFO - TEST init EA.Eelement packid=301 elt=CodingSchemeTypeList
+2026-06-23 11:22:28,715 - INFO - TEST creation classifier=5425 dans pack=301
+2026-06-23 11:22:28,719 - INFO - TEST init Attribute elt=PartyID_String atr=value classifierID=5388
+2026-06-23 11:22:28,719 - INFO - TEST init connector pour elt=PartyID_String source=None target=None
+2026-06-23 11:22:28,719 - INFO - TEST creation classifier=5379 dans pack=300
+2026-06-23 11:22:28,719 - INFO - TEST init Attribute elt=TimeSeries atr=acquiring_Domain.mRID classifierID=5336
+2026-06-23 11:22:28,719 - INFO - TEST init EA.Eelement packid=300 elt=AreaID_String
+2026-06-23 11:22:28,719 - INFO - TEST init Attribute elt=AreaID_String atr=codingScheme classifierID=5425
+2026-06-23 11:22:28,719 - INFO - TEST init Attribute elt=AreaID_String atr=value classifierID=5388
+2026-06-23 11:22:28,731 - INFO - TEST init connector pour elt=AreaID_String source=None target=None
+2026-06-23 11:22:28,731 - INFO - TEST creation classifier=5336 dans pack=300
+2026-06-23 11:22:28,731 - INFO - TEST init Attribute elt=TimeSeries atr=connecting_Domain.mRID classifierID=5336
+2026-06-23 11:22:28,731 - INFO - TEST init Attribute elt=TimeSeries atr=measurement_Unit.name classifierID=5370
+2026-06-23 11:22:28,731 - INFO - TEST init EA.Eelement packid=300 elt=MeasurementUnitKind_String
+2026-06-23 11:22:28,731 - INFO - TEST init Attribute elt=MeasurementUnitKind_String atr=value classifierID=5409
+2026-06-23 11:22:28,731 - INFO - TEST init EA.Eelement packid=301 elt=UnitOfMeasureTypeList
+2026-06-23 11:22:28,731 - INFO - TEST creation classifier=5409 dans pack=301
+2026-06-23 11:22:28,731 - INFO - TEST init connector pour elt=MeasurementUnitKind_String source=None target=None
+2026-06-23 11:22:28,731 - INFO - TEST creation classifier=5370 dans pack=300
+2026-06-23 11:22:28,731 - INFO - TEST init Attribute elt=TimeSeries atr=flowDirection.direction classifierID=5398
+2026-06-23 11:22:28,746 - INFO - TEST init EA.Eelement packid=300 elt=DirectionKind_String
+2026-06-23 11:22:28,746 - INFO - TEST init Attribute elt=DirectionKind_String atr=value classifierID=5408
+2026-06-23 11:22:28,746 - INFO - TEST init EA.Eelement packid=301 elt=DirectionTypeList
+2026-06-23 11:22:28,746 - INFO - TEST creation classifier=5408 dans pack=301
+2026-06-23 11:22:28,746 - INFO - TEST init connector pour elt=DirectionKind_String source=None target=None
+2026-06-23 11:22:28,746 - INFO - TEST creation classifier=5398 dans pack=300
+2026-06-23 11:22:28,746 - INFO - TEST init Attribute elt=TimeSeries atr=marketObjectStatus.status classifierID=5332
+2026-06-23 11:22:28,746 - INFO - TEST init EA.Eelement packid=300 elt=Status_String
+2026-06-23 11:22:28,746 - INFO - TEST init Attribute elt=Status_String atr=value classifierID=5448
+2026-06-23 11:22:28,746 - INFO - TEST init EA.Eelement packid=301 elt=StatusTypeList
+2026-06-23 11:22:28,746 - INFO - TEST creation classifier=5448 dans pack=301
+2026-06-23 11:22:28,746 - INFO - TEST init connector pour elt=Status_String source=None target=None
+2026-06-23 11:22:28,746 - INFO - TEST creation classifier=5332 dans pack=300
+2026-06-23 11:22:28,762 - INFO - TEST init Attribute elt=TimeSeries atr=registeredResource.mRID classifierID=5346
+2026-06-23 11:22:28,762 - INFO - TEST init EA.Eelement packid=300 elt=ResourceID_String
+2026-06-23 11:22:28,762 - INFO - TEST init Attribute elt=ResourceID_String atr=codingScheme classifierID=5425
+2026-06-23 11:22:28,762 - INFO - TEST init Attribute elt=ResourceID_String atr=value classifierID=5388
+2026-06-23 11:22:28,762 - INFO - TEST init connector pour elt=ResourceID_String source=None target=None
+2026-06-23 11:22:28,762 - INFO - TEST creation classifier=5346 dans pack=300
+2026-06-23 11:22:28,762 - INFO - TEST init connector pour elt=TimeSeries source=None target=TimeSeries
+2026-06-23 11:22:28,762 - INFO - TEST init connector pour elt=TimeSeries source=None target=None
+2026-06-23 11:22:28,762 - INFO - TEST init connector pour elt=TimeSeries source=None target=None
+2026-06-23 11:22:28,778 - INFO - TEST init connector pour elt=TimeSeries source=None target=None
+2026-06-23 11:22:28,778 - INFO - TEST init connector pour elt=TimeSeries source=None target=None
+2026-06-23 11:22:28,778 - INFO - TEST init connector pour elt=TimeSeries source=None target=None
+2026-06-23 11:22:28,778 - INFO - TEST init connector pour elt=TimeSeries source=None target=None
+2026-06-23 11:22:28,778 - INFO - TEST init connector pour elt=TimeSeries source=None target=None
+2026-06-23 11:22:28,794 - INFO - TEST init connector pour elt=TimeSeries source=None target=None
+2026-06-23 11:22:28,794 - INFO - TEST init EA.Eelement packid=1007 elt=CEEDSActivation_Envelope
+2026-06-23 11:22:28,794 - INFO - TEST init connector pour elt=CEEDSActivation_Envelope source=None target=None
+2026-06-23 11:22:28,794 - INFO - TEST init connector pour elt=CEEDSActivation_Envelope source=None target=MarketDocument
+2026-06-23 11:22:28,809 - INFO - TEST init EA.Eelement packid=1007 elt=CEEDSActivation_MarketDocument
+2026-06-23 11:22:28,809 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=mRID classifierID=5333
+2026-06-23 11:22:28,809 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=revisionNumber classifierID=5364
+2026-06-23 11:22:28,809 - INFO - TEST init EA.Eelement packid=300 elt=ESMPVersion_String
+2026-06-23 11:22:28,825 - INFO - TEST init Attribute elt=ESMPVersion_String atr=value classifierID=5388
+2026-06-23 11:22:28,825 - INFO - TEST init connector pour elt=ESMPVersion_String source=None target=None
+2026-06-23 11:22:28,825 - INFO - TEST creation classifier=5364 dans pack=300
+2026-06-23 11:22:28,825 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=type classifierID=5381
+2026-06-23 11:22:28,825 - INFO - TEST init EA.Eelement packid=300 elt=MessageKind_String
+2026-06-23 11:22:28,825 - INFO - TEST init Attribute elt=MessageKind_String atr=value classifierID=5405
+2026-06-23 11:22:28,825 - INFO - TEST init EA.Eelement packid=301 elt=MessageTypeList
+2026-06-23 11:22:28,825 - INFO - TEST creation classifier=5405 dans pack=301
+2026-06-23 11:22:28,825 - INFO - TEST init connector pour elt=MessageKind_String source=None target=None
+2026-06-23 11:22:28,825 - INFO - TEST creation classifier=5381 dans pack=300
+2026-06-23 11:22:28,825 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=createdDateTime classifierID=5385
+2026-06-23 11:22:28,841 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=process.processType classifierID=5348
+2026-06-23 11:22:28,841 - INFO - TEST init EA.Eelement packid=300 elt=ProcessKind_String
+2026-06-23 11:22:28,841 - INFO - TEST init Attribute elt=ProcessKind_String atr=value classifierID=5415
+2026-06-23 11:22:28,841 - INFO - TEST init EA.Eelement packid=301 elt=ProcessTypeList
+2026-06-23 11:22:28,841 - INFO - TEST creation classifier=5415 dans pack=301
+2026-06-23 11:22:28,841 - INFO - TEST init connector pour elt=ProcessKind_String source=None target=None
+2026-06-23 11:22:28,841 - INFO - TEST creation classifier=5348 dans pack=300
+2026-06-23 11:22:28,841 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=sender_MarketParticipant.mRID classifierID=5379
+2026-06-23 11:22:28,841 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=sender_MarketParticipant.marketRole.type classifierID=5372
+2026-06-23 11:22:28,857 - INFO - TEST init EA.Eelement packid=300 elt=MarketRoleKind_String
+2026-06-23 11:22:28,857 - INFO - TEST init Attribute elt=MarketRoleKind_String atr=value classifierID=5426
+2026-06-23 11:22:28,857 - INFO - TEST init EA.Eelement packid=301 elt=RoleTypeList
+2026-06-23 11:22:28,857 - INFO - TEST creation classifier=5426 dans pack=301
+2026-06-23 11:22:28,857 - INFO - TEST init connector pour elt=MarketRoleKind_String source=None target=None
+2026-06-23 11:22:28,857 - INFO - TEST creation classifier=5372 dans pack=300
+2026-06-23 11:22:28,857 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=receiver_MarketParticipant.mRID classifierID=5379
+2026-06-23 11:22:28,857 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=receiver_MarketParticipant.marketRole.type classifierID=5372
+2026-06-23 11:22:28,857 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=activation_Time_Period.timeInterval classifierID=5326
+2026-06-23 11:22:28,857 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=domain.mRID classifierID=5336
+2026-06-23 11:22:28,872 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=subject_MarketParticipant.mRID classifierID=5379
+2026-06-23 11:22:28,872 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=subject_MarketParticipant.marketRole.type classifierID=5372
+2026-06-23 11:22:28,872 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=order_MarketDocument.mRID classifierID=5333
+2026-06-23 11:22:28,872 - INFO - TEST init Attribute elt=CEEDSActivation_MarketDocument atr=order_MarketDocument.revisionNumber classifierID=5364
+2026-06-23 11:22:28,872 - INFO - TEST init connector pour elt=CEEDSActivation_MarketDocument source=None target=None
+2026-06-23 11:22:28,872 - INFO - TEST init connector pour elt=CEEDSActivation_MarketDocument source=None target=None
+2026-06-23 11:22:28,872 - INFO - TEST init connector pour elt=CEEDSActivation_MarketDocument source=None target=None
+2026-06-23 11:22:28,888 - INFO - TEST init connector pour elt=CEEDSActivation_MarketDocument source=None target=None
+2026-06-23 11:22:28,888 - INFO - TEST init connector pour elt=CEEDSActivation_MarketDocument source=None target=None
+2026-06-23 11:22:28,888 - INFO - TEST init connector pour elt=CEEDSActivation_MarketDocument source=None target=None
+2026-06-23 11:22:28,888 - INFO - TEST init connector pour elt=CEEDSActivation_MarketDocument source=None target=None
+2026-06-23 11:22:28,888 - INFO - TEST init connector pour elt=CEEDSActivation_MarketDocument source=None target=None
+2026-06-23 11:22:28,888 - INFO - TEST init connector pour elt=CEEDSActivation_MarketDocument source=None target=None
+2026-06-23 11:22:28,888 - INFO - Package creation 
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts CEEDS_Activation assembly model
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=EnvAsset
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=MessageDocumentHeader
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=MetaInformation
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=Point
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=Quantity
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=Reason
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=Series_Period
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=TimeSeries
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=CEEDSActivation_Envelope
+2026-06-23 11:22:28,888 - INFO - Test  getAllProfElts pack=CEEDS_Activation assembly model elt=CEEDSActivation_MarketDocument
+2026-06-23 11:22:28,904 - INFO -  demarrage de la creaton du Profile Schema
+2026-06-23 11:22:30,742 - INFO - Execute creatSubSchema EnvAsset
+2026-06-23 11:22:30,742 - INFO - l550
+2026-06-23 11:22:30,743 - INFO - l550
+2026-06-23 11:22:30,743 - INFO - l550
+2026-06-23 11:22:30,743 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - Execute creatSubSchema MessageDocumentHeader
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - Execute creatSubSchema MetaInformation
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,744 - INFO - l550
+2026-06-23 11:22:30,745 - INFO - l550
+2026-06-23 11:22:30,745 - INFO - l550
+2026-06-23 11:22:30,745 - INFO - l550
+2026-06-23 11:22:30,745 - INFO - Execute creatSubSchema Point
+2026-06-23 11:22:30,745 - INFO - l550
+2026-06-23 11:22:30,745 - INFO - l550
+2026-06-23 11:22:30,746 - INFO - l550
+2026-06-23 11:22:30,746 - INFO - l550
+2026-06-23 11:22:30,746 - INFO - l550
+2026-06-23 11:22:30,746 - INFO - Execute creatSubSchema Quantity
+2026-06-23 11:22:30,746 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - Execute creatSubSchema Reason
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - Execute creatSubSchema Series_Period
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - l557
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - l557
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - l557
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,747 - INFO - l557
+2026-06-23 11:22:30,747 - INFO - Execute creatSubSchema TimeSeries
+2026-06-23 11:22:30,747 - INFO - l550
+2026-06-23 11:22:30,748 - INFO - l550
+2026-06-23 11:22:30,748 - INFO - l550
+2026-06-23 11:22:30,748 - INFO - l550
+2026-06-23 11:22:30,748 - INFO - l557
+2026-06-23 11:22:30,748 - INFO - l550
+2026-06-23 11:22:30,748 - INFO - l557
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l557
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l557
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - Execute creatSubSchema CEEDSActivation_Envelope
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l557
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l557
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l557
+2026-06-23 11:22:30,749 - INFO - Execute creatSubSchema CEEDSActivation_MarketDocument
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l557
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l557
+2026-06-23 11:22:30,749 - INFO - l550
+2026-06-23 11:22:30,749 - INFO - l557
+2026-06-23 11:22:30,750 - INFO - l550
+2026-06-23 11:22:30,750 - INFO - l557
+2026-06-23 11:22:30,750 - INFO - l550
+2026-06-23 11:22:30,750 - INFO - l557
+2026-06-23 11:22:30,750 - INFO - l550
+2026-06-23 11:22:30,750 - INFO - l550
+2026-06-23 11:22:30,750 - INFO - l557
+2026-06-23 11:22:30,750 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l557
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l557
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l557
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l557
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l557
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l557
+2026-06-23 11:22:30,751 - INFO - Execute creatSubSchema ESMP_DateTime
+2026-06-23 11:22:30,751 - INFO - Execute traitdatatype ESMP_DateTime
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,751 - INFO - l557
+2026-06-23 11:22:30,751 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - Execute creatSubSchema Position_Integer
+2026-06-23 11:22:30,752 - INFO - Execute traitdatatype Position_Integer
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - l557
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - Execute creatSubSchema Quality_String
+2026-06-23 11:22:30,752 - INFO - Execute traitdatatype Quality_String
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - l557
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - Execute creatSubSchema ReasonCode_String
+2026-06-23 11:22:30,752 - INFO - Execute traitdatatype ReasonCode_String
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - l557
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - Execute creatSubSchema ReasonText_String
+2026-06-23 11:22:30,752 - INFO - Execute traitdatatype ReasonText_String
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - l557
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - Execute creatSubSchema ESMP_DateTimeInterval
+2026-06-23 11:22:30,752 - INFO - Execute traitcompound ESMP_DateTimeInterval
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - l557
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - l557
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,752 - INFO - l557
+2026-06-23 11:22:30,752 - INFO - Execute creatSubSchema YMDHM_DateTime
+2026-06-23 11:22:30,752 - INFO - Execute traitdatatype YMDHM_DateTime
+2026-06-23 11:22:30,752 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - l557
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - Execute creatSubSchema ID_String
+2026-06-23 11:22:30,753 - INFO - Execute traitdatatype ID_String
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - l557
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - Execute creatSubSchema BusinessKind_String
+2026-06-23 11:22:30,753 - INFO - Execute traitdatatype BusinessKind_String
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - l557
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - Execute creatSubSchema PartyID_String
+2026-06-23 11:22:30,753 - INFO - Execute traitdatatype PartyID_String
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - l557
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - l557
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - l557
+2026-06-23 11:22:30,753 - INFO - Execute creatSubSchema AreaID_String
+2026-06-23 11:22:30,753 - INFO - Execute traitdatatype AreaID_String
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,753 - INFO - l557
+2026-06-23 11:22:30,753 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - l557
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - l557
+2026-06-23 11:22:30,754 - INFO - Execute creatSubSchema MeasurementUnitKind_String
+2026-06-23 11:22:30,754 - INFO - Execute traitdatatype MeasurementUnitKind_String
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - l557
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - Execute creatSubSchema DirectionKind_String
+2026-06-23 11:22:30,754 - INFO - Execute traitdatatype DirectionKind_String
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - l557
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - Execute creatSubSchema Status_String
+2026-06-23 11:22:30,754 - INFO - Execute traitdatatype Status_String
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - l557
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - Execute creatSubSchema ResourceID_String
+2026-06-23 11:22:30,754 - INFO - Execute traitdatatype ResourceID_String
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - l557
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - l557
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - l557
+2026-06-23 11:22:30,754 - INFO - Execute creatSubSchema ESMPVersion_String
+2026-06-23 11:22:30,754 - INFO - Execute traitdatatype ESMPVersion_String
+2026-06-23 11:22:30,754 - INFO - l550
+2026-06-23 11:22:30,754 - INFO - l557
+2026-06-23 11:22:30,755 - INFO - l550
+2026-06-23 11:22:30,755 - INFO - Execute creatSubSchema MessageKind_String
+2026-06-23 11:22:30,755 - INFO - Execute traitdatatype MessageKind_String
+2026-06-23 11:22:30,755 - INFO - l550
+2026-06-23 11:22:30,755 - INFO - l557
+2026-06-23 11:22:30,755 - INFO - l550
+2026-06-23 11:22:30,755 - INFO - Execute creatSubSchema ProcessKind_String
+2026-06-23 11:22:30,755 - INFO - Execute traitdatatype ProcessKind_String
+2026-06-23 11:22:30,755 - INFO - l550
+2026-06-23 11:22:30,755 - INFO - l557
+2026-06-23 11:22:30,755 - INFO - l550
+2026-06-23 11:22:30,755 - INFO - Execute creatSubSchema MarketRoleKind_String
+2026-06-23 11:22:30,755 - INFO - Execute traitdatatype MarketRoleKind_String
+2026-06-23 11:22:30,755 - INFO - l550
+2026-06-23 11:22:30,755 - INFO - l557
+2026-06-23 11:22:30,755 - INFO - l550
