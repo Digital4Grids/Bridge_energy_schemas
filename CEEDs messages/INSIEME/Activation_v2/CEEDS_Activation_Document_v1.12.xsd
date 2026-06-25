@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://insieme.energy/CEEDS_ActivationDocument_v1.12" xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://insieme.energy/CEEDS_ActivationDocument_v1.12" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://insieme.energy/CEEDS_Activation_Document_v1.12" xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://insieme.energy/CEEDS_Activation_Document_v1.12" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="c:\data\urn-entsoe-eu-wgedi-codelists.xsd" namespace="urn:entsoe.eu:wgedi:codelists" />
   <xs:element name="CEEDS_Activation_Envelope" type="dl:CEEDS_Activation_Envelope" />
   <xs:complexType name="CEEDS_Activation_Envelope" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CEEDS_Activation_Envelope">
@@ -159,8 +159,6 @@
     <xs:sequence>
       <xs:element minOccurs="1" maxOccurs="1" name="position" type="dl:Position_Integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Point.position">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="quantity" type="xs:decimal" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Point.quantity">
-      </xs:element>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Quantity" type="dl:Quantity" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Point.Quantity">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Reason" type="dl:Reason" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Point.Reason">
@@ -187,15 +185,15 @@
   </xs:simpleType>
   <xs:complexType name="Quantity" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="quantity" type="xs:decimal" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quantity">
+      <xs:element minOccurs="1" maxOccurs="1" name="quantity" type="xs:decimal" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quantity">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="quality" type="dl:Quality_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quality">
+      <xs:element minOccurs="1" maxOccurs="1" name="quality" type="dl:Quality_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quality">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="type" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.type">
+      <xs:element minOccurs="1" maxOccurs="1" name="type" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.type">
       </xs:element>
       <xs:element minOccurs="1" maxOccurs="1" name="quantityDefinition.mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="quantityDefinition.quantityType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#QuantityDefinition.quantityType">
+      <xs:element minOccurs="1" maxOccurs="1" name="quantityDefinition.quantityType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#QuantityDefinition.quantityType">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="quantityDefinition.commodityFlowOccurence" type="dl:CommodityDirectionKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#QuantityDefinition.commodityFlowOccurence">
       </xs:element>

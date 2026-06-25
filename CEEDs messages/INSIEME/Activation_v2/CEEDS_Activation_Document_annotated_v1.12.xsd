@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://insieme.energy/CEEDS_ActivationDocument_annotated_v1.12" xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://insieme.energy/CEEDS_ActivationDocument_annotated_v1.12" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://insieme.energy/ CEEDS_GridHostingCapacityDocument_annotated_v1.12." xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://insieme.energy/ CEEDS_GridHostingCapacityDocument_annotated_v1.12." xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="c:\data\urn-entsoe-eu-wgedi-codelists.xsd" namespace="urn:entsoe.eu:wgedi:codelists" />
   <xs:element name="CEEDS_Activation_Envelope" type="dl:CEEDS_Activation_Envelope" />
   <xs:complexType name="CEEDS_Activation_Envelope" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CEEDS_Activation_Envelope">
@@ -619,6 +619,40 @@ This is applicable if you have the need to know the content without having to op
   <xs:complexType name="Point" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Point">
     <xs:annotation>
       <xs:documentation>The identification of the values being addressed within a specific interval of time.</xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="businessProcessContextValue">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="businessProcessRoleContextValue">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="businessTerm">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="definition">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="dictionaryEntryName">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="example">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="geopoliticalOrRegionContextValue">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="industryContextValue">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="objectClassQualifierTerm">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="objectClassTerm">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="officialConstraintContextValue">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="productContextValue">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="supportingRoleContextValue">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="systemCapabilitiesContextValue">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="uniqueID">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="usageRule">
+      </xs:documentation>
+      <xs:documentation cimp:category="TagValue" cimp:subcategory="version">
+      </xs:documentation>
       <xs:documentation cimp:category="Stereotype" cimp:notes="Message business information entity">MBIE</xs:documentation>
     </xs:annotation>
     <xs:sequence>
@@ -626,14 +660,6 @@ This is applicable if you have the need to know the content without having to op
         <xs:annotation>
           <xs:documentation>A sequential value representing the relative position within a given time interval.</xs:documentation>
           <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">0</xs:documentation>
-          <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="quantity" type="xs:decimal" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Point.quantity">
-        <xs:annotation>
-          <xs:documentation>The principal quantity identified for a point.</xs:documentation>
-          <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">1</xs:documentation>
           <xs:documentation cimp:category="TagValue" cimp:subcategory="ETSOBusinessTerm">
           </xs:documentation>
         </xs:annotation>
@@ -749,7 +775,7 @@ The quality attribute provides the information about the quality of the quantity
       <xs:documentation cimp:category="Stereotype" cimp:notes="Message business information entity">MBIE</xs:documentation>
     </xs:annotation>
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="quantity" type="xs:decimal" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quantity">
+      <xs:element minOccurs="1" maxOccurs="1" name="quantity" type="xs:decimal" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quantity">
         <xs:annotation>
           <xs:documentation>The quantity value.
 The association role provides the information about what is expressed.</xs:documentation>
@@ -758,7 +784,7 @@ The association role provides the information about what is expressed.</xs:docum
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="quality" type="dl:Quality_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quality">
+      <xs:element minOccurs="1" maxOccurs="1" name="quality" type="dl:Quality_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.quality">
         <xs:annotation>
           <xs:documentation>The description of the quality of the quantity.</xs:documentation>
           <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">1</xs:documentation>
@@ -766,7 +792,7 @@ The association role provides the information about what is expressed.</xs:docum
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="type" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.type">
+      <xs:element minOccurs="1" maxOccurs="1" name="type" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Quantity.type">
         <xs:annotation>
           <xs:documentation>The description of the type of the quantity.</xs:documentation>
           <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">2</xs:documentation>
@@ -783,7 +809,7 @@ For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is map
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="quantityDefinition.quantityType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#QuantityDefinition.quantityType">
+      <xs:element minOccurs="1" maxOccurs="1" name="quantityDefinition.quantityType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#QuantityDefinition.quantityType">
         <xs:annotation>
           <xs:documentation>Describes an observable property that can be measured and quantified numerically. Electricity related examples are ActivePower, ReactivePower, ActiveEnergy, ReactiveEnergy.</xs:documentation>
           <xs:documentation cimp:category="TagValue" cimp:subcategory="ESMPRG">4</xs:documentation>
