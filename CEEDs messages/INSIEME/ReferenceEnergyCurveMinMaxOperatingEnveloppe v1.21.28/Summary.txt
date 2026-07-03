@@ -1,0 +1,5 @@
+  <log time="09:33:59" username="ExpertModeller\woutvanv" IntegrityCheck="ISSUE: the hierarchy of one association ( ,Quantity )from Point should exist or reflects upperlevel hierarchy" />
+    <log time="09:34:12" username="ExpertModeller\woutvanv" IntegrityCheck="ISSUE: the hierarchy of one association ( ,QuantityDefinition )from Quantity should exist or reflects upperlevel hierarchy" />
+    <log time="09:34:35" username="ExpertModeller\woutvanv" IntegrityCheck=" ISSUE: for the association of element RECMMOE_MarketDocument RECMMOE_MarketDocument. towards TimeSeries_Series.TimeSeries_Series there is an inconsistency in end role name with the IsBasedOn association" />
+    <log time="09:34:52" username="ExpertModeller\woutvanv" IntegrityCheck="WARNING: the test about hierarchy has been excluded for the  association between Series and TimeSeries_Series because based on  a recursive association: check if necessary" />
+    <log time="09:34:54" username="ExpertModeller\woutvanv" IntegrityCheck="ISSUE: the hierarchy of one association ( ,Series_Period )from Series should exist or reflects upperlevel hierarchy" />
