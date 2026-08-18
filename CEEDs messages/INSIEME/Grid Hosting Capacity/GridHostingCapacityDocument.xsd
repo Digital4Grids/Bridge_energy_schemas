@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://eddie.energy/GridHostingCapacity" xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://eddie.energy/GridHostingCapacity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://insieme.energy/GridHostingCapacityDocument_v1.12.33" xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://insieme.energy/GridHostingCapacityDocument_v1.12.33" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="c:\data\urn-entsoe-eu-wgedi-codelists.xsd" namespace="urn:entsoe.eu:wgedi:codelists" />
   <xs:element name="GHC_Envelope" type="dl:GHC_Envelope" />
   <xs:complexType name="Cadastre" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Cadastre">
@@ -134,25 +134,27 @@
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="publishedDateTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Ext_MarketDocument.publishedDateTime">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="legalInformationText" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Ext_MarketDocument.legalInformationText">
-      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="revisionNumber" type="dl:ESMPVersion_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Document.revisionNumber">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="legalInformationText" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Ext_MarketDocument.legalInformationText">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="legalInformationWebsites" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Ext_MarketDocument.legalInformationWebsites">
       </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="legalInformationLicense" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Ext_MarketDocument.legalInformationLicense">
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="createdDateTime" type="dl:ESMP_DateTime" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Document.createdDateTime">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="sender_MarketParticipant.mRID" type="dl:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
+      <xs:element minOccurs="0" maxOccurs="1" name="sender_MarketParticipant.mRID" type="dl:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="sender_MarketParticipant.name" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.name">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="sender_MarketParticipant.marketRole.type" type="dl:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MarketRole.type">
+      <xs:element minOccurs="0" maxOccurs="1" name="sender_MarketParticipant.marketRole.type" type="dl:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MarketRole.type">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="receiver_MarketParticipant.mRID" type="dl:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
+      <xs:element minOccurs="0" maxOccurs="1" name="receiver_MarketParticipant.mRID" type="dl:PartyID_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="receiver_MarketParticipant.name" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.name">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="receiver_MarketParticipant.marketRole.type" type="dl:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MarketRole.type">
+      <xs:element minOccurs="0" maxOccurs="1" name="receiver_MarketParticipant.marketRole.type" type="dl:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#MarketRole.type">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="ServiceArea" type="dl:ServiceArea" sawsdl:modelReference="http://iec.ch/TC57/CIM100#GHC_MarketDocument.ServiceArea">
       </xs:element>
@@ -162,165 +164,94 @@
   </xs:complexType>
   <xs:complexType name="HostingCapacity" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity">
     <xs:sequence>
-      <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
-      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="identifier" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Identity.identifier">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="capacityDataDetails" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.capacityDataDetails">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="firstConnectionYear" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.firstConnectionYear">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.name">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="publicationDate" type="xs:date" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.timeForCapacityData">
+      <xs:element minOccurs="0" maxOccurs="1" name="publicationDate" type="xs:date" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.publicationDate">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="HostingCapacityDetails" type="dl:HostingCapacityDetail" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.HostingCapacityDetails">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:simpleType name="CEEDS_ActivePower-base" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CEEDS_ActivePower">
-    <xs:restriction base="xs:float">
-      <xs:pattern value="('^\d{4}$')" />
-    </xs:restriction>
+  <xs:simpleType name="UnitSymbol" sawsdl:modelReference="http://iec.ch/TC57/CIM100#UnitSymbol">
+    <xs:restriction base="ecl:UnitSymbol" />
   </xs:simpleType>
   <xs:complexType name="CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CEEDS_ActivePower">
-    <xs:simpleContent>
-      <xs:extension base="dl:CEEDS_ActivePower-base">
-        <xs:attribute fixed="MAW" name="unit" type="ecl:UnitSymbol" use="required" />
-      </xs:extension>
-    </xs:simpleContent>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="nominalQuantity" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ActivePower.value">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="minimumQuantity" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ActivePower.value">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="maximumQuantity" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ActivePower.value">
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" fixed="MAW" name="unit" type="dl:UnitSymbol" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ActivePower.unit">
+      </xs:element>
+    </xs:sequence>
   </xs:complexType>
-  <xs:simpleType name="CustomerConnectionTypeKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CustomerConnectionTypeKind">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="1">
-        <xs:annotation>
-          <xs:documentation />
-          <xs:documentation cimp:category="enumValue">Consumption</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="2">
-        <xs:annotation>
-          <xs:documentation />
-          <xs:documentation cimp:category="enumValue">Production</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="3">
-        <xs:annotation>
-          <xs:documentation>The customer type relevant for the capacity data is Industry customer – energy storage</xs:documentation>
-          <xs:documentation cimp:category="enumValue">Energy storage</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="4">
-        <xs:annotation>
-          <xs:documentation />
-          <xs:documentation cimp:category="enumValue">Hybrid park</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="CustomerSubConnectionTypeKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CustomerSubConnectionTypeKind">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="1">
-        <xs:annotation>
-          <xs:documentation />
-          <xs:documentation cimp:category="enumValue">Solar</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="2">
-        <xs:annotation>
-          <xs:documentation />
-          <xs:documentation cimp:category="enumValue">Wind</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="3">
-        <xs:annotation>
-          <xs:documentation>The customer type relevant for the capacity data is EV chargers Light vehicles </xs:documentation>
-          <xs:documentation cimp:category="enumValue">EV charger</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="4">
-        <xs:annotation>
-          <xs:documentation>The customer type relevant for the capacity data is Industry customer – high users </xs:documentation>
-          <xs:documentation cimp:category="enumValue">Industry</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="CustomerSubSubConnectionTypeKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CustomerSubSubConnectionTypeKind">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="1">
-        <xs:annotation>
-          <xs:documentation>The customer type relevant for the capacity data is EV chargers Light vehicles </xs:documentation>
-          <xs:documentation cimp:category="enumValue">EV charger light vehicle</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="2">
-        <xs:annotation>
-          <xs:documentation>The customer type relevant for the capacity data is EV chargers Heavy Duty </xs:documentation>
-          <xs:documentation cimp:category="enumValue">EV charger heavy duty vehicle</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="3">
-        <xs:annotation>
-          <xs:documentation>The customer type relevant for the capacity data is Industry customer – high users </xs:documentation>
-          <xs:documentation cimp:category="enumValue">Industry - High usage</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="4">
-        <xs:annotation>
-          <xs:documentation>The customer type relevant for the capacity data is Industry customer – average users </xs:documentation>
-          <xs:documentation cimp:category="enumValue">Industry - Average usage</xs:documentation>
-          <xs:documentation cimp:category="Alias">
-          </xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
   <xs:complexType name="HostingCapacityDetail" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="1" name="capacityAvailableForConnection" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityAvailableForConnection">
       </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="capacityAvailableForConnectionColor" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityAvailableForConnectionColor">
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="totalCapacity" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.totalCapacity">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="totalCapacityColor" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.totalCapacityColor">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="capacityUnderConnectionRequest" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityUnderConnectionRequest">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="withConsiderationOfCapacityFromOverlyingGrid" type="xs:boolean" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.withConsiderationOfOverlyingGrid">
+      <xs:element minOccurs="0" maxOccurs="1" name="capacityUnderConnectionRequestColor" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityUnderConnectionRequestColor">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="FlexibleConnectionCapacity" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.flexibleConnectionCapacity">
+      <xs:element minOccurs="0" maxOccurs="1" name="withConsiderationOfOverlyingGrid" type="xs:boolean" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.withConsiderationOfOverlyingGrid">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="flexibleConnectionCapacity" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.flexibleConnectionCapacity">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="flexibleConnectionCapacityColor" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.flexibleConnectionCapacityColor">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="levelOfFlexibility" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.levelOfFlexibility">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="customerConnectionType" type="dl:CustomerConnectionTypeKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerConnectionType">
+      <xs:element minOccurs="1" maxOccurs="1" name="customerConnectionType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerConnectionType">
       </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="customerSubConnectionType" type="dl:CustomerSubConnectionTypeKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerSubConnectionType">
-      </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" name="customerSubSubConnectionType" type="dl:CustomerSubSubConnectionTypeKind" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerSubSubConnectionType">
+      <xs:element minOccurs="1" maxOccurs="1" name="customerSubConnectionType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerSubConnectionType">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="appliesFromYear" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.appliesFromYear">
       </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="customerSubSubConnectionType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerSubSubConnectionType">
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="durationApplicable" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.durationApplicable">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HostingCapacityMapLegend" type="dl:HostingCapacityMapLegend" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.HostingCapacityMapLegend">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Float">
+    <xs:annotation>
+      <xs:documentation>A floating point number. The range is unspecified and not limited.</xs:documentation>
+    </xs:annotation>
+    <xs:union memberTypes="xs:float xs:double" />
+  </xs:simpleType>
+  <xs:complexType name="HostingCapacityMapLegend" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="color" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.color">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.description">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="lowerLimit" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.lowerLimit">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="upperLimit" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.upperLimit">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="applicableForMarketParticipant" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.applicableForMarketParticipant">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="EIC_Code" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.EIC_Code">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
@@ -505,7 +436,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Site" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Site">
-    <xs:sequence />
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="PhysicalAddress" type="dl:PhysicalAddress" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Site.PhysicalAddress">
+      </xs:element>
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="UsagePointLocation" sawsdl:modelReference="http://iec.ch/TC57/CIM100#UsagePointLocation">
     <xs:sequence>
