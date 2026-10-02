@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://insieme.energy/GridHostingCapacityDocument_v1.12.33" xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://insieme.energy/GridHostingCapacityDocument_v1.12.33" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:dl="https://insieme.energy/GridHostingCapacityDocument._v1.12.35" xmlns:cimp="http://www.iec.ch/cimprofile" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://insieme.energy/GridHostingCapacityDocument._v1.12.35" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="c:\data\urn-entsoe-eu-wgedi-codelists.xsd" namespace="urn:entsoe.eu:wgedi:codelists" />
   <xs:element name="GHC_Envelope" type="dl:GHC_Envelope" />
   <xs:complexType name="Cadastre" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Cadastre">
@@ -166,7 +166,11 @@
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="1" name="identifier" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Identity.identifier">
       </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="timeForCapacityData" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.timeForCapacityData">
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="capacityDataDetails" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.capacityDataDetails">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="otherTimeDetails" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacity.otherTimeDetails">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
       </xs:element>
@@ -180,38 +184,37 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:simpleType name="UnitSymbol" sawsdl:modelReference="http://iec.ch/TC57/CIM100#UnitSymbol">
-    <xs:restriction base="ecl:UnitSymbol" />
+  <xs:simpleType name="ESMP_ActivePower-base" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ESMP_ActivePower">
+    <xs:restriction base="xs:float">
+      <xs:pattern value="([0-9]*\.?[0-9]*)" />
+    </xs:restriction>
   </xs:simpleType>
-  <xs:complexType name="CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#CEEDS_ActivePower">
+  <xs:complexType name="ESMP_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ESMP_ActivePower">
+    <xs:simpleContent>
+      <xs:extension base="dl:ESMP_ActivePower-base">
+        <xs:attribute fixed="MAW" name="unit" type="ecl:UnitSymbol" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ESMP_NominalMinMax" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ESMP_NominalMinMax">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="nominalQuantity" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ActivePower.value">
+      <xs:element minOccurs="1" maxOccurs="1" name="nominalQuantity" type="dl:ESMP_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#NominalMinMax.nominalQuantity">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="minimumQuantity" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ActivePower.value">
+      <xs:element minOccurs="1" maxOccurs="1" name="minimumQuantity" type="dl:ESMP_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#NominalMinMax.minimumQuantity">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="maximumQuantity" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ActivePower.value">
-      </xs:element>
-      <xs:element minOccurs="1" maxOccurs="1" fixed="MAW" name="unit" type="dl:UnitSymbol" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ActivePower.unit">
+      <xs:element minOccurs="1" maxOccurs="1" name="maximumQuantity" type="dl:ESMP_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#NominalMinMax.maximumQuantity">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="HostingCapacityDetail" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="capacityAvailableForConnection" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityAvailableForConnection">
-      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="capacityAvailableForConnectionColor" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityAvailableForConnectionColor">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="totalCapacity" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.totalCapacity">
-      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="totalCapacityColor" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.totalCapacityColor">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="capacityUnderConnectionRequest" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityUnderConnectionRequest">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="capacityUnderConnectionRequestColor" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityUnderConnectionRequestColor">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="withConsiderationOfOverlyingGrid" type="xs:boolean" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.withConsiderationOfOverlyingGrid">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="flexibleConnectionCapacity" type="dl:CEEDS_ActivePower" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.flexibleConnectionCapacity">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="flexibleConnectionCapacityColor" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.flexibleConnectionCapacityColor">
       </xs:element>
@@ -221,33 +224,40 @@
       </xs:element>
       <xs:element minOccurs="1" maxOccurs="1" name="customerSubConnectionType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerSubConnectionType">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="appliesFromYear" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.appliesFromYear">
-      </xs:element>
       <xs:element minOccurs="1" maxOccurs="1" name="customerSubSubConnectionType" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.customerSubSubConnectionType">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="appliesFromYear" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.appliesFromYear">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="durationApplicable" type="xs:integer" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.durationApplicable">
       </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="capacityAvailableForConnection" type="dl:ESMP_NominalMinMax" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityAvailableForConnection">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="capacityUnderConnectionRequest" type="dl:ESMP_NominalMinMax" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.capacityUnderConnectionRequest">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="flexibleConnectionCapacity" type="dl:ESMP_NominalMinMax" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.flexibleConnectionCapacity">
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="HostingCapacityMapLegend" type="dl:HostingCapacityMapLegend" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.HostingCapacityMapLegend">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="totalCapacity" type="dl:ESMP_NominalMinMax" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityDetail.totalCapacity">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:simpleType name="Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Float">
-    <xs:annotation>
-      <xs:documentation>A floating point number. The range is unspecified and not limited.</xs:documentation>
-    </xs:annotation>
-    <xs:union memberTypes="xs:float xs:double" />
+  <xs:simpleType name="ESMP_Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ESMP_Float">
+    <xs:restriction base="xs:float">
+      <xs:pattern value="([0-9]*\.?[0-9]*)" />
+    </xs:restriction>
   </xs:simpleType>
   <xs:complexType name="HostingCapacityMapLegend" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend">
     <xs:sequence>
       <xs:element minOccurs="1" maxOccurs="1" name="color" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.color">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.description">
-      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="lowerLimit" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.lowerLimit">
+      <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.description">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="upperLimit" type="dl:Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.upperLimit">
+      <xs:element minOccurs="0" maxOccurs="1" name="lowerLimit" type="dl:ESMP_Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.lowerLimit">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="upperLimit" type="dl:ESMP_Float" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.upperLimit">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="applicableForMarketParticipant" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#HostingCapacityMapLegend.applicableForMarketParticipant">
       </xs:element>
@@ -325,18 +335,9 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="Status" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Status">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="value" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Status.value">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="dateTime" type="xs:dateTime" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Status.dateTime">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="remark" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Status.remark">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="reason" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Status.reason">
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
+  <xs:simpleType name="Status_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Status_String">
+    <xs:restriction base="ecl:StatusTypeList" />
+  </xs:simpleType>
   <xs:complexType name="PhysicalAddress" sawsdl:modelReference="http://iec.ch/TC57/CIM100#PhysicalAddress">
     <xs:sequence>
       <xs:element minOccurs="1" maxOccurs="1" name="mRID" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">
@@ -387,7 +388,7 @@
       </xs:element>
       <xs:element minOccurs="1" maxOccurs="1" name="fullAddress" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Address.fullAddress">
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="status" type="dl:Status" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Address.status">
+      <xs:element minOccurs="0" maxOccurs="1" name="status" type="dl:Status_String">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
@@ -427,11 +428,15 @@
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="licenseArea.name" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.name">
       </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="licenseArea.gridOperator" type="dl:MarketRoleKind_String" sawsdl:modelReference="http://iec.ch/TC57/CIM100#LicenseArea.gridOperator">
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="HostingCapacity" type="dl:HostingCapacity" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ServiceArea.HostingCapacity">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="Location" type="dl:Location" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ServiceArea.Location">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="UsagePointLocation" type="dl:UsagePointLocation" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ServiceArea.UsagePointLocation">
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VoltageLevel" type="dl:VoltageLevel" sawsdl:modelReference="http://iec.ch/TC57/CIM100#ServiceArea.VoltageLevel">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
@@ -481,11 +486,11 @@
       </xs:element>
       <xs:element minOccurs="1" maxOccurs="1" name="highVoltageLimit" type="dl:ESMP_Voltage" sawsdl:modelReference="http://iec.ch/TC57/CIM100#VoltageLevel.highVoltageLimit">
       </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="lowVoltageLimit" type="dl:ESMP_Voltage" sawsdl:modelReference="http://iec.ch/TC57/CIM100#VoltageLevel.lowVoltageLimit">
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#IdentifiedObject.name">
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="identifier" type="xs:string" sawsdl:modelReference="http://iec.ch/TC57/CIM100#Identity.identifier">
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="lowVoltageLimit" type="dl:ESMP_Voltage" sawsdl:modelReference="http://iec.ch/TC57/CIM100#VoltageLevel.lowVoltageLimit">
       </xs:element>
       <xs:element minOccurs="1" maxOccurs="1" name="baseVoltage.nominalVoltage" type="dl:ESMP_Voltage" sawsdl:modelReference="http://iec.ch/TC57/CIM100#BaseVoltage.nominalVoltage">
       </xs:element>
