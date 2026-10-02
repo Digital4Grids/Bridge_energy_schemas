@@ -1,0 +1,627 @@
+{
+    "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/CEEDS_OpenADR_ReferenceEnergyCurveMinMaxOperatingEnveloppe-Document-assembly-model.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CEEDS_OpenADR_ReferenceEnergyCurveMinMaxOperatingEnveloppe-Document-assembly-model  profile generated 2026-10-02 12:18:37.564231",
+    "description": "",
+    "namespace": "http://iec.ch/TC57/2020/CEEDS_OpenADR_ReferenceEnergyCurveMinMaxOperatingEnveloppe-Document-assembly-model#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "event": {
+            "$ref": "#/definitions/event"
+        }
+    },
+    "definitions": {
+        "CEEDS_OpenADR_ReferenceEnergyCurveMinMaxOperatingEnveloppe-Document-assembly-model": {
+            "$ref": "#"
+        },
+        "OpenADRRECMMOE_MarketDocument": {
+            "id": "#OpenADRRECMMOE_MarketDocument",
+            "title": "OpenADRRECMMOE_MarketDocument",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.mRID",
+                    "$ref": "#/definitions/ID_String"
+                },
+                "description": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.description",
+                    "type": "string"
+                },
+                "period.resolution": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#period.resolution",
+                    "type": "string",
+                    "pattern": "^(-?)P(?=\\d|T\\d)(?:(\\d+)Y)?(?:(\\d+)M)?(?:(\\d+)([DW]))?(?:T(?:(\\d+)H)?(?:(\\d+)M)?(?:(\\d+(?:\\.\\d+)?)S)?)?$"
+                },
+                "period.timeInterval": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#period.timeInterval",
+                    "$ref": "#/definitions/ESMP_DateTimeInterval"
+                },
+                "process.processType": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#process.processType",
+                    "$ref": "#/definitions/ProcessKind_String"
+                },
+                "receiver_MarketParticipant.description": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.description",
+                    "type": "string"
+                },
+                "receiver_MarketParticipant.mRID": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.mRID",
+                    "$ref": "#/definitions/PartyID_String"
+                },
+                "receiver_MarketParticipant.name": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.name",
+                    "type": "string"
+                },
+                "revisionNumber": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.revisionNumber",
+                    "$ref": "#/definitions/ESMPVersion_String"
+                },
+                "sender_MarketParticipant.description": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.description",
+                    "type": "string"
+                },
+                "sender_MarketParticipant.mRID": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.mRID",
+                    "$ref": "#/definitions/PartyID_String"
+                },
+                "sender_MarketParticipant.name": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketParticipant.name",
+                    "type": "string"
+                },
+                "TimeSeries_Series": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument.TimeSeries_Series",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TimeSeries_Series"
+                    },
+                    "minItems": 0
+                }
+            },
+            "required": [
+                "mRID"
+            ]
+        },
+        "Point": {
+            "id": "#Point",
+            "title": "Point",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#Point",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "position": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Point.position",
+                    "$ref": "#/definitions/Position_Integer"
+                },
+                "Quantity": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Point.Quantity",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Quantity"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "Quantity": {
+            "id": "#Quantity",
+            "title": "Quantity",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#Quantity",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "quality": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Quantity.quality",
+                    "$ref": "#/definitions/Quality_String"
+                },
+                "quantity": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Quantity.quantity",
+                    "type": "number"
+                },
+                "quantityDefinition.commodityFlowOccurence": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#quantityDefinition.commodityFlowOccurence",
+                    "$ref": "#/definitions/CommodityDirectionKind"
+                },
+                "quantityDefinition.mRID": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#quantityDefinition.mRID",
+                    "type": "string"
+                },
+                "quantityDefinition.quantityQualifier": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#quantityDefinition.quantityQualifier",
+                    "type": "string"
+                },
+                "quantityDefinition.quantityType": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#quantityDefinition.quantityType",
+                    "type": "string"
+                },
+                "quantityDefinition.unit.name": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#unit.name",
+                    "$ref": "#/definitions/MeasurementUnitKind_String"
+                },
+                "type": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Quantity.type",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "quantity",
+                "quantityDefinition.mRID",
+                "quantityDefinition.unit.name"
+            ]
+        },
+        "Series": {
+            "id": "#Series",
+            "title": "Series",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#Series",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Series_Period": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Period",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Series_Period"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "Series_Period": {
+            "id": "#Series_Period",
+            "title": "Series_Period",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#Period",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "resolution": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Period.resolution",
+                    "type": "string",
+                    "pattern": "^(-?)P(?=\\d|T\\d)(?:(\\d+)Y)?(?:(\\d+)M)?(?:(\\d+)([DW]))?(?:T(?:(\\d+)H)?(?:(\\d+)M)?(?:(\\d+(?:\\.\\d+)?)S)?)?$"
+                },
+                "timeInterval": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Period.timeInterval",
+                    "$ref": "#/definitions/ESMP_DateTimeInterval"
+                },
+                "Point": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Period.Point",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Point"
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": [
+                "resolution",
+                "timeInterval",
+                "Point"
+            ]
+        },
+        "TimeSeries_Series": {
+            "id": "#TimeSeries_Series",
+            "title": "TimeSeries_Series",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#Series",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mRID": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Series.mRID",
+                    "$ref": "#/definitions/ID_String"
+                },
+                "businessType": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Series.businessType",
+                    "$ref": "#/definitions/BusinessKind_String"
+                },
+                "curveType": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Series.curveType",
+                    "$ref": "#/definitions/CurveType_String"
+                },
+                "flowDirection.direction": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#flowDirection.direction",
+                    "$ref": "#/definitions/DirectionKind_String"
+                },
+                "measurement_Unit.name": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Unit.name",
+                    "$ref": "#/definitions/MeasurementUnitKind_String"
+                },
+                "registeredResource.description": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#registeredResource.description",
+                    "type": "string"
+                },
+                "registeredResource.mRID": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#registeredResource.mRID",
+                    "$ref": "#/definitions/ResourceID_String"
+                },
+                "registeredResource.name": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#registeredResource.name",
+                    "type": "string"
+                },
+                "resourceTimeSeries.value1ScheduleType": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#resourceTimeSeries.value1ScheduleType",
+                    "$ref": "#/definitions/CommodityDirectionKind"
+                },
+                "Series": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#Series.Series",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Series"
+                    },
+                    "minItems": 0
+                }
+            }
+        },
+        "event": {
+            "id": "#event",
+            "title": "event",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#event",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "createdDateTime": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#event.createdDateTime",
+                    "type": "string",
+                    "pattern": "^(-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)$"
+                },
+                "eventName": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#event.eventName",
+                    "type": "string"
+                },
+                "id": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#event.id",
+                    "type": "integer"
+                },
+                "modifiedDateTime": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#event.modifiedDateTime",
+                    "type": "string",
+                    "pattern": "^(-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)$"
+                },
+                "objectType": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#event.objectType",
+                    "type": "string"
+                },
+                "priority": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#event.priority",
+                    "type": "integer"
+                },
+                "programID": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#event.programID",
+                    "type": "integer"
+                },
+                "OpenADRRECMMOE_MarketDocument": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#MarketDocument",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/OpenADRRECMMOE_MarketDocument"
+                    },
+                    "minItems": 0
+                }
+            },
+            "required": [
+                "id",
+                "createdDateTime",
+                "modifiedDateTime",
+                "objectType",
+                "programID"
+            ]
+        },
+        "ID_String": {
+            "id": "#ID_String",
+            "title": "ID_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "type": "string",
+                    "maxLength": 60
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ESMPVersion_String": {
+            "id": "#ESMPVersion_String",
+            "title": "ESMPVersion_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "type": "string",
+                    "pattern": "^[1-9]([0-9]){0,2}$"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "PartyID_String": {
+            "id": "#PartyID_String",
+            "title": "PartyID_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codingScheme": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/CodingSchemeTypeList",
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.codingScheme"
+                },
+                "value": {
+                    "description": "",
+                    "type": "string",
+                    "maxLength": 16,
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.value"
+                }
+            },
+            "required": [
+                "codingScheme",
+                "value"
+            ]
+        },
+        "ProcessKind_String": {
+            "id": "#ProcessKind_String",
+            "title": "ProcessKind_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/ProcessTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ESMP_DateTimeInterval": {
+            "id": "#ESMP_DateTimeInterval",
+            "title": "ESMP_DateTimeInterval",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#DateTimeInterval",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "start": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#DateTimeInterval.start",
+                    "$ref": "#/definitions/YMDHM_DateTime"
+                },
+                "end": {
+                    "description": "",
+                    "modelReference": "http://iec.ch/TC57/CIM100#DateTimeInterval.end",
+                    "$ref": "#/definitions/YMDHM_DateTime"
+                }
+            },
+            "required": [
+                "start",
+                "end"
+            ]
+        },
+        "YMDHM_DateTime": {
+            "id": "#YMDHM_DateTime",
+            "title": "YMDHM_DateTime",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#DateTime",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "type": "string",
+                    "pattern": "^((([0-9]{4})[\\-](0[13578]|1[02])[\\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\\-]((0[469])|(11))[\\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\\-](02)[\\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9])Z)$"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "Position_Integer": {
+            "id": "#Position_Integer",
+            "title": "Position_Integer",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#Integer",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "type": "integer",
+                    "maximum": 999999,
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "Quality_String": {
+            "id": "#Quality_String",
+            "title": "Quality_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/QualityTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "CommodityDirectionKind": {
+            "id": "#CommodityDirectionKind",
+            "title": "CommodityDirectionKind",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#CommodityDirectionKind",
+            "$id": "#CommodityDirectionKind",
+            "type": "string",
+            "enum": [
+                "production",
+                "consumption",
+                "consumptionIncrease",
+                "consumptionDecrease",
+                "productionIncrease",
+                "productionDecrease"
+            ]
+        },
+        "MeasurementUnitKind_String": {
+            "id": "#MeasurementUnitKind_String",
+            "title": "MeasurementUnitKind_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/UnitOfMeasureTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "DirectionKind_String": {
+            "id": "#DirectionKind_String",
+            "title": "DirectionKind_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/DirectionTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "ResourceID_String": {
+            "id": "#ResourceID_String",
+            "title": "ResourceID_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codingScheme": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/CodingSchemeTypeList",
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.codingScheme"
+                },
+                "value": {
+                    "description": "",
+                    "type": "string",
+                    "maxLength": 60,
+                    "modelReference": "http://iec.ch/TC57/CIM100#String.value"
+                }
+            },
+            "required": [
+                "codingScheme",
+                "value"
+            ]
+        },
+        "BusinessKind_String": {
+            "id": "#BusinessKind_String",
+            "title": "BusinessKind_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/BusinessTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "CurveType_String": {
+            "id": "#CurveType_String",
+            "title": "CurveType_String",
+            "description": "",
+            "modelReference": "http://iec.ch/TC57/CIM100#String",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "description": "",
+                    "$ref": "urn-entsoe-eu-wgedi-codelists.schema.json#/definitions/CurveTypeList"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        }
+    }
+}
