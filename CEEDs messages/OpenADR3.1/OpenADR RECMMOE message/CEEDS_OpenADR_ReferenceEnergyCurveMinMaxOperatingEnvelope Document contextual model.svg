@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.88cm" height="28.71cm" viewBox="0 0 978 1085">
+<title></title>
+<desc>Created with Enterprise Architect (Build: 1629) 2</desc>
+
+<g style="fill:#FFFFFF;fill-opacity:1.00;">
+	 <rect x="0" y="0" width="978" height="1085" shape-rendering="auto"/>
+</g><g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 6 6 L 6 1079 L 972 1079 L 972 6 L 6 6" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="6 26 432 26 445 12 445 6 6 6 6 26" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="11.00" y="19.00" textLength="419" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 11.00 19.00)">class CEEDS_OpenADR_ReferenceEnergyCurveMinMaxOperatingEnvelope Document contextual model</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="706" y="578" width="173" height="70" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="778.00" y="594.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 778.00 594.00)">«ABIE»</text>
+	<text x="763.00" y="607.00" textLength="59" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 763.00 607.00)">Measure_Unit</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 706 615 L 878 615" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="711.00" y="629.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 711.00 629.00)">+ </text>
+	<text x="728.00" y="629.00" textLength="146" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 728.00 629.00)">name: MeasurementUnitKind_String</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="668" y="804" width="260" height="98" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="783.00" y="820.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 783.00 820.00)">«ABIE»</text>
+	<text x="761.00" y="833.00" textLength="73" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 761.00 833.00)">QuantityDefinition</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 668 841 L 927 841" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="673.00" y="855.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 673.00 855.00)">+ </text>
+	<text x="690.00" y="855.00" textLength="50" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 690.00 855.00)">mRID: String</text>
+	<text x="673.00" y="868.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 673.00 868.00)">+ </text>
+	<text x="690.00" y="868.00" textLength="105" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 690.00 868.00)">quantityType: String [0..1]</text>
+	<text x="673.00" y="881.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 673.00 881.00)">+ </text>
+	<text x="690.00" y="881.00" textLength="233" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 690.00 881.00)">commodityFlowOccurence: CommodityDirectionKind [0..1]</text>
+	<text x="673.00" y="894.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 673.00 894.00)">+ </text>
+	<text x="690.00" y="894.00" textLength="119" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 690.00 894.00)">quantityQualifier: String [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="716" y="967" width="140" height="85" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="771.00" y="983.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 771.00 983.00)">«ABIE»</text>
+	<text x="768.00" y="996.00" textLength="35" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 768.00 996.00)">Quantity</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 716 1004 L 855 1004" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="721.00" y="1018.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 721.00 1018.00)">+ </text>
+	<text x="738.00" y="1018.00" textLength="70" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 738.00 1018.00)">quantity: Decimal</text>
+	<text x="721.00" y="1031.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 721.00 1031.00)">+ </text>
+	<text x="738.00" y="1031.00" textLength="113" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 738.00 1031.00)">quality: Quality_String [0..1]</text>
+	<text x="721.00" y="1044.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 721.00 1044.00)">+ </text>
+	<text x="738.00" y="1044.00" textLength="70" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 738.00 1044.00)">type: String [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="417" y="977" width="164" height="64" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="484.00" y="993.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 484.00 993.00)">«ABIE»</text>
+	<text x="489.00" y="1006.00" textLength="20" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 489.00 1006.00)">Point</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 417 1014 L 580 1014" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="422.00" y="1028.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 422.00 1028.00)">+ </text>
+	<text x="439.00" y="1028.00" textLength="125" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 439.00 1028.00)">position: Position_Integer [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="408" y="849" width="180" height="70" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="483.00" y="865.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 483.00 865.00)">«ABIE»</text>
+	<text x="470.00" y="878.00" textLength="56" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 470.00 878.00)">Series_Period</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 408 886 L 587 886" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="413.00" y="900.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 413.00 900.00)">+ </text>
+	<text x="430.00" y="900.00" textLength="78" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 430.00 900.00)">resolution: Duration</text>
+	<text x="413.00" y="913.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 413.00 913.00)">+ </text>
+	<text x="430.00" y="913.00" textLength="153" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 430.00 913.00)">timeInterval: ESMP_DateTimeInterval</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="44" y="626" width="151" height="98" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="105.00" y="642.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 105.00 642.00)">«ABIE»</text>
+	<text x="78.00" y="655.00" textLength="82" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 78.00 655.00)">RegisteredResource</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 44 663 L 194 663" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="49.00" y="677.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 49.00 677.00)">+ </text>
+	<text x="66.00" y="677.00" textLength="124" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 66.00 677.00)">mRID: ResourceID_String [0..1]</text>
+	<text x="49.00" y="690.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 49.00 690.00)">+ </text>
+	<text x="66.00" y="690.00" textLength="75" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 66.00 690.00)">name: String [0..1]</text>
+	<text x="49.00" y="703.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 49.00 703.00)">+ </text>
+	<text x="66.00" y="703.00" textLength="95" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 66.00 703.00)">description: String [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="46" y="540" width="146" height="70" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="104.00" y="556.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 104.00 556.00)">«ABIE»</text>
+	<text x="91.00" y="569.00" textLength="55" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 91.00 569.00)">FlowDirection</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 46 577 L 191 577" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="51.00" y="591.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 51.00 591.00)">+ </text>
+	<text x="68.00" y="591.00" textLength="119" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 68.00 591.00)">direction: DirectionKind_String</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="41" y="456" width="237" height="70" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="145.00" y="472.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 145.00 472.00)">«ABIE»</text>
+	<text x="118.00" y="485.00" textLength="83" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 118.00 485.00)">ResourceTimeSeries</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 41 493 L 277 493" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="46.00" y="507.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 46.00 507.00)">+ </text>
+	<text x="63.00" y="507.00" textLength="210" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 63.00 507.00)">value1ScheduleType: CommodityDirectionKind [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="453" y="714" width="90" height="70" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="483.00" y="730.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 483.00 730.00)">«ABIE»</text>
+	<text x="485.00" y="743.00" textLength="25" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 485.00 743.00)">Series</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="404" y="464" width="189" height="184" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="484.00" y="480.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 484.00 480.00)">«ABIE»</text>
+	<text x="461.00" y="493.00" textLength="75" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 461.00 493.00)">TimeSeries_Series</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 404 501 L 592 501" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="409.00" y="515.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 409.00 515.00)">+ </text>
+	<text x="426.00" y="515.00" textLength="88" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 426.00 515.00)">mRID: ID_String [0..1]</text>
+	<text x="409.00" y="528.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 409.00 528.00)">+ </text>
+	<text x="426.00" y="528.00" textLength="162" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 426.00 528.00)">businessType: BusinessKind_String [0..1]</text>
+	<text x="409.00" y="541.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 409.00 541.00)">+ </text>
+	<text x="426.00" y="541.00" textLength="142" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 426.00 541.00)">curveType: CurveType_String [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="41" y="374" width="204" height="70" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="128.00" y="390.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 128.00 390.00)">«ABIE»</text>
+	<text x="117.00" y="403.00" textLength="51" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 117.00 403.00)">Time_Period</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 41 411 L 244 411" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="46.00" y="425.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 46.00 425.00)">+ </text>
+	<text x="63.00" y="425.00" textLength="177" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 63.00 425.00)">timeInterval: ESMP_DateTimeInterval [0..1]</text>
+	<text x="46.00" y="438.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 46.00 438.00)">+ </text>
+	<text x="63.00" y="438.00" textLength="102" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 63.00 438.00)">resolution: Duration [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="35" y="282" width="181" height="70" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="111.00" y="298.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 111.00 298.00)">«ABIE»</text>
+	<text x="110.00" y="311.00" textLength="31" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 110.00 311.00)">Process</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 35 319 L 215 319" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="40.00" y="333.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 333.00)">+ </text>
+	<text x="57.00" y="333.00" textLength="154" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 333.00)">processType: ProcessKind_String [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="666" y="292" width="136" height="98" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="719.00" y="308.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 719.00 308.00)">«ABIE»</text>
+	<text x="697.00" y="321.00" textLength="74" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 697.00 321.00)">MarketParticipant</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 666 329 L 801 329" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="671.00" y="343.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 671.00 343.00)">+ </text>
+	<text x="688.00" y="343.00" textLength="109" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 688.00 343.00)">mRID: PartyID_String [0..1]</text>
+	<text x="671.00" y="356.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 671.00 356.00)">+ </text>
+	<text x="688.00" y="356.00" textLength="75" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 688.00 356.00)">name: String [0..1]</text>
+	<text x="671.00" y="369.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 671.00 369.00)">+ </text>
+	<text x="688.00" y="369.00" textLength="95" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 688.00 369.00)">description: String [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="327" y="287" width="201" height="107" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="413.00" y="303.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 413.00 303.00)">«ABIE»</text>
+	<text x="346.00" y="316.00" textLength="163" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 346.00 316.00)">OpenADRRECMMOE_MarketDocument</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 327 324 L 527 324" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="332.00" y="338.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 332.00 338.00)">+ </text>
+	<text x="349.00" y="338.00" textLength="64" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 349.00 338.00)">mRID: ID_String</text>
+	<text x="332.00" y="351.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 332.00 351.00)">+ </text>
+	<text x="349.00" y="351.00" textLength="95" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 349.00 351.00)">description: String [0..1]</text>
+	<text x="332.00" y="364.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 332.00 364.00)">+ </text>
+	<text x="349.00" y="364.00" textLength="174" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 349.00 364.00)">revisionNumber: ESMPVersion_String [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="357" y="40" width="154" height="154" rx="2.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 364 40 L 364 194 M 504 40 L 504 194" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="419.00" y="56.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 419.00 56.00)">«ABIE»</text>
+	<text x="422.00" y="69.00" textLength="23" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 422.00 69.00)">event</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 364 77 L 503 77" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="376.00" y="95.00" textLength="49" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 376.00 95.00)">«OpenADR»</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="369.00" y="108.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 369.00 108.00)">+ </text>
+	<text x="386.00" y="108.00" textLength="41" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 386.00 108.00)">id: Integer</text>
+	<text x="369.00" y="121.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 369.00 121.00)">+ </text>
+	<text x="386.00" y="121.00" textLength="113" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 386.00 121.00)">createdDateTime: DateTime</text>
+	<text x="369.00" y="134.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 369.00 134.00)">+ </text>
+	<text x="386.00" y="134.00" textLength="118" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 386.00 134.00)">modifiedDateTime: DateTime</text>
+	<text x="369.00" y="147.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 369.00 147.00)">+ </text>
+	<text x="386.00" y="147.00" textLength="72" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 386.00 147.00)">objectType: String</text>
+	<text x="369.00" y="160.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 369.00 160.00)">+ </text>
+	<text x="386.00" y="160.00" textLength="77" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 386.00 160.00)">programID: Integer</text>
+	<text x="369.00" y="173.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 369.00 173.00)">+ </text>
+	<text x="386.00" y="173.00" textLength="99" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 386.00 173.00)">eventName: String [0..1]</text>
+	<text x="369.00" y="186.00" textLength="7" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 369.00 186.00)">+ </text>
+	<text x="386.00" y="186.00" textLength="86" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#2F4F4F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 386.00 186.00)">priority: Integer [0..1]</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 404 566 L 192 566" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="394 571 404 566 394 561 384 566" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 528 340 L 666 340" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="538 335 528 340 538 345 548 340" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 528 371 L 666 371" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="538 366 528 371 538 376 548 371" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 327 308 L 216 308" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="317 313 327 308 317 303 307 308" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 327 384 L 245 384" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="317 389 327 384 317 379 307 384" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 497 394 L 497 464" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="502 404 497 394 492 404 497 414" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 431 194 L 428 287" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="436 204 431 194 426 204 430 214" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 404 495 L 278 495" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="394 500 404 495 394 490 384 495" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 792 804 L 792 648" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="787 794 792 804 797 794 792 784" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 404 631 L 195 631" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="394 636 404 631 394 626 384 631" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 498 784 L 498 849" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="503 794 498 784 493 794 498 804" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 498 919 L 498 977" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="503 929 498 919 493 929 498 939" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 581 1009 L 716 1009" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="591 1004 581 1009 591 1014 601 1009" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 788 967 L 789 902" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="783 957 788 967 793 957 788 947" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 593 599 L 706 599" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="603 594 593 599 603 604 613 599" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 498 648 L 498 714" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F7DDB4;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="503 658 498 648 493 658 498 668" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="219.00" y="300.00" textLength="35" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 219.00 300.00)">+Process</text>
+	<text x="219.00" y="323.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 219.00 323.00)">0..1</text>
+	<text x="547.00" y="332.00" textLength="116" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 547.00 332.00)">+Receiver_MarketParticipant</text>
+	<text x="647.00" y="355.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 647.00 355.00)">0..1</text>
+	<text x="248.00" y="376.00" textLength="30" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 248.00 376.00)">+Period</text>
+	<text x="248.00" y="399.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 248.00 399.00)">0..1</text>
+	<text x="673.00" y="1001.00" textLength="40" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 673.00 1001.00)">+Quantity</text>
+	<text x="697.00" y="1024.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 697.00 1024.00)">0..*</text>
+	<text x="411.00" y="456.00" textLength="78" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 411.00 456.00)">+TimeSeries_Series</text>
+	<text x="505.00" y="456.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 505.00 456.00)">0..*</text>
+	<text x="255.00" y="279.00" textLength="165" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 255.00 279.00)">+OpenADRRECMMOE_MarketDocument</text>
+	<text x="436.00" y="279.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 436.00 279.00)">0..*</text>
+	<text x="195.00" y="558.00" textLength="59" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 195.00 558.00)">+FlowDirection</text>
+	<text x="195.00" y="581.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 195.00 581.00)">0..1</text>
+	<text x="198.00" y="623.00" textLength="83" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 198.00 623.00)">+RegisteredResource</text>
+	<text x="198.00" y="646.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 198.00 646.00)">0..1</text>
+	<text x="703.00" y="917.00" textLength="78" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 703.00 917.00)">+QuantityDefinition</text>
+	<text x="801.00" y="917.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 801.00 917.00)">1..1</text>
+	<text x="324.00" y="508.00" textLength="35" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 324.00 508.00)">«62746»</text>
+	<text x="281.00" y="487.00" textLength="85" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 281.00 487.00)">+ResourceTimeSeries</text>
+	<text x="281.00" y="510.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 281.00 510.00)">0..1</text>
+	<text x="431.00" y="841.00" textLength="59" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 431.00 841.00)">+Series_Period</text>
+	<text x="506.00" y="841.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 506.00 841.00)">0..*</text>
+	<text x="465.00" y="969.00" textLength="25" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 465.00 969.00)">+Point</text>
+	<text x="506.00" y="969.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 506.00 969.00)">1..*</text>
+	<text x="553.00" y="363.00" textLength="110" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 553.00 363.00)">+Sender_MarketParticipant</text>
+	<text x="647.00" y="386.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 647.00 386.00)">0..1</text>
+	<text x="461.00" y="706.00" textLength="29" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 461.00 706.00)">+Series</text>
+	<text x="506.00" y="706.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 506.00 706.00)">0..*</text>
+	<text x="620.00" y="591.00" textLength="83" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 620.00 591.00)">+Measurement_Unit</text>
+	<text x="687.00" y="614.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 687.00 614.00)">0..1</text>
+	<text x="763.00" y="663.00" textLength="21" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 763.00 663.00)">+Unit</text>
+	<text x="804.00" y="663.00" textLength="16" style="font-family:Calibri; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 804.00 663.00)">1..1</text>
+</g>
+</svg>
