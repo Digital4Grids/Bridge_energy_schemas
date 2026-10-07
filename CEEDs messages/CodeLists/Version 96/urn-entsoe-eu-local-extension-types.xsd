@@ -290,6 +290,28 @@
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+  	<xsd:enumeration value="Z04">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Distribution System Operator (DSO) - Regional</Title>
+              <Definition>The Regional Distributed System Operator (to differentiate from the local System Operator)
+.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration> 
+  	<xsd:enumeration value="Z05">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Distribution System Operator (DSO) - Local</Title>
+              <Definition>The Local Distributed System Operator (to differentiate from the Regional System Operator))
+.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>   
    
    </xsd:restriction>
   </xsd:simpleType>

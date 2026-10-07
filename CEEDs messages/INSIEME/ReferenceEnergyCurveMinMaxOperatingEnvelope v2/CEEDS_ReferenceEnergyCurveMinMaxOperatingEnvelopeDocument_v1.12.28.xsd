@@ -1,0 +1,201 @@
+<?xml  version='1.0' encoding='utf-8' ?>
+<xs:schema targetNamespace="https://insieme.energy/CEEDS_ReferenceEnergyCurveMinMaxOperatingEnvelopeDocument_v1.12.28" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dl="https://insieme.energy/CEEDS_ReferenceEnergyCurveMinMaxOperatingEnvelopeDocument_v1.12.28" xmlns:ecl="urn:entsoe.eu:wgedi:codelists" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:cimp="http://www.iec.ch/cimprofile" elementFormDefault="qualified">
+	<xs:import namespace="urn:entsoe.eu:wgedi:codelists" schemaLocation="c:\data\urn-entsoe-eu-wgedi-codelists.xsd"/>
+	<xs:simpleType name="BusinessKind_String">
+		<xs:restriction base="ecl:BusinessTypeList"/>
+	</xs:simpleType>
+	<xs:simpleType name="CommodityDirectionKind">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="consumption"/>
+			<xs:enumeration value="consumptionDecrease"/>
+			<xs:enumeration value="consumptionIncrease"/>
+			<xs:enumeration value="production"/>
+			<xs:enumeration value="productionDecrease"/>
+			<xs:enumeration value="productionIncrease"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CurveType_String">
+		<xs:restriction base="ecl:CurveTypeList"/>
+	</xs:simpleType>
+	<xs:simpleType name="DirectionKind_String">
+		<xs:restriction base="ecl:DirectionTypeList"/>
+	</xs:simpleType>
+	<xs:simpleType name="ESMP_DateTime">
+		<xs:restriction base="xs:dateTime">
+			<xs:pattern value="((([0-9]{4})[\-](0[13578]|1[02])[\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\-]((0[469])|(11))[\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048]["/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ESMPVersion_String">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[1-9]([0-9]){0,2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ID_String">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="60"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MarketRoleKind_String">
+		<xs:restriction base="ecl:RoleTypeList"/>
+	</xs:simpleType>
+	<xs:simpleType name="MeasurementUnitKind_String">
+		<xs:restriction base="ecl:UnitOfMeasureTypeList"/>
+	</xs:simpleType>
+	<xs:simpleType name="MessageKind_String">
+		<xs:restriction base="ecl:MessageTypeList"/>
+	</xs:simpleType>
+	<xs:simpleType name="PartyID_String-base">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="16"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Position_Integer">
+		<xs:restriction base="xs:integer">
+			<xs:maxInclusive value="999999"/>
+			<xs:minInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ProcessKind_String">
+		<xs:restriction base="ecl:ProcessTypeList"/>
+	</xs:simpleType>
+	<xs:simpleType name="Quality_String">
+		<xs:restriction base="ecl:QualityTypeList"/>
+	</xs:simpleType>
+	<xs:simpleType name="ResourceID_String-base">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="60"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="YMDHM_DateTime">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="((([0-9]{4})[\-](0[13578]|1[02])[\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\-]((0[469])|(11))[\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="EnvAsset" type="dl:EnvAsset"/>
+	<xs:complexType name="EnvAsset">
+		<xs:sequence>
+			<xs:element name="meterId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="operatorId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="type" type="xs:string" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ESMP_DateTimeInterval" type="dl:ESMP_DateTimeInterval"/>
+	<xs:complexType name="ESMP_DateTimeInterval">
+		<xs:sequence>
+			<xs:element name="start" type="dl:YMDHM_DateTime" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="end" type="dl:YMDHM_DateTime" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MessageDocumentHeader" type="dl:MessageDocumentHeader"/>
+	<xs:complexType name="MessageDocumentHeader">
+		<xs:sequence>
+			<xs:element name="creationDateTime" type="dl:ESMP_DateTime" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="MetaInformation" type="dl:MetaInformation" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MetaInformation" type="dl:MetaInformation"/>
+	<xs:complexType name="MetaInformation">
+		<xs:sequence>
+			<xs:element name="connectionId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dataNeedId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dataSourceId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="defaultValues" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="documentType" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="finalCustomerId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="regionConnector" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="regionCountry" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="requestPermissionId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="EnvAsset" type="dl:EnvAsset" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PartyID_String" type="dl:PartyID_String"/>
+	<xs:complexType name="PartyID_String">
+		<xs:simpleContent>
+			<xs:extension base="dl:PartyID_String-base">
+				<xs:attribute name="codingScheme" use="required" type="ecl:CodingSchemeTypeList"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="Point" type="dl:Point"/>
+	<xs:complexType name="Point">
+		<xs:sequence>
+			<xs:element name="position" type="dl:Position_Integer" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Quantity" type="dl:Quantity" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Quantity" type="dl:Quantity"/>
+	<xs:complexType name="Quantity">
+		<xs:sequence>
+			<xs:element name="Quantity.mRID" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Quantity.quantity" type="xs:decimal" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Quantity.quantityQualifier" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Quantity.quantityType" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Quantity.type" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Quantity.commodityFlowOccurence" type="dl:CommodityDirectionKind" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Quantity.measure_Unit.name" type="dl:MeasurementUnitKind_String" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Quantity.quality" type="dl:Quality_String" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="RECMMOE_Envelope" type="dl:RECMMOE_Envelope"/>
+	<xs:complexType name="RECMMOE_Envelope">
+		<xs:sequence>
+			<xs:element name="MessageDocumentHeader" type="dl:MessageDocumentHeader" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument" type="dl:RECMMOE_MarketDocument" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="RECMMOE_MarketDocument" type="dl:RECMMOE_MarketDocument"/>
+	<xs:complexType name="RECMMOE_MarketDocument">
+		<xs:sequence>
+			<xs:element name="RECMMOE_MarketDocument.description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.createdDateTime" type="dl:ESMP_DateTime" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.timeInterval" type="dl:ESMP_DateTimeInterval" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.revisionNumber" type="dl:ESMPVersion_String" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.mRID" type="dl:ID_String" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.marketRole.type" type="dl:MarketRoleKind_String" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.marketRole.type" type="dl:MarketRoleKind_String" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.type" type="dl:MessageKind_String" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.mRID" type="dl:PartyID_String" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.mRID" type="dl:PartyID_String" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.processType" type="dl:ProcessKind_String" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="RECMMOE_MarketDocument.TimeSeries_Series" type="dl:TimeSeries_Series" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ResourceID_String" type="dl:ResourceID_String"/>
+	<xs:complexType name="ResourceID_String">
+		<xs:simpleContent>
+			<xs:extension base="dl:ResourceID_String-base">
+				<xs:attribute name="codingScheme" use="required" type="ecl:CodingSchemeTypeList"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="Series" type="dl:Series"/>
+	<xs:complexType name="Series">
+		<xs:sequence>
+			<xs:element name="Period" type="dl:Series_Period" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Series_Period" type="dl:Series_Period"/>
+	<xs:complexType name="Series_Period">
+		<xs:sequence>
+			<xs:element name="resolution" type="xs:duration" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="timeInterval" type="dl:ESMP_DateTimeInterval" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Point" type="dl:Point" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="TimeSeries_Series" type="dl:TimeSeries_Series"/>
+	<xs:complexType name="TimeSeries_Series">
+		<xs:sequence>
+			<xs:element name="TimeSeries_Series.description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="TimeSeries_Series.name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="TimeSeries_Series.businessType" type="dl:BusinessKind_String" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="TimeSeries_Series.value1ScheduleType" type="dl:CommodityDirectionKind" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="TimeSeries_Series.curveType" type="dl:CurveType_String" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="TimeSeries_Series.direction" type="dl:DirectionKind_String" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="TimeSeries_Series.mRID" type="dl:ID_String" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="TimeSeries_Series.mRID" type="dl:ResourceID_String" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="TimeSeries_Series.Series" type="dl:Series" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
