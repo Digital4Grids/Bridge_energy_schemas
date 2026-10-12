@@ -273,16 +273,7 @@
 					</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
-			<xsd:enumeration value="Z04">
-				<xsd:annotation>
-					<xsd:documentation>
-						<CodeDescription>
-							<Title>Other</Title>
-							<Definition>The action is canceled by other means.</Definition>
-						</CodeDescription>
-					</xsd:documentation>
-				</xsd:annotation>
-			</xsd:enumeration>
+
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="LocalRightsType">
