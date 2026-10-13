@@ -1,0 +1,420 @@
+{
+    "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/urn-entsoe-eu-local-extension-types.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Local Code List",
+    "description": "Complete compilation of Local Code Lists used by ENTSO-E Json electronic documents and CIM Json electronic documents.",
+    "definitions": {
+        "LocalCodeLists": {
+            "$ref": "#"
+        },
+        "LocalAllocationModeType": {
+            "$id": "#LocalAllocationModeType",
+            "title": "LocalAllocationModeType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalAnalogType": {
+            "$id": "#LocalAnalogType",
+            "title": "LocalAnalogType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalAreaType": {
+            "$id": "#LocalAreaType",
+            "title": "LocalAreaType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalAssetType": {
+            "$id": "#LocalAssetType",
+            "title": "LocalAssetType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalAuctionType": {
+            "$id": "#LocalAuctionType",
+            "title": "LocalAuctionType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalBusinessType": {
+            "$id": "#LocalBusinessType",
+            "title": "LocalBusinessType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "C99",
+                "C98"
+            ]
+        },
+        "LocalCategoryType": {
+            "$id": "#LocalCategoryType",
+            "title": "LocalCategoryType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalClassificationType": {
+            "$id": "#LocalClassificationType",
+            "title": "LocalClassificationType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalCodingSchemeType": {
+            "$id": "#LocalCodingSchemeType",
+            "title": "LocalCodingSchemeType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "NAU",
+                "NNZ",
+                "NUS",
+                "NCA"
+            ]
+        },
+        "LocalConnectionCategoryType": {
+            "$id": "#LocalConnectionCategoryType",
+            "title": "LocalConnectionCategoryType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "E03"
+            ]
+        },
+        "LocalCustomerType": {
+            "$id": "#LocalCustomerType",
+            "title": "LocalCustomerType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalCoordinateSystemType": {
+            "$id": "#LocalCoordinateSystemType",
+            "title": "LocalCoordinateSystemType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalContractType": {
+            "$id": "#LocalContractType",
+            "title": "LocalContractType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalCurrencyType": {
+            "$id": "#LocalCurrencyType",
+            "title": "LocalCurrencyType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "BAM"
+            ]
+        },
+        "LocalCurveType": {
+            "$id": "#LocalCurveType",
+            "title": "LocalCurveType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalDirectionType": {
+            "$id": "#LocalDirectionType",
+            "title": "LocalDirectionType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalEicType": {
+            "$id": "#LocalEicType",
+            "title": "LocalEicType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A"
+            ]
+        },
+        "LocalEnergyProductType": {
+            "$id": "#LocalEnergyProductType",
+            "title": "LocalEnergyProductType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "8716867000016"
+            ]
+        },
+        "LocalFlowCommodityOptionType": {
+            "$id": "#LocalFlowCommodityOptionType",
+            "title": "LocalFlowCommodityOptionType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "E17"
+            ]
+        },
+        "LocalFuelType": {
+            "$id": "#LocalFuelType",
+            "title": "LocalFuelType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalGridAgreementType": {
+            "$id": "#LocalGridAgreementType",
+            "title": "LocalGridAgreementType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "E01"
+            ]
+        },
+        "LocalHVDCModeType": {
+            "$id": "#LocalHVDCModeType",
+            "title": "LocalHVDCModeType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalIndicatorType": {
+            "$id": "#LocalIndicatorType",
+            "title": "LocalIndicatorType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalMessageType": {
+            "$id": "#LocalMessageType",
+            "title": "LocalMessageType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "Z01",
+                "Z02"
+            ]
+        },
+        "LocalMarketProductType": {
+            "$id": "#LocalMarketProductType",
+            "title": "LocalMarketProductType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalObjectAggregationType": {
+            "$id": "#LocalObjectAggregationType",
+            "title": "LocalObjectAggregationType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalPaymentTermsType": {
+            "$id": "#LocalPaymentTermsType",
+            "title": "LocalPaymentTermsType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalPriceCategoryType": {
+            "$id": "#LocalPriceCategoryType",
+            "title": "LocalPriceCategoryType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalPriceComponentType": {
+            "$id": "#LocalPriceComponentType",
+            "title": "LocalPriceComponentType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalPriceDirectionType": {
+            "$id": "#LocalPriceDirectionType",
+            "title": "LocalPriceDirectionType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalProcessType": {
+            "$id": "#LocalProcessType",
+            "title": "LocalProcessType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalQualityType": {
+            "$id": "#LocalQualityType",
+            "title": "LocalQualityType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalReasonCodeType": {
+            "$id": "#LocalReasonCodeType",
+            "title": "LocalReasonCodeType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "Z01",
+                "Z02",
+                "Z03"
+            ]
+        },
+        "LocalRightsType": {
+            "$id": "#LocalRightsType",
+            "title": "LocalRightsType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalRoleType": {
+            "$id": "#LocalRoleType",
+            "title": "LocalRoleType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "Z01",
+                "Z02",
+                "Z03",
+                "Z04",
+                "Z05"
+            ]
+        },
+        "LocalSettlementMethodType": {
+            "$id": "#LocalSettlementMethodType",
+            "title": "LocalSettlementMethodType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "E01"
+            ]
+        },
+        "LocalStatusType": {
+            "$id": "#LocalStatusType",
+            "title": "LocalStatusType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "Z01",
+                "Z02",
+                "Z03"
+            ]
+        },
+        "LocalSubAreaType": {
+            "$id": "#LocalSubAreaType",
+            "title": "LocalSubAreaType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalTarifTypeType": {
+            "$id": "#LocalTarifTypeType",
+            "title": "LocalTarifTypeType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalTimeframeType": {
+            "$id": "#LocalTimeframeType",
+            "title": "LocalTimeframeType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        },
+        "LocalUnitMultiplier": {
+            "$id": "#LocalUnitMultiplier",
+            "title": "LocalUnitMultiplier",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "1"
+            ]
+        },
+        "LocalUnitOfMeasureType": {
+            "$id": "#LocalUnitOfMeasureType",
+            "title": "LocalUnitOfMeasureType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A59"
+            ]
+        },
+        "LocalUnitSymbol": {
+            "$id": "#LocalUnitSymbol",
+            "title": "LocalUnitSymbol",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "MTR"
+            ]
+        },
+        "LocalDocumentType": {
+            "$id": "#LocalDocumentType",
+            "title": "LocalDocumentType",
+            "description": "",
+            "type": "string",
+            "enum": [
+                "A01"
+            ]
+        }
+    }
+}

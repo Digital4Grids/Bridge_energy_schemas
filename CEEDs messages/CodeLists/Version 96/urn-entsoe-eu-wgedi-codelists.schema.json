@@ -1,0 +1,2474 @@
+{
+    "$id": "file:///C:/Users/Public/Documents/iec.ch/TC57/2020/urn-entsoe-eu-wgedi-codelists.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ENTSO-E Code Lists - 96 - 1 - release date= 2026-08-04",
+    "description": "Complete compilation of ENTSO-E Code Lists used by ENTSO-E XML electronic documents and CIM XML electronic documents.",
+    "namespace": "urn:entsoe.eu:wgedi:codelists",
+    "definitions": {
+        "CodeLists": {
+            "$ref": "#"
+        },
+        "AllocationModeTypeList": {
+            "$id": "#AllocationModeTypeList",
+            "title": "AllocationModeTypeList",
+            "modelReference": ".json#/definitions/AllocationModeTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardAllocationModeTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalAllocationModeType"
+                }
+            ]
+        },
+        "StandardAllocationModeTypeList": {
+            "$id": "#StandardAllocationModeTypeList",
+            "title": "",
+            "description": "The identification of the method of allocation in an auction.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04"
+            ]
+        },
+        "AnalogTypeList": {
+            "$id": "#AnalogTypeList",
+            "title": "AnalogTypeList",
+            "modelReference": ".json#/definitions/AnalogTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardAnalogTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalAnalogType"
+                }
+            ]
+        },
+        "StandardAnalogTypeList": {
+            "$id": "#StandardAnalogTypeList",
+            "title": "",
+            "description": "The identification of an analog value.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A29",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A39",
+                "A40",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46"
+            ]
+        },
+        "AreaTypeList": {
+            "$id": "#AreaTypeList",
+            "title": "AreaTypeList",
+            "modelReference": ".json#/definitions/AreaTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardAreaTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalAreaType"
+                }
+            ]
+        },
+        "StandardAreaTypeList": {
+            "$id": "#StandardAreaTypeList",
+            "title": "",
+            "description": "The coded identification of the type of area or domain.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A29",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A39",
+                "A40",
+                "A41"
+            ]
+        },
+        "AssetTypeList": {
+            "$id": "#AssetTypeList",
+            "title": "AssetTypeList",
+            "modelReference": ".json#/definitions/AssetTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardAssetTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalAssetType"
+                }
+            ]
+        },
+        "StandardAssetTypeList": {
+            "$id": "#StandardAssetTypeList",
+            "title": "",
+            "description": "The identification of the type of asset.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "B01",
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07",
+                "B08",
+                "B09",
+                "B10",
+                "B11",
+                "B12",
+                "B13",
+                "B14",
+                "B15",
+                "B16",
+                "B17",
+                "B18",
+                "B19",
+                "B20",
+                "B21",
+                "B22",
+                "B23",
+                "B24",
+                "B25",
+                "B26",
+                "B27",
+                "B28",
+                "B29",
+                "B30",
+                "B31",
+                "B32",
+                "B33",
+                "B34",
+                "B35",
+                "B36",
+                "B37",
+                "B38",
+                "B39",
+                "B40",
+                "B41",
+                "B42",
+                "B43",
+                "B44",
+                "B45",
+                "B46",
+                "B47",
+                "B48",
+                "B49",
+                "B50",
+                "B51",
+                "B52",
+                "B53",
+                "B54",
+                "B55",
+                "B56",
+                "B57",
+                "B58",
+                "B59",
+                "B60",
+                "B61",
+                "B62",
+                "B63",
+                "B64",
+                "B65",
+                "B66",
+                "B67",
+                "B68",
+                "B69",
+                "B70",
+                "B71",
+                "B72",
+                "B73",
+                "B74",
+                "B75",
+                "B76"
+            ]
+        },
+        "AuctionTypeList": {
+            "$id": "#AuctionTypeList",
+            "title": "AuctionTypeList",
+            "modelReference": ".json#/definitions/AuctionTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardAuctionTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalAuctionType"
+                }
+            ]
+        },
+        "StandardAuctionTypeList": {
+            "$id": "#StandardAuctionTypeList",
+            "title": "",
+            "description": "The coded representation of different types of auction.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08"
+            ]
+        },
+        "BusinessTypeList": {
+            "$id": "#BusinessTypeList",
+            "title": "BusinessTypeList",
+            "modelReference": ".json#/definitions/BusinessTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardBusinessTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalBusinessType"
+                }
+            ]
+        },
+        "StandardBusinessTypeList": {
+            "$id": "#StandardBusinessTypeList",
+            "title": "",
+            "description": "The exact business nature identifying the principal characteristic of a time series.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A29",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A40",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46",
+                "A47",
+                "A48",
+                "A49",
+                "A50",
+                "A51",
+                "A52",
+                "A53",
+                "A54",
+                "A55",
+                "A56",
+                "A57",
+                "A58",
+                "A59",
+                "A60",
+                "A61",
+                "A62",
+                "A63",
+                "A64",
+                "A65",
+                "A66",
+                "A67",
+                "A68",
+                "A69",
+                "A70",
+                "A71",
+                "A72",
+                "A73",
+                "A74",
+                "A75",
+                "A76",
+                "A77",
+                "A78",
+                "A79",
+                "A80",
+                "A81",
+                "A82",
+                "A83",
+                "A84",
+                "A85",
+                "A86",
+                "A87",
+                "A88",
+                "A89",
+                "A90",
+                "A91",
+                "A92",
+                "A93",
+                "A94",
+                "A95",
+                "A96",
+                "A97",
+                "A98",
+                "A99",
+                "B01",
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07",
+                "B08",
+                "B09",
+                "B10",
+                "B11",
+                "B12",
+                "B13",
+                "B14",
+                "B15",
+                "B16",
+                "B17",
+                "B18",
+                "B19",
+                "B20",
+                "B21",
+                "B22",
+                "B23",
+                "B24",
+                "B25",
+                "B26",
+                "B27",
+                "B28",
+                "B29",
+                "B30",
+                "B31",
+                "B32",
+                "B33",
+                "B34",
+                "B35",
+                "B36",
+                "B37",
+                "B38",
+                "B39",
+                "B40",
+                "B41",
+                "B42",
+                "B43",
+                "B44",
+                "B45",
+                "B46",
+                "B47",
+                "B48",
+                "B49",
+                "B50",
+                "B51",
+                "B52",
+                "B53",
+                "B54",
+                "B55",
+                "B56",
+                "B57",
+                "B58",
+                "B59",
+                "B60",
+                "B61",
+                "B62",
+                "B63",
+                "B64",
+                "B65",
+                "B66",
+                "B67",
+                "B68",
+                "B69",
+                "B70",
+                "B71",
+                "B72",
+                "B73",
+                "B74",
+                "B75",
+                "B76",
+                "B77",
+                "B78",
+                "B79",
+                "B80",
+                "B81",
+                "B82",
+                "B83",
+                "B84",
+                "B85",
+                "B86",
+                "B87",
+                "B88",
+                "B89",
+                "B90",
+                "B91",
+                "B92",
+                "B93",
+                "B94",
+                "B95",
+                "B96",
+                "B97",
+                "B98",
+                "B99",
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09",
+                "C10",
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17",
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24",
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29",
+                "C30",
+                "C31",
+                "C32",
+                "C33",
+                "C34",
+                "C35",
+                "C36",
+                "C37",
+                "C38",
+                "C39",
+                "C40",
+                "C41",
+                "C42",
+                "C43",
+                "C44",
+                "C45",
+                "C46",
+                "C47",
+                "C48",
+                "C49",
+                "C50",
+                "C51",
+                "C52",
+                "C53",
+                "C54",
+                "C55",
+                "C56",
+                "C57",
+                "C58",
+                "C59",
+                "C60",
+                "C61",
+                "C62",
+                "C63",
+                "C64",
+                "C65",
+                "C66",
+                "C67",
+                "C68",
+                "C69",
+                "C70",
+                "C71",
+                "C72",
+                "C73",
+                "C74",
+                "C75",
+                "C76",
+                "C77",
+                "C78",
+                "C79",
+                "C80",
+                "C81",
+                "C82",
+                "C83",
+                "C84",
+                "C85",
+                "C86",
+                "C87",
+                "C88",
+                "C89",
+                "C90",
+                "C91",
+                "C92",
+                "C93",
+                "C94",
+                "C95",
+                "C96"
+            ]
+        },
+        "CategoryTypeList": {
+            "$id": "#CategoryTypeList",
+            "title": "CategoryTypeList",
+            "modelReference": ".json#/definitions/CategoryTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardCategoryTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalCategoryType"
+                }
+            ]
+        },
+        "StandardCategoryTypeList": {
+            "$id": "#StandardCategoryTypeList",
+            "title": "",
+            "description": "The product category of an auction.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04"
+            ]
+        },
+        "ClassificationTypeList": {
+            "$id": "#ClassificationTypeList",
+            "title": "ClassificationTypeList",
+            "modelReference": ".json#/definitions/ClassificationTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardClassificationTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalClassificationType"
+                }
+            ]
+        },
+        "StandardClassificationTypeList": {
+            "$id": "#StandardClassificationTypeList",
+            "title": "",
+            "description": "Indicates the classification mechanism used to group a set of objects together. The grouping may be of a detailed or a summary nature.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02"
+            ]
+        },
+        "CodingSchemeTypeList": {
+            "$id": "#CodingSchemeTypeList",
+            "title": "CodingSchemeTypeList",
+            "modelReference": ".json#/definitions/CodingSchemeTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardCodingSchemeTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalCodingSchemeType"
+                }
+            ]
+        },
+        "StandardCodingSchemeTypeList": {
+            "$id": "#StandardCodingSchemeTypeList",
+            "title": "",
+            "description": "Codification scheme used to identify the coding scheme used for the set of coded values to identify specific objects.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A10",
+                "NAD",
+                "NAL",
+                "NAM",
+                "NAT",
+                "NAZ",
+                "NBA",
+                "NBE",
+                "NBG",
+                "NCH",
+                "NCS",
+                "NCY",
+                "NCZ",
+                "NDE",
+                "NDK",
+                "NEE",
+                "NES",
+                "NFI",
+                "NFR",
+                "NGB",
+                "NGE",
+                "NGI",
+                "NGR",
+                "NHR",
+                "NHU",
+                "NIE",
+                "NIT",
+                "NKG",
+                "NKZ",
+                "NLI",
+                "NLT",
+                "NLU",
+                "NLV",
+                "NMA",
+                "NMD",
+                "NMK",
+                "NNL",
+                "NNN",
+                "NNO",
+                "NPL",
+                "NPT",
+                "NRO",
+                "NRU",
+                "NSE",
+                "NSI",
+                "NSK",
+                "NTR",
+                "NUA"
+            ]
+        },
+        "ConnectionCategoryTypeList": {
+            "$id": "#ConnectionCategoryTypeList",
+            "title": "ConnectionCategoryTypeList",
+            "modelReference": ".json#/definitions/ConnectionCategoryTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardConnectionCategoryTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalConnectionCategoryType"
+                }
+            ]
+        },
+        "StandardConnectionCategoryTypeList": {
+            "$id": "#StandardConnectionCategoryTypeList",
+            "title": "",
+            "description": "The coded identification of the connection category, e.g. low voltage, where the meter operates..",
+            "type": "string",
+            "enum": [
+                "E03",
+                "E04",
+                "E05",
+                "E06",
+                "E07",
+                "E08",
+                "E09",
+                "E10",
+                "E11",
+                "E12"
+            ]
+        },
+        "CustomerTypeList": {
+            "$id": "#CustomerTypeList",
+            "title": "CustomerTypeList",
+            "modelReference": ".json#/definitions/CustomerTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardCustomerTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalCustomerType"
+                }
+            ]
+        },
+        "StandardCustomerTypeList": {
+            "$id": "#StandardCustomerTypeList",
+            "title": "",
+            "description": "The coded identification of the type of customer such as household customer or company customer.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04"
+            ]
+        },
+        "CoordinateSystemTypeList": {
+            "$id": "#CoordinateSystemTypeList",
+            "title": "CoordinateSystemTypeList",
+            "modelReference": ".json#/definitions/CoordinateSystemTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardCoordinateSystemTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalCoordinateSystemType"
+                }
+            ]
+        },
+        "StandardCoordinateSystemTypeList": {
+            "$id": "#StandardCoordinateSystemTypeList",
+            "title": "",
+            "description": "The identification of the coordinate system used for the location position.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04"
+            ]
+        },
+        "ContractTypeList": {
+            "$id": "#ContractTypeList",
+            "title": "ContractTypeList",
+            "modelReference": ".json#/definitions/ContractTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardContractTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalContractType"
+                }
+            ]
+        },
+        "StandardContractTypeList": {
+            "$id": "#StandardContractTypeList",
+            "title": "",
+            "description": "The contract type defines the conditions under which the capacity is allocated and handled, e.g. daily auction, weekly auction, monthly auction, yearly auction, etc. \nThe significance of this type is dependent on area specific coded working methods.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16"
+            ]
+        },
+        "CurrencyTypeList": {
+            "$id": "#CurrencyTypeList",
+            "title": "CurrencyTypeList",
+            "modelReference": ".json#/definitions/CurrencyTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardCurrencyTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalCurrencyType"
+                }
+            ]
+        },
+        "StandardCurrencyTypeList": {
+            "$id": "#StandardCurrencyTypeList",
+            "title": "",
+            "description": "The coded identification of legal tender using ISO 4217 3 alpha codes.",
+            "type": "string",
+            "enum": [
+                "BAM",
+                "BGN",
+                "CHF",
+                "CZK",
+                "DKK",
+                "EUR",
+                "GBP",
+                "HRK",
+                "HUF",
+                "ISK",
+                "LEK",
+                "LTL",
+                "MKD",
+                "NOK",
+                "PLN",
+                "RON",
+                "RSD",
+                "SAR",
+                "SEK",
+                "SKK",
+                "TRY",
+                "UAH",
+                "USD"
+            ]
+        },
+        "CurveTypeList": {
+            "$id": "#CurveTypeList",
+            "title": "CurveTypeList",
+            "modelReference": ".json#/definitions/CurveTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardCurveTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalCurveType"
+                }
+            ]
+        },
+        "StandardCurveTypeList": {
+            "$id": "#StandardCurveTypeList",
+            "title": "",
+            "description": "The type of curve being defined in the time series.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05"
+            ]
+        },
+        "DirectionTypeList": {
+            "$id": "#DirectionTypeList",
+            "title": "DirectionTypeList",
+            "modelReference": ".json#/definitions/DirectionTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardDirectionTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalDirectionType"
+                }
+            ]
+        },
+        "StandardDirectionTypeList": {
+            "$id": "#StandardDirectionTypeList",
+            "title": "",
+            "description": "The coded identification of the direction of energy flow.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04"
+            ]
+        },
+        "EicTypeList": {
+            "$id": "#EicTypeList",
+            "title": "EicTypeList",
+            "modelReference": ".json#/definitions/EicTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardEicTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalEicType"
+                }
+            ]
+        },
+        "StandardEicTypeList": {
+            "$id": "#StandardEicTypeList",
+            "title": "",
+            "description": "The coded identification of the type of an EIC code.",
+            "type": "string",
+            "enum": [
+                "A",
+                "T",
+                "V",
+                "W",
+                "X",
+                "Y",
+                "Z"
+            ]
+        },
+        "EnergyProductTypeList": {
+            "$id": "#EnergyProductTypeList",
+            "title": "EnergyProductTypeList",
+            "modelReference": ".json#/definitions/EnergyProductTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardEnergyProductTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalEnergyProductType"
+                }
+            ]
+        },
+        "StandardEnergyProductTypeList": {
+            "$id": "#StandardEnergyProductTypeList",
+            "title": "",
+            "description": "The identification of the nature of an energy product such as power, energy, reactive power, etc.",
+            "type": "string",
+            "enum": [
+                "8716867000016",
+                "8716867000023",
+                "8716867000030",
+                "8716867000047",
+                "8716867000115",
+                "8716867000122",
+                "8716867000139",
+                "8716867000146",
+                "8716867009911"
+            ]
+        },
+        "FlowCommodityOptionTypeList": {
+            "$id": "#FlowCommodityOptionTypeList",
+            "title": "FlowCommodityOptionTypeList",
+            "modelReference": ".json#/definitions/FlowCommodityOptionTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardFlowCommodityOptionTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalFlowCommodityOptionType"
+                }
+            ]
+        },
+        "StandardFlowCommodityOptionTypeList": {
+            "$id": "#StandardFlowCommodityOptionTypeList",
+            "title": "",
+            "description": "The option of flow commodity, such as production, consumption, combined or exchange. ",
+            "type": "string",
+            "enum": [
+                "E17",
+                "E18",
+                "E19",
+                "E20"
+            ]
+        },
+        "FuelTypeList": {
+            "$id": "#FuelTypeList",
+            "title": "FuelTypeList",
+            "modelReference": ".json#/definitions/FuelTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardFuelTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalFuelType"
+                }
+            ]
+        },
+        "StandardFuelTypeList": {
+            "$id": "#StandardFuelTypeList",
+            "title": "",
+            "description": "The identification of the type of fuel.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A29",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A39",
+                "A40",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46",
+                "A47",
+                "A48",
+                "A49",
+                "A50",
+                "A51",
+                "A52",
+                "A53",
+                "A54",
+                "A55"
+            ]
+        },
+        "GridAgreementTypeList": {
+            "$id": "#GridAgreementTypeList",
+            "title": "GridAgreementTypeList",
+            "modelReference": ".json#/definitions/GridAgreementTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardGridAgreementTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalGridAgreementType"
+                }
+            ]
+        },
+        "StandardGridAgreementTypeList": {
+            "$id": "#StandardGridAgreementTypeList",
+            "title": "",
+            "description": "Contract dirctly",
+            "type": "string",
+            "enum": [
+                "E01",
+                "E02",
+                "E03",
+                "E04"
+            ]
+        },
+        "HVDCModeTypeList": {
+            "$id": "#HVDCModeTypeList",
+            "title": "HVDCModeTypeList",
+            "modelReference": ".json#/definitions/HVDCModeTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardHVDCModeTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalHVDCModeType"
+                }
+            ]
+        },
+        "StandardHVDCModeTypeList": {
+            "$id": "#StandardHVDCModeTypeList",
+            "title": "",
+            "description": "The coded identification of the HVDC mode.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03"
+            ]
+        },
+        "IndicatorTypeList": {
+            "$id": "#IndicatorTypeList",
+            "title": "IndicatorTypeList",
+            "modelReference": ".json#/definitions/IndicatorTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardIndicatorTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalIndicatorType"
+                }
+            ]
+        },
+        "StandardIndicatorTypeList": {
+            "$id": "#StandardIndicatorTypeList",
+            "title": "",
+            "description": "A boolean indicator to express Yes or No or True or False.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02"
+            ]
+        },
+        "MessageTypeList": {
+            "$id": "#MessageTypeList",
+            "title": "MessageTypeList",
+            "modelReference": ".json#/definitions/MessageTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardMessageTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalMessageType"
+                }
+            ]
+        },
+        "StandardMessageTypeList": {
+            "$id": "#StandardMessageTypeList",
+            "title": "",
+            "description": "The coded type of a document. The message type describes the principal characteristic of a document.\nThis enumeration is used in the XML instances based on IEC 62325.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A39",
+                "A40",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46",
+                "A47",
+                "A48",
+                "A49",
+                "A50",
+                "A51",
+                "A52",
+                "A53",
+                "A54",
+                "A55",
+                "A56",
+                "A57",
+                "A58",
+                "A59",
+                "A60",
+                "A61",
+                "A62",
+                "A63",
+                "A64",
+                "A65",
+                "A66",
+                "A67",
+                "A68",
+                "A69",
+                "A70",
+                "A71",
+                "A72",
+                "A73",
+                "A74",
+                "A75",
+                "A76",
+                "A77",
+                "A78",
+                "A79",
+                "A80",
+                "A81",
+                "A82",
+                "A83",
+                "A84",
+                "A85",
+                "A86",
+                "A87",
+                "A88",
+                "A89",
+                "A90",
+                "A91",
+                "A92",
+                "A93",
+                "A94",
+                "A95",
+                "A96",
+                "A97",
+                "A98",
+                "A99",
+                "B01",
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07",
+                "B08",
+                "B09",
+                "B10",
+                "B11",
+                "B12",
+                "B13",
+                "B14",
+                "B15",
+                "B16",
+                "B17",
+                "B18",
+                "B19",
+                "B20",
+                "B21",
+                "B22",
+                "B23",
+                "B24",
+                "B25",
+                "B26",
+                "B27",
+                "B28",
+                "B29",
+                "B30",
+                "B31",
+                "B32",
+                "B33",
+                "B34",
+                "B35",
+                "B36",
+                "B37",
+                "B38",
+                "B39",
+                "B40",
+                "B41",
+                "B42",
+                "B43",
+                "B44",
+                "B45",
+                "B46",
+                "B47",
+                "B48",
+                "B49",
+                "B50",
+                "B51",
+                "B52"
+            ]
+        },
+        "MarketProductTypeList": {
+            "$id": "#MarketProductTypeList",
+            "title": "MarketProductTypeList",
+            "modelReference": ".json#/definitions/MarketProductTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardMarketProductTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalMarketProductType"
+                }
+            ]
+        },
+        "StandardMarketProductTypeList": {
+            "$id": "#StandardMarketProductTypeList",
+            "title": "",
+            "description": "The identification of the type of a product on a market view",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20"
+            ]
+        },
+        "ObjectAggregationTypeList": {
+            "$id": "#ObjectAggregationTypeList",
+            "title": "ObjectAggregationTypeList",
+            "modelReference": ".json#/definitions/ObjectAggregationTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardObjectAggregationTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalObjectAggregationType"
+                }
+            ]
+        },
+        "StandardObjectAggregationTypeList": {
+            "$id": "#StandardObjectAggregationTypeList",
+            "title": "",
+            "description": "The identification of the domain that is the common dominator used to aggregate a time series.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16"
+            ]
+        },
+        "PaymentTermsTypeList": {
+            "$id": "#PaymentTermsTypeList",
+            "title": "PaymentTermsTypeList",
+            "modelReference": ".json#/definitions/PaymentTermsTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardPaymentTermsTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalPaymentTermsType"
+                }
+            ]
+        },
+        "StandardPaymentTermsTypeList": {
+            "$id": "#StandardPaymentTermsTypeList",
+            "title": "",
+            "description": "The identification of the different terms of payment.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03"
+            ]
+        },
+        "PriceCategoryTypeList": {
+            "$id": "#PriceCategoryTypeList",
+            "title": "PriceCategoryTypeList",
+            "modelReference": ".json#/definitions/PriceCategoryTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardPriceCategoryTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalPriceCategoryType"
+                }
+            ]
+        },
+        "StandardPriceCategoryTypeList": {
+            "$id": "#StandardPriceCategoryTypeList",
+            "title": "",
+            "description": "Indicates the category of the calculation to be applied to a price.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08"
+            ]
+        },
+        "PriceComponentTypeList": {
+            "$id": "#PriceComponentTypeList",
+            "title": "PriceComponentTypeList",
+            "modelReference": ".json#/definitions/PriceComponentTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardPriceComponentTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalPriceComponentType"
+                }
+            ]
+        },
+        "StandardPriceComponentTypeList": {
+            "$id": "#StandardPriceComponentTypeList",
+            "title": "",
+            "description": "Indicates the component type for  a price.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03"
+            ]
+        },
+        "PriceDirectionTypeList": {
+            "$id": "#PriceDirectionTypeList",
+            "title": "PriceDirectionTypeList",
+            "modelReference": ".json#/definitions/PriceDirectionTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardPriceDirectionTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalPriceDirectionType"
+                }
+            ]
+        },
+        "StandardPriceDirectionTypeList": {
+            "$id": "#StandardPriceDirectionTypeList",
+            "title": "",
+            "description": "The nature of a price, i.e. an impacted area system operator pays to internal market parties or inverse.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02"
+            ]
+        },
+        "ProcessTypeList": {
+            "$id": "#ProcessTypeList",
+            "title": "ProcessTypeList",
+            "modelReference": ".json#/definitions/ProcessTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardProcessTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalProcessType"
+                }
+            ]
+        },
+        "StandardProcessTypeList": {
+            "$id": "#StandardProcessTypeList",
+            "title": "",
+            "description": "Indicates the nature of process that the document addresses.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A29",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A39",
+                "A40",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46",
+                "A47",
+                "A48",
+                "A49",
+                "A50",
+                "A51",
+                "A52",
+                "A53",
+                "A54",
+                "A55",
+                "A56",
+                "A57",
+                "A58",
+                "A59",
+                "A60",
+                "A61",
+                "A62",
+                "A63",
+                "A64",
+                "A65",
+                "A66",
+                "A67",
+                "A68",
+                "A69",
+                "A70",
+                "A71",
+                "A72",
+                "A73",
+                "A74",
+                "A75",
+                "A76"
+            ]
+        },
+        "QualityTypeList": {
+            "$id": "#QualityTypeList",
+            "title": "QualityTypeList",
+            "modelReference": ".json#/definitions/QualityTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardQualityTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalQualityType"
+                }
+            ]
+        },
+        "StandardQualityTypeList": {
+            "$id": "#StandardQualityTypeList",
+            "title": "",
+            "description": "The quality of an object.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07"
+            ]
+        },
+        "ReasonCodeTypeList": {
+            "$id": "#ReasonCodeTypeList",
+            "title": "ReasonCodeTypeList",
+            "modelReference": ".json#/definitions/ReasonCodeTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardReasonCodeTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalReasonCodeType"
+                }
+            ]
+        },
+        "StandardReasonCodeTypeList": {
+            "$id": "#StandardReasonCodeTypeList",
+            "title": "",
+            "description": "The coded motivation of an act.",
+            "type": "string",
+            "enum": [
+                "999",
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A29",
+                "A30",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46",
+                "A47",
+                "A48",
+                "A49",
+                "A50",
+                "A51",
+                "A52",
+                "A53",
+                "A54",
+                "A55",
+                "A56",
+                "A57",
+                "A58",
+                "A59",
+                "A60",
+                "A61",
+                "A62",
+                "A63",
+                "A64",
+                "A65",
+                "A66",
+                "A67",
+                "A68",
+                "A69",
+                "A70",
+                "A71",
+                "A72",
+                "A73",
+                "A74",
+                "A75",
+                "A76",
+                "A77",
+                "A78",
+                "A79",
+                "A80",
+                "A81",
+                "A82",
+                "A83",
+                "A84",
+                "A85",
+                "A86",
+                "A87",
+                "A88",
+                "A89",
+                "A90",
+                "A91",
+                "A92",
+                "A93",
+                "A94",
+                "A95",
+                "A96",
+                "A97",
+                "A98",
+                "A99",
+                "B01",
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07",
+                "B08",
+                "B09",
+                "B10",
+                "B11",
+                "B12",
+                "B13",
+                "B14",
+                "B15",
+                "B16",
+                "B17",
+                "B18",
+                "B19",
+                "B20",
+                "B21",
+                "B22",
+                "B23",
+                "B24",
+                "B25",
+                "B26",
+                "B27",
+                "B28",
+                "B29",
+                "B30",
+                "B31",
+                "B32",
+                "B33",
+                "B34",
+                "B35",
+                "B36",
+                "B37",
+                "B38",
+                "B39",
+                "B40",
+                "B41",
+                "B42",
+                "B43",
+                "B44",
+                "B45",
+                "B46",
+                "B47",
+                "B48",
+                "B49",
+                "B50",
+                "B51",
+                "B52",
+                "B53",
+                "B54",
+                "B55",
+                "B56",
+                "B57",
+                "B58",
+                "B59",
+                "B60",
+                "B61",
+                "B62",
+                "B63",
+                "B64",
+                "B65",
+                "B66",
+                "B67",
+                "B68",
+                "B69",
+                "B70",
+                "B71",
+                "B72",
+                "B73",
+                "B74",
+                "B75",
+                "B76",
+                "B77",
+                "B78",
+                "B79",
+                "B80",
+                "B81",
+                "B82",
+                "B83",
+                "B84",
+                "B85"
+            ]
+        },
+        "RightsTypeList": {
+            "$id": "#RightsTypeList",
+            "title": "RightsTypeList",
+            "modelReference": ".json#/definitions/RightsTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardRightsTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalRightsType"
+                }
+            ]
+        },
+        "StandardRightsTypeList": {
+            "$id": "#StandardRightsTypeList",
+            "title": "",
+            "description": "The rights of use that is accorded to what is acquired in an auction.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06"
+            ]
+        },
+        "RoleTypeList": {
+            "$id": "#RoleTypeList",
+            "title": "RoleTypeList",
+            "modelReference": ".json#/definitions/RoleTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardRoleTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalRoleType"
+                }
+            ]
+        },
+        "StandardRoleTypeList": {
+            "$id": "#StandardRoleTypeList",
+            "title": "",
+            "description": "Identification of the role played by a party.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A29",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A39",
+                "A40",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46",
+                "A47",
+                "A48",
+                "A49",
+                "A50",
+                "A51",
+                "A52",
+                "A53",
+                "A54",
+                "A55",
+                "A56",
+                "A57",
+                "A58",
+                "A59",
+                "A60",
+                "WK"
+            ]
+        },
+        "SettlementMethodTypeList": {
+            "$id": "#SettlementMethodTypeList",
+            "title": "SettlementMethodTypeList",
+            "modelReference": ".json#/definitions/SettlementMethodTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardSettlementMethodTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalSettlementMethodType"
+                }
+            ]
+        },
+        "StandardSettlementMethodTypeList": {
+            "$id": "#StandardSettlementMethodTypeList",
+            "title": "",
+            "description": "\n        ",
+            "type": "string",
+            "enum": [
+                "E01",
+                "E02"
+            ]
+        },
+        "StatusTypeList": {
+            "$id": "#StatusTypeList",
+            "title": "StatusTypeList",
+            "modelReference": ".json#/definitions/StatusTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardStatusTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalStatusType"
+                }
+            ]
+        },
+        "StandardStatusTypeList": {
+            "$id": "#StandardStatusTypeList",
+            "title": "",
+            "description": "The condition or position of an object with regard to its standing.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A29",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A39",
+                "A40",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46",
+                "A47",
+                "A48",
+                "A49",
+                "A50",
+                "A51",
+                "A52",
+                "A53",
+                "A54",
+                "A55",
+                "A56",
+                "A57",
+                "A58",
+                "A59",
+                "A60",
+                "A61",
+                "A62",
+                "A63",
+                "A64",
+                "A65",
+                "A66",
+                "A67",
+                "A68",
+                "A69",
+                "A70",
+                "A71",
+                "A72",
+                "A73",
+                "A74",
+                "A75",
+                "A76"
+            ]
+        },
+        "SubAreaTypeList": {
+            "$id": "#SubAreaTypeList",
+            "title": "SubAreaTypeList",
+            "modelReference": ".json#/definitions/SubAreaTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardSubAreaTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalSubAreaType"
+                }
+            ]
+        },
+        "StandardSubAreaTypeList": {
+            "$id": "#StandardSubAreaTypeList",
+            "title": "",
+            "description": "The coded identification of the area sub-type, such as the type of Metering Grid Area.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07"
+            ]
+        },
+        "TarifTypeTypeList": {
+            "$id": "#TarifTypeTypeList",
+            "title": "TarifTypeTypeList",
+            "modelReference": ".json#/definitions/TarifTypeTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardTarifTypeTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalTarifTypeType"
+                }
+            ]
+        },
+        "StandardTarifTypeTypeList": {
+            "$id": "#StandardTarifTypeTypeList",
+            "title": "",
+            "description": "The standard tariff types as defined in the RGCE policies.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07"
+            ]
+        },
+        "TimeframeTypeList": {
+            "$id": "#TimeframeTypeList",
+            "title": "TimeframeTypeList",
+            "modelReference": ".json#/definitions/TimeframeTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardTimeframeTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalTimeframeType"
+                }
+            ]
+        },
+        "StandardTimeframeTypeList": {
+            "$id": "#StandardTimeframeTypeList",
+            "title": "",
+            "description": "The identification of the timeframe.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A29",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A39",
+                "A40",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46"
+            ]
+        },
+        "UnitMultiplier": {
+            "$id": "#UnitMultiplier",
+            "title": "UnitMultiplier",
+            "modelReference": ".json#/definitions/UnitMultiplier",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardUnitMultiplier"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalUnitMultiplier"
+                }
+            ]
+        },
+        "StandardUnitMultiplier": {
+            "$id": "#StandardUnitMultiplier",
+            "title": "",
+            "description": "The unit multipliers defined for the CIM.",
+            "type": "string",
+            "enum": [
+                "1"
+            ]
+        },
+        "UnitOfMeasureTypeList": {
+            "$id": "#UnitOfMeasureTypeList",
+            "title": "UnitOfMeasureTypeList",
+            "modelReference": ".json#/definitions/UnitOfMeasureTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardUnitOfMeasureTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalUnitOfMeasureType"
+                }
+            ]
+        },
+        "StandardUnitOfMeasureTypeList": {
+            "$id": "#StandardUnitOfMeasureTypeList",
+            "title": "",
+            "description": "(synonym MeasurementUnit) The unit of measure that is applied to a quantity. The measurement units shall be in compliance with UN/ECE Recommendation 20.",
+            "type": "string",
+            "enum": [
+                "A59",
+                "A90",
+                "A97",
+                "AMP",
+                "C62",
+                "CEL",
+                "D54",
+                "DD",
+                "E08",
+                "GWH",
+                "HMQ",
+                "HTZ",
+                "KEL",
+                "KMT",
+                "KVR",
+                "KVT",
+                "KWH",
+                "KWT",
+                "MAH",
+                "MAR",
+                "MAW",
+                "MIN",
+                "MMT",
+                "MQS",
+                "MTQ",
+                "MTR",
+                "MTS",
+                "MTZ",
+                "MVA",
+                "MWH",
+                "P1",
+                "SEC",
+                "WTT"
+            ]
+        },
+        "UnitSymbol": {
+            "$id": "#UnitSymbol",
+            "title": "UnitSymbol",
+            "modelReference": ".json#/definitions/UnitSymbol",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardUnitSymbol"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalUnitSymbol"
+                }
+            ]
+        },
+        "StandardUnitSymbol": {
+            "$id": "#StandardUnitSymbol",
+            "title": "",
+            "description": "The coded representation of different units from IEC 61970.",
+            "type": "string",
+            "enum": [
+                "AMP",
+                "C62",
+                "DD",
+                "GKH",
+                "HTZ",
+                "KVT",
+                "MAR",
+                "MAW",
+                "MVA",
+                "OHM",
+                "P1",
+                "Q35"
+            ]
+        },
+        "DocumentTypeList": {
+            "$id": "#DocumentTypeList",
+            "title": "DocumentTypeList",
+            "modelReference": ".json#/definitions/DocumentTypeList",
+            "description": "",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/StandardDocumentTypeList"
+                },
+                {
+                    "$ref": "urn-entsoe-eu-local-extension-types.schema.json#/definitions/LocalDocumentType"
+                }
+            ]
+        },
+        "StandardDocumentTypeList": {
+            "$id": "#StandardDocumentTypeList",
+            "title": "",
+            "description": "The DocumentTypeList is only used in XML instances using deprecated ENTSO-E schema; otherwise for XML instances based CIM, the codelist is MessageTypeList. \nTherefore, you are kindly advised to refer to the MessageType enumeration, which includes the same enumeration codes.",
+            "type": "string",
+            "enum": [
+                "A01",
+                "A02",
+                "A03",
+                "A04",
+                "A05",
+                "A06",
+                "A07",
+                "A08",
+                "A09",
+                "A10",
+                "A11",
+                "A12",
+                "A13",
+                "A14",
+                "A15",
+                "A16",
+                "A17",
+                "A18",
+                "A19",
+                "A20",
+                "A21",
+                "A22",
+                "A23",
+                "A24",
+                "A25",
+                "A26",
+                "A27",
+                "A28",
+                "A30",
+                "A31",
+                "A32",
+                "A33",
+                "A34",
+                "A35",
+                "A36",
+                "A37",
+                "A38",
+                "A39",
+                "A40",
+                "A41",
+                "A42",
+                "A43",
+                "A44",
+                "A45",
+                "A46",
+                "A47",
+                "A48",
+                "A49",
+                "A50",
+                "A51",
+                "A52",
+                "A53",
+                "A54",
+                "A55",
+                "A56",
+                "A57",
+                "A58",
+                "A59",
+                "A60",
+                "A61",
+                "A62",
+                "A63",
+                "A64",
+                "A65",
+                "A66",
+                "A67",
+                "A68",
+                "A69",
+                "A70",
+                "A71",
+                "A72",
+                "A73",
+                "A74",
+                "A75",
+                "A76",
+                "A77",
+                "A78",
+                "A79",
+                "A80",
+                "A81",
+                "A82",
+                "A83",
+                "A84",
+                "A85",
+                "A86",
+                "A87",
+                "A88",
+                "A89",
+                "A90",
+                "A91",
+                "A92",
+                "A93",
+                "A94",
+                "A95",
+                "A96",
+                "A97",
+                "A98",
+                "A99",
+                "B01",
+                "B02",
+                "B03",
+                "B04",
+                "B05"
+            ]
+        }
+    }
+}
