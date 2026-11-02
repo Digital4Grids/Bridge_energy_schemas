@@ -1,0 +1,133 @@
+@startuml 04_field_mapping
+title Field-Level Semantic Mapping — IEC 62746-4 ↔ OpenADR 3.1
+
+skinparam classBackgroundColor #FAFAFA
+skinparam classBorderColor #555555
+skinparam noteBackgroundColor #FFFDE7
+skinparam noteBorderColor #F9A825
+skinparam packageStyle frame
+
+left to right direction
+
+package "IEC 62746-4 Field" as IEC_SIDE #E8F5E9 {
+  class "Document Header" as IH {
+    mRID
+    revisionNumber
+    type
+    createdDateTime
+    Sender_MarketParticipant.mRID
+    Sender_MarketParticipant.MarketRole
+    Receiver_MarketParticipant.mRID
+    Process.processType
+    Period.timeInterval
+  }
+
+  class "Series / Resource" as ISR {
+    RegisteredResource.mRID {codingScheme}
+    FlowDirection.direction
+    value1ScheduleType (ScheduleKind)
+    Measurement_Unit.name
+    curveType
+    businessType
+  }
+
+  class "Series_Period" as ISP {
+    resolution
+    timeInterval.start
+    timeInterval.end
+  }
+
+  class "Point" as IP {
+    position
+    Max_Quantity.quantity
+    Max_Quantity.quality
+    amount (price)
+  }
+
+  class "Instructions (Dispatch)" as ID {
+    instructionType
+    bindingInstruction
+    bindingDOT.value
+    bindingDOT.unit
+    bindingDOT.multiplier
+    Order_MarketDocument (back-ref)
+    Domain.mRID
+  }
+}
+
+package "OpenADR 3.1 Field" as OA_SIDE #E3F2FD {
+  class "event / program" as OEP {
+    event.id  «VTN-scoped»
+    event.eventName  «convention»
+    event.modificationDateTime
+    program.programName  «convention»
+    event.createdDateTime
+    OAuth2 bearer token  «auth»
+    — (no MarketRole)
+    event.targets
+    program.programName  «convention»
+    event.intervalPeriod
+  }
+
+  class "event targets / payloads" as OTP {
+    targets {RESOURCE_NAME|VEN_NAME}
+    payloadType  «encodes direction»
+    payloadType  «encodes ScheduleKind»
+    payloadDescriptor.units
+    event-level / interval-level  «implicit/explicit»
+    program.programName  «convention»
+  }
+
+  class "intervalPeriod" as OIP {
+    event.intervalPeriod.duration  «implicit»
+    event.intervalPeriod.start  «implicit»
+    — derived: start + (n × duration)
+  }
+
+  class "interval / payload" as OI {
+    interval.id  «1-based, profile constraint»
+    payload.values[0]
+    DATA_QUALITY payload
+    PRICE payload.values[0]
+  }
+
+  class "event lifecycle / payloads" as OEL {
+    POST=ACTIVATE, PUT=ADJUSTMENT, DELETE=RELEASE
+    program.bindingEvents  «program-level only»
+    payload.values[0] in KW
+    payloadDescriptor.units  «combined»
+    — «no equivalent»
+    — «no equivalent»
+    targets {SERVICE_AREA|GROUP}
+  }
+}
+
+' Mapping lines with quality annotation
+IH  ..>  OEP : "mRID → event.id\n«partial — scoping gap»"
+IH  ..>  OEP : "revisionNumber → modificationDateTime\n«functional approximation»"
+IH  ..>  OEP : "createdDateTime → createdDateTime\n«direct»"
+IH  ..>  OEP : "Sender / Receiver → OAuth2 + targets\n«auth-only — role lost»"
+IH  ..>  OEP : "Process.processType → programName\n«convention»"
+IH  ..>  OEP : "Period.timeInterval → intervalPeriod\n«direct»"
+
+ISR ..>  OTP : "RegisteredResource.mRID → RESOURCE_NAME\n«partial — namespace lost»"
+ISR ..>  OTP : "FlowDirection + ScheduleKind → payloadType\n«encoded in type name»"
+ISR ..>  OTP : "Measurement_Unit → units\n«unit code translation»"
+ISR ..>  OTP : "curveType → implicit/explicit intervalPeriod\n«structural convention»"
+
+ISP ..>  OIP : "resolution → intervalPeriod.duration\n«direct»"
+ISP ..>  OIP : "timeInterval.start → intervalPeriod.start\n«direct»"
+ISP ..>  OIP : "timeInterval.end → derived\n«derived»"
+
+IP  ..>  OI  : "position → interval.id\n«direct (1-based)»"
+IP  ..>  OI  : "Quantity → payload.values[0]\n«direct»"
+IP  ..>  OI  : "quality → DATA_QUALITY payload\n«translation table»"
+IP  ..>  OI  : "amount → PRICE payload.values[0]\n«combined interval»"
+
+ID  ..>  OEL : "instructionType → POST/PUT/DELETE\n«CRUD lifecycle»"
+ID  ..>  OEL : "bindingInstruction → program.bindingEvents\n«granularity gap»"
+ID  ..>  OEL : "bindingDOT → payload.values[0] KW\n«direct (after unit conv.)»"
+ID  ..>  OEL : "Order_MarketDocument → no equivalent\n«GAP»"
+ID  ..>  OEL : "Domain.mRID → SERVICE_AREA|GROUP\n«approximate»"
+
+@enduml

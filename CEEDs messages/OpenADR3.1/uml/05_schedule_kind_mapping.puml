@@ -1,0 +1,103 @@
+@startuml 05_schedule_kind_mapping
+title ScheduleKind to OpenADR payloadType Mapping — All Contexts
+
+skinparam classBackgroundColor #FAFAFA
+skinparam classBorderColor #555555
+skinparam noteBackgroundColor #FFFDE7
+skinparam noteBorderColor #F9A825
+
+left to right direction
+
+package "IEC ScheduleKind\n(ResourceTimeSeries.value1ScheduleType)" as SK #E8F5E9 {
+  class "load" as SK_load {
+    FlowDirection: —
+    Absolute consumption setpoint
+    or site capacity limit
+  }
+  class "generation" as SK_gen {
+    FlowDirection: —
+    Absolute injection setpoint
+    or site capacity limit
+  }
+  class "loadReduction" as SK_lr {
+    FlowDirection: DOWN
+    Downward load regulation
+  }
+  class "generationIncrease" as SK_gi {
+    FlowDirection: UP
+    Upward generation regulation
+  }
+  class "loadIncrease" as SK_li {
+    FlowDirection: UP
+    Upward load regulation
+  }
+  class "generationReduction" as SK_gr {
+    FlowDirection: DOWN
+    Generation curtailment
+  }
+}
+
+package "OpenADR 3.1 payloadType" as PT #E3F2FD {
+  class "IMPORT_CAPACITY_LIMIT" as PT_icl <<standard>> {
+    Context: Operating Envelope
+    Units: KW
+  }
+  class "EXPORT_CAPACITY_LIMIT" as PT_ecl <<standard>> {
+    Context: Operating Envelope
+    Units: KW
+  }
+  class "DISPATCH_SETPOINT" as PT_ds <<standard>> {
+    Context: Dispatch — absolute
+    Units: KW
+  }
+  class "CONTROL_SETPOINT" as PT_cs <<standard>> {
+    Context: Dispatch — relative delta
+    Units: KW (negative = reduce)
+  }
+  class "LOAD_SHED_DELTA_AVAILABLE" as PT_lsda <<standard>> {
+    Context: Flex Offer
+    Units: KW
+  }
+  class "GENERATION_DELTA_AVAILABLE" as PT_gda <<standard>> {
+    Context: Flex Offer
+    Units: KW
+  }
+  class "x-LOAD_INCREASE_DELTA_AVAIL" as PT_lida <<extension>> {
+    Context: Flex Offer / Dispatch
+    Units: KW
+    Status: PRIVATE EXTENSION — GAP
+  }
+  class "x-GENERATION_REDUCTION_DELTA_AVAIL" as PT_grda <<extension>> {
+    Context: Flex Offer / Dispatch
+    Units: KW
+    Status: PRIVATE EXTENSION — GAP
+  }
+}
+
+SK_load  --> PT_icl : «Operating Envelope»
+SK_load  --> PT_ds  : «Dispatch (absolute)»
+SK_gen   --> PT_ecl : «Operating Envelope»
+SK_gen   --> PT_ds  : «Dispatch (absolute)»
+SK_lr    --> PT_lsda : «Flex Offer»
+SK_lr    --> PT_cs  : «Dispatch (relative, value < 0)»
+SK_gi    --> PT_gda : «Flex Offer»
+SK_gi    --> PT_cs  : «Dispatch (relative, value > 0)»
+SK_li    --> PT_lida : «Flex Offer / Dispatch — GAP»
+SK_gr    --> PT_grda : «Flex Offer / Dispatch — GAP»
+
+note bottom of SK_li
+  ACTION (Frank Sandoval):
+  Assess LOAD_INCREASE_DELTA_AVAILABLE
+  and GENERATION_REDUCTION_DELTA_AVAILABLE
+  as standard enumerations in OpenADR 3.x.
+end note
+
+note right of PT_ds
+  Context determines absolute vs. limit:
+  DISPATCH_SETPOINT in MarketDERInstruction
+  IMPORT/EXPORT_CAPACITY_LIMIT in DOE.
+  Same ScheduleKind — different payload types
+  based on message type context.
+end note
+
+@enduml

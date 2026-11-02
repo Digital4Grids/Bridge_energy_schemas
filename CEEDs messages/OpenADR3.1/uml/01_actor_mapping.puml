@@ -1,0 +1,88 @@
+@startuml 01_actor_mapping
+title Actor Model Mapping — IEC 62746-4 ↔ OpenADR 3.1
+
+skinparam packageStyle rectangle
+skinparam classBackgroundColor #FAFAFA
+skinparam classBorderColor #555555
+skinparam arrowColor #333333
+skinparam noteBackgroundColor #FFFDE7
+skinparam noteBorderColor #F9A825
+
+left to right direction
+
+package "IEC 62746-4 Actor Hierarchy" <<Frame>> #E8F5E9 {
+  class "Service Procurement System\n(SPS)" as SPS {
+    + Issues demand-side signals
+    + Market procurement logic
+  }
+  class "VTN\n(Virtual Top Node)" as VTN_IEC {
+    + Message broker / resource server
+  }
+  class "Aggregator Energy\nManagement System (AEMS)" as AEMS {
+    + Resource Role → SPS
+    + Operator Role → CEMSs
+  }
+  class "Customer Energy\nManagement System (CEMS)" as CEMS {
+    + Manages local DER devices
+  }
+  class "RegisteredDistributedResource" as RDR {
+    + mRID : string {codingScheme}
+    + market service certifications
+    + isAggregatedRes : boolean
+  }
+
+  SPS ..> VTN_IEC : issues signals via
+  VTN_IEC ..> AEMS : delivers events/commands
+  AEMS ..> CEMS : sub-dispatches
+  CEMS o-- RDR : manages
+}
+
+package "OpenADR 3.1 Actor Model" <<Frame>> #E3F2FD {
+  class "Business Logic\n(BL)" as BL {
+    + Creates programs & events
+    + Reads reports
+  }
+  class "VTN\n(Virtual Top Node)" as VTN_OA {
+    + REST/MQTT resource server
+    + OAuth2 auth server
+  }
+  class "VEN — Aggregator role" as VEN_AGG {
+    + Subscribes to programs
+    + Submits flex offer reports
+    + Nested BL/VTN in sub-program
+  }
+  class "VEN — Resource role" as VEN_RES {
+    + Receives events
+    + Submits telemetry reports
+  }
+  class "resource object" as RES_OBJ {
+    + resourceName : string
+    + venID : string
+  }
+
+  BL ..> VTN_OA : creates programs/events
+  VTN_OA ..> VEN_AGG : delivers events
+  VEN_AGG ..> VEN_RES : nested program
+  VEN_RES o-- RES_OBJ : registered as
+}
+
+' Cross-standard mapping arrows
+SPS      -[#E65100,dashed,thickness=2]->  BL       : «maps to»
+VTN_IEC  -[#E65100,dashed,thickness=2]->  VTN_OA   : «identical concept»
+AEMS     -[#E65100,dashed,thickness=2]->  VEN_AGG  : «maps to»
+CEMS     -[#E65100,dashed,thickness=2]->  VEN_RES  : «maps to»
+RDR      -[#E65100,dashed,thickness=2]->  RES_OBJ  : «maps to (partial)»
+
+note bottom of RDR
+  GAP: IEC mRID carries codingScheme attribute
+  (ENTSOE namespace). OpenADR resourceName
+  is an opaque string — no namespace metadata.
+end note
+
+note bottom of SPS
+  Party identity (MarketRole) carried
+  in IEC message body. OpenADR relies
+  on OAuth2 bearer token only.
+end note
+
+@enduml

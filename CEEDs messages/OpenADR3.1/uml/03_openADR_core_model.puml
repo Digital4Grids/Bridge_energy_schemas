@@ -1,0 +1,172 @@
+@startuml 03_openADR_core_model
+title OpenADR 3.1 Core Data Model — Profile-Relevant Subset
+
+skinparam classBackgroundColor #E3F2FD
+skinparam classBorderColor #1565C0
+skinparam arrowColor #0D47A1
+skinparam noteBackgroundColor #FFF9C4
+skinparam noteBorderColor #F57F17
+skinparam packageStyle rectangle
+
+package "Program Layer" <<Frame>> #E8EAF6 {
+  class program {
+    + id : string
+    + programName : string
+    + programLongName : string {0..1}
+    + programType : objectTypes
+    + bindingEvents : boolean
+    + createdDateTime : dateTime
+    + modificationDateTime : dateTime
+    + payloadDescriptors [0..*]
+    + programDescriptions [0..*]
+  }
+}
+
+package "Event Layer" <<Frame>> #E3F2FD {
+  class event {
+    + id : string  {VTN-scoped}
+    + eventName : string {0..1}
+    + programID : string
+    + createdDateTime : dateTime
+    + modificationDateTime : dateTime
+    + objectType : objectTypes
+    + priority : int {0..1}
+    + intervalPeriod : intervalPeriod {0..1}
+    + payloadDescriptors [0..*]
+    + reportDescriptors [0..*]
+    + targets [0..*]
+    + intervals [1..*]
+  }
+
+  class interval {
+    + id : int  {1-based per profile}
+    + intervalPeriod : intervalPeriod {0..1}
+    + payloads [1..*]
+  }
+
+  class intervalPeriod {
+    + start : dateTime
+    + duration : duration {0..1}
+    + randomizedStart : duration {0..1}
+  }
+
+  class eventPayloadDescriptor {
+    + payloadType : string
+    + units : string {0..1}
+    + currency : string {0..1}
+  }
+
+  class reportDescriptor {
+    + payloadType : string
+    + readingType : string {0..1}
+    + units : string {0..1}
+    + startInterval : int
+    + numIntervals : int
+    + historical : boolean
+    + frequency : int
+    + repeat : int
+    + reportIntervals : reportIntervals {0..1}
+  }
+
+  class targets {
+    + type : string
+    + values [1..*] : string
+  }
+
+  class payload {
+    + type : string
+    + values [1..*]
+  }
+}
+
+package "Report Layer" <<Frame>> #E8F5E9 {
+  class report {
+    + id : string
+    + reportName : string {0..1}
+    + eventID : string
+    + clientName : string
+    + createdDateTime : dateTime
+    + modificationDateTime : dateTime
+    + payloadDescriptors [0..*]
+    + resources [1..*]
+  }
+
+  class reportPayloadDescriptor {
+    + payloadType : string
+    + readingType : string {0..1}
+    + units : string {0..1}
+  }
+
+  class resource {
+    + resourceName : string
+    + intervalPeriod : intervalPeriod {0..1}
+    + intervals [1..*]
+  }
+}
+
+package "Registration Layer" <<Frame>> #FCE4EC {
+  class ven {
+    + id : string
+    + venName : string
+    + createdDateTime : dateTime
+    + modificationDateTime : dateTime
+    + objectType : objectType
+    + objectOperations [0..*]
+  }
+
+  class "resource object" as resobj {
+    + id : string
+    + resourceName : string
+    + venID : string
+    + createdDateTime : dateTime
+    + modificationDateTime : dateTime
+    + objectType : objectType
+  }
+
+  class subscription {
+    + id : string
+    + clientID : string
+    + programID : string
+    + objectType : objectType
+    + objectOperations [0..*]
+  }
+}
+
+' Relationships
+program "1" *-- "0..*" event : programID
+event "1" *-- "1..*" interval
+event "1" *-- "0..*" intervalPeriod
+event "1" *-- "0..*" eventPayloadDescriptor
+event "1" *-- "0..*" reportDescriptor
+event "1" *-- "0..*" targets
+interval "1" *-- "1..*" payload
+interval "0..1" *-- "0..1" intervalPeriod
+
+report "1" *-- "1..*" resource
+report "1" *-- "0..*" reportPayloadDescriptor
+resource "1" *-- "1..*" interval
+
+ven "1" o-- "0..*" resobj : manages
+ven "1" ..> "0..*" subscription : has
+subscription ..> program : subscribes to
+
+note bottom of event
+  event.id is VTN-scoped.
+  IEC mRID must be embedded
+  in event.eventName by convention
+  for cross-system traceability.
+end note
+
+note bottom of eventPayloadDescriptor
+  Profile payload types used:
+  IMPORT_CAPACITY_LIMIT | EXPORT_CAPACITY_LIMIT
+  DISPATCH_SETPOINT | CONTROL_SETPOINT
+  DISPATCH_INSTRUCTION | USAGE | PRICE
+  LOAD_SHED_DELTA_AVAILABLE
+  GENERATION_DELTA_AVAILABLE
+  x-USAGE_EXPORT (private extension)
+  x-LOAD_INCREASE_DELTA_AVAIL (private extension)
+  x-GENERATION_REDUCTION_DELTA_AVAIL (private extension)
+end note
+
+@enduml

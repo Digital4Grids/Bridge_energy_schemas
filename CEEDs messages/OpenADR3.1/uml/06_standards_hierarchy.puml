@@ -1,0 +1,87 @@
+@startuml 06_standards_hierarchy
+title IEC Standards Hierarchy — CIM → ESMP → OpenADR 3.1 / IEC 62746-4
+
+skinparam packageStyle rectangle
+skinparam packageBackgroundColor #FAFAFA
+skinparam packageBorderColor #888888
+skinparam classBackgroundColor #FFFFFF
+skinparam arrowColor #333333
+skinparam noteBackgroundColor #FFFDE7
+skinparam noteBorderColor #F9A825
+
+top to bottom direction
+
+package "Abstract Semantic Foundation" <<Frame>> #E8EAF6 {
+  class "IEC CIM\n(Common Information Model)" as CIM {
+    + Abstract UML ontology
+    + Grid assets, market participants,
+      time series, measurements
+    + Vendor/region neutral
+  }
+}
+
+package "Regional Contextual Model" <<Frame>> #E8F5E9 {
+  class "IEC 62325-351\nESMP\n(European Style Market Profile)" as ESMP {
+    + EIC party identification
+    + ENTSOE code lists
+    + Document header conventions
+    + ESMP_DateTimeInterval
+    + Time series encoding (explicit / implicit)
+  }
+}
+
+package "Wholesale Market Operations\n(OUT OF SCOPE for this profile)" <<Frame>> #FFEBEE {
+  class "IEC 62325-451-x\nBusiness Process Profiles" as BPP {
+    + -451-1: Acknowledgement
+    + -451-3: Capacity allocation
+    + -451-4: Settlement
+    + -451-7: Balancing (TSO–BSP)
+  }
+}
+
+package "Demand-Side Interface\n(SCOPE of this profile ★)" <<Frame>> #E3F2FD {
+  class "IEC 62746-4\nDemand Side Resource Interface" as DSRI {
+    + ReferenceEnergyCurveOperatingEnvelope
+    + ReferenceEnergyCurveBaselineNotification
+    + ReferenceEnergyCurveFlexOffer
+    + MarketDERInstruction
+    + CommodityPriceExchange
+    + MarketDER (registration, TBD)
+    Information model layer
+  }
+
+  class "OpenADR 3.1\n(IEC/PAS 62746-10-1 candidate)" as OA {
+    + REST/JSON/MQTT transport
+    + program / event / report / interval
+    + OAuth2 authentication
+    + Publish-subscribe / webhook
+    Transport + API layer
+  }
+}
+
+CIM  -down-|>  ESMP       : «derives»
+ESMP -down-|>  BPP        : «derives»
+ESMP -down-|>  DSRI       : «derives»
+DSRI -right->  OA         : «semantic alignment\n(this profile)»
+
+note right of OA
+  IEC 62746-4 = information model
+  (data structures, message semantics,
+  CIM UML profiles)
+
+  OpenADR 3.1 = transport + API layer
+  (REST/JSON/MQTT, pub-sub, webhooks)
+
+  This profile documents the semantic
+  equivalence between the two layers.
+end note
+
+note right of BPP
+  IEC 62325-451-7 governs TSO–BSP
+  wholesale balancing communications.
+  Architecturally upstream of OpenADR 3.1.
+  Out of scope — but triggers the Aggregator
+  who then dispatches via OpenADR.
+end note
+
+@enduml

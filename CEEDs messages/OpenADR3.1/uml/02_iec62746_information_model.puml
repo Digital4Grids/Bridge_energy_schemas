@@ -1,0 +1,125 @@
+@startuml 02_iec62746_information_model
+title IEC 62746-4 / ESMP Information Model — Key Message Types
+
+skinparam classBackgroundColor #F9FBE7
+skinparam classBorderColor #558B2F
+skinparam arrowColor #33691E
+skinparam noteBackgroundColor #FFF9C4
+skinparam noteBorderColor #F57F17
+skinparam packageStyle rectangle
+
+package "ESMP / CIM Shared Document Header" <<Frame>> #FFF8E1 {
+  abstract class "AbstractDocument" as AD {
+    + mRID : string {originator-assigned, globally unique}
+    + revisionNumber : int
+    + type : DocumentTypeList
+    + createdDateTime : dateTime
+    + Sender_MarketParticipant.mRID + MarketRole
+    + Receiver_MarketParticipant.mRID + MarketRole
+    + Process.processType : ProcessTypeList
+    + Period.timeInterval : ESMP_DateTimeInterval
+  }
+}
+
+package "IEC 62746-4 ReferenceEnergyCurve Family" <<Frame>> #E8F5E9 {
+  note as N_schema
+    All four schemas are structurally identical.
+    They differ only by document type name
+    and the quantity field label on Point.
+  end note
+
+  class "ReferenceEnergyCurveOperatingEnvelope" as DOE {
+    -- Series level --
+    + RegisteredResource.mRID {codingScheme}
+    + FlowDirection.direction : IN | OUT
+    + ResourceTimeSeries.value1ScheduleType : ScheduleKind
+    + Measurement_Unit.name : UnitOfMeasureTypeList
+    + curveType : CurveTypeList
+    + businessType : BusinessTypeList {0..1}
+    -- Series_Period level --
+    + resolution : duration
+    + timeInterval : ESMP_DateTimeInterval
+    -- Point level --
+    + position : int {1-based}
+    + **Max_Quantity**.quantity : decimal
+    + Max_Quantity.quality : QualityTypeList {0..1}
+  }
+
+  class "ReferenceEnergyCurveBaselineNotification" as BLN {
+    -- (same structure as DOE) --
+    + **Baseline_Quantity**.quantity : decimal
+    + Baseline_Quantity.quality : QualityTypeList {0..1}
+  }
+
+  class "ReferenceEnergyCurveFlexOffer" as FO {
+    -- (same structure as DOE) --
+    + **Quantity**.quantity : decimal
+    + Quantity.quality : QualityTypeList {0..1}
+  }
+}
+
+package "IEC 62746-4 Dispatch" <<Frame>> #E3F2FD {
+  class "MarketDERInstruction" as MDI {
+    -- Document level --
+    + mRID : string
+    + revisionNumber : int {0..1}
+    + Domain.mRID : string {0..1}
+    + Order_MarketDocument (back-reference) {0..1}
+    -- Instructions level --
+    + bindingDOTType : ScheduleKind
+    + instructionType : ACTIVATE|ADJUSTMENT|RELEASE|START_UP|SHUT_DOWN
+    + bindingInstruction : YES | NO
+    + bindingDOT.value : decimal
+    + bindingDOT.unit : UnitOfMeasureTypeList
+    + bindingDOT.multiplier : int
+    + RegisteredDistributedResource.mRID {codingScheme}
+  }
+}
+
+package "IEC 62746-4 Price" <<Frame>> #FCE4EC {
+  class "CommodityPriceExchange" as CPE {
+    -- Document level (shared ESMP header) --
+    -- TimeSeries level --
+    + Currency_Unit.name : ISO 4217
+    + Measurement_Unit.name : UnitOfMeasureTypeList
+    + PriceDescriptor.marketType : DAM|RTM|HAM
+    + PriceDescriptor.priceType : capacity|energy|total
+    -- Series_Period / Point level --
+    + Point.amount : decimal per interval
+  }
+}
+
+package "IEC 62746-4 Registration" <<Frame>> #EDE7F6 {
+  class "MarketDER" as MDER {
+    + mRID : string
+    + registrationStatus
+    + isAggregatedRes : boolean
+    + marketServiceCertifications [*]
+    ' NOTE: TBD in profile — no OpenADR equivalent
+  }
+}
+
+AD <|-- DOE
+AD <|-- BLN
+AD <|-- FO
+AD <|-- MDI
+AD <|-- CPE
+AD <|-- MDER
+
+FO ..> CPE : «combined in flex offer\n(separate documents)»
+
+note right of MDI
+  bindingInstruction is per-instruction in IEC.
+  OpenADR only supports binding flag at
+  program level (program.bindingEvents).
+  GAP — proposed extension: payloadDescriptor.obligatory
+end note
+
+note right of MDER
+  GAP: DER registration attributes
+  (isAggregatedRes, certifications)
+  have no OpenADR equivalent.
+  TBD in profile.
+end note
+
+@enduml
